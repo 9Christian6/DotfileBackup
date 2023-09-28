@@ -1,0 +1,169 @@
+{
+	"BioShock Remastered": {
+		"timestampLastFetch": "Sat Aug 26 2023 12:18:23 GMT+0200 (Central European Summer Time)",
+		"pcgamingwiki": {
+			"steamID": "409710",
+			"howLongToBeatID": "1065",
+			"metacritic": {
+				"score": "",
+				"urlid": ""
+			},
+			"opencritic": {
+				"score": "",
+				"urlid": ""
+			},
+			"igdb": {
+				"score": "",
+				"urlid": ""
+			},
+			"direct3DVersions": [
+				"11"
+			]
+		},
+		"applegamingwiki": null,
+		"howlongtobeat": null,
+		"gamesdb": {
+			"steamID": "409710"
+		},
+		"steamInfo": {
+			"compatibilityLevel": "gold",
+			"steamDeckCatagory": 2
+		}
+	},
+	"Bloons TD 6": {
+		"timestampLastFetch": "Sat Aug 26 2023 12:19:31 GMT+0200 (Central European Summer Time)",
+		"pcgamingwiki": {
+			"steamID": "960090",
+			"howLongToBeatID": "",
+			"metacritic": {
+				"score": "",
+				"urlid": ""
+			},
+			"opencritic": {
+				"score": "",
+				"urlid": ""
+			},
+			"igdb": {
+				"score": "",
+				"urlid": ""
+			},
+			"direct3DVersions": [
+				"11"
+			]
+		},
+		"applegamingwiki": null,
+		"howlongtobeat": null,
+		"gamesdb": {
+			"steamID": "960090"
+		},
+		"steamInfo": {
+			"compatibilityLevel": "gold",
+			"steamDeckCatagory": 2
+		}
+	},
+	"League of Legends": {
+		"timestampLastFetch": "Sat Aug 26 2023 12:26:10 GMT+0200 (Central European Summer Time)",
+		"pcgamingwiki": {
+			"steamID": "1333200",
+			"howLongToBeatID": "",
+			"metacritic": {
+				"score": "",
+				"urlid": ""
+			},
+			"opencritic": {
+				"score": "",
+				"urlid": ""
+			},
+			"igdb": {
+				"score": "",
+				"urlid": ""
+			},
+			"direct3DVersions": [
+				""
+			]
+		},
+		"applegamingwiki": null,
+		"howlongtobeat": null,
+		"gamesdb": {
+			"steamID": "20590"
+		},
+		"steamInfo": {
+			"steamDeckCatagory": 0
+		}
+	},
+	"BioShock Infinite Complete Edition": {
+		"timestampLastFetch": "Sun Sep 17 2023 13:11:49 GMT+0200 (Central European Summer Time)",
+		"pcgamingwiki": null,
+		"applegamingwiki": null,
+		"howlongtobeat": null,
+		"gamesdb": {
+			"steamID": "8870"
+		},
+		"steamInfo": {
+			"compatibilityLevel": "gold",
+			"steamDeckCatagory": 2
+		}
+	},
+	"Tacoma": {
+		"timestampLastFetch": "Fri Sep 22 2023 21:33:57 GMT+0200 (Central European Summer Time)",
+		"pcgamingwiki": {
+			"steamID": "343860",
+			"howLongToBeatID": "26799",
+			"metacritic": {
+				"score": "76",
+				"urlid": "tacoma"
+			},
+			"opencritic": {
+				"score": "77",
+				"urlid": "1716/tacoma"
+			},
+			"igdb": {
+				"score": "78",
+				"urlid": "tacoma"
+			},
+			"direct3DVersions": [
+				"11"
+			]
+		},
+		"applegamingwiki": null,
+		"howlongtobeat": null,
+		"gamesdb": {
+			"steamID": "343860"
+		},
+		"steamInfo": {
+			"compatibilityLevel": "gold",
+			"steamDeckCatagory": 3
+		}
+	},
+	"Cyberpunk 2077": {
+		"timestampLastFetch": "Sat Sep 23 2023 09:48:08 GMT+0200 (Central European Summer Time)",
+		"pcgamingwiki": {
+			"steamID": "1091500",
+			"howLongToBeatID": "2127",
+			"metacritic": {
+				"score": "86",
+				"urlid": "cyberpunk-2077"
+			},
+			"opencritic": {
+				"score": "76",
+				"urlid": "8525/cyberpunk-2077"
+			},
+			"igdb": {
+				"score": "75",
+				"urlid": "cyberpunk-2077"
+			},
+			"direct3DVersions": [
+				"12"
+			]
+		},
+		"applegamingwiki": null,
+		"howlongtobeat": null,
+		"gamesdb": {
+			"steamID": "1091500"
+		},
+		"steamInfo": {
+			"compatibilityLevel": "gold",
+			"steamDeckCatagory": 3
+		}
+	}
+}

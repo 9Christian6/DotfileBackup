@@ -1,0 +1,51 @@
+# Config for workstyle
+#
+# Format:
+# "pattern" = "icon"
+#
+# The pattern will be used to match against the application name, class_id or WM_CLASS.
+# The icon will be used to represent that application.
+#
+# Note if multiple patterns are present in the same application name,
+# precedence is given in order of apparition in this file.
+
+"spotify" = ""
+"reddit" = ""
+"alacritty" = ""
+"twitch" = ""
+"youtube" = ""
+"github" = ""
+"rust" = ""
+"thunderbird" = ""
+"calendar" = ""
+"tutanota" = ""
+"google" = ""
+"private browsing" = ""
+"firefox" = ""
+"chrome" = ""
+"file manager" = ""
+"libreoffice calc" = ""
+"libreoffice writer" = ""
+"libreoffice" = ""
+"nvim" = ""
+"gthumb" = ""
+"menu" = ""
+"calculator" = ""
+"transmission" = ""
+"videostream" = ""
+"mpv" = ""
+"music" = ""
+"disk usage" = ""
+"nautilus" = ""
+".pdf" = ""
+"whatsdesk" = ""
+"signal" = ""
+"whatsapp" = ""
+"discord" = ""
+"Discord" = ""
+"steam" = ""
+"heroic" = ""
+
+[other]
+fallback_icon = " "
+deduplicate_icons = true

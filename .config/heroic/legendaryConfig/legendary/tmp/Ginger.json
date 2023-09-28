@@ -1,0 +1,75 @@
+{
+  "data": {
+    "cn": {
+      "description": "Includes the additional voice over languages available.",
+      "name": "(Language Pack) \u4e2d\u6587\uff08\u4e2d\u56fd\uff09",
+      "tags": [
+        "voice_zh_cn"
+      ]
+    },
+    "de": {
+      "description": "Includes the additional voice over languages available.",
+      "name": "(Language Pack) Deutsch",
+      "tags": [
+        "voice_de_de"
+      ]
+    },
+    "es": {
+      "description": "Includes the additional voice over languages available.",
+      "name": "(Language Pack) espa\u00f1ol (Espa\u00f1a)",
+      "tags": [
+        "voice_es_es"
+      ]
+    },
+    "fr": {
+      "description": "Includes the additional voice over languages available.",
+      "name": "(Language Pack) fran\u00e7ais",
+      "tags": [
+        "voice_fr_fr"
+      ]
+    },
+    "it": {
+      "description": "Includes the additional voice over languages available.",
+      "name": "(Language Pack) italiano",
+      "tags": [
+        "voice_it_it"
+      ]
+    },
+    "ja": {
+      "description": "Includes the additional voice over languages available.",
+      "name": "(Language Pack) \u65e5\u672c\u8a9e",
+      "tags": [
+        "voice_ja_jp"
+      ]
+    },
+    "ko": {
+      "description": "Includes the additional voice over languages available.",
+      "name": "(Language Pack) \ud55c\uad6d\uc5b4",
+      "tags": [
+        "voice_ko_kr"
+      ]
+    },
+    "pl": {
+      "description": "Includes the additional voice over languages available.",
+      "name": "(Language Pack) polski",
+      "tags": [
+        "voice_pl_pl"
+      ]
+    },
+    "pt": {
+      "description": "Includes the additional voice over languages available.",
+      "name": "(Language Pack) portugu\u00eas brasileiro",
+      "tags": [
+        "voice_pt_br"
+      ]
+    },
+    "ru": {
+      "description": "Includes the additional voice over languages available.",
+      "name": "(Language Pack) \u0440\u0443\u0441\u0441\u043a\u0438\u0439",
+      "tags": [
+        "voice_ru_ru"
+      ]
+    }
+  },
+  "version": 1
+}

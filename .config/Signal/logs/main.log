@@ -1,0 +1,260 @@
+{"level":30,"time":"2023-09-28T12:40:32.400Z","msg":"app.ready: hour cycle preference: UnknownPreference"}
+{"level":30,"time":"2023-09-28T12:40:32.401Z","msg":"app.ready: preferred system locales: en-US, en"}
+{"level":30,"time":"2023-09-28T12:40:32.403Z","msg":"locale: Supported locales: af-ZA, ar, az-AZ, bg-BG, bn-BD, bs-BA, ca, cs, da, de, el, en, es, et-EE, eu, fa-IR, fi, fr, ga-IE, gl-ES, gu-IN, he, hi-IN, hr-HR, hu, id, it, ja, ka-GE, kk-KZ, km-KH, kn-IN, ko, ky-KG, lt-LT, lv-LV, mk-MK, ml-IN, mr-IN, ms, my, nb, nl, pa-IN, pl, pt-BR, pt-PT, ro-RO, ru, sk-SK, sl-SI, sq-AL, sr, sv, sw, ta-IN, te-IN, th, tl-PH, tr, ug, uk-UA, ur, vi, yue, zh-CN, zh-HK, zh-Hant"}
+{"level":30,"time":"2023-09-28T12:40:32.403Z","msg":"locale: Preferred locales:  en-US, en"}
+{"level":30,"time":"2023-09-28T12:40:32.407Z","msg":"locale: Matched locale: en"}
+{"level":40,"time":"2023-09-28T12:40:32.471Z","msg":"intl.onWarn [@formatjs/intl] \"defaultRichTextElements\" was specified but \"message\" was not pre-compiled. \nPlease consider using \"@formatjs/cli\" to pre-compile your messages for performance.\nFor more details see https://formatjs.io/docs/getting-started/message-distribution"}
+{"level":30,"time":"2023-09-28T12:40:32.472Z","msg":"locale: Text info direction for en: ltr"}
+{"level":30,"time":"2023-09-28T12:40:32.474Z","msg":"app ready"}
+{"level":30,"time":"2023-09-28T12:40:32.474Z","msg":"starting version 6.31.0"}
+{"level":30,"time":"2023-09-28T12:40:32.474Z","msg":"media access status [object Undefined] [object Undefined]"}
+{"level":30,"time":"2023-09-28T12:40:32.477Z","msg":"got fast theme-setting value dark"}
+{"level":30,"time":"2023-09-28T12:40:32.482Z","msg":"got fast theme-setting value dark"}
+{"level":30,"time":"2023-09-28T12:40:32.483Z","msg":"got fast spellcheck setting false"}
+{"level":30,"time":"2023-09-28T12:40:32.483Z","msg":"getSystemTraySetting had no flags and did no DB lookups. Returning DoNotUseSystemTray"}
+{"level":30,"time":"2023-09-28T12:40:32.484Z","msg":"Initializing BrowserWindow config: {\"show\":false,\"width\":953,\"height\":1040,\"minWidth\":300,\"minHeight\":200,\"autoHideMenuBar\":true,\"titleBarStyle\":\"default\",\"titleBarOverlay\":false,\"backgroundColor\":\"#121212\",\"webPreferences\":{\"devTools\":false,\"spellcheck\":false,\"enableBlinkFeatures\":\"CSSPseudoDir,CSSLogical\",\"nodeIntegration\":false,\"nodeIntegrationInWorker\":false,\"sandbox\":false,\"contextIsolation\":true,\"preload\":\"[REDACTED]/preload.bundle.js\",\"backgroundThrottling\":true,\"enablePreferredSizeMode\":true,\"disableBlinkFeatures\":\"Accelerated2dCanvas,AcceleratedSmallCanvases\"},\"icon\":\"[REDACTED]/images/signal-logo-desktop-linux.png\",\"x\":2565,\"y\":5}"}
+{"level":30,"time":"2023-09-28T12:40:32.549Z","msg":"spellcheck: user locales: [\"en-US\",\"en\"]"}
+{"level":30,"time":"2023-09-28T12:40:32.549Z","msg":"spellcheck: available spellchecker languages: [\"af\",\"bg\",\"ca\",\"cs\",\"cy\",\"da\",\"de\",\"de-DE\",\"el\",\"en\",\"en-AU\",\"en-CA\",\"en-GB\",\"en-GB-oxendict\",\"en-US\",\"es\",\"es-419\",\"es-AR\",\"es-ES\",\"es-MX\",\"es-US\",\"et\",\"fa\",\"fo\",\"fr\",\"fr-FR\",\"he\",\"hi\",\"hr\",\"hu\",\"hy\",\"id\",\"it\",\"it-IT\",\"ko\",\"lt\",\"lv\",\"nb\",\"nl\",\"pl\",\"pt\",\"pt-BR\",\"pt-PT\",\"ro\",\"ru\",\"sh\",\"sk\",\"sl\",\"sq\",\"sr\",\"sv\",\"ta\",\"tg\",\"tr\",\"uk\",\"vi\"]"}
+{"level":30,"time":"2023-09-28T12:40:32.549Z","msg":"spellcheck: setting languages to: [\"en-US\",\"en\"]"}
+{"level":30,"time":"2023-09-28T12:40:32.570Z","msg":"MainSQL: updateSchema:\n  Current user_version: 940;\n  Most recent db schema: 940;\n  SQLite version: 3.42.0;\n  SQLCipher version: 4.5.5 community;\n  (deprecated) schema_version: 437;\n"}
+{"level":30,"time":"2023-09-28T12:40:33.104Z","msg":"Updating BrowserWindow config: %s {\"maximized\":true,\"autoHideMenuBar\":true,\"fullscreen\":false,\"width\":952,\"height\":1040,\"x\":3523,\"y\":5}"}
+{"level":30,"time":"2023-09-28T12:40:33.106Z","msg":"config/set: Saving ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T12:40:33.106Z","msg":"config/set: Saved ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T12:40:33.368Z","msg":"got fast theme-setting value dark"}
+{"level":30,"time":"2023-09-28T12:40:34.509Z","msg":"got fast spellcheck setting false"}
+{"level":30,"time":"2023-09-28T12:40:34.521Z","msg":"System tray service: created"}
+{"level":30,"time":"2023-09-28T12:40:34.521Z","msg":"System tray service: updating main window. Previously, there was not a window, and now there is"}
+{"level":30,"time":"2023-09-28T12:40:34.521Z","msg":"System tray service: rendering no tray"}
+{"level":30,"time":"2023-09-28T12:40:34.521Z","msg":"Begin ensuring permissions"}
+{"level":30,"time":"2023-09-28T12:40:34.522Z","msg":"main window is ready-to-show"}
+{"level":30,"time":"2023-09-28T12:40:34.522Z","msg":"showing main window"}
+{"level":30,"time":"2023-09-28T12:40:34.522Z","msg":"System tray service: rendering no tray"}
+{"level":30,"time":"2023-09-28T12:40:34.523Z","msg":"Ensuring file permissions for 4 files"}
+{"level":30,"time":"2023-09-28T12:40:34.524Z","msg":"Finish ensuring permissions in 3ms"}
+{"level":30,"time":"2023-09-28T12:40:34.706Z","msg":"MainSQL: slow query getAllStories duration=85ms"}
+{"level":30,"time":"2023-09-28T12:40:34.829Z","msg":"Prevent display sleep service: allowing display sleep"}
+{"level":30,"time":"2023-09-28T12:40:34.829Z","msg":"Background throttling enabled because no call is active"}
+{"level":30,"time":"2023-09-28T12:40:35.557Z","msg":"updater/start: Updates disabled - not starting new version checks"}
+{"level":30,"time":"2023-09-28T12:40:35.560Z","msg":"App loaded - time: 3087"}
+{"level":30,"time":"2023-09-28T12:40:35.560Z","msg":"SQL init - time: 98"}
+{"level":30,"time":"2023-09-28T12:40:35.560Z","msg":"Preload - time: 1130"}
+{"level":30,"time":"2023-09-28T12:40:35.561Z","msg":"WebSocket connect - time: 645"}
+{"level":30,"time":"2023-09-28T12:40:35.561Z","msg":"Processed count: 13"}
+{"level":30,"time":"2023-09-28T12:40:35.561Z","msg":"Messages per second: 9.908536585365853"}
+{"level":30,"time":"2023-09-28T12:58:58.042Z","msg":"Updating BrowserWindow config: %s {\"maximized\":true,\"autoHideMenuBar\":true,\"fullscreen\":false,\"width\":633,\"height\":1040,\"x\":3203,\"y\":5}"}
+{"level":30,"time":"2023-09-28T12:58:58.042Z","msg":"config/set: Saving ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T12:58:58.043Z","msg":"config/set: Saved ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T12:59:16.047Z","msg":"Updating BrowserWindow config: %s {\"maximized\":true,\"autoHideMenuBar\":true,\"fullscreen\":false,\"width\":952,\"height\":1040,\"x\":3523,\"y\":5}"}
+{"level":30,"time":"2023-09-28T12:59:16.048Z","msg":"config/set: Saving ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T12:59:16.048Z","msg":"config/set: Saved ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:00:42.584Z","msg":"Updating BrowserWindow config: %s {\"maximized\":true,\"autoHideMenuBar\":true,\"fullscreen\":false,\"width\":633,\"height\":1040,\"x\":3203,\"y\":5}"}
+{"level":30,"time":"2023-09-28T13:00:42.584Z","msg":"config/set: Saving ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:00:42.584Z","msg":"config/set: Saved ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:01:02.780Z","msg":"Updating BrowserWindow config: %s {\"maximized\":true,\"autoHideMenuBar\":true,\"fullscreen\":false,\"width\":952,\"height\":1040,\"x\":3523,\"y\":5}"}
+{"level":30,"time":"2023-09-28T13:01:02.780Z","msg":"config/set: Saving ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:01:02.780Z","msg":"config/set: Saved ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:02:33.719Z","msg":"Updating BrowserWindow config: %s {\"maximized\":true,\"autoHideMenuBar\":true,\"fullscreen\":false,\"width\":633,\"height\":1040,\"x\":3203,\"y\":5}"}
+{"level":30,"time":"2023-09-28T13:02:33.719Z","msg":"config/set: Saving ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:02:33.719Z","msg":"config/set: Saved ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:03:50.801Z","msg":"Updating BrowserWindow config: %s {\"maximized\":true,\"autoHideMenuBar\":true,\"fullscreen\":false,\"width\":952,\"height\":1040,\"x\":3523,\"y\":5}"}
+{"level":30,"time":"2023-09-28T13:03:50.801Z","msg":"config/set: Saving ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:03:50.801Z","msg":"config/set: Saved ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:14:39.745Z","msg":"Updating BrowserWindow config: %s {\"maximized\":true,\"autoHideMenuBar\":true,\"fullscreen\":false,\"width\":634,\"height\":1040,\"x\":3841,\"y\":5}"}
+{"level":30,"time":"2023-09-28T13:14:39.745Z","msg":"config/set: Saving ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:14:39.745Z","msg":"config/set: Saved ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:15:01.991Z","msg":"Updating BrowserWindow config: %s {\"maximized\":true,\"autoHideMenuBar\":true,\"fullscreen\":false,\"width\":952,\"height\":1040,\"x\":3523,\"y\":5}"}
+{"level":30,"time":"2023-09-28T13:15:01.992Z","msg":"config/set: Saving ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:15:01.992Z","msg":"config/set: Saved ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:17:27.764Z","msg":"Updating BrowserWindow config: %s {\"maximized\":true,\"autoHideMenuBar\":true,\"fullscreen\":false,\"width\":206,\"height\":1040,\"x\":4269,\"y\":5}"}
+{"level":30,"time":"2023-09-28T13:17:27.764Z","msg":"config/set: Saving ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:17:27.765Z","msg":"config/set: Saved ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:17:39.886Z","msg":"Updating BrowserWindow config: %s {\"maximized\":true,\"autoHideMenuBar\":true,\"fullscreen\":false,\"width\":237,\"height\":1040,\"x\":4238,\"y\":5}"}
+{"level":30,"time":"2023-09-28T13:17:39.886Z","msg":"config/set: Saving ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:17:39.886Z","msg":"config/set: Saved ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:17:43.214Z","msg":"Updating BrowserWindow config: %s {\"maximized\":true,\"autoHideMenuBar\":true,\"fullscreen\":false,\"width\":266,\"height\":1040,\"x\":4209,\"y\":5}"}
+{"level":30,"time":"2023-09-28T13:17:43.215Z","msg":"config/set: Saving ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:17:43.215Z","msg":"config/set: Saved ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:17:47.006Z","msg":"Updating BrowserWindow config: %s {\"maximized\":true,\"autoHideMenuBar\":true,\"fullscreen\":false,\"width\":952,\"height\":1040,\"x\":3523,\"y\":5}"}
+{"level":30,"time":"2023-09-28T13:17:47.006Z","msg":"config/set: Saving ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:17:47.006Z","msg":"config/set: Saved ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:23:22.715Z","msg":"Updating BrowserWindow config: %s {\"maximized\":true,\"autoHideMenuBar\":true,\"fullscreen\":false,\"width\":952,\"height\":1040,\"x\":3523,\"y\":5}"}
+{"level":30,"time":"2023-09-28T13:23:22.715Z","msg":"config/set: Saving ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:23:22.715Z","msg":"config/set: Saved ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:23:39.150Z","msg":"Updating BrowserWindow config: %s {\"maximized\":true,\"autoHideMenuBar\":true,\"fullscreen\":false,\"width\":952,\"height\":1040,\"x\":3523,\"y\":5}"}
+{"level":30,"time":"2023-09-28T13:23:39.150Z","msg":"config/set: Saving ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:23:39.150Z","msg":"config/set: Saved ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:24:33.010Z","msg":"Updating BrowserWindow config: %s {\"maximized\":true,\"autoHideMenuBar\":true,\"fullscreen\":false,\"width\":633,\"height\":1040,\"x\":3203,\"y\":5}"}
+{"level":30,"time":"2023-09-28T13:24:33.010Z","msg":"config/set: Saving ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:24:33.011Z","msg":"config/set: Saved ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:24:42.343Z","msg":"Updating BrowserWindow config: %s {\"maximized\":true,\"autoHideMenuBar\":true,\"fullscreen\":false,\"width\":633,\"height\":1040,\"x\":3203,\"y\":5}"}
+{"level":30,"time":"2023-09-28T13:24:42.343Z","msg":"config/set: Saving ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:24:42.343Z","msg":"config/set: Saved ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:24:47.335Z","msg":"Updating BrowserWindow config: %s {\"maximized\":true,\"autoHideMenuBar\":true,\"fullscreen\":false,\"width\":952,\"height\":1040,\"x\":3523,\"y\":5}"}
+{"level":30,"time":"2023-09-28T13:24:47.335Z","msg":"config/set: Saving ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:24:47.335Z","msg":"config/set: Saved ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:25:06.181Z","msg":"Updating BrowserWindow config: %s {\"maximized\":true,\"autoHideMenuBar\":true,\"fullscreen\":false,\"width\":952,\"height\":1040,\"x\":3523,\"y\":5}"}
+{"level":30,"time":"2023-09-28T13:25:06.181Z","msg":"config/set: Saving ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:25:06.181Z","msg":"config/set: Saved ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:25:09.771Z","msg":"Updating BrowserWindow config: %s {\"maximized\":true,\"autoHideMenuBar\":true,\"fullscreen\":false,\"width\":633,\"height\":1040,\"x\":3203,\"y\":5}"}
+{"level":30,"time":"2023-09-28T13:25:09.771Z","msg":"config/set: Saving ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:25:09.771Z","msg":"config/set: Saved ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:25:15.240Z","msg":"Updating BrowserWindow config: %s {\"maximized\":true,\"autoHideMenuBar\":true,\"fullscreen\":false,\"width\":952,\"height\":1040,\"x\":3523,\"y\":5}"}
+{"level":30,"time":"2023-09-28T13:25:15.240Z","msg":"config/set: Saving ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:25:15.240Z","msg":"config/set: Saved ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:26:40.494Z","msg":"Updating BrowserWindow config: %s {\"maximized\":true,\"autoHideMenuBar\":true,\"fullscreen\":false,\"width\":952,\"height\":1040,\"x\":3523,\"y\":5}"}
+{"level":30,"time":"2023-09-28T13:26:40.494Z","msg":"config/set: Saving ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:26:40.494Z","msg":"config/set: Saved ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:27:37.195Z","msg":"Updating BrowserWindow config: %s {\"maximized\":true,\"autoHideMenuBar\":true,\"fullscreen\":false,\"width\":952,\"height\":1040,\"x\":3523,\"y\":5}"}
+{"level":30,"time":"2023-09-28T13:27:37.196Z","msg":"config/set: Saving ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:27:37.196Z","msg":"config/set: Saved ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:28:21.316Z","msg":"Updating BrowserWindow config: %s {\"maximized\":true,\"autoHideMenuBar\":true,\"fullscreen\":false,\"width\":952,\"height\":1040,\"x\":3523,\"y\":5}"}
+{"level":30,"time":"2023-09-28T13:28:21.316Z","msg":"config/set: Saving ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:28:21.317Z","msg":"config/set: Saved ephemeral config to disk"}
+{"level":30,"time":"2023-09-28T13:29:42.853Z","msg":"close event {\"readyForShutdown\":false,\"shouldQuit\":false}"}
+{"level":30,"time":"2023-09-28T13:29:42.853Z","msg":"System tray service: rendering no tray"}
+{"level":30,"time":"2023-09-28T13:29:42.853Z","msg":"requestShutdown: Requesting close of mainWindow..."}
+{"level":30,"time":"2023-09-28T13:29:42.902Z","msg":"requestShutdown: Response received"}
+{"level":30,"time":"2023-09-28T13:29:42.905Z","msg":"before-quit event {\"readyForShutdown\":true,\"shouldQuit\":false}"}
+{"level":30,"time":"2023-09-28T13:29:42.905Z","msg":"System tray service: markShouldQuit"}
+{"level":30,"time":"2023-09-28T13:29:42.905Z","msg":"close event {\"readyForShutdown\":true,\"shouldQuit\":true}"}
+{"level":30,"time":"2023-09-28T13:29:42.907Z","msg":"System tray service: updating main window. Previously, there was a window, and now there is not"}
+{"level":30,"time":"2023-09-28T13:29:42.907Z","msg":"System tray service: rendering no tray"}
+{"level":30,"time":"2023-09-28T13:30:32.973Z","msg":"app.ready: hour cycle preference: UnknownPreference"}
+{"level":30,"time":"2023-09-28T13:30:32.974Z","msg":"app.ready: preferred system locales: en-US, en"}
+{"level":30,"time":"2023-09-28T13:30:32.975Z","msg":"locale: Supported locales: af-ZA, ar, az-AZ, bg-BG, bn-BD, bs-BA, ca, cs, da, de, el, en, es, et-EE, eu, fa-IR, fi, fr, ga-IE, gl-ES, gu-IN, he, hi-IN, hr-HR, hu, id, it, ja, ka-GE, kk-KZ, km-KH, kn-IN, ko, ky-KG, lt-LT, lv-LV, mk-MK, ml-IN, mr-IN, ms, my, nb, nl, pa-IN, pl, pt-BR, pt-PT, ro-RO, ru, sk-SK, sl-SI, sq-AL, sr, sv, sw, ta-IN, te-IN, th, tl-PH, tr, ug, uk-UA, ur, vi, yue, zh-CN, zh-HK, zh-Hant"}
+{"level":30,"time":"2023-09-28T13:30:32.975Z","msg":"locale: Preferred locales:  en-US, en"}
+{"level":30,"time":"2023-09-28T13:30:32.978Z","msg":"locale: Matched locale: en"}
+{"level":40,"time":"2023-09-28T13:30:33.034Z","msg":"intl.onWarn [@formatjs/intl] \"defaultRichTextElements\" was specified but \"message\" was not pre-compiled. \nPlease consider using \"@formatjs/cli\" to pre-compile your messages for performance.\nFor more details see https://formatjs.io/docs/getting-started/message-distribution"}
+{"level":30,"time":"2023-09-28T13:30:33.035Z","msg":"locale: Text info direction for en: ltr"}
+{"level":30,"time":"2023-09-28T13:30:33.037Z","msg":"app ready"}
+{"level":30,"time":"2023-09-28T13:30:33.037Z","msg":"starting version 6.31.0"}
+{"level":30,"time":"2023-09-28T13:30:33.037Z","msg":"media access status [object Undefined] [object Undefined]"}
+{"level":30,"time":"2023-09-28T13:30:33.045Z","msg":"got fast theme-setting value dark"}
+{"level":30,"time":"2023-09-28T13:30:33.052Z","msg":"got fast theme-setting value dark"}
+{"level":30,"time":"2023-09-28T13:30:33.053Z","msg":"got fast spellcheck setting false"}
+{"level":30,"time":"2023-09-28T13:30:33.053Z","msg":"getSystemTraySetting had no flags and did no DB lookups. Returning DoNotUseSystemTray"}
+{"level":30,"time":"2023-09-28T13:30:33.054Z","msg":"Initializing BrowserWindow config: {\"show\":false,\"width\":952,\"height\":1040,\"minWidth\":300,\"minHeight\":200,\"autoHideMenuBar\":true,\"titleBarStyle\":\"default\",\"titleBarOverlay\":false,\"backgroundColor\":\"#121212\",\"webPreferences\":{\"devTools\":false,\"spellcheck\":false,\"enableBlinkFeatures\":\"CSSPseudoDir,CSSLogical\",\"nodeIntegration\":false,\"nodeIntegrationInWorker\":false,\"sandbox\":false,\"contextIsolation\":true,\"preload\":\"[REDACTED]/preload.bundle.js\",\"backgroundThrottling\":true,\"enablePreferredSizeMode\":true,\"disableBlinkFeatures\":\"Accelerated2dCanvas,AcceleratedSmallCanvases\"},\"icon\":\"[REDACTED]/images/signal-logo-desktop-linux.png\",\"x\":3523,\"y\":5}"}
+{"level":30,"time":"2023-09-28T13:30:33.142Z","msg":"spellcheck: user locales: [\"en-US\",\"en\"]"}
+{"level":30,"time":"2023-09-28T13:30:33.142Z","msg":"spellcheck: available spellchecker languages: [\"af\",\"bg\",\"ca\",\"cs\",\"cy\",\"da\",\"de\",\"de-DE\",\"el\",\"en\",\"en-AU\",\"en-CA\",\"en-GB\",\"en-GB-oxendict\",\"en-US\",\"es\",\"es-419\",\"es-AR\",\"es-ES\",\"es-MX\",\"es-US\",\"et\",\"fa\",\"fo\",\"fr\",\"fr-FR\",\"he\",\"hi\",\"hr\",\"hu\",\"hy\",\"id\",\"it\",\"it-IT\",\"ko\",\"lt\",\"lv\",\"nb\",\"nl\",\"pl\",\"pt\",\"pt-BR\",\"pt-PT\",\"ro\",\"ru\",\"sh\",\"sk\",\"sl\",\"sq\",\"sr\",\"sv\",\"ta\",\"tg\",\"tr\",\"uk\",\"vi\"]"}
+{"level":30,"time":"2023-09-28T13:30:33.142Z","msg":"spellcheck: setting languages to: [\"en-US\",\"en\"]"}
+{"level":30,"time":"2023-09-28T13:30:33.167Z","msg":"MainSQL: updateSchema:\n  Current user_version: 940;\n  Most recent db schema: 940;\n  SQLite version: 3.42.0;\n  SQLCipher version: 4.5.5 community;\n  (deprecated) schema_version: 437;\n"}
+{"level":30,"time":"2023-09-28T13:30:34.013Z","msg":"got fast theme-setting value dark"}
+{"level":30,"time":"2023-09-28T13:30:35.540Z","msg":"got fast spellcheck setting false"}
+{"level":30,"time":"2023-09-28T13:30:35.550Z","msg":"System tray service: created"}
+{"level":30,"time":"2023-09-28T13:30:35.550Z","msg":"System tray service: updating main window. Previously, there was not a window, and now there is"}
+{"level":30,"time":"2023-09-28T13:30:35.550Z","msg":"System tray service: rendering no tray"}
+{"level":30,"time":"2023-09-28T13:30:35.550Z","msg":"Begin ensuring permissions"}
+{"level":30,"time":"2023-09-28T13:30:35.551Z","msg":"main window is ready-to-show"}
+{"level":30,"time":"2023-09-28T13:30:35.551Z","msg":"showing main window"}
+{"level":30,"time":"2023-09-28T13:30:35.552Z","msg":"System tray service: rendering no tray"}
+{"level":30,"time":"2023-09-28T13:30:35.559Z","msg":"Ensuring file permissions for 4 files"}
+{"level":30,"time":"2023-09-28T13:30:35.562Z","msg":"Finish ensuring permissions in 12ms"}
+{"level":30,"time":"2023-09-28T13:30:35.767Z","msg":"MainSQL: slow query getAllStories duration=87ms"}
+{"level":30,"time":"2023-09-28T13:30:35.982Z","msg":"Prevent display sleep service: allowing display sleep"}
+{"level":30,"time":"2023-09-28T13:30:35.982Z","msg":"Background throttling enabled because no call is active"}
+{"level":30,"time":"2023-09-28T13:30:36.373Z","msg":"updater/start: Updates disabled - not starting new version checks"}
+{"level":30,"time":"2023-09-28T13:30:36.374Z","msg":"App loaded - time: 3339"}
+{"level":30,"time":"2023-09-28T13:30:36.374Z","msg":"SQL init - time: 145"}
+{"level":30,"time":"2023-09-28T13:30:36.374Z","msg":"Preload - time: 1500"}
+{"level":30,"time":"2023-09-28T13:30:36.374Z","msg":"WebSocket connect - time: 772"}
+{"level":30,"time":"2023-09-28T13:30:36.374Z","msg":"Processed count: 0"}
+{"level":30,"time":"2023-09-28T13:30:36.374Z","msg":"Messages per second: 0"}
+{"level":30,"time":"2023-09-28T14:04:16.193Z","msg":"close event {\"readyForShutdown\":false,\"shouldQuit\":false}"}
+{"level":30,"time":"2023-09-28T14:04:16.194Z","msg":"System tray service: rendering no tray"}
+{"level":30,"time":"2023-09-28T14:04:16.194Z","msg":"requestShutdown: Requesting close of mainWindow..."}
+{"level":30,"time":"2023-09-28T14:04:16.256Z","msg":"MainSQL: slow query close duration=49ms"}
+{"level":30,"time":"2023-09-28T14:04:16.258Z","msg":"requestShutdown: Response received"}
+{"level":30,"time":"2023-09-28T14:04:16.263Z","msg":"before-quit event {\"readyForShutdown\":true,\"shouldQuit\":false}"}
+{"level":30,"time":"2023-09-28T14:04:16.263Z","msg":"System tray service: markShouldQuit"}
+{"level":30,"time":"2023-09-28T14:04:16.263Z","msg":"close event {\"readyForShutdown\":true,\"shouldQuit\":true}"}
+{"level":30,"time":"2023-09-28T14:04:16.265Z","msg":"System tray service: updating main window. Previously, there was a window, and now there is not"}
+{"level":30,"time":"2023-09-28T14:04:16.265Z","msg":"System tray service: rendering no tray"}
+{"level":30,"time":"2023-09-28T14:05:24.796Z","msg":"app.ready: hour cycle preference: UnknownPreference"}
+{"level":30,"time":"2023-09-28T14:05:24.797Z","msg":"app.ready: preferred system locales: en-US, en"}
+{"level":30,"time":"2023-09-28T14:05:24.798Z","msg":"locale: Supported locales: af-ZA, ar, az-AZ, bg-BG, bn-BD, bs-BA, ca, cs, da, de, el, en, es, et-EE, eu, fa-IR, fi, fr, ga-IE, gl-ES, gu-IN, he, hi-IN, hr-HR, hu, id, it, ja, ka-GE, kk-KZ, km-KH, kn-IN, ko, ky-KG, lt-LT, lv-LV, mk-MK, ml-IN, mr-IN, ms, my, nb, nl, pa-IN, pl, pt-BR, pt-PT, ro-RO, ru, sk-SK, sl-SI, sq-AL, sr, sv, sw, ta-IN, te-IN, th, tl-PH, tr, ug, uk-UA, ur, vi, yue, zh-CN, zh-HK, zh-Hant"}
+{"level":30,"time":"2023-09-28T14:05:24.798Z","msg":"locale: Preferred locales:  en-US, en"}
+{"level":30,"time":"2023-09-28T14:05:24.803Z","msg":"locale: Matched locale: en"}
+{"level":40,"time":"2023-09-28T14:05:24.864Z","msg":"intl.onWarn [@formatjs/intl] \"defaultRichTextElements\" was specified but \"message\" was not pre-compiled. \nPlease consider using \"@formatjs/cli\" to pre-compile your messages for performance.\nFor more details see https://formatjs.io/docs/getting-started/message-distribution"}
+{"level":30,"time":"2023-09-28T14:05:24.865Z","msg":"locale: Text info direction for en: ltr"}
+{"level":30,"time":"2023-09-28T14:05:24.867Z","msg":"app ready"}
+{"level":30,"time":"2023-09-28T14:05:24.868Z","msg":"starting version 6.31.0"}
+{"level":30,"time":"2023-09-28T14:05:24.868Z","msg":"media access status [object Undefined] [object Undefined]"}
+{"level":30,"time":"2023-09-28T14:05:24.873Z","msg":"got fast theme-setting value dark"}
+{"level":30,"time":"2023-09-28T14:05:24.877Z","msg":"got fast theme-setting value dark"}
+{"level":30,"time":"2023-09-28T14:05:24.877Z","msg":"got fast spellcheck setting false"}
+{"level":30,"time":"2023-09-28T14:05:24.878Z","msg":"getSystemTraySetting had no flags and did no DB lookups. Returning DoNotUseSystemTray"}
+{"level":30,"time":"2023-09-28T14:05:24.879Z","msg":"Initializing BrowserWindow config: {\"show\":false,\"width\":952,\"height\":1040,\"minWidth\":300,\"minHeight\":200,\"autoHideMenuBar\":true,\"titleBarStyle\":\"default\",\"titleBarOverlay\":false,\"backgroundColor\":\"#121212\",\"webPreferences\":{\"devTools\":false,\"spellcheck\":false,\"enableBlinkFeatures\":\"CSSPseudoDir,CSSLogical\",\"nodeIntegration\":false,\"nodeIntegrationInWorker\":false,\"sandbox\":false,\"contextIsolation\":true,\"preload\":\"[REDACTED]/preload.bundle.js\",\"backgroundThrottling\":true,\"enablePreferredSizeMode\":true,\"disableBlinkFeatures\":\"Accelerated2dCanvas,AcceleratedSmallCanvases\"},\"icon\":\"[REDACTED]/images/signal-logo-desktop-linux.png\",\"x\":3523,\"y\":5}"}
+{"level":30,"time":"2023-09-28T14:05:24.973Z","msg":"spellcheck: user locales: [\"en-US\",\"en\"]"}
+{"level":30,"time":"2023-09-28T14:05:24.973Z","msg":"spellcheck: available spellchecker languages: [\"af\",\"bg\",\"ca\",\"cs\",\"cy\",\"da\",\"de\",\"de-DE\",\"el\",\"en\",\"en-AU\",\"en-CA\",\"en-GB\",\"en-GB-oxendict\",\"en-US\",\"es\",\"es-419\",\"es-AR\",\"es-ES\",\"es-MX\",\"es-US\",\"et\",\"fa\",\"fo\",\"fr\",\"fr-FR\",\"he\",\"hi\",\"hr\",\"hu\",\"hy\",\"id\",\"it\",\"it-IT\",\"ko\",\"lt\",\"lv\",\"nb\",\"nl\",\"pl\",\"pt\",\"pt-BR\",\"pt-PT\",\"ro\",\"ru\",\"sh\",\"sk\",\"sl\",\"sq\",\"sr\",\"sv\",\"ta\",\"tg\",\"tr\",\"uk\",\"vi\"]"}
+{"level":30,"time":"2023-09-28T14:05:24.973Z","msg":"spellcheck: setting languages to: [\"en-US\",\"en\"]"}
+{"level":30,"time":"2023-09-28T14:05:24.995Z","msg":"MainSQL: updateSchema:\n  Current user_version: 940;\n  Most recent db schema: 940;\n  SQLite version: 3.42.0;\n  SQLCipher version: 4.5.5 community;\n  (deprecated) schema_version: 437;\n"}
+{"level":30,"time":"2023-09-28T14:05:25.851Z","msg":"got fast theme-setting value dark"}
+{"level":30,"time":"2023-09-28T14:05:27.498Z","msg":"got fast spellcheck setting false"}
+{"level":30,"time":"2023-09-28T14:05:27.506Z","msg":"System tray service: created"}
+{"level":30,"time":"2023-09-28T14:05:27.507Z","msg":"System tray service: updating main window. Previously, there was not a window, and now there is"}
+{"level":30,"time":"2023-09-28T14:05:27.507Z","msg":"System tray service: rendering no tray"}
+{"level":30,"time":"2023-09-28T14:05:27.507Z","msg":"Begin ensuring permissions"}
+{"level":30,"time":"2023-09-28T14:05:27.508Z","msg":"main window is ready-to-show"}
+{"level":30,"time":"2023-09-28T14:05:27.508Z","msg":"showing main window"}
+{"level":30,"time":"2023-09-28T14:05:27.509Z","msg":"System tray service: rendering no tray"}
+{"level":30,"time":"2023-09-28T14:05:27.510Z","msg":"Ensuring file permissions for 4 files"}
+{"level":30,"time":"2023-09-28T14:05:27.512Z","msg":"Finish ensuring permissions in 5ms"}
+{"level":30,"time":"2023-09-28T14:05:27.750Z","msg":"MainSQL: slow query getAllStories duration=100ms"}
+{"level":30,"time":"2023-09-28T14:05:27.959Z","msg":"Prevent display sleep service: allowing display sleep"}
+{"level":30,"time":"2023-09-28T14:05:27.959Z","msg":"Background throttling enabled because no call is active"}
+{"level":30,"time":"2023-09-28T14:05:28.320Z","msg":"updater/start: Updates disabled - not starting new version checks"}
+{"level":30,"time":"2023-09-28T14:05:28.322Z","msg":"App loaded - time: 3456"}
+{"level":30,"time":"2023-09-28T14:05:28.322Z","msg":"SQL init - time: 130"}
+{"level":30,"time":"2023-09-28T14:05:28.322Z","msg":"Preload - time: 1631"}
+{"level":30,"time":"2023-09-28T14:05:28.322Z","msg":"WebSocket connect - time: 748"}
+{"level":30,"time":"2023-09-28T14:05:28.322Z","msg":"Processed count: 0"}
+{"level":30,"time":"2023-09-28T14:05:28.322Z","msg":"Messages per second: 0"}
+{"level":30,"time":"2023-09-28T14:33:19.462Z","msg":"close event {\"readyForShutdown\":false,\"shouldQuit\":false}"}
+{"level":30,"time":"2023-09-28T14:33:19.463Z","msg":"System tray service: rendering no tray"}
+{"level":30,"time":"2023-09-28T14:33:19.463Z","msg":"requestShutdown: Requesting close of mainWindow..."}
+{"level":30,"time":"2023-09-28T14:33:19.531Z","msg":"MainSQL: slow query close duration=50ms"}
+{"level":30,"time":"2023-09-28T14:33:19.532Z","msg":"requestShutdown: Response received"}
+{"level":30,"time":"2023-09-28T14:33:19.535Z","msg":"before-quit event {\"readyForShutdown\":true,\"shouldQuit\":false}"}
+{"level":30,"time":"2023-09-28T14:33:19.535Z","msg":"System tray service: markShouldQuit"}
+{"level":30,"time":"2023-09-28T14:33:19.535Z","msg":"close event {\"readyForShutdown\":true,\"shouldQuit\":true}"}
+{"level":30,"time":"2023-09-28T14:33:19.536Z","msg":"System tray service: updating main window. Previously, there was a window, and now there is not"}
+{"level":30,"time":"2023-09-28T14:33:19.536Z","msg":"System tray service: rendering no tray"}
+{"level":30,"time":"2023-09-28T14:34:40.171Z","msg":"app.ready: hour cycle preference: UnknownPreference"}
+{"level":30,"time":"2023-09-28T14:34:40.172Z","msg":"app.ready: preferred system locales: en-US, en"}
+{"level":30,"time":"2023-09-28T14:34:40.173Z","msg":"locale: Supported locales: af-ZA, ar, az-AZ, bg-BG, bn-BD, bs-BA, ca, cs, da, de, el, en, es, et-EE, eu, fa-IR, fi, fr, ga-IE, gl-ES, gu-IN, he, hi-IN, hr-HR, hu, id, it, ja, ka-GE, kk-KZ, km-KH, kn-IN, ko, ky-KG, lt-LT, lv-LV, mk-MK, ml-IN, mr-IN, ms, my, nb, nl, pa-IN, pl, pt-BR, pt-PT, ro-RO, ru, sk-SK, sl-SI, sq-AL, sr, sv, sw, ta-IN, te-IN, th, tl-PH, tr, ug, uk-UA, ur, vi, yue, zh-CN, zh-HK, zh-Hant"}
+{"level":30,"time":"2023-09-28T14:34:40.173Z","msg":"locale: Preferred locales:  en-US, en"}
+{"level":30,"time":"2023-09-28T14:34:40.183Z","msg":"locale: Matched locale: en"}
+{"level":40,"time":"2023-09-28T14:34:40.241Z","msg":"intl.onWarn [@formatjs/intl] \"defaultRichTextElements\" was specified but \"message\" was not pre-compiled. \nPlease consider using \"@formatjs/cli\" to pre-compile your messages for performance.\nFor more details see https://formatjs.io/docs/getting-started/message-distribution"}
+{"level":30,"time":"2023-09-28T14:34:40.242Z","msg":"locale: Text info direction for en: ltr"}
+{"level":30,"time":"2023-09-28T14:34:40.244Z","msg":"app ready"}
+{"level":30,"time":"2023-09-28T14:34:40.245Z","msg":"starting version 6.31.0"}
+{"level":30,"time":"2023-09-28T14:34:40.245Z","msg":"media access status [object Undefined] [object Undefined]"}
+{"level":30,"time":"2023-09-28T14:34:40.248Z","msg":"got fast theme-setting value dark"}
+{"level":30,"time":"2023-09-28T14:34:40.251Z","msg":"got fast theme-setting value dark"}
+{"level":30,"time":"2023-09-28T14:34:40.252Z","msg":"got fast spellcheck setting false"}
+{"level":30,"time":"2023-09-28T14:34:40.252Z","msg":"getSystemTraySetting had no flags and did no DB lookups. Returning DoNotUseSystemTray"}
+{"level":30,"time":"2023-09-28T14:34:40.253Z","msg":"Initializing BrowserWindow config: {\"show\":false,\"width\":952,\"height\":1040,\"minWidth\":300,\"minHeight\":200,\"autoHideMenuBar\":true,\"titleBarStyle\":\"default\",\"titleBarOverlay\":false,\"backgroundColor\":\"#121212\",\"webPreferences\":{\"devTools\":false,\"spellcheck\":false,\"enableBlinkFeatures\":\"CSSPseudoDir,CSSLogical\",\"nodeIntegration\":false,\"nodeIntegrationInWorker\":false,\"sandbox\":false,\"contextIsolation\":true,\"preload\":\"[REDACTED]/preload.bundle.js\",\"backgroundThrottling\":true,\"enablePreferredSizeMode\":true,\"disableBlinkFeatures\":\"Accelerated2dCanvas,AcceleratedSmallCanvases\"},\"icon\":\"[REDACTED]/images/signal-logo-desktop-linux.png\",\"x\":3523,\"y\":5}"}
+{"level":30,"time":"2023-09-28T14:34:40.309Z","msg":"spellcheck: user locales: [\"en-US\",\"en\"]"}
+{"level":30,"time":"2023-09-28T14:34:40.310Z","msg":"spellcheck: available spellchecker languages: [\"af\",\"bg\",\"ca\",\"cs\",\"cy\",\"da\",\"de\",\"de-DE\",\"el\",\"en\",\"en-AU\",\"en-CA\",\"en-GB\",\"en-GB-oxendict\",\"en-US\",\"es\",\"es-419\",\"es-AR\",\"es-ES\",\"es-MX\",\"es-US\",\"et\",\"fa\",\"fo\",\"fr\",\"fr-FR\",\"he\",\"hi\",\"hr\",\"hu\",\"hy\",\"id\",\"it\",\"it-IT\",\"ko\",\"lt\",\"lv\",\"nb\",\"nl\",\"pl\",\"pt\",\"pt-BR\",\"pt-PT\",\"ro\",\"ru\",\"sh\",\"sk\",\"sl\",\"sq\",\"sr\",\"sv\",\"ta\",\"tg\",\"tr\",\"uk\",\"vi\"]"}
+{"level":30,"time":"2023-09-28T14:34:40.310Z","msg":"spellcheck: setting languages to: [\"en-US\",\"en\"]"}
+{"level":30,"time":"2023-09-28T14:34:40.333Z","msg":"MainSQL: updateSchema:\n  Current user_version: 940;\n  Most recent db schema: 940;\n  SQLite version: 3.42.0;\n  SQLCipher version: 4.5.5 community;\n  (deprecated) schema_version: 437;\n"}
+{"level":30,"time":"2023-09-28T14:34:40.946Z","msg":"got fast theme-setting value dark"}
+{"level":30,"time":"2023-09-28T14:34:42.180Z","msg":"got fast spellcheck setting false"}
+{"level":30,"time":"2023-09-28T14:34:42.192Z","msg":"System tray service: created"}
+{"level":30,"time":"2023-09-28T14:34:42.192Z","msg":"System tray service: updating main window. Previously, there was not a window, and now there is"}
+{"level":30,"time":"2023-09-28T14:34:42.192Z","msg":"System tray service: rendering no tray"}
+{"level":30,"time":"2023-09-28T14:34:42.192Z","msg":"Begin ensuring permissions"}
+{"level":30,"time":"2023-09-28T14:34:42.200Z","msg":"main window is ready-to-show"}
+{"level":30,"time":"2023-09-28T14:34:42.200Z","msg":"showing main window"}
+{"level":30,"time":"2023-09-28T14:34:42.207Z","msg":"System tray service: rendering no tray"}
+{"level":30,"time":"2023-09-28T14:34:42.207Z","msg":"Ensuring file permissions for 4 files"}
+{"level":30,"time":"2023-09-28T14:34:42.209Z","msg":"Finish ensuring permissions in 17ms"}
+{"level":30,"time":"2023-09-28T14:34:42.600Z","msg":"Prevent display sleep service: allowing display sleep"}
+{"level":30,"time":"2023-09-28T14:34:42.600Z","msg":"Background throttling enabled because no call is active"}
+{"level":30,"time":"2023-09-28T14:34:43.050Z","msg":"updater/start: Updates disabled - not starting new version checks"}
+{"level":30,"time":"2023-09-28T14:34:43.060Z","msg":"App loaded - time: 2818"}
+{"level":30,"time":"2023-09-28T14:34:43.060Z","msg":"SQL init - time: 91"}
+{"level":30,"time":"2023-09-28T14:34:43.060Z","msg":"Preload - time: 1223"}
+{"level":30,"time":"2023-09-28T14:34:43.060Z","msg":"WebSocket connect - time: 699"}
+{"level":30,"time":"2023-09-28T14:34:43.060Z","msg":"Processed count: 0"}
+{"level":30,"time":"2023-09-28T14:34:43.060Z","msg":"Messages per second: 0"}

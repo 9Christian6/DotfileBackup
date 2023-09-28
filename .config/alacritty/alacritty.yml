@@ -1,0 +1,89 @@
+# Garuda Linux configuration for Alacritty
+env:
+  TERM: xterm-256color
+
+window:
+  dimensions:
+    columns: 100
+    lines: 30
+  dynamic_padding: true
+  decorations: full
+  title: Alacritty@Garuda
+  opacity: 0.8
+  class:
+    instance: Alacritty
+    general: Alacritty
+    #gtk_theme_variant: dark
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+font:
+  normal:
+    family: UbuntuMono Nerd Font
+  #family: FiraCode Nerd Font Mono
+  #bold:
+  #  family:  FiraCode Nerd Font Mono
+  #italic:
+  #  family:  FiraCode Nerd Font Mono
+  #bold_italic:
+  #  family:  FiraCode Nerd Font Mono
+  #  size: 12.0
+
+draw_bold_text_with_bright_colors: true
+
+save_to_clipboard: true
+
+window.dynamic_title: true
+
+cursor:
+  style: Block
+
+live_config_reload: true
+
+shell:
+  program: /usr/bin/zsh
+  args:
+    - --login
+
+mouse:
+  hide_when_typing: true
+
+key_bindings:
+    # (Windows, Linux, and BSD only)
+  - { key: V,        mods: Control|Shift, action: Paste            }
+  - { key: C,        mods: Control|Shift, action: Copy             }
+  - { key: Insert,   mods: Shift,         action: PasteSelection   }
+  - { key: Key0,     mods: Control,       action: ResetFontSize    }
+  - { key: Equals,   mods: Control,       action: IncreaseFontSize }
+  - { key: Plus,     mods: Control,       action: IncreaseFontSize }
+  - { key: Minus,    mods: Control,       action: DecreaseFontSize }
+  - { key: Minus,    mods: Control,       action: DecreaseFontSize }
+
+colors:
+  primary:
+    background: '0x0a1124'
+    foreground: '0xeec49a'
+  cursor:
+    text:       '0x0a1124'
+    cursor:     '0xeec49a'
+  normal:
+    black:      '0x000000'
+    red:        '0x990000'
+    green:      '0x009900'
+    yellow:     '0x009999'
+    blue:       '0x000099'
+    magenta:    '0x990099'
+    cyan:       '0x009999'
+    white:      '0x999999'
+  bright:
+    black:      '0x000000'
+    red:        '0xFF0000'
+    green:      '0x00FF00'
+    yellow:     '0xFFFF00'
+    blue:       '0x9900DD'
+    magenta:    '0xFF00FF'
+    cyan:       '0x00FFFF'
+    white:      '0xFFFFFF'
+

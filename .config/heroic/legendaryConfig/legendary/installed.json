@@ -1,0 +1,162 @@
+{
+  "02855a2f4c044aa1a813b19f8c447fe1": {
+    "app_name": "02855a2f4c044aa1a813b19f8c447fe1",
+    "base_urls": [
+      "https://download.epicgames.com/Builds/Org/o-x2vdjaf7cfakvlsgz8qf2gx8bkplcc/0741a5496ea5492e8bba61e9087b32f7/default",
+      "https://download2.epicgames.com/Builds/Org/o-x2vdjaf7cfakvlsgz8qf2gx8bkplcc/0741a5496ea5492e8bba61e9087b32f7/default",
+      "https://download3.epicgames.com/Builds/Org/o-x2vdjaf7cfakvlsgz8qf2gx8bkplcc/0741a5496ea5492e8bba61e9087b32f7/default",
+      "https://download4.epicgames.com/Builds/Org/o-x2vdjaf7cfakvlsgz8qf2gx8bkplcc/0741a5496ea5492e8bba61e9087b32f7/default",
+      "https://epicgames-download1.akamaized.net/Builds/Org/o-x2vdjaf7cfakvlsgz8qf2gx8bkplcc/0741a5496ea5492e8bba61e9087b32f7/default",
+      "https://fastly-download.epicgames.com/Builds/Org/o-x2vdjaf7cfakvlsgz8qf2gx8bkplcc/0741a5496ea5492e8bba61e9087b32f7/default"
+    ],
+    "can_run_offline": true,
+    "egl_guid": "",
+    "executable": "",
+    "install_path": "/home/christian/Games/Heroic/Cyberpunk2077",
+    "install_size": 91453650,
+    "install_tags": [
+      ""
+    ],
+    "is_dlc": true,
+    "launch_parameters": "",
+    "manifest_path": null,
+    "needs_verification": false,
+    "platform": "Windows",
+    "prereq_info": null,
+    "requires_ot": false,
+    "save_path": null,
+    "title": "Cyberpunk 2077 - REDmod",
+    "version": "Build_4902785Change_6408866_1_RedMod"
+  },
+  "03b7b25a77024cc0adf44777f791ffc4": {
+    "app_name": "03b7b25a77024cc0adf44777f791ffc4",
+    "base_urls": [
+      "https://download.epicgames.com/Builds/Org/o-d2ygr9bjcjfebgt8842wvvbmswympz/ddd8d978e7c64a56bf9125c666bafdc1/default",
+      "https://download2.epicgames.com/Builds/Org/o-d2ygr9bjcjfebgt8842wvvbmswympz/ddd8d978e7c64a56bf9125c666bafdc1/default",
+      "https://download3.epicgames.com/Builds/Org/o-d2ygr9bjcjfebgt8842wvvbmswympz/ddd8d978e7c64a56bf9125c666bafdc1/default",
+      "https://download4.epicgames.com/Builds/Org/o-d2ygr9bjcjfebgt8842wvvbmswympz/ddd8d978e7c64a56bf9125c666bafdc1/default",
+      "https://epicgames-download1.akamaized.net/Builds/Org/o-d2ygr9bjcjfebgt8842wvvbmswympz/ddd8d978e7c64a56bf9125c666bafdc1/default",
+      "https://fastly-download.epicgames.com/Builds/Org/o-d2ygr9bjcjfebgt8842wvvbmswympz/ddd8d978e7c64a56bf9125c666bafdc1/default"
+    ],
+    "can_run_offline": true,
+    "egl_guid": "",
+    "executable": "deponia.cmd",
+    "install_path": "/home/christian/Games/Heroic/DeponiaTCJ",
+    "install_size": 9682923738,
+    "install_tags": [],
+    "is_dlc": false,
+    "launch_parameters": "",
+    "manifest_path": null,
+    "needs_verification": false,
+    "platform": "Windows",
+    "prereq_info": null,
+    "requires_ot": false,
+    "save_path": null,
+    "title": "Deponia The Complete Journey",
+    "version": "3.3.0156.8"
+  },
+  "Ginger": {
+    "app_name": "Ginger",
+    "base_urls": [
+      "https://download.epicgames.com/Builds/Org/o-x2vdjaf7cfakvlsgz8qf2gx8bkplcc/0741a5496ea5492e8bba61e9087b32f7/default",
+      "https://download2.epicgames.com/Builds/Org/o-x2vdjaf7cfakvlsgz8qf2gx8bkplcc/0741a5496ea5492e8bba61e9087b32f7/default",
+      "https://download3.epicgames.com/Builds/Org/o-x2vdjaf7cfakvlsgz8qf2gx8bkplcc/0741a5496ea5492e8bba61e9087b32f7/default",
+      "https://download4.epicgames.com/Builds/Org/o-x2vdjaf7cfakvlsgz8qf2gx8bkplcc/0741a5496ea5492e8bba61e9087b32f7/default",
+      "https://epicgames-download1.akamaized.net/Builds/Org/o-x2vdjaf7cfakvlsgz8qf2gx8bkplcc/0741a5496ea5492e8bba61e9087b32f7/default",
+      "https://fastly-download.epicgames.com/Builds/Org/o-x2vdjaf7cfakvlsgz8qf2gx8bkplcc/0741a5496ea5492e8bba61e9087b32f7/default"
+    ],
+    "can_run_offline": true,
+    "egl_guid": "",
+    "executable": "redprelauncher.exe",
+    "install_path": "/home/christian/Games/Heroic/Cyberpunk2077",
+    "install_size": 0,
+    "install_tags": [
+      ""
+    ],
+    "is_dlc": false,
+    "launch_parameters": "",
+    "manifest_path": null,
+    "needs_verification": false,
+    "platform": "Windows",
+    "prereq_info": {
+      "args": "/install /passive /norestart",
+      "ids": [
+        "VCRedist1519"
+      ],
+      "name": "",
+      "path": "vc/vc_redist.x64.exe"
+    },
+    "requires_ot": false,
+    "save_path": null,
+    "title": "Cyberpunk 2077",
+    "version": "Build_4902785Change_6408866_RL"
+  },
+  "bc2c95c6ff564a16b26644f1d3ac3c55": {
+    "app_name": "bc2c95c6ff564a16b26644f1d3ac3c55",
+    "base_urls": [
+      "https://download.epicgames.com/Builds/Org/o-37m6jbj5wcvrcvm4wusv7nazdfvbjk/ad341110e65148e18d9115e5dc12d47e/default",
+      "https://download2.epicgames.com/Builds/Org/o-37m6jbj5wcvrcvm4wusv7nazdfvbjk/ad341110e65148e18d9115e5dc12d47e/default",
+      "https://download3.epicgames.com/Builds/Org/o-37m6jbj5wcvrcvm4wusv7nazdfvbjk/ad341110e65148e18d9115e5dc12d47e/default",
+      "https://download4.epicgames.com/Builds/Org/o-37m6jbj5wcvrcvm4wusv7nazdfvbjk/ad341110e65148e18d9115e5dc12d47e/default",
+      "https://epicgames-download1.akamaized.net/Builds/Org/o-37m6jbj5wcvrcvm4wusv7nazdfvbjk/ad341110e65148e18d9115e5dc12d47e/default",
+      "https://fastly-download.epicgames.com/Builds/Org/o-37m6jbj5wcvrcvm4wusv7nazdfvbjk/ad341110e65148e18d9115e5dc12d47e/default"
+    ],
+    "can_run_offline": true,
+    "egl_guid": "",
+    "executable": "Build/FinalEpic/BioshockHD.exe",
+    "install_path": "/home/christian/Games/Heroic/BioshockRemastered",
+    "install_size": 22543745163,
+    "install_tags": [],
+    "is_dlc": false,
+    "launch_parameters": "",
+    "manifest_path": null,
+    "needs_verification": false,
+    "platform": "Windows",
+    "prereq_info": {
+      "args": "",
+      "ids": [
+        "C1C37386EDA92EE4461988BB0631C0878D58B4F2"
+      ],
+      "name": "",
+      "path": "Build/FinalEpic/Prerequisites/PrerequisiteInstaller.exe"
+    },
+    "requires_ot": false,
+    "save_path": null,
+    "title": "BioShock Remastered",
+    "version": "1.0.0_BN-187_CL-17677"
+  },
+  "f9d6f0530ea140909f8e8a997a7532d7": {
+    "app_name": "f9d6f0530ea140909f8e8a997a7532d7",
+    "base_urls": [
+      "https://download.epicgames.com/Builds/Org/o-37m6jbj5wcvrcvm4wusv7nazdfvbjk/55e96fd93d05476990b04ddd90431b62/default",
+      "https://download2.epicgames.com/Builds/Org/o-37m6jbj5wcvrcvm4wusv7nazdfvbjk/55e96fd93d05476990b04ddd90431b62/default",
+      "https://download3.epicgames.com/Builds/Org/o-37m6jbj5wcvrcvm4wusv7nazdfvbjk/55e96fd93d05476990b04ddd90431b62/default",
+      "https://download4.epicgames.com/Builds/Org/o-37m6jbj5wcvrcvm4wusv7nazdfvbjk/55e96fd93d05476990b04ddd90431b62/default",
+      "https://epicgames-download1.akamaized.net/Builds/Org/o-37m6jbj5wcvrcvm4wusv7nazdfvbjk/55e96fd93d05476990b04ddd90431b62/default",
+      "https://fastly-download.epicgames.com/Builds/Org/o-37m6jbj5wcvrcvm4wusv7nazdfvbjk/55e96fd93d05476990b04ddd90431b62/default"
+    ],
+    "can_run_offline": true,
+    "egl_guid": "",
+    "executable": "Binaries/Win32/ShippingPC-XGame.exe",
+    "install_path": "/home/christian/Games/Heroic/BioshockInfiniteCompleteEdition",
+    "install_size": 47672779527,
+    "install_tags": [],
+    "is_dlc": false,
+    "launch_parameters": "",
+    "manifest_path": null,
+    "needs_verification": false,
+    "platform": "Windows",
+    "prereq_info": {
+      "args": "",
+      "ids": [
+        "753D6947CD52478DAE324C60307BF8E26F167C4E"
+      ],
+      "name": "",
+      "path": "Binaries/Prerequisites/PrerequisiteInstaller.exe"
+    },
+    "requires_ot": false,
+    "save_path": null,
+    "title": "BioShock Infinite: Complete Edition",
+    "version": "1.0.0_BN-314_CL-17899"
+  }
+}

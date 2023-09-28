@@ -1,0 +1,92 @@
+{
+  "app_name": "ARKDevKit",
+  "app_title": "ARK Editor",
+  "asset_infos": {
+    "Windows": {
+      "app_name": "ARKDevKit",
+      "asset_id": "ARKDevKit",
+      "build_version": "357.2",
+      "catalog_item_id": "8077d89481064a9097dd4b8fe7bca090",
+      "label_name": "Live-Windows",
+      "metadata": {},
+      "namespace": "ark"
+    }
+  },
+  "base_urls": [],
+  "metadata": {
+    "ageGatings": {},
+    "applicationId": "",
+    "categories": [
+      {
+        "path": "engines"
+      },
+      {
+        "path": "applications"
+      }
+    ],
+    "creationDate": "2015-07-20T19:57:00.724Z",
+    "customAttributes": {
+      "AllowMultipleInstances": {
+        "type": "STRING",
+        "value": "true"
+      },
+      "CanRunOffline": {
+        "type": "STRING",
+        "value": "true"
+      },
+      "FolderName": {
+        "type": "STRING",
+        "value": "ARKEditor"
+      }
+    },
+    "description": "Flavored Editor for ARK Development",
+    "developer": "Studio Wildcard",
+    "developerId": "o-usvfbmlqdt678vrp36qvm2d5cz2cpr",
+    "endOfSupport": false,
+    "entitlementName": "8077d89481064a9097dd4b8fe7bca090",
+    "entitlementStartDate": "2015-07-20T00:00:00.000Z",
+    "entitlementType": "EXECUTABLE",
+    "eulaIds": [
+      "(ark && unreal_engine)"
+    ],
+    "id": "8077d89481064a9097dd4b8fe7bca090",
+    "installModes": [],
+    "itemType": "DURABLE",
+    "keyImages": [
+      {
+        "height": 500,
+        "md5": "bcdfeebe35e569b1ea216e397f41b102",
+        "size": 696968,
+        "type": "DieselGameBox",
+        "uploadedDate": "2018-09-17T20:55:10.249Z",
+        "url": "https://cdn1.epicgames.com/ark/item/ark-860x500-bcdfeebe35e569b1ea216e397f41b102.png",
+        "width": 860
+      },
+      {
+        "height": 484,
+        "md5": "a285208638c26d9673c11c8ed7eb4728",
+        "size": 37822,
+        "type": "DieselGameBoxLogo",
+        "uploadedDate": "2018-11-15T18:03:49.505Z",
+        "url": "https://cdn1.epicgames.com/ark/item/Ark__White-581x484-a285208638c26d9673c11c8ed7eb4728.png",
+        "width": 581
+      }
+    ],
+    "lastModifiedDate": "2022-04-05T14:07:00.994Z",
+    "namespace": "ark",
+    "releaseInfo": [
+      {
+        "appId": "ARKDevKit",
+        "compatibleApps": [],
+        "dateAdded": "2015-07-22T00:00:00.000Z",
+        "id": "49af93aaf50949dc8b2c213689ab617e",
+        "platform": [
+          "Windows"
+        ]
+      }
+    ],
+    "status": "ACTIVE",
+    "title": "ARK Editor",
+    "unsearchable": true
+  }
+}

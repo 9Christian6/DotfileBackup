@@ -1,0 +1,940 @@
+(15:39:06) INFO:    [Legendary]:        Running command: XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary --version
+(15:39:06) INFO:    [Legendary]:        Legendary location: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary
+(15:39:06) INFO:    [Gog]:              GOGDL location: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/gogdl
+(15:39:06) INFO:    [Connection]:       Connectivity: check-online
+(15:39:06) INFO:    [Connection]:       Pinging external endpoints
+(15:39:06) INFO:    [Backend]:          DRM module staus {
+  "oimompecagnajdejgnnjijobebaeigek": {
+    "name": "Widevine Content Decryption Module",
+    "status": "new",
+    "version": "4.10.2557.0"
+  }
+}
+(15:39:06) WARNING: [Backend]:          Protocol already registered.
+(15:39:06) INFO:    [Gog]:              Running command: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/gogdl --auth-config-path /home/christian/.config/heroic/gog_store/auth.json --version
+(15:39:06) INFO:    [Connection]:       Connectivity: online
+(15:39:06) ERROR:   [Gog]:              Unable to syncQueued playtime, userData not present
+(15:39:06) INFO:    [Backend]:          AreWeAntiCheatYet data downloaded
+(15:39:06) INFO:    [Nile]:             Running command: XDG_CONFIG_HOME=/home/christian/.config/heroic/nile_config /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/nile --version
+(15:39:07) INFO:    [Backend]:          Loading Screen Ready
+(15:39:07) INFO:    [Frontend]:         Refreshing undefined Library
+(15:39:07) WARNING: [Backend]:          refresh not implemented on Sideload Library Manager
+(15:39:07) INFO:    [Legendary]:        Refreshing library...
+(15:39:07) INFO:    [Legendary]:        Refreshing Epic Games...
+(15:39:07) INFO:    [Legendary]:        Game list updated, got 342 games & DLCs
+(15:39:07) INFO:    [Backend]:          Frontend Ready
+(15:39:07) INFO:    [Backend]:          
+
+Heroic Version: 2.9.1 Boa Hancock
+Legendary Version:  0.20.32 Dark Energy (hotfix #6)
+GOGdl Version: 0.7.3
+Nile Version: 1.0.0 Jonathan Joestar
+
+Electron Version: 24.4.1
+Chrome Version: 112.0.5615.204
+NodeJS Version: 18.14.0
+
+OS: Ubuntu KERNEL: 6.2.0-31-generic ARCH: x64
+CPU: Intel Xeon® E3-1230 v3 @3.3 GOVERNOR: schedutil
+RAM: Total: 15.54 GiB Available: 11.37 GiB
+GRAPHICS: GPU0: GP104 [GeForce GTX 1080]  VRAM: 32MB 
+PROTOCOL: wayland
+
+(15:39:07) WARNING: [Backend]:          listUpdateableGames not implemented on Sideload Library Manager
+(15:39:07) INFO:    [Gog]:              Found 0 game(s) to update
+(15:39:07) INFO:    [Legendary]:        Running command: XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary list --third-party
+(15:39:07) INFO:    [Backend]:          Checking for new Heroic Updates
+(15:39:07) INFO:    [Legendary]:        Checking for game updates: XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary list --third-party
+(15:39:07) INFO:    [Backend]:          Checking for current version changelog
+(15:39:08) WARNING: [DXVKInstaller]:    No GPU with Vulkan 1.1 support found, DXVK will not work
+(15:39:08) INFO:    [Winetricks]:       Downloading Winetricks
+(15:39:11) DEBUG:   [Legendary]:        Update is available for 7786b355a13b47a6b3915335117cd0b2: 38.2.6893 != 38.3.6909
+(15:39:11) INFO:    [Legendary]:        Found 1 game to update
+(15:39:12) INFO:    [Backend]:          Starting the Download Queue
+(15:40:03) INFO:    [Legendary]:        Getting more details with 'legendary info'
+(15:40:03) DEBUG:   [Backend]:          {"free":749270204416,"diskSize":1006450962432,"message":"697.81 GiB / 937.33 GiB","validPath":true}
+(15:40:03) INFO:    [Legendary]:        Running command: XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary info 03b7b25a77024cc0adf44777f791ffc4 --platform Windows --json
+(15:40:06) DEBUG:   [Backend]:          {"free":749270196224,"diskSize":1006450962432,"message":"697.81 GiB / 937.33 GiB","validPath":true}
+(15:40:15) INFO:    [Backend]:          Writing config for 03b7b25a77024cc0adf44777f791ffc4
+(15:40:15) INFO:    [Backend]:          Changed config: wineVersion from {"bin":"","name":"Default Wine - Not Found","type":"wine"} to {"bin":"/home/christian/.local/share/Steam/steamapps/common/Proton - Experimental/proton","name":"Proton - Proton - Experimental","type":"proton"}
+(15:40:15) INFO:    [Backend]:          Changed config: winePrefix from /home/christian/Games/Heroic/Prefixes/default to /home/christian/Games/Heroic/Prefixes/default/Deponia The Complete Journey
+(15:40:15) INFO:    [Backend]:          Changed config: wineCrossoverBottle from undefined to 
+(15:40:15) DEBUG:   [Legendary]:        Using cached install info
+(15:40:15) INFO:    [DownloadManager]:  Deponia The Complete Journey  was added to the download queue.
+(15:40:15) DEBUG:   [Legendary]:        Using cached install info
+(15:40:15) INFO:    [Legendary]:        Installing 03b7b25a77024cc0adf44777f791ffc4: XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary install 03b7b25a77024cc0adf44777f791ffc4 --platform Windows --base-path /home/christian/Games/Heroic --skip-dlcs --skip-sdl -y
+(15:40:15) DEBUG:   [Legendary]:        Logging to file "/home/christian/.config/heroic/GamesConfig/03b7b25a77024cc0adf44777f791ffc4.log"
+(15:40:15) INFO:    [Backend]:          Preventing machine to sleep
+(15:40:17) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 0%/0.00MB/00:00:00 Down: 0MB/s / Disk: 0MB/s
+(15:40:18) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 0.06%/5.19MB/01:00:45 Down: 5.19MB/s / Disk: 3MB/s
+(15:40:19) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 0.14%/12.39MB/00:20:10 Down: 7.18MB/s / Disk: 10.99MB/s
+(15:40:20) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 0.29%/26.17MB/00:10:50 Down: 13.76MB/s / Disk: 17.98MB/s
+(15:40:21) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 0.4%/36.24MB/00:10:36 Down: 10.06MB/s / Disk: 3.99MB/s
+(15:40:22) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 0.54%/49.08MB/00:05:35 Down: 12.83MB/s / Disk: 20.98MB/s
+(15:40:23) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 0.66%/60.22MB/00:05:43 Down: 11.12MB/s / Disk: 9.99MB/s
+(15:40:24) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 0.74%/67.43MB/00:06:04 Down: 7.19MB/s / Disk: 9.99MB/s
+(15:40:25) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 0.87%/78.92MB/00:06:24 Down: 11.48MB/s / Disk: 11.98MB/s
+(15:40:26) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 0.99%/89.88MB/00:06:47 Down: 10.95MB/s / Disk: 11.98MB/s
+(15:40:27) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 1.07%/97.85MB/00:07:17 Down: 7.96MB/s / Disk: 6.99MB/s
+(15:40:28) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 1.21%/109.82MB/00:08:01 Down: 11.95MB/s / Disk: 0MB/s
+(15:40:29) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 1.32%/119.78MB/00:08:12 Down: 9.95MB/s / Disk: 14.98MB/s
+(15:40:30) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 1.43%/129.78MB/00:08:17 Down: 9.99MB/s / Disk: 16.98MB/s
+(15:40:31) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 1.55%/140.75MB/00:08:42 Down: 10.96MB/s / Disk: 5.99MB/s
+(15:40:32) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 1.68%/152.74MB/00:08:54 Down: 11.98MB/s / Disk: 12.99MB/s
+(15:40:33) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 1.79%/162.75MB/00:09:07 Down: 9.99MB/s / Disk: 11.98MB/s
+(15:40:34) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 1.93%/175.61MB/00:09:21 Down: 12.85MB/s / Disk: 10.98MB/s
+(15:40:35) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 2.04%/185.32MB/00:09:18 Down: 9.69MB/s / Disk: 13.98MB/s
+(15:40:36) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 2.17%/197.22MB/00:09:40 Down: 11.88MB/s / Disk: 3.99MB/s
+(15:40:37) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 2.29%/208.15MB/00:09:37 Down: 10.93MB/s / Disk: 13.99MB/s
+(15:40:38) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 2.41%/219.12MB/00:09:41 Down: 10.95MB/s / Disk: 13.97MB/s
+(15:40:39) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 2.52%/229.09MB/00:09:44 Down: 9.96MB/s / Disk: 14.98MB/s
+(15:40:40) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 2.63%/239.08MB/00:10:07 Down: 9.97MB/s / Disk: 1.99MB/s
+(15:40:41) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 2.78%/253.02MB/00:10:08 Down: 13.92MB/s / Disk: 14.98MB/s
+(15:40:42) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 2.89%/263.00MB/00:10:10 Down: 9.96MB/s / Disk: 13.98MB/s
+(15:40:43) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 3.01%/273.99MB/00:10:22 Down: 10.98MB/s / Disk: 7.99MB/s
+(15:40:44) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 3.13%/284.99MB/00:10:46 Down: 10.99MB/s / Disk: 0MB/s
+(15:40:45) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 3.21%/291.99MB/00:11:10 Down: 6.99MB/s / Disk: 0MB/s
+(15:40:46) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 3.37%/306.99MB/00:10:45 Down: 14.98MB/s / Disk: 30.97MB/s
+(15:40:47) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 3.49%/317.77MB/00:10:52 Down: 10.77MB/s / Disk: 9.99MB/s
+(15:40:48) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 3.59%/326.41MB/00:11:14 Down: 8.63MB/s / Disk: 0MB/s
+(15:40:49) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 3.72%/338.31MB/00:11:08 Down: 11.88MB/s / Disk: 12.98MB/s
+(15:40:50) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 3.86%/351.27MB/00:10:50 Down: 12.94MB/s / Disk: 22.97MB/s
+(15:40:51) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 3.97%/361.26MB/00:11:02 Down: 9.98MB/s / Disk: 5.99MB/s
+(15:40:52) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 4.11%/374.25MB/00:11:14 Down: 12.97MB/s / Disk: 5.99MB/s
+(15:40:53) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 4.22%/384.24MB/00:11:04 Down: 9.98MB/s / Disk: 21.97MB/s
+(15:40:54) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 4.33%/394.24MB/00:11:01 Down: 9.98MB/s / Disk: 16.98MB/s
+(15:40:55) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 4.46%/406.23MB/00:11:11 Down: 11.98MB/s / Disk: 6.99MB/s
+(15:40:56) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 4.57%/416.23MB/00:11:12 Down: 9.98MB/s / Disk: 12.98MB/s
+(15:40:57) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 4.7%/428.22MB/00:11:13 Down: 11.98MB/s / Disk: 13.98MB/s
+(15:40:58) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 4.82%/439.22MB/00:11:20 Down: 10.99MB/s / Disk: 8MB/s
+(15:40:59) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 4.96%/451.21MB/00:11:25 Down: 11.98MB/s / Disk: 9.99MB/s
+(15:41:00) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 5.1%/464.21MB/00:11:25 Down: 12.98MB/s / Disk: 13.98MB/s
+(15:41:01) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 5.2%/473.21MB/00:11:40 Down: 8.99MB/s / Disk: 1MB/s
+(15:41:02) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 5.31%/483.21MB/00:11:34 Down: 10MB/s / Disk: 18.99MB/s
+(15:41:03) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 5.43%/494.21MB/00:11:37 Down: 10.98MB/s / Disk: 10.99MB/s
+(15:41:04) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 5.57%/507.21MB/00:11:39 Down: 12.98MB/s / Disk: 11.98MB/s
+(15:41:05) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 5.68%/517.20MB/00:11:47 Down: 9.99MB/s / Disk: 5.99MB/s
+(15:41:06) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 5.8%/528.19MB/00:11:50 Down: 10.98MB/s / Disk: 10.99MB/s
+(15:41:07) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 5.89%/536.19MB/00:11:57 Down: 7.99MB/s / Disk: 6.99MB/s
+(15:41:08) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 6.03%/549.19MB/00:11:53 Down: 12.98MB/s / Disk: 16.98MB/s
+(15:41:09) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 6.14%/559.19MB/00:11:57 Down: 9.98MB/s / Disk: 8.99MB/s
+(15:41:10) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 6.27%/571.19MB/00:11:57 Down: 11.98MB/s / Disk: 12.98MB/s
+(15:41:11) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 6.37%/580.17MB/00:12:09 Down: 8.97MB/s / Disk: 2MB/s
+(15:41:12) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 6.5%/592.16MB/00:12:04 Down: 11.98MB/s / Disk: 17.98MB/s
+(15:41:13) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 6.61%/602.15MB/00:12:17 Down: 9.98MB/s / Disk: 0MB/s
+(15:41:14) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 6.78%/617.14MB/00:12:02 Down: 14.97MB/s / Disk: 27.97MB/s
+(15:41:15) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 6.88%/626.13MB/00:12:05 Down: 8.97MB/s / Disk: 8.99MB/s
+(15:41:16) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 7.01%/638.12MB/00:12:17 Down: 11.98MB/s / Disk: 1MB/s
+(15:41:17) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 7.12%/648.11MB/00:12:29 Down: 9.97MB/s / Disk: 0MB/s
+(15:41:18) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 7.24%/659.09MB/00:12:12 Down: 10.97MB/s / Disk: 29.98MB/s
+(15:41:19) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 7.37%/671.08MB/00:12:24 Down: 11.98MB/s / Disk: 0MB/s
+(15:41:20) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 7.51%/684.07MB/00:12:09 Down: 12.98MB/s / Disk: 28.98MB/s
+(15:41:21) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 7.62%/694.07MB/00:12:12 Down: 9.98MB/s / Disk: 8.99MB/s
+(15:41:22) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 7.76%/706.06MB/00:12:23 Down: 11.97MB/s / Disk: 1MB/s
+(15:41:23) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 7.87%/716.06MB/00:12:31 Down: 9.98MB/s / Disk: 3MB/s
+(15:41:24) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 8%/728.05MB/00:12:27 Down: 11.98MB/s / Disk: 16.98MB/s
+(15:41:25) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 8.12%/739.05MB/00:12:23 Down: 10.99MB/s / Disk: 16.98MB/s
+(15:41:26) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 8.2%/746.05MB/00:12:27 Down: 6.99MB/s / Disk: 6.99MB/s
+(15:41:27) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 8.33%/758.05MB/00:12:20 Down: 11.98MB/s / Disk: 20.97MB/s
+(15:41:28) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 8.44%/768.03MB/00:12:29 Down: 9.97MB/s / Disk: 1MB/s
+(15:41:29) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 8.59%/782.00MB/00:12:29 Down: 13.95MB/s / Disk: 12.98MB/s
+(15:41:30) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 8.7%/791.86MB/00:12:27 Down: 9.85MB/s / Disk: 13.98MB/s
+(15:41:31) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 8.81%/801.80MB/00:12:34 Down: 9.92MB/s / Disk: 3MB/s
+(15:41:32) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 8.96%/815.79MB/00:12:27 Down: 13.97MB/s / Disk: 19.98MB/s
+(15:41:33) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 9.07%/825.79MB/00:12:26 Down: 9.99MB/s / Disk: 12.98MB/s
+(15:41:34) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 9.19%/836.79MB/00:12:34 Down: 10.99MB/s / Disk: 2MB/s
+(15:41:35) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 9.32%/848.74MB/00:12:30 Down: 11.94MB/s / Disk: 16.98MB/s
+(15:41:36) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 9.45%/860.74MB/00:12:28 Down: 11.98MB/s / Disk: 14.97MB/s
+(15:41:37) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 9.56%/870.74MB/00:12:37 Down: 9.99MB/s / Disk: 0MB/s
+(15:41:38) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 9.7%/882.75MB/00:12:27 Down: 11.98MB/s / Disk: 24.97MB/s
+(15:41:39) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 9.81%/892.75MB/00:12:28 Down: 9.99MB/s / Disk: 9.99MB/s
+(15:41:40) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 9.92%/902.75MB/00:12:35 Down: 9.99MB/s / Disk: 3MB/s
+(15:41:41) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 10.05%/914.75MB/00:12:35 Down: 12MB/s / Disk: 11MB/s
+(15:41:42) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 10.17%/925.75MB/00:12:44 Down: 11MB/s / Disk: 0MB/s
+(15:41:43) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 10.3%/937.75MB/00:12:35 Down: 11.99MB/s / Disk: 23.97MB/s
+(15:41:44) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 10.41%/947.75MB/00:12:33 Down: 9.99MB/s / Disk: 13.99MB/s
+(15:41:45) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 10.52%/957.74MB/00:12:42 Down: 9.97MB/s / Disk: 0MB/s
+(15:41:46) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 10.65%/969.74MB/00:12:50 Down: 11.99MB/s / Disk: 0MB/s
+(15:41:47) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 10.78%/981.62MB/00:12:44 Down: 11.86MB/s / Disk: 19.97MB/s
+(15:41:48) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 10.9%/992.57MB/00:12:36 Down: 10.94MB/s / Disk: 21.97MB/s
+(15:41:49) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 11.01%/1002.43MB/00:12:41 Down: 9.84MB/s / Disk: 3.99MB/s
+(15:41:50) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 11.13%/1013.37MB/00:12:49 Down: 10.93MB/s / Disk: 1MB/s
+(15:41:51) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 11.27%/1026.33MB/00:12:57 Down: 12.94MB/s / Disk: 0MB/s
+(15:41:52) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 11.38%/1036.32MB/00:12:34 Down: 9.98MB/s / Disk: 42.96MB/s
+(15:41:53) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 11.52%/1048.32MB/00:12:35 Down: 11.98MB/s / Disk: 10.98MB/s
+(15:41:54) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 11.61%/1057.32MB/00:12:40 Down: 8.99MB/s / Disk: 3MB/s
+(15:41:55) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 11.75%/1069.32MB/00:12:38 Down: 11.99MB/s / Disk: 13.99MB/s
+(15:41:56) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 11.89%/1082.20MB/00:12:39 Down: 12.87MB/s / Disk: 10.99MB/s
+(15:41:57) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 12%/1092.20MB/00:12:34 Down: 9.99MB/s / Disk: 17.97MB/s
+(15:41:58) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 12.11%/1102.14MB/00:12:40 Down: 9.93MB/s / Disk: 3MB/s
+(15:41:59) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 12.22%/1112.11MB/00:12:46 Down: 9.96MB/s / Disk: 2MB/s
+(15:42:00) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 12.35%/1124.11MB/00:12:35 Down: 11.98MB/s / Disk: 26.96MB/s
+(15:42:01) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 12.47%/1135.11MB/00:12:40 Down: 10.98MB/s / Disk: 2.99MB/s
+(15:42:02) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 12.59%/1146.08MB/00:12:47 Down: 10.95MB/s / Disk: 1MB/s
+(15:42:03) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 12.72%/1158.03MB/00:12:47 Down: 11.93MB/s / Disk: 10.98MB/s
+(15:42:04) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 12.85%/1170.02MB/00:12:37 Down: 11.98MB/s / Disk: 25.97MB/s
+(15:42:05) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 12.96%/1179.94MB/00:12:43 Down: 9.9MB/s / Disk: 2MB/s
+(15:42:06) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 13.07%/1189.94MB/00:12:42 Down: 9.98MB/s / Disk: 12.98MB/s
+(15:42:07) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 13.21%/1202.75MB/00:12:32 Down: 12.79MB/s / Disk: 25.97MB/s
+(15:42:08) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 13.33%/1213.97MB/00:12:38 Down: 11.2MB/s / Disk: 1MB/s
+(15:42:09) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 13.45%/1224.72MB/00:12:45 Down: 10.73MB/s / Disk: 0MB/s
+(15:42:10) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 13.57%/1235.45MB/00:12:52 Down: 10.71MB/s / Disk: 0MB/s
+(15:42:11) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 13.69%/1246.38MB/00:12:36 Down: 10.92MB/s / Disk: 32.3MB/s
+(15:42:12) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 13.82%/1258.30MB/00:12:31 Down: 11.91MB/s / Disk: 18.99MB/s
+(15:42:13) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 13.95%/1270.22MB/00:12:31 Down: 11.91MB/s / Disk: 9.99MB/s
+(15:42:14) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 14.04%/1278.16MB/00:12:37 Down: 7.93MB/s / Disk: 2MB/s
+(15:42:15) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 14.17%/1289.97MB/00:12:30 Down: 11.78MB/s / Disk: 21.96MB/s
+(15:42:16) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 14.29%/1300.91MB/00:12:33 Down: 10.93MB/s / Disk: 4.38MB/s
+(15:42:17) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 14.41%/1311.86MB/00:12:31 Down: 10.93MB/s / Disk: 13.98MB/s
+(15:42:18) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 14.54%/1323.79MB/00:12:27 Down: 11.92MB/s / Disk: 16.97MB/s
+(15:42:19) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 14.65%/1333.61MB/00:12:33 Down: 9.81MB/s / Disk: 1MB/s
+(15:42:20) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 14.78%/1345.48MB/00:12:29 Down: 11.85MB/s / Disk: 16.98MB/s
+(15:42:21) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 14.9%/1356.43MB/00:12:30 Down: 10.93MB/s / Disk: 7.43MB/s
+(15:42:22) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 15.05%/1370.38MB/00:12:25 Down: 13.93MB/s / Disk: 19.98MB/s
+(15:42:23) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 15.15%/1379.35MB/00:12:29 Down: 8.96MB/s / Disk: 3MB/s
+(15:42:24) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 15.28%/1391.31MB/00:12:28 Down: 11.95MB/s / Disk: 11.99MB/s
+(15:42:25) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 15.39%/1401.19MB/00:12:29 Down: 9.87MB/s / Disk: 9.99MB/s
+(15:42:26) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 15.56%/1416.20MB/00:12:30 Down: 14.98MB/s / Disk: 8.99MB/s
+(15:42:27) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 15.61%/1420.95MB/00:12:36 Down: 4.74MB/s / Disk: 0MB/s
+(15:42:28) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 15.75%/1433.64MB/00:12:18 Down: 12.68MB/s / Disk: 36.82MB/s
+(15:42:29) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 15.89%/1446.23MB/00:12:17 Down: 12.58MB/s / Disk: 11.99MB/s
+(15:42:30) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 15.99%/1455.96MB/00:12:15 Down: 9.72MB/s / Disk: 12.98MB/s
+(15:42:31) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 16.11%/1466.81MB/00:12:14 Down: 10.84MB/s / Disk: 11.98MB/s
+(15:42:32) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 16.23%/1477.69MB/00:12:14 Down: 10.87MB/s / Disk: 7MB/s
+(15:42:33) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 16.36%/1489.45MB/00:12:20 Down: 11.75MB/s / Disk: 0MB/s
+(15:42:34) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 16.47%/1499.13MB/00:12:25 Down: 9.67MB/s / Disk: 0MB/s
+(15:42:35) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 16.6%/1510.90MB/00:12:07 Down: 11.76MB/s / Disk: 37.06MB/s
+(15:42:36) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 16.71%/1521.61MB/00:12:05 Down: 10.69MB/s / Disk: 9.88MB/s
+(15:42:37) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 16.83%/1532.27MB/00:12:07 Down: 10.64MB/s / Disk: 3.99MB/s
+(15:42:38) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 16.97%/1545.06MB/00:11:57 Down: 12.78MB/s / Disk: 23.06MB/s
+(15:42:39) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 17.09%/1555.93MB/00:11:58 Down: 10.86MB/s / Disk: 4.79MB/s
+(15:42:40) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 17.21%/1566.82MB/00:11:57 Down: 10.87MB/s / Disk: 12.98MB/s
+(15:42:41) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 17.34%/1578.55MB/00:11:54 Down: 11.71MB/s / Disk: 12.99MB/s
+(15:42:42) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 17.46%/1589.13MB/00:11:57 Down: 10.58MB/s / Disk: 3MB/s
+(15:42:43) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 17.57%/1599.91MB/00:12:02 Down: 10.77MB/s / Disk: 0MB/s
+(15:42:44) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 17.72%/1613.33MB/00:11:36 Down: 13.4MB/s / Disk: 35.95MB/s
+(15:42:45) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 17.82%/1621.89MB/00:11:37 Down: 8.54MB/s / Disk: 3.1MB/s
+(15:42:46) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 17.97%/1635.73MB/00:11:41 Down: 13.83MB/s / Disk: 0MB/s
+(15:42:47) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 18.07%/1644.68MB/00:11:26 Down: 8.93MB/s / Disk: 26.62MB/s
+(15:42:48) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 18.19%/1655.54MB/00:11:26 Down: 10.85MB/s / Disk: 8.13MB/s
+(15:42:49) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 18.34%/1669.40MB/00:11:21 Down: 13.84MB/s / Disk: 18.99MB/s
+(15:42:50) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 18.44%/1678.29MB/00:11:23 Down: 8.87MB/s / Disk: 4.99MB/s
+(15:42:51) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 18.57%/1690.19MB/00:11:23 Down: 11.88MB/s / Disk: 7.7MB/s
+(15:42:52) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 18.7%/1702.11MB/00:11:21 Down: 11.91MB/s / Disk: 13.03MB/s
+(15:42:53) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 18.78%/1710.03MB/00:11:20 Down: 7.91MB/s / Disk: 11.99MB/s
+(15:42:54) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 18.94%/1724.62MB/00:11:14 Down: 14.57MB/s / Disk: 18.86MB/s
+(15:42:55) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 19.03%/1732.54MB/00:11:16 Down: 7.91MB/s / Disk: 5.23MB/s
+(15:42:56) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 19.14%/1742.48MB/00:11:20 Down: 9.93MB/s / Disk: 0MB/s
+(15:42:57) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 19.3%/1757.34MB/00:11:13 Down: 14.84MB/s / Disk: 26.37MB/s
+(15:42:58) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 19.4%/1766.29MB/00:11:15 Down: 8.93MB/s / Disk: 4.99MB/s
+(15:42:59) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 19.51%/1776.23MB/00:11:16 Down: 9.93MB/s / Disk: 7.99MB/s
+(15:43:00) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 19.65%/1789.13MB/00:11:13 Down: 12.88MB/s / Disk: 15.42MB/s
+(15:43:01) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 19.77%/1800.02MB/00:11:11 Down: 10.87MB/s / Disk: 13.82MB/s
+(15:43:02) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 19.91%/1812.92MB/00:11:13 Down: 12.89MB/s / Disk: 4MB/s
+(15:43:03) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 20%/1820.79MB/00:11:11 Down: 7.86MB/s / Disk: 12.69MB/s
+(15:43:04) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 20.13%/1832.72MB/00:11:08 Down: 11.91MB/s / Disk: 15.11MB/s
+(15:43:05) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 20.26%/1844.62MB/00:11:10 Down: 11.89MB/s / Disk: 4MB/s
+(15:43:06) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 20.39%/1856.47MB/00:11:04 Down: 11.84MB/s / Disk: 20.89MB/s
+(15:43:07) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 20.5%/1865.87MB/00:11:07 Down: 9.39MB/s / Disk: 3.99MB/s
+(15:43:08) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 20.62%/1877.54MB/00:11:06 Down: 11.66MB/s / Disk: 8.53MB/s
+(15:43:09) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 20.77%/1891.21MB/00:10:55 Down: 13.65MB/s / Disk: 21.12MB/s
+(15:43:10) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 20.88%/1901.14MB/00:10:58 Down: 9.92MB/s / Disk: 3MB/s
+(15:43:11) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 21%/1912.05MB/00:10:59 Down: 10.91MB/s / Disk: 4MB/s
+(15:43:12) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 21.12%/1922.99MB/00:10:55 Down: 10.92MB/s / Disk: 19.32MB/s
+(15:43:13) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 21.23%/1932.89MB/00:10:53 Down: 9.9MB/s / Disk: 15.99MB/s
+(15:43:14) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 21.35%/1943.84MB/00:10:48 Down: 10.93MB/s / Disk: 10.98MB/s
+(15:43:15) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 21.51%/1957.84MB/00:10:45 Down: 13.98MB/s / Disk: 17.75MB/s
+(15:43:16) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 21.59%/1965.84MB/00:10:48 Down: 7.99MB/s / Disk: 0MB/s
+(15:43:17) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 21.73%/1977.84MB/00:10:44 Down: 11.98MB/s / Disk: 20.84MB/s
+(15:43:18) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 21.86%/1989.84MB/00:10:44 Down: 11.98MB/s / Disk: 11.98MB/s
+(15:43:19) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 21.99%/2001.84MB/00:10:43 Down: 11.99MB/s / Disk: 11.48MB/s
+(15:43:20) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 22.12%/2013.84MB/00:10:43 Down: 11.99MB/s / Disk: 9.99MB/s
+(15:43:21) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 22.22%/2022.84MB/00:10:43 Down: 8.99MB/s / Disk: 9.98MB/s
+(15:43:22) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 22.35%/2034.84MB/00:10:43 Down: 11.99MB/s / Disk: 9.99MB/s
+(15:43:23) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 22.48%/2046.82MB/00:10:40 Down: 11.96MB/s / Disk: 14.18MB/s
+(15:43:24) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 22.6%/2057.55MB/00:10:41 Down: 10.72MB/s / Disk: 3MB/s
+(15:43:25) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 22.73%/2069.35MB/00:10:41 Down: 11.79MB/s / Disk: 9.99MB/s
+(15:43:26) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 22.83%/2077.98MB/00:10:38 Down: 8.62MB/s / Disk: 17.98MB/s
+(15:43:27) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 22.98%/2091.67MB/00:10:40 Down: 13.66MB/s / Disk: 3MB/s
+(15:43:28) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 23.09%/2101.66MB/00:10:36 Down: 9.98MB/s / Disk: 20.97MB/s
+(15:43:29) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 23.21%/2112.66MB/00:10:38 Down: 10.98MB/s / Disk: 3MB/s
+(15:43:30) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 23.33%/2123.64MB/00:10:38 Down: 10.96MB/s / Disk: 10.98MB/s
+(15:43:31) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 23.42%/2132.53MB/00:10:36 Down: 8.88MB/s / Disk: 14.98MB/s
+(15:43:32) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 23.55%/2144.36MB/00:10:37 Down: 11.8MB/s / Disk: 6.98MB/s
+(15:43:33) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 23.7%/2157.19MB/00:10:36 Down: 12.81MB/s / Disk: 13.98MB/s
+(15:43:34) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 23.79%/2166.10MB/00:10:35 Down: 8.91MB/s / Disk: 10.99MB/s
+(15:43:35) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 23.92%/2177.89MB/00:10:34 Down: 11.77MB/s / Disk: 12.98MB/s
+(15:43:36) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 24.07%/2191.32MB/00:10:35 Down: 13.42MB/s / Disk: 7MB/s
+(15:43:37) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 24.17%/2200.80MB/00:10:31 Down: 9.46MB/s / Disk: 19.97MB/s
+(15:43:38) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 24.28%/2210.36MB/00:10:34 Down: 9.56MB/s / Disk: 0MB/s
+(15:43:39) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 24.42%/2222.99MB/00:10:30 Down: 12.61MB/s / Disk: 22.97MB/s
+(15:43:40) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 24.53%/2233.47MB/00:10:32 Down: 10.46MB/s / Disk: 4.99MB/s
+(15:43:41) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 24.68%/2247.17MB/00:10:28 Down: 13.69MB/s / Disk: 19.98MB/s
+(15:43:42) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 24.79%/2256.74MB/00:10:29 Down: 9.56MB/s / Disk: 7.99MB/s
+(15:43:43) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 24.92%/2268.54MB/00:10:27 Down: 11.78MB/s / Disk: 12.98MB/s
+(15:43:44) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 25.04%/2279.43MB/00:10:27 Down: 10.87MB/s / Disk: 10.98MB/s
+(15:43:45) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 25.17%/2290.97MB/00:10:27 Down: 11.53MB/s / Disk: 8.99MB/s
+(15:43:46) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 25.28%/2301.55MB/00:10:30 Down: 10.56MB/s / Disk: 0MB/s
+(15:43:47) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 25.4%/2312.56MB/00:10:33 Down: 11MB/s / Disk: 0MB/s
+(15:43:48) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 25.52%/2323.30MB/00:10:36 Down: 10.74MB/s / Disk: 0MB/s
+(15:43:49) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 25.64%/2334.03MB/00:10:39 Down: 10.72MB/s / Disk: 0MB/s
+(15:43:50) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 25.77%/2345.72MB/00:10:42 Down: 11.67MB/s / Disk: 0MB/s
+(15:43:51) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 25.89%/2357.37MB/00:10:45 Down: 11.64MB/s / Disk: 0MB/s
+(15:43:52) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 26.01%/2368.05MB/00:10:21 Down: 10.67MB/s / Disk: 80.97MB/s
+(15:43:53) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 26.12%/2377.89MB/00:10:22 Down: 9.83MB/s / Disk: 6.99MB/s
+(15:43:54) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 26.25%/2389.60MB/00:10:25 Down: 11.71MB/s / Disk: 0MB/s
+(15:43:55) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 26.39%/2402.33MB/00:10:18 Down: 12.72MB/s / Disk: 28.97MB/s
+(15:43:56) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 26.5%/2412.07MB/00:10:17 Down: 9.74MB/s / Disk: 13.99MB/s
+(15:43:57) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 26.66%/2426.94MB/00:10:18 Down: 14.84MB/s / Disk: 6.99MB/s
+(15:43:58) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 26.74%/2433.94MB/00:10:20 Down: 6.99MB/s / Disk: 0MB/s
+(15:43:59) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 26.87%/2445.93MB/00:10:23 Down: 11.98MB/s / Disk: 0MB/s
+(15:44:00) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 26.99%/2456.70MB/00:10:26 Down: 10.75MB/s / Disk: 0MB/s
+(15:44:01) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 27.12%/2468.65MB/00:10:29 Down: 11.93MB/s / Disk: 0MB/s
+(15:44:02) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 27.24%/2479.58MB/00:10:13 Down: 10.92MB/s / Disk: 60.95MB/s
+(15:44:03) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 27.35%/2489.57MB/00:10:14 Down: 9.98MB/s / Disk: 6.99MB/s
+(15:44:04) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 27.49%/2502.27MB/00:10:16 Down: 12.68MB/s / Disk: 0MB/s
+(15:44:05) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 27.59%/2511.63MB/00:10:19 Down: 9.35MB/s / Disk: 0MB/s
+(15:44:06) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 27.72%/2523.17MB/00:10:10 Down: 11.52MB/s / Disk: 36.95MB/s
+(15:44:07) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 27.84%/2534.13MB/00:10:10 Down: 10.95MB/s / Disk: 10.99MB/s
+(15:44:08) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 27.95%/2544.13MB/00:10:11 Down: 9.99MB/s / Disk: 4.99MB/s
+(15:44:09) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 28.08%/2556.06MB/00:10:10 Down: 11.92MB/s / Disk: 12.99MB/s
+(15:44:10) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 28.19%/2565.96MB/00:10:10 Down: 9.89MB/s / Disk: 9.99MB/s
+(15:44:11) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 28.32%/2577.87MB/00:10:10 Down: 11.89MB/s / Disk: 8.99MB/s
+(15:44:12) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 28.39%/2584.86MB/00:10:11 Down: 6.98MB/s / Disk: 5.99MB/s
+(15:44:13) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 28.53%/2596.86MB/00:10:11 Down: 11.98MB/s / Disk: 8.99MB/s
+(15:44:14) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 28.68%/2610.69MB/00:10:08 Down: 13.82MB/s / Disk: 18.99MB/s
+(15:44:15) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 28.76%/2618.61MB/00:10:11 Down: 7.91MB/s / Disk: 0MB/s
+(15:44:16) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 28.88%/2629.51MB/00:10:13 Down: 10.89MB/s / Disk: 0MB/s
+(15:44:17) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 28.99%/2639.46MB/00:10:09 Down: 9.93MB/s / Disk: 23.96MB/s
+(15:44:18) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 29.11%/2650.43MB/00:10:05 Down: 10.95MB/s / Disk: 22.97MB/s
+(15:44:19) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 29.23%/2661.41MB/00:10:05 Down: 10.97MB/s / Disk: 8.99MB/s
+(15:44:20) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 29.33%/2670.41MB/00:10:06 Down: 8.98MB/s / Disk: 3.99MB/s
+(15:44:21) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 29.46%/2682.39MB/00:10:04 Down: 11.97MB/s / Disk: 18.97MB/s
+(15:44:22) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 29.62%/2696.18MB/00:10:04 Down: 13.77MB/s / Disk: 8.99MB/s
+(15:44:23) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 29.71%/2705.02MB/00:10:03 Down: 8.83MB/s / Disk: 12.98MB/s
+(15:44:24) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 29.81%/2714.01MB/00:10:03 Down: 8.97MB/s / Disk: 6.99MB/s
+(15:44:25) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 29.97%/2727.96MB/00:10:04 Down: 13.94MB/s / Disk: 6.99MB/s
+(15:44:26) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 30.11%/2741.56MB/00:10:01 Down: 13.58MB/s / Disk: 18.97MB/s
+(15:44:27) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 30.2%/2749.37MB/00:10:00 Down: 7.8MB/s / Disk: 10.98MB/s
+(15:44:28) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 30.33%/2760.79MB/00:09:59 Down: 11.41MB/s / Disk: 8.99MB/s
+(15:44:29) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 30.46%/2772.56MB/00:10:00 Down: 11.75MB/s / Disk: 3MB/s
+(15:44:30) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 30.58%/2783.99MB/00:09:54 Down: 11.41MB/s / Disk: 24.92MB/s
+(15:44:31) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 30.69%/2793.81MB/00:09:55 Down: 9.82MB/s / Disk: 4MB/s
+(15:44:32) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 30.84%/2807.72MB/00:09:55 Down: 13.89MB/s / Disk: 10.99MB/s
+(15:44:33) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 30.95%/2817.54MB/00:09:53 Down: 9.8MB/s / Disk: 13.97MB/s
+(15:44:34) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 31.1%/2831.69MB/00:09:55 Down: 14.14MB/s / Disk: 3MB/s
+(15:44:35) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 31.17%/2837.55MB/00:09:53 Down: 5.85MB/s / Disk: 14.81MB/s
+(15:44:36) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 31.3%/2849.37MB/00:09:47 Down: 11.81MB/s / Disk: 16.14MB/s
+(15:44:37) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 31.44%/2862.15MB/00:09:45 Down: 12.75MB/s / Disk: 14.12MB/s
+(15:44:38) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 31.53%/2870.07MB/00:09:47 Down: 7.92MB/s / Disk: 1MB/s
+(15:44:39) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 31.66%/2881.99MB/00:09:45 Down: 11.9MB/s / Disk: 14.98MB/s
+(15:44:40) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 31.76%/2891.69MB/00:09:43 Down: 9.69MB/s / Disk: 16.98MB/s
+(15:44:41) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 31.9%/2904.46MB/00:09:43 Down: 12.75MB/s / Disk: 10.06MB/s
+(15:44:42) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 32.02%/2915.35MB/00:09:41 Down: 10.88MB/s / Disk: 14.98MB/s
+(15:44:43) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 32.15%/2927.15MB/00:09:41 Down: 11.79MB/s / Disk: 8.99MB/s
+(15:44:44) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 32.29%/2939.96MB/00:09:41 Down: 12.79MB/s / Disk: 6.99MB/s
+(15:44:45) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 32.39%/2948.67MB/00:09:41 Down: 8.7MB/s / Disk: 5.58MB/s
+(15:44:46) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 32.52%/2960.52MB/00:09:36 Down: 11.84MB/s / Disk: 25.48MB/s
+(15:44:47) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 32.66%/2973.31MB/00:09:35 Down: 12.78MB/s / Disk: 9.26MB/s
+(15:44:48) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 32.76%/2982.23MB/00:09:38 Down: 8.9MB/s / Disk: 0MB/s
+(15:44:49) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 32.87%/2992.18MB/00:09:34 Down: 9.94MB/s / Disk: 21.97MB/s
+(15:44:50) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 33.01%/3005.01MB/00:09:35 Down: 12.82MB/s / Disk: 5MB/s
+(15:44:51) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 33.12%/3014.89MB/00:09:34 Down: 9.88MB/s / Disk: 10MB/s
+(15:44:52) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 33.29%/3030.62MB/00:09:31 Down: 15.71MB/s / Disk: 17.56MB/s
+(15:44:53) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 33.34%/3035.59MB/00:09:31 Down: 4.97MB/s / Disk: 10MB/s
+(15:44:54) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 33.5%/3049.37MB/00:09:32 Down: 13.76MB/s / Disk: 3MB/s
+(15:44:55) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 33.62%/3060.24MB/00:09:28 Down: 10.86MB/s / Disk: 19.46MB/s
+(15:44:56) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 33.74%/3071.17MB/00:09:28 Down: 10.91MB/s / Disk: 9.99MB/s
+(15:44:57) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 33.89%/3085.03MB/00:09:29 Down: 13.84MB/s / Disk: 3MB/s
+(15:44:58) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 33.96%/3091.93MB/00:09:31 Down: 6.89MB/s / Disk: 0MB/s
+(15:44:59) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 34.08%/3102.88MB/00:09:25 Down: 10.94MB/s / Disk: 29.22MB/s
+(15:45:00) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 34.21%/3114.83MB/00:09:27 Down: 11.93MB/s / Disk: 0MB/s
+(15:45:01) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 34.35%/3127.33MB/00:09:22 Down: 12.48MB/s / Disk: 27.96MB/s
+(15:45:02) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 34.48%/3138.98MB/00:09:22 Down: 11.63MB/s / Disk: 4.43MB/s
+(15:45:03) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 34.58%/3147.73MB/00:09:22 Down: 8.74MB/s / Disk: 7.24MB/s
+(15:45:04) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 34.71%/3160.32MB/00:09:17 Down: 12.58MB/s / Disk: 16.32MB/s
+(15:45:05) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 34.85%/3173.01MB/00:09:15 Down: 12.66MB/s / Disk: 11.98MB/s
+(15:45:06) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 34.97%/3183.59MB/00:09:13 Down: 10.57MB/s / Disk: 8.82MB/s
+(15:45:07) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 35.07%/3193.10MB/00:09:06 Down: 9.49MB/s / Disk: 17.97MB/s
+(15:45:08) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 35.22%/3205.88MB/00:09:06 Down: 12.76MB/s / Disk: 5.12MB/s
+(15:45:09) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 35.33%/3216.51MB/00:09:04 Down: 10.62MB/s / Disk: 12MB/s
+(15:45:10) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 35.47%/3229.18MB/00:09:02 Down: 12.65MB/s / Disk: 8.12MB/s
+(15:45:11) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 35.58%/3238.75MB/00:08:53 Down: 9.56MB/s / Disk: 23.28MB/s
+(15:45:12) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 35.69%/3249.41MB/00:08:54 Down: 10.64MB/s / Disk: 1MB/s
+(15:45:13) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 35.82%/3260.91MB/00:08:52 Down: 11.49MB/s / Disk: 9.8MB/s
+(15:45:14) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 35.95%/3272.74MB/00:08:51 Down: 11.81MB/s / Disk: 9.22MB/s
+(15:45:15) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 36.08%/3284.58MB/00:08:42 Down: 11.83MB/s / Disk: 27.97MB/s
+(15:45:16) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 36.2%/3295.52MB/00:08:44 Down: 10.93MB/s / Disk: 0MB/s
+(15:45:17) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 36.32%/3306.48MB/00:08:46 Down: 10.95MB/s / Disk: 0MB/s
+(15:45:18) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 36.44%/3317.38MB/00:08:39 Down: 10.89MB/s / Disk: 35.39MB/s
+(15:45:19) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 36.52%/3325.13MB/00:08:37 Down: 7.73MB/s / Disk: 6.99MB/s
+(15:45:20) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 36.67%/3337.93MB/00:08:36 Down: 12.78MB/s / Disk: 12.98MB/s
+(15:45:21) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 36.77%/3347.88MB/00:08:38 Down: 9.94MB/s / Disk: 0MB/s
+(15:45:22) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 36.95%/3363.73MB/00:08:33 Down: 15.82MB/s / Disk: 26.66MB/s
+(15:45:23) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 37.02%/3370.61MB/00:08:34 Down: 6.88MB/s / Disk: 3MB/s
+(15:45:24) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 37.14%/3381.47MB/00:08:33 Down: 10.85MB/s / Disk: 10.13MB/s
+(15:45:25) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 37.28%/3394.26MB/00:08:34 Down: 12.77MB/s / Disk: 2.07MB/s
+(15:45:26) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 37.39%/3404.00MB/00:08:31 Down: 9.73MB/s / Disk: 19.97MB/s
+(15:45:27) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 37.52%/3415.97MB/00:08:32 Down: 11.95MB/s / Disk: 3MB/s
+(15:45:28) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 37.63%/3425.80MB/00:08:29 Down: 9.81MB/s / Disk: 20.36MB/s
+(15:45:29) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 37.76%/3437.65MB/00:08:28 Down: 11.83MB/s / Disk: 9.57MB/s
+(15:45:30) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 37.87%/3447.56MB/00:08:28 Down: 9.89MB/s / Disk: 4.72MB/s
+(15:45:31) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 38.02%/3461.13MB/00:08:24 Down: 13.55MB/s / Disk: 20.97MB/s
+(15:45:32) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 38.15%/3473.03MB/00:08:22 Down: 11.89MB/s / Disk: 14.24MB/s
+(15:45:33) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 38.27%/3483.85MB/00:08:23 Down: 10.81MB/s / Disk: 4MB/s
+(15:45:34) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 38.39%/3494.70MB/00:08:21 Down: 10.84MB/s / Disk: 16.55MB/s
+(15:45:35) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 38.53%/3507.57MB/00:08:19 Down: 12.86MB/s / Disk: 13.29MB/s
+(15:45:36) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 38.61%/3514.50MB/00:08:20 Down: 6.92MB/s / Disk: 0MB/s
+(15:45:37) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 38.77%/3529.24MB/00:08:15 Down: 14.72MB/s / Disk: 24.88MB/s
+(15:45:38) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 38.86%/3538.04MB/00:08:16 Down: 8.79MB/s / Disk: 3.99MB/s
+(15:45:39) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 38.98%/3548.96MB/00:08:16 Down: 10.91MB/s / Disk: 8.99MB/s
+(15:45:40) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 39.15%/3563.66MB/00:08:12 Down: 14.69MB/s / Disk: 22.92MB/s
+(15:45:41) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 39.24%/3572.55MB/00:08:13 Down: 8.88MB/s / Disk: 0MB/s
+(15:45:42) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 39.35%/3582.44MB/00:08:15 Down: 9.87MB/s / Disk: 0MB/s
+(15:45:43) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 39.49%/3595.34MB/00:08:09 Down: 12.89MB/s / Disk: 23.16MB/s
+(15:45:44) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 39.61%/3606.26MB/00:08:08 Down: 10.91MB/s / Disk: 15.98MB/s
+(15:45:45) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 39.74%/3617.86MB/00:08:08 Down: 11.58MB/s / Disk: 5.24MB/s
+(15:45:46) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 39.86%/3628.74MB/00:08:05 Down: 10.87MB/s / Disk: 16.61MB/s
+(15:45:47) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 40%/3641.26MB/00:08:04 Down: 12.49MB/s / Disk: 8.54MB/s
+(15:45:48) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 40.1%/3650.18MB/00:08:02 Down: 8.91MB/s / Disk: 9.35MB/s
+(15:45:49) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 40.23%/3662.18MB/00:08:03 Down: 11.99MB/s / Disk: 0MB/s
+(15:45:50) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 40.37%/3675.16MB/00:08:01 Down: 12.96MB/s / Disk: 14.98MB/s
+(15:45:51) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 40.46%/3683.16MB/00:08:01 Down: 7.99MB/s / Disk: 8MB/s
+(15:45:52) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 40.59%/3695.16MB/00:08:02 Down: 11.98MB/s / Disk: 0MB/s
+(15:45:53) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 40.71%/3706.16MB/00:07:58 Down: 10.99MB/s / Disk: 31MB/s
+(15:45:54) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 40.84%/3718.16MB/00:07:59 Down: 11.98MB/s / Disk: 0MB/s
+(15:45:55) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 40.97%/3730.16MB/00:07:55 Down: 11.98MB/s / Disk: 28.69MB/s
+(15:45:56) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 41.11%/3742.16MB/00:07:53 Down: 11.98MB/s / Disk: 15.46MB/s
+(15:45:57) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 41.2%/3751.15MB/00:07:54 Down: 8.98MB/s / Disk: 5.99MB/s
+(15:45:58) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 41.31%/3761.16MB/00:07:55 Down: 9.99MB/s / Disk: 0MB/s
+(15:45:59) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 41.48%/3776.09MB/00:07:50 Down: 14.92MB/s / Disk: 31.14MB/s
+(15:46:00) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 41.58%/3785.07MB/00:07:50 Down: 8.96MB/s / Disk: 3MB/s
+(15:46:01) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 41.69%/3795.04MB/00:07:51 Down: 9.96MB/s / Disk: 2MB/s
+(15:46:02) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 41.83%/3808.00MB/00:07:51 Down: 12.94MB/s / Disk: 9.98MB/s
+(15:46:03) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 41.96%/3819.95MB/00:07:48 Down: 11.94MB/s / Disk: 22.96MB/s
+(15:46:04) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 42.06%/3828.94MB/00:07:50 Down: 8.97MB/s / Disk: 0MB/s
+(15:46:05) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 42.18%/3839.91MB/00:07:49 Down: 10.96MB/s / Disk: 8.99MB/s
+(15:46:06) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 42.3%/3850.89MB/00:07:49 Down: 10.98MB/s / Disk: 10.99MB/s
+(15:46:07) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 42.43%/3862.85MB/00:07:46 Down: 11.95MB/s / Disk: 24.98MB/s
+(15:46:08) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 42.55%/3873.81MB/00:07:46 Down: 10.94MB/s / Disk: 5.99MB/s
+(15:46:09) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 42.68%/3885.76MB/00:07:46 Down: 11.93MB/s / Disk: 7.99MB/s
+(15:46:10) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 42.81%/3897.70MB/00:07:44 Down: 11.92MB/s / Disk: 19.97MB/s
+(15:46:11) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 42.91%/3906.59MB/00:07:43 Down: 8.88MB/s / Disk: 12.98MB/s
+(15:46:12) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 43.05%/3919.51MB/00:07:43 Down: 12.92MB/s / Disk: 5MB/s
+(15:46:13) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 43.21%/3933.43MB/00:07:41 Down: 13.91MB/s / Disk: 17.99MB/s
+(15:46:14) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 43.27%/3939.40MB/00:07:41 Down: 5.96MB/s / Disk: 6.99MB/s
+(15:46:15) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 43.42%/3953.22MB/00:07:40 Down: 13.8MB/s / Disk: 13.98MB/s
+(15:46:16) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 43.54%/3964.10MB/00:07:41 Down: 10.88MB/s / Disk: 6MB/s
+(15:46:17) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 43.66%/3975.05MB/00:07:40 Down: 10.93MB/s / Disk: 11.98MB/s
+(15:46:18) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 43.82%/3989.04MB/00:07:38 Down: 13.98MB/s / Disk: 14.99MB/s
+(15:46:19) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 43.94%/3999.96MB/00:07:37 Down: 10.91MB/s / Disk: 13.98MB/s
+(15:46:20) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 43.99%/4004.96MB/00:07:37 Down: 5MB/s / Disk: 6MB/s
+(15:46:21) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 44.18%/4021.86MB/00:07:35 Down: 16.88MB/s / Disk: 17.98MB/s
+(15:46:22) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 44.29%/4031.85MB/00:07:35 Down: 9.99MB/s / Disk: 7MB/s
+(15:46:23) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 44.41%/4042.83MB/00:07:36 Down: 10.97MB/s / Disk: 0MB/s
+(15:46:24) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 44.53%/4053.82MB/00:07:34 Down: 10.97MB/s / Disk: 19.98MB/s
+(15:46:25) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 44.65%/4064.80MB/00:07:34 Down: 10.97MB/s / Disk: 4.99MB/s
+(15:46:26) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 44.77%/4075.77MB/00:07:36 Down: 10.96MB/s / Disk: 0MB/s
+(15:46:27) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 44.89%/4086.77MB/00:07:37 Down: 10.99MB/s / Disk: 0MB/s
+(15:46:28) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 45.03%/4099.68MB/00:07:38 Down: 12.89MB/s / Disk: 0MB/s
+(15:46:29) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 45.12%/4107.62MB/00:07:31 Down: 7.93MB/s / Disk: 49.93MB/s
+(15:46:30) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 45.25%/4119.49MB/00:07:32 Down: 11.85MB/s / Disk: 0MB/s
+(15:46:31) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 45.38%/4131.45MB/00:07:30 Down: 11.96MB/s / Disk: 14.99MB/s
+(15:46:32) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 45.47%/4139.37MB/00:07:32 Down: 7.92MB/s / Disk: 0MB/s
+(15:46:33) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 45.61%/4152.14MB/00:07:29 Down: 12.77MB/s / Disk: 19.99MB/s
+(15:46:34) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 45.74%/4164.13MB/00:07:28 Down: 11.97MB/s / Disk: 9.98MB/s
+(15:46:35) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 45.84%/4173.10MB/00:07:27 Down: 8.96MB/s / Disk: 16.99MB/s
+(15:46:36) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 45.98%/4185.97MB/00:07:28 Down: 12.85MB/s / Disk: 0MB/s
+(15:46:37) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 46.1%/4196.69MB/00:07:29 Down: 10.71MB/s / Disk: 0MB/s
+(15:46:38) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 46.21%/4206.63MB/00:07:30 Down: 9.93MB/s / Disk: 0MB/s
+(15:46:39) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 46.34%/4218.54MB/00:07:22 Down: 11.89MB/s / Disk: 54.93MB/s
+(15:46:40) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 46.47%/4230.54MB/00:07:22 Down: 11.99MB/s / Disk: 6MB/s
+(15:46:41) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 46.6%/4242.53MB/00:07:23 Down: 11.99MB/s / Disk: 3MB/s
+(15:46:42) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 46.72%/4253.50MB/00:07:23 Down: 10.96MB/s / Disk: 4MB/s
+(15:46:43) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 46.82%/4262.21MB/00:07:25 Down: 8.7MB/s / Disk: 0MB/s
+(15:46:44) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 46.95%/4274.05MB/00:07:20 Down: 11.84MB/s / Disk: 30.99MB/s
+(15:46:45) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 47.09%/4287.04MB/00:07:18 Down: 12.98MB/s / Disk: 19.99MB/s
+(15:46:46) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 47.21%/4297.98MB/00:07:18 Down: 10.94MB/s / Disk: 8MB/s
+(15:46:47) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 47.32%/4307.97MB/00:07:16 Down: 9.98MB/s / Disk: 17.98MB/s
+(15:46:48) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 47.45%/4319.77MB/00:07:17 Down: 11.78MB/s / Disk: 3.99MB/s
+(15:46:49) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 47.59%/4332.60MB/00:07:18 Down: 12.83MB/s / Disk: 0MB/s
+(15:46:50) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 47.71%/4343.55MB/00:07:14 Down: 10.93MB/s / Disk: 28.98MB/s
+(15:46:51) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 47.81%/4352.39MB/00:07:14 Down: 8.84MB/s / Disk: 7MB/s
+(15:46:52) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 47.93%/4363.30MB/00:07:14 Down: 10.9MB/s / Disk: 7MB/s
+(15:46:53) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 48.05%/4374.14MB/00:07:12 Down: 10.83MB/s / Disk: 16.98MB/s
+(15:46:54) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 48.17%/4385.05MB/00:07:13 Down: 10.89MB/s / Disk: 0MB/s
+(15:46:55) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 48.3%/4396.92MB/00:07:12 Down: 11.86MB/s / Disk: 13.98MB/s
+(15:46:56) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 48.44%/4409.80MB/00:07:10 Down: 12.86MB/s / Disk: 15.98MB/s
+(15:46:57) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 48.55%/4419.70MB/00:07:10 Down: 9.89MB/s / Disk: 9.99MB/s
+(15:46:58) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 48.67%/4430.66MB/00:07:11 Down: 10.94MB/s / Disk: 0MB/s
+(15:46:59) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 48.8%/4442.62MB/00:07:12 Down: 11.94MB/s / Disk: 0MB/s
+(15:47:00) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 48.93%/4454.58MB/00:07:07 Down: 11.95MB/s / Disk: 36.98MB/s
+(15:47:01) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 49.01%/4461.52MB/00:07:08 Down: 6.94MB/s / Disk: 2MB/s
+(15:47:02) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 49.16%/4475.52MB/00:07:05 Down: 13.98MB/s / Disk: 19.98MB/s
+(15:47:03) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 49.27%/4485.52MB/00:07:05 Down: 9.99MB/s / Disk: 8.99MB/s
+(15:47:04) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 49.39%/4496.51MB/00:07:06 Down: 10.98MB/s / Disk: 1MB/s
+(15:47:05) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 49.55%/4511.30MB/00:07:04 Down: 14.76MB/s / Disk: 20.97MB/s
+(15:47:06) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 49.65%/4520.13MB/00:07:03 Down: 8.82MB/s / Disk: 9.99MB/s
+(15:47:07) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 49.74%/4528.05MB/00:07:03 Down: 7.91MB/s / Disk: 6MB/s
+(15:47:08) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 49.87%/4539.94MB/00:07:04 Down: 11.87MB/s / Disk: 0MB/s
+(15:47:09) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 50%/4551.71MB/00:07:05 Down: 11.76MB/s / Disk: 0MB/s
+(15:47:10) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 50.13%/4563.68MB/00:06:59 Down: 11.95MB/s / Disk: 43.94MB/s
+(15:47:11) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 50.24%/4573.68MB/00:07:00 Down: 9.99MB/s / Disk: 3MB/s
+(15:47:12) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 50.38%/4586.68MB/00:06:59 Down: 12.98MB/s / Disk: 9.99MB/s
+(15:47:13) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 50.47%/4594.68MB/00:06:57 Down: 8MB/s / Disk: 17.99MB/s
+(15:47:14) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 50.6%/4606.68MB/00:06:57 Down: 12MB/s / Disk: 6MB/s
+(15:47:15) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 50.73%/4618.68MB/00:06:56 Down: 11.98MB/s / Disk: 17.97MB/s
+(15:47:16) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 50.87%/4630.68MB/00:06:56 Down: 11.98MB/s / Disk: 2MB/s
+(15:47:17) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 50.96%/4639.68MB/00:06:57 Down: 8.99MB/s / Disk: 0MB/s
+(15:47:18) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 51.09%/4650.68MB/00:06:57 Down: 10.99MB/s / Disk: 9.99MB/s
+(15:47:19) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 51.23%/4663.69MB/00:06:52 Down: 12.98MB/s / Disk: 36.95MB/s
+(15:47:20) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 51.36%/4675.69MB/00:06:53 Down: 11.99MB/s / Disk: 2MB/s
+(15:47:21) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 51.45%/4683.69MB/00:06:54 Down: 7.99MB/s / Disk: 0MB/s
+(15:47:22) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 51.59%/4696.69MB/00:06:53 Down: 12.99MB/s / Disk: 9.99MB/s
+(15:47:23) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 51.72%/4708.69MB/00:06:51 Down: 11.98MB/s / Disk: 22.97MB/s
+(15:47:24) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 51.84%/4719.69MB/00:06:51 Down: 10.99MB/s / Disk: 4.99MB/s
+(15:47:25) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 51.96%/4730.69MB/00:06:49 Down: 10.99MB/s / Disk: 21.97MB/s
+(15:47:26) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 52.04%/4737.68MB/00:06:49 Down: 6.98MB/s / Disk: 0MB/s
+(15:47:27) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 52.17%/4749.65MB/00:06:49 Down: 11.96MB/s / Disk: 9MB/s
+(15:47:28) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 52.3%/4761.65MB/00:06:47 Down: 11.99MB/s / Disk: 16.99MB/s
+(15:47:29) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 52.43%/4772.65MB/00:06:46 Down: 10.99MB/s / Disk: 15.99MB/s
+(15:47:30) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 52.54%/4782.64MB/00:06:47 Down: 9.98MB/s / Disk: 0MB/s
+(15:47:31) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 52.68%/4795.61MB/00:06:47 Down: 12.96MB/s / Disk: 7MB/s
+(15:47:32) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 52.78%/4804.61MB/00:06:44 Down: 8.99MB/s / Disk: 24.96MB/s
+(15:47:33) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 52.88%/4813.61MB/00:06:43 Down: 8.99MB/s / Disk: 11.98MB/s
+(15:47:34) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 53.02%/4826.61MB/00:06:42 Down: 12.98MB/s / Disk: 10.98MB/s
+(15:47:35) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 53.14%/4837.61MB/00:06:41 Down: 10.99MB/s / Disk: 12.99MB/s
+(15:47:36) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 53.25%/4847.54MB/00:06:42 Down: 9.92MB/s / Disk: 1MB/s
+(15:47:37) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 53.38%/4859.49MB/00:06:43 Down: 11.94MB/s / Disk: 0MB/s
+(15:47:38) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 53.47%/4867.47MB/00:06:39 Down: 7.97MB/s / Disk: 30.99MB/s
+(15:47:39) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 53.63%/4882.46MB/00:06:38 Down: 14.97MB/s / Disk: 13.98MB/s
+(15:47:40) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 53.71%/4889.41MB/00:06:39 Down: 6.95MB/s / Disk: 0MB/s
+(15:47:41) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 53.84%/4901.32MB/00:06:40 Down: 11.89MB/s / Disk: 0MB/s
+(15:47:42) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 53.96%/4912.25MB/00:06:36 Down: 10.91MB/s / Disk: 27.96MB/s
+(15:47:43) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 54.02%/4918.25MB/00:06:37 Down: 5.99MB/s / Disk: 0MB/s
+(15:47:44) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 54.16%/4930.25MB/00:06:36 Down: 11.99MB/s / Disk: 12.99MB/s
+(15:47:45) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 54.3%/4943.25MB/00:06:36 Down: 12.99MB/s / Disk: 0MB/s
+(15:47:46) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 54.4%/4952.25MB/00:06:37 Down: 8.99MB/s / Disk: 0MB/s
+(15:47:47) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 54.55%/4966.25MB/00:06:32 Down: 13.98MB/s / Disk: 41.95MB/s
+(15:47:48) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 54.65%/4975.25MB/00:06:33 Down: 8.99MB/s / Disk: 2MB/s
+(15:47:49) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 54.77%/4986.25MB/00:06:33 Down: 10.99MB/s / Disk: 5.99MB/s
+(15:47:50) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 54.9%/4998.25MB/00:06:31 Down: 11.99MB/s / Disk: 17.98MB/s
+(15:47:51) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 55.02%/5009.25MB/00:06:31 Down: 10.99MB/s / Disk: 4.99MB/s
+(15:47:52) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 55.12%/5018.25MB/00:06:30 Down: 8.99MB/s / Disk: 11.98MB/s
+(15:47:53) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 55.28%/5032.25MB/00:06:28 Down: 13.98MB/s / Disk: 18.98MB/s
+(15:47:54) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 55.4%/5043.26MB/00:06:28 Down: 10.99MB/s / Disk: 5.99MB/s
+(15:47:55) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 55.5%/5052.26MB/00:06:29 Down: 8.99MB/s / Disk: 0MB/s
+(15:47:56) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 55.63%/5064.26MB/00:06:28 Down: 11.99MB/s / Disk: 15.98MB/s
+(15:47:57) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 55.74%/5074.26MB/00:06:25 Down: 9.99MB/s / Disk: 21.97MB/s
+(15:47:58) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 55.84%/5083.23MB/00:06:26 Down: 8.96MB/s / Disk: 0MB/s
+(15:47:59) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 55.98%/5096.23MB/00:06:25 Down: 12.99MB/s / Disk: 9.99MB/s
+(15:48:00) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 56.1%/5107.23MB/00:06:24 Down: 10.99MB/s / Disk: 18.99MB/s
+(15:48:01) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 56.23%/5119.18MB/00:06:23 Down: 11.94MB/s / Disk: 7.99MB/s
+(15:48:02) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 56.33%/5128.18MB/00:06:24 Down: 8.99MB/s / Disk: 0MB/s
+(15:48:03) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 56.48%/5142.16MB/00:06:25 Down: 13.98MB/s / Disk: 0MB/s
+(15:48:04) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 56.59%/5152.07MB/00:06:20 Down: 9.9MB/s / Disk: 36.96MB/s
+(15:48:05) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 56.7%/5161.99MB/00:06:21 Down: 9.91MB/s / Disk: 1MB/s
+(15:48:06) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 56.84%/5174.95MB/00:06:20 Down: 12.95MB/s / Disk: 13.99MB/s
+(15:48:07) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 56.95%/5184.91MB/00:06:20 Down: 9.95MB/s / Disk: 0MB/s
+(15:48:08) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 57.1%/5197.91MB/00:06:21 Down: 12.98MB/s / Disk: 2MB/s
+(15:48:09) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 57.18%/5205.90MB/00:06:22 Down: 7.98MB/s / Disk: 0MB/s
+(15:48:10) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 57.33%/5218.90MB/00:06:23 Down: 12.95MB/s / Disk: 0MB/s
+(15:48:11) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 57.44%/5228.90MB/00:06:23 Down: 9.94MB/s / Disk: 0MB/s
+(15:48:13) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 57.6%/5243.90MB/00:06:17 Down: 14.82MB/s / Disk: 48.43MB/s
+(15:48:13) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 57.71%/5253.90MB/00:06:13 Down: 9.66MB/s / Disk: 30.92MB/s
+(15:48:14) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 57.83%/5264.90MB/00:06:12 Down: 10.91MB/s / Disk: 10.91MB/s
+(15:48:15) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 57.94%/5274.90MB/00:06:12 Down: 9.95MB/s / Disk: 3.98MB/s
+(15:48:16) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 58.06%/5285.91MB/00:06:13 Down: 10.9MB/s / Disk: 0MB/s
+(15:48:17) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 58.18%/5296.90MB/00:06:14 Down: 10.93MB/s / Disk: 0MB/s
+(15:48:18) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 58.34%/5310.90MB/00:06:15 Down: 13.96MB/s / Disk: 0MB/s
+(15:48:19) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 58.46%/5321.86MB/00:06:16 Down: 10.89MB/s / Disk: 0MB/s
+(15:48:20) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 58.55%/5329.86MB/00:06:16 Down: 7.95MB/s / Disk: 0MB/s
+(15:48:21) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 58.7%/5343.86MB/00:06:17 Down: 13.87MB/s / Disk: 0MB/s
+(15:48:23) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 58.81%/5353.85MB/00:06:11 Down: 9.95MB/s / Disk: 46.79MB/s
+(15:48:24) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 58.94%/5365.64MB/00:06:04 Down: 11.5MB/s / Disk: 52.69MB/s
+(15:48:25) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 59.07%/5377.25MB/00:06:04 Down: 11.51MB/s / Disk: 8.92MB/s
+(15:48:26) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 59.14%/5384.09MB/00:06:05 Down: 6.8MB/s / Disk: 0MB/s
+(15:48:27) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 59.28%/5396.93MB/00:06:05 Down: 11.64MB/s / Disk: 0MB/s
+(15:48:28) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 59.46%/5413.18MB/00:06:06 Down: 15.72MB/s / Disk: 0MB/s
+(15:48:29) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 59.57%/5423.31MB/00:06:07 Down: 10.09MB/s / Disk: 0MB/s
+(15:48:31) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 59.71%/5435.68MB/00:05:58 Down: 12.22MB/s / Disk: 66.16MB/s
+(15:48:32) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 59.83%/5446.45MB/00:05:57 Down: 10.51MB/s / Disk: 11.71MB/s
+(15:48:33) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 60.08%/5469.45MB/00:05:58 Down: 12.79MB/s / Disk: 0MB/s
+(15:48:34) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 60.19%/5479.45MB/00:05:59 Down: 9.85MB/s / Disk: 0MB/s
+(15:48:35) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 60.29%/5488.39MB/00:05:59 Down: 8.87MB/s / Disk: 0MB/s
+(15:48:37) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 60.44%/5502.25MB/00:06:00 Down: 13.68MB/s / Disk: 0MB/s
+(15:48:37) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 60.56%/5513.16MB/00:06:01 Down: 10.72MB/s / Disk: 0MB/s
+(15:48:38) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 60.69%/5525.03MB/00:06:02 Down: 11.67MB/s / Disk: 0MB/s
+(15:48:40) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 60.83%/5537.91MB/00:06:02 Down: 12.7MB/s / Disk: 0MB/s
+(15:48:41) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 60.92%/5545.86MB/00:05:50 Down: 7.92MB/s / Disk: 97.66MB/s
+(15:48:42) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 61.09%/5561.82MB/00:05:48 Down: 15.95MB/s / Disk: 15.99MB/s
+(15:48:43) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 61.21%/5572.36MB/00:05:49 Down: 10.1MB/s / Disk: 0MB/s
+(15:48:44) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 61.47%/5595.65MB/00:05:51 Down: 13.26MB/s / Disk: 0MB/s
+(15:48:46) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 61.56%/5604.18MB/00:05:51 Down: 8.37MB/s / Disk: 0MB/s
+(15:48:46) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 61.68%/5614.85MB/00:05:52 Down: 10.65MB/s / Disk: 0MB/s
+(15:48:48) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 61.86%/5631.44MB/00:05:52 Down: 16.11MB/s / Disk: 6.38MB/s
+(15:48:50) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 62.05%/5649.25MB/00:05:39 Down: 8.9MB/s / Disk: 7.98MB/s
+(15:48:51) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 62.19%/5661.20MB/00:05:39 Down: 11.68MB/s / Disk: 6.35MB/s
+(15:48:51) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 62.32%/5673.01MB/00:05:36 Down: 10.37MB/s / Disk: 18.34MB/s
+(15:48:52) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 62.48%/5687.87MB/00:05:36 Down: 14.83MB/s / Disk: 9.99MB/s
+(15:48:53) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 62.58%/5697.54MB/00:05:32 Down: 9.66MB/s / Disk: 20.21MB/s
+(15:48:54) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 62.7%/5708.37MB/00:05:31 Down: 10.81MB/s / Disk: 7.99MB/s
+(15:48:55) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 62.85%/5721.27MB/00:05:29 Down: 12.88MB/s / Disk: 16.32MB/s
+(15:48:56) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 62.94%/5730.02MB/00:05:30 Down: 8.74MB/s / Disk: 1MB/s
+(15:48:57) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 63.09%/5743.26MB/00:05:25 Down: 13.22MB/s / Disk: 21.18MB/s
+(15:48:58) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 63.22%/5755.13MB/00:05:25 Down: 11.85MB/s / Disk: 3.99MB/s
+(15:48:59) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 63.33%/5765.02MB/00:05:24 Down: 9.88MB/s / Disk: 9.99MB/s
+(15:49:00) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 63.46%/5776.85MB/00:05:22 Down: 11.82MB/s / Disk: 16.98MB/s
+(15:49:01) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 63.55%/5785.80MB/00:05:22 Down: 8.94MB/s / Disk: 3.77MB/s
+(15:49:02) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 63.68%/5797.51MB/00:05:22 Down: 11.7MB/s / Disk: 0MB/s
+(15:49:03) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 63.81%/5809.42MB/00:05:17 Down: 11.89MB/s / Disk: 31MB/s
+(15:49:04) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 63.93%/5820.06MB/00:05:17 Down: 10.62MB/s / Disk: 3.99MB/s
+(15:49:05) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 64.08%/5833.72MB/00:05:15 Down: 13.64MB/s / Disk: 9.23MB/s
+(15:49:06) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 64.15%/5839.68MB/00:05:16 Down: 5.95MB/s / Disk: 0MB/s
+(15:49:07) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 64.32%/5855.56MB/00:05:10 Down: 15.86MB/s / Disk: 36.33MB/s
+(15:49:08) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 64.44%/5866.45MB/00:05:09 Down: 10.88MB/s / Disk: 5.99MB/s
+(15:49:09) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 64.54%/5875.42MB/00:05:10 Down: 8.96MB/s / Disk: 3MB/s
+(15:49:10) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 64.67%/5887.32MB/00:05:07 Down: 11.88MB/s / Disk: 20.97MB/s
+(15:49:11) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 64.79%/5898.25MB/00:05:07 Down: 10.92MB/s / Disk: 7.99MB/s
+(15:49:12) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 64.89%/5907.08MB/00:05:07 Down: 8.82MB/s / Disk: 0MB/s
+(15:49:13) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 65.03%/5919.99MB/00:05:08 Down: 12.9MB/s / Disk: 0MB/s
+(15:49:14) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 65.15%/5930.89MB/00:05:03 Down: 10.89MB/s / Disk: 31.96MB/s
+(15:49:15) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 65.27%/5941.77MB/00:05:03 Down: 10.86MB/s / Disk: 3.99MB/s
+(15:49:16) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 65.44%/5957.67MB/00:04:59 Down: 15.88MB/s / Disk: 28.81MB/s
+(15:49:17) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 65.53%/5965.55MB/00:04:59 Down: 7.87MB/s / Disk: 0MB/s
+(15:49:18) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 65.68%/5979.33MB/00:04:59 Down: 13.76MB/s / Disk: 3.99MB/s
+(15:49:19) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 65.79%/5989.15MB/00:04:55 Down: 9.81MB/s / Disk: 25.76MB/s
+(15:49:20) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 65.91%/5999.86MB/00:04:56 Down: 10.7MB/s / Disk: 2MB/s
+(15:49:21) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 66.01%/6009.72MB/00:04:55 Down: 9.85MB/s / Disk: 3.99MB/s
+(15:49:22) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 66.15%/6022.31MB/00:04:50 Down: 12.57MB/s / Disk: 26.28MB/s
+(15:49:23) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 66.27%/6033.08MB/00:04:49 Down: 10.75MB/s / Disk: 6.99MB/s
+(15:49:24) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 66.39%/6043.83MB/00:04:50 Down: 10.74MB/s / Disk: 0MB/s
+(15:49:25) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 66.54%/6057.53MB/00:04:43 Down: 13.68MB/s / Disk: 22.12MB/s
+(15:49:26) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 66.62%/6065.31MB/00:04:41 Down: 7.77MB/s / Disk: 18.97MB/s
+(15:49:27) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 66.77%/6078.20MB/00:04:40 Down: 12.87MB/s / Disk: 11.98MB/s
+(15:49:28) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 66.88%/6088.12MB/00:04:40 Down: 9.92MB/s / Disk: 0MB/s
+(15:49:29) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 67.04%/6103.44MB/00:04:35 Down: 15.3MB/s / Disk: 25.59MB/s
+(15:49:30) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 67.14%/6112.21MB/00:04:32 Down: 8.76MB/s / Disk: 3MB/s
+(15:49:31) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 67.27%/6124.10MB/00:04:31 Down: 11.88MB/s / Disk: 7MB/s
+(15:49:32) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 67.37%/6133.02MB/00:04:29 Down: 8.91MB/s / Disk: 19.97MB/s
+(15:49:33) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 67.5%/6144.97MB/00:04:28 Down: 11.93MB/s / Disk: 10.99MB/s
+(15:49:34) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 67.6%/6153.92MB/00:04:28 Down: 8.94MB/s / Disk: 5.99MB/s
+(15:49:35) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 67.76%/6168.87MB/00:04:27 Down: 14.93MB/s / Disk: 12.53MB/s
+(15:49:36) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 67.89%/6180.52MB/00:04:26 Down: 11.64MB/s / Disk: 12.03MB/s
+(15:49:37) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 68.02%/6192.45MB/00:04:24 Down: 11.92MB/s / Disk: 14.24MB/s
+(15:49:38) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 68.1%/6199.33MB/00:04:23 Down: 6.87MB/s / Disk: 10.99MB/s
+(15:49:39) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 68.26%/6214.16MB/00:04:22 Down: 14.81MB/s / Disk: 8.7MB/s
+(15:49:40) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 68.35%/6222.11MB/00:04:21 Down: 7.94MB/s / Disk: 12.98MB/s
+(15:49:41) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 68.52%/6237.91MB/00:04:20 Down: 15.79MB/s / Disk: 12.73MB/s
+(15:49:42) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 68.59%/6243.86MB/00:04:19 Down: 5.95MB/s / Disk: 8.95MB/s
+(15:49:43) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 68.73%/6256.79MB/00:04:19 Down: 12.93MB/s / Disk: 3MB/s
+(15:49:44) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 68.87%/6269.71MB/00:04:16 Down: 12.91MB/s / Disk: 24.43MB/s
+(15:49:45) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 68.97%/6278.63MB/00:04:16 Down: 8.92MB/s / Disk: 4.01MB/s
+(15:49:46) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 69.12%/6292.40MB/00:04:13 Down: 13.75MB/s / Disk: 20.91MB/s
+(15:49:47) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 69.22%/6301.26MB/00:04:12 Down: 8.84MB/s / Disk: 7.88MB/s
+(15:49:48) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 69.34%/6312.11MB/00:04:11 Down: 10.85MB/s / Disk: 8.55MB/s
+(15:49:49) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 69.48%/6325.70MB/00:04:09 Down: 13.57MB/s / Disk: 15.44MB/s
+(15:49:50) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 69.59%/6335.26MB/00:04:09 Down: 9.56MB/s / Disk: 0MB/s
+(15:49:51) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 69.72%/6347.18MB/00:04:06 Down: 11.91MB/s / Disk: 22.39MB/s
+(15:49:52) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 69.82%/6356.12MB/00:04:06 Down: 8.93MB/s / Disk: 5.38MB/s
+(15:49:53) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 69.98%/6370.91MB/00:04:06 Down: 14.78MB/s / Disk: 0MB/s
+(15:49:54) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 70.07%/6378.89MB/00:04:04 Down: 7.97MB/s / Disk: 24.86MB/s
+(15:49:55) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 70.19%/6389.85MB/00:04:04 Down: 10.94MB/s / Disk: 4.99MB/s
+(15:49:56) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 70.33%/6402.79MB/00:04:02 Down: 12.93MB/s / Disk: 18.98MB/s
+(15:49:57) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 70.45%/6413.73MB/00:04:01 Down: 10.93MB/s / Disk: 10.98MB/s
+(15:49:58) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 70.56%/6423.64MB/00:04:02 Down: 9.9MB/s / Disk: 0MB/s
+(15:49:59) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 70.69%/6435.57MB/00:03:59 Down: 11.91MB/s / Disk: 25.58MB/s
+(15:50:00) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 70.82%/6447.42MB/00:03:58 Down: 11.83MB/s / Disk: 7.99MB/s
+(15:50:01) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 70.96%/6460.23MB/00:03:58 Down: 12.79MB/s / Disk: 2MB/s
+(15:50:02) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 71.07%/6470.01MB/00:03:55 Down: 9.76MB/s / Disk: 21.82MB/s
+(15:50:03) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 71.18%/6479.93MB/00:03:54 Down: 9.9MB/s / Disk: 10.31MB/s
+(15:50:04) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 71.34%/6494.76MB/00:03:52 Down: 14.82MB/s / Disk: 16.58MB/s
+(15:50:05) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 71.42%/6501.68MB/00:03:51 Down: 6.91MB/s / Disk: 7.99MB/s
+(15:50:06) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 71.56%/6514.56MB/00:03:50 Down: 12.86MB/s / Disk: 12.43MB/s
+(15:50:07) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 71.68%/6525.50MB/00:03:49 Down: 10.92MB/s / Disk: 9.64MB/s
+(15:50:08) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 71.81%/6537.40MB/00:03:49 Down: 11.88MB/s / Disk: 3MB/s
+(15:50:09) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 71.93%/6548.33MB/00:03:48 Down: 10.92MB/s / Disk: 16.24MB/s
+(15:50:10) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 72.07%/6561.28MB/00:03:48 Down: 12.24MB/s / Disk: 3.78MB/s
+(15:50:11) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 72.18%/6571.18MB/00:03:46 Down: 9.88MB/s / Disk: 20.1MB/s
+(15:50:12) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 72.28%/6580.07MB/00:03:45 Down: 8.88MB/s / Disk: 6.78MB/s
+(15:50:13) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 72.42%/6593.00MB/00:03:43 Down: 12.92MB/s / Disk: 14.23MB/s
+(15:50:14) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 72.54%/6603.91MB/00:03:43 Down: 10.89MB/s / Disk: 9.99MB/s
+(15:50:15) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 72.66%/6614.85MB/00:03:43 Down: 10.92MB/s / Disk: 3.99MB/s
+(15:50:16) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 72.78%/6625.66MB/00:03:43 Down: 10.8MB/s / Disk: 0MB/s
+(15:50:17) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 72.91%/6637.57MB/00:03:40 Down: 11.9MB/s / Disk: 23.53MB/s
+(15:50:18) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 73.03%/6648.45MB/00:03:39 Down: 10.86MB/s / Disk: 11.09MB/s
+(15:50:19) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 73.18%/6662.12MB/00:03:38 Down: 13.65MB/s / Disk: 7.05MB/s
+(15:50:20) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 73.26%/6669.09MB/00:03:38 Down: 6.96MB/s / Disk: 0MB/s
+(15:50:21) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 73.41%/6683.06MB/00:03:34 Down: 13.97MB/s / Disk: 28.43MB/s
+(15:50:22) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 73.51%/6692.06MB/00:03:32 Down: 8.99MB/s / Disk: 20.97MB/s
+(15:50:23) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 73.67%/6707.06MB/00:03:32 Down: 14.98MB/s / Disk: 5.99MB/s
+(15:50:24) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 73.75%/6714.06MB/00:03:30 Down: 6.99MB/s / Disk: 14.98MB/s
+(15:50:25) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 73.89%/6727.06MB/00:03:30 Down: 12.99MB/s / Disk: 5MB/s
+(15:50:26) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 74.01%/6738.06MB/00:03:29 Down: 10.99MB/s / Disk: 19.27MB/s
+(15:50:27) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 74.14%/6749.06MB/00:03:29 Down: 10.98MB/s / Disk: 0MB/s
+(15:50:28) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 74.26%/6760.06MB/00:03:27 Down: 10.99MB/s / Disk: 20.99MB/s
+(15:50:29) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 74.38%/6771.06MB/00:03:27 Down: 10.99MB/s / Disk: 4.28MB/s
+(15:50:30) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 74.52%/6784.06MB/00:03:26 Down: 13MB/s / Disk: 7MB/s
+(15:50:31) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 74.64%/6795.07MB/00:03:24 Down: 10.98MB/s / Disk: 26.68MB/s
+(15:50:32) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 74.76%/6806.07MB/00:03:24 Down: 10.99MB/s / Disk: 2MB/s
+(15:50:33) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 74.86%/6815.07MB/00:03:24 Down: 8.99MB/s / Disk: 6MB/s
+(15:50:34) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 74.98%/6826.07MB/00:03:24 Down: 10.99MB/s / Disk: 0MB/s
+(15:50:35) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 75.12%/6839.07MB/00:03:21 Down: 12.99MB/s / Disk: 30.51MB/s
+(15:50:36) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 75.23%/6849.07MB/00:03:22 Down: 9.99MB/s / Disk: 0MB/s
+(15:50:37) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 75.37%/6861.04MB/00:03:20 Down: 11.95MB/s / Disk: 15.65MB/s
+(15:50:38) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 75.45%/6868.93MB/00:03:21 Down: 7.88MB/s / Disk: 0MB/s
+(15:50:39) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 75.6%/6882.83MB/00:03:21 Down: 13.88MB/s / Disk: 0MB/s
+(15:50:40) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 75.74%/6894.72MB/00:03:18 Down: 11.87MB/s / Disk: 21.01MB/s
+(15:50:41) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 75.85%/6905.43MB/00:03:15 Down: 10.7MB/s / Disk: 28.85MB/s
+(15:50:42) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 75.97%/6916.22MB/00:03:13 Down: 10.79MB/s / Disk: 15.1MB/s
+(15:50:43) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 76.07%/6924.97MB/00:03:13 Down: 8.73MB/s / Disk: 3.99MB/s
+(15:50:44) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 76.21%/6937.96MB/00:03:13 Down: 12.97MB/s / Disk: 7.99MB/s
+(15:50:45) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 76.31%/6946.87MB/00:03:13 Down: 8.9MB/s / Disk: 0MB/s
+(15:50:46) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 76.42%/6957.49MB/00:03:13 Down: 10.6MB/s / Disk: 0MB/s
+(15:50:47) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 76.54%/6968.32MB/00:03:14 Down: 10.82MB/s / Disk: 0MB/s
+(15:50:48) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 76.68%/6980.28MB/00:03:08 Down: 11.95MB/s / Disk: 52.97MB/s
+(15:50:49) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 76.75%/6987.28MB/00:03:08 Down: 6.99MB/s / Disk: 4MB/s
+(15:50:50) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 76.89%/7000.27MB/00:03:06 Down: 12.97MB/s / Disk: 18.97MB/s
+(15:50:51) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 77%/7010.21MB/00:03:06 Down: 9.93MB/s / Disk: 3.99MB/s
+(15:50:52) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 77.1%/7019.21MB/00:03:06 Down: 8.99MB/s / Disk: 0MB/s
+(15:50:53) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 77.22%/7030.21MB/00:03:04 Down: 10.98MB/s / Disk: 18.97MB/s
+(15:50:54) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 77.38%/7044.88MB/00:03:03 Down: 14.66MB/s / Disk: 13.98MB/s
+(15:50:55) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 77.47%/7052.82MB/00:03:02 Down: 7.92MB/s / Disk: 13.98MB/s
+(15:50:56) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 77.61%/7065.80MB/00:03:01 Down: 12.98MB/s / Disk: 7.99MB/s
+(15:50:57) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 77.75%/7077.80MB/00:02:59 Down: 11.97MB/s / Disk: 18.97MB/s
+(15:50:58) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 77.83%/7085.80MB/00:02:59 Down: 8MB/s / Disk: 0MB/s
+(15:50:59) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 77.97%/7097.78MB/00:02:59 Down: 11.97MB/s / Disk: 5MB/s
+(15:51:00) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 78.1%/7109.73MB/00:02:57 Down: 11.94MB/s / Disk: 16.97MB/s
+(15:51:01) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 78.22%/7120.73MB/00:02:56 Down: 10.98MB/s / Disk: 19.97MB/s
+(15:51:02) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 78.34%/7131.72MB/00:02:55 Down: 10.99MB/s / Disk: 5MB/s
+(15:51:03) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 78.43%/7139.69MB/00:02:54 Down: 7.95MB/s / Disk: 13.98MB/s
+(15:51:04) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 78.57%/7152.67MB/00:02:54 Down: 12.98MB/s / Disk: 4MB/s
+(15:51:05) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 78.71%/7165.60MB/00:02:52 Down: 12.93MB/s / Disk: 11.99MB/s
+(15:51:06) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 78.81%/7174.57MB/00:02:50 Down: 8.96MB/s / Disk: 19.99MB/s
+(15:51:07) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 78.92%/7184.55MB/00:02:50 Down: 9.98MB/s / Disk: 0MB/s
+(15:51:08) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 79.06%/7197.55MB/00:02:48 Down: 12.99MB/s / Disk: 21.99MB/s
+(15:51:09) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 79.14%/7204.55MB/00:02:48 Down: 6.99MB/s / Disk: 4.9MB/s
+(15:51:10) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 79.26%/7215.55MB/00:02:47 Down: 10.99MB/s / Disk: 9.09MB/s
+(15:51:11) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 79.37%/7225.55MB/00:02:47 Down: 9.99MB/s / Disk: 0MB/s
+(15:51:12) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 79.5%/7237.41MB/00:02:45 Down: 11.84MB/s / Disk: 25.96MB/s
+(15:51:13) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 79.59%/7245.38MB/00:02:44 Down: 7.95MB/s / Disk: 5.9MB/s
+(15:51:14) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 79.72%/7257.37MB/00:02:43 Down: 11.98MB/s / Disk: 9.99MB/s
+(15:51:15) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 79.83%/7267.34MB/00:02:42 Down: 9.95MB/s / Disk: 10.07MB/s
+(15:51:16) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 79.95%/7278.26MB/00:02:42 Down: 10.91MB/s / Disk: 5.99MB/s
+(15:51:17) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 80.06%/7288.25MB/00:02:41 Down: 9.98MB/s / Disk: 8.99MB/s
+(15:51:18) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 80.2%/7301.24MB/00:02:40 Down: 12.97MB/s / Disk: 13.98MB/s
+(15:51:19) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 80.31%/7311.24MB/00:02:38 Down: 9.98MB/s / Disk: 15.98MB/s
+(15:51:20) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 80.42%/7321.24MB/00:02:38 Down: 9.99MB/s / Disk: 5.99MB/s
+(15:51:21) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 80.55%/7333.20MB/00:02:37 Down: 11.95MB/s / Disk: 13.99MB/s
+(15:51:22) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 80.7%/7347.12MB/00:02:35 Down: 13.9MB/s / Disk: 14.98MB/s
+(15:51:23) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 80.8%/7356.12MB/00:02:34 Down: 8.99MB/s / Disk: 8.99MB/s
+(15:51:24) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 80.92%/7367.07MB/00:02:34 Down: 10.95MB/s / Disk: 8.9MB/s
+(15:51:25) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 81.04%/7378.05MB/00:02:32 Down: 10.97MB/s / Disk: 11.08MB/s
+(15:51:26) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 81.16%/7388.98MB/00:02:33 Down: 10.9MB/s / Disk: 0MB/s
+(15:51:27) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 81.25%/7396.96MB/00:02:31 Down: 7.98MB/s / Disk: 18.99MB/s
+(15:51:28) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 81.39%/7409.91MB/00:02:29 Down: 12.93MB/s / Disk: 18.97MB/s
+(15:51:29) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 81.5%/7419.91MB/00:02:29 Down: 9.99MB/s / Disk: 3MB/s
+(15:51:30) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 81.62%/7430.83MB/00:02:29 Down: 10.9MB/s / Disk: 0MB/s
+(15:51:31) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 81.75%/7442.72MB/00:02:26 Down: 11.88MB/s / Disk: 27.96MB/s
+(15:51:32) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 81.84%/7450.69MB/00:02:26 Down: 7.96MB/s / Disk: 5.91MB/s
+(15:51:33) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 81.97%/7462.68MB/00:02:25 Down: 11.99MB/s / Disk: 13.99MB/s
+(15:51:34) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 82.1%/7474.45MB/00:02:24 Down: 11.75MB/s / Disk: 5.08MB/s
+(15:51:35) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 82.23%/7486.36MB/00:02:23 Down: 11.9MB/s / Disk: 12.99MB/s
+(15:51:36) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 82.34%/7496.25MB/00:02:22 Down: 9.88MB/s / Disk: 15.98MB/s
+(15:51:37) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 82.46%/7507.24MB/00:02:21 Down: 10.98MB/s / Disk: 4.99MB/s
+(15:51:38) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 82.57%/7517.11MB/00:02:22 Down: 9.85MB/s / Disk: 0MB/s
+(15:51:39) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 82.72%/7531.00MB/00:02:19 Down: 13.87MB/s / Disk: 28.88MB/s
+(15:51:40) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 82.84%/7541.94MB/00:02:18 Down: 10.93MB/s / Disk: 11.98MB/s
+(15:51:41) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 82.93%/7549.94MB/00:02:18 Down: 7.98MB/s / Disk: 1.08MB/s
+(15:51:42) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 83.08%/7562.94MB/00:02:16 Down: 12.98MB/s / Disk: 19.89MB/s
+(15:51:43) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 83.19%/7572.94MB/00:02:15 Down: 9.99MB/s / Disk: 5.08MB/s
+(15:51:44) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 83.32%/7584.94MB/00:02:14 Down: 11.98MB/s / Disk: 12.9MB/s
+(15:51:45) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 83.43%/7594.88MB/00:02:14 Down: 9.93MB/s / Disk: 0MB/s
+(15:51:46) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 83.53%/7603.88MB/00:02:14 Down: 8.99MB/s / Disk: 0MB/s
+(15:51:47) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 83.65%/7614.84MB/00:02:11 Down: 10.95MB/s / Disk: 32.95MB/s
+(15:51:48) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 83.79%/7627.83MB/00:02:10 Down: 12.97MB/s / Disk: 10.07MB/s
+(15:51:49) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 83.9%/7637.82MB/00:02:10 Down: 9.98MB/s / Disk: 0MB/s
+(15:51:50) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 84.03%/7649.80MB/00:02:11 Down: 11.95MB/s / Disk: 0MB/s
+(15:51:51) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 84.14%/7659.72MB/00:02:07 Down: 9.92MB/s / Disk: 31.97MB/s
+(15:51:52) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 84.26%/7670.72MB/00:02:06 Down: 10.98MB/s / Disk: 9.98MB/s
+(15:51:53) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 84.33%/7676.71MB/00:02:06 Down: 5.99MB/s / Disk: 0MB/s
+(15:51:54) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 84.47%/7689.72MB/00:02:06 Down: 12.98MB/s / Disk: 7.99MB/s
+(15:51:55) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 84.59%/7700.71MB/00:02:04 Down: 10.98MB/s / Disk: 19.89MB/s
+(15:51:56) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 84.73%/7713.71MB/00:02:04 Down: 12.98MB/s / Disk: 0MB/s
+(15:51:57) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 84.79%/7718.71MB/00:02:04 Down: 5MB/s / Disk: 0MB/s
+(15:51:58) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 84.94%/7732.71MB/00:02:03 Down: 13.98MB/s / Disk: 18.05MB/s
+(15:51:59) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 85.04%/7741.69MB/00:02:03 Down: 8.98MB/s / Disk: 0MB/s
+(15:52:00) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 85.16%/7752.30MB/00:02:00 Down: 10.59MB/s / Disk: 31.87MB/s
+(15:52:01) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 85.28%/7763.20MB/00:01:58 Down: 10.9MB/s / Disk: 18.07MB/s
+(15:52:02) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 85.38%/7773.20MB/00:01:59 Down: 9.99MB/s / Disk: 0MB/s
+(15:52:03) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 85.48%/7782.20MB/00:01:59 Down: 8.99MB/s / Disk: 0MB/s
+(15:52:04) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 85.65%/7797.20MB/00:01:55 Down: 14.98MB/s / Disk: 33.97MB/s
+(15:52:05) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 85.73%/7804.20MB/00:01:55 Down: 6.99MB/s / Disk: 4.99MB/s
+(15:52:06) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 85.83%/7814.09MB/00:01:55 Down: 9.89MB/s / Disk: 5MB/s
+(15:52:07) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 85.94%/7824.08MB/00:01:55 Down: 9.97MB/s / Disk: 0MB/s
+(15:52:08) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 86.1%/7838.01MB/00:01:52 Down: 13.92MB/s / Disk: 31.98MB/s
+(15:52:09) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 86.21%/7847.95MB/00:01:51 Down: 9.93MB/s / Disk: 10.98MB/s
+(15:52:10) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 86.3%/7856.94MB/00:01:51 Down: 8.99MB/s / Disk: 0MB/s
+(15:52:11) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 86.44%/7868.94MB/00:01:49 Down: 11.99MB/s / Disk: 20.98MB/s
+(15:52:12) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 86.54%/7878.75MB/00:01:48 Down: 9.79MB/s / Disk: 11.98MB/s
+(15:52:13) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 86.65%/7888.69MB/00:01:47 Down: 9.92MB/s / Disk: 9.99MB/s
+(15:52:14) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 86.75%/7897.65MB/00:01:47 Down: 8.95MB/s / Disk: 5.92MB/s
+(15:52:15) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 86.89%/7910.54MB/00:01:46 Down: 12.87MB/s / Disk: 9.06MB/s
+(15:52:16) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 87.02%/7922.41MB/00:01:45 Down: 11.85MB/s / Disk: 7.92MB/s
+(15:52:17) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 87.1%/7929.41MB/00:01:45 Down: 6.99MB/s / Disk: 0MB/s
+(15:52:18) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 87.19%/7937.41MB/00:01:45 Down: 7.99MB/s / Disk: 0MB/s
+(15:52:19) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 87.35%/7952.34MB/00:01:41 Down: 14.93MB/s / Disk: 42.05MB/s
+(15:52:20) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 87.43%/7959.34MB/00:01:41 Down: 6.99MB/s / Disk: 3.99MB/s
+(15:52:21) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 87.55%/7970.34MB/00:01:40 Down: 10.99MB/s / Disk: 9.99MB/s
+(15:52:22) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 87.66%/7980.34MB/00:01:39 Down: 9.99MB/s / Disk: 11.91MB/s
+(15:52:23) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 87.78%/7991.31MB/00:01:38 Down: 10.96MB/s / Disk: 11.98MB/s
+(15:52:24) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 87.9%/8002.27MB/00:01:38 Down: 10.95MB/s / Disk: 0MB/s
+(15:52:25) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 88.04%/8015.20MB/00:01:36 Down: 12.91MB/s / Disk: 17.04MB/s
+(15:52:26) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 88.16%/8026.17MB/00:01:34 Down: 10.96MB/s / Disk: 15.98MB/s
+(15:52:27) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 88.27%/8036.17MB/00:01:34 Down: 9.98MB/s / Disk: 2MB/s
+(15:52:28) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 88.42%/8049.13MB/00:01:32 Down: 12.94MB/s / Disk: 20.97MB/s
+(15:52:29) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 88.54%/8060.00MB/00:01:32 Down: 10.86MB/s / Disk: 2MB/s
+(15:52:30) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 88.64%/8069.90MB/00:01:31 Down: 9.89MB/s / Disk: 17.98MB/s
+(15:52:31) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 88.73%/8077.87MB/00:01:30 Down: 7.96MB/s / Disk: 8.99MB/s
+(15:52:32) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 88.89%/8091.87MB/00:01:30 Down: 13.98MB/s / Disk: 0MB/s
+(15:52:33) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 88.97%/8099.87MB/00:01:28 Down: 7.99MB/s / Disk: 22.97MB/s
+(15:52:34) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 89.11%/8111.87MB/00:01:27 Down: 11.98MB/s / Disk: 9.99MB/s
+(15:52:35) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 89.21%/8121.87MB/00:01:26 Down: 9.99MB/s / Disk: 11.98MB/s
+(15:52:36) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 89.34%/8132.87MB/00:01:27 Down: 10.99MB/s / Disk: 0MB/s
+(15:52:37) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 89.46%/8143.88MB/00:01:25 Down: 10.98MB/s / Disk: 21.97MB/s
+(15:52:38) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 89.57%/8153.87MB/00:01:24 Down: 9.99MB/s / Disk: 5.99MB/s
+(15:52:39) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 89.67%/8162.87MB/00:01:24 Down: 8.99MB/s / Disk: 4.99MB/s
+(15:52:40) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 89.8%/8174.87MB/00:01:24 Down: 11.98MB/s / Disk: 2MB/s
+(15:52:41) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 89.94%/8187.87MB/00:01:22 Down: 12.98MB/s / Disk: 29.96MB/s
+(15:52:42) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 90.07%/8199.88MB/00:01:22 Down: 11.99MB/s / Disk: 0MB/s
+(15:52:43) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 90.16%/8207.88MB/00:01:20 Down: 7.99MB/s / Disk: 20.97MB/s
+(15:52:44) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 90.27%/8217.88MB/00:01:20 Down: 9.99MB/s / Disk: 3.99MB/s
+(15:52:45) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 90.41%/8230.81MB/00:01:19 Down: 12.92MB/s / Disk: 8.99MB/s
+(15:52:46) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 90.54%/8242.81MB/00:01:18 Down: 11.98MB/s / Disk: 14.98MB/s
+(15:52:47) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 90.65%/8252.81MB/00:01:18 Down: 9.99MB/s / Disk: 0MB/s
+(15:52:48) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 90.72%/8258.81MB/00:01:18 Down: 5.99MB/s / Disk: 0MB/s
+(15:52:49) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 90.84%/8269.80MB/00:01:18 Down: 10.98MB/s / Disk: 0MB/s
+(15:52:50) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 90.97%/8281.80MB/00:01:18 Down: 11.98MB/s / Disk: 0MB/s
+(15:52:51) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 91.07%/8290.80MB/00:01:18 Down: 8.99MB/s / Disk: 0MB/s
+(15:52:52) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 91.21%/8303.80MB/00:01:19 Down: 12.98MB/s / Disk: 0MB/s
+(15:52:53) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 91.35%/8315.81MB/00:01:11 Down: 11.98MB/s / Disk: 79.89MB/s
+(15:52:54) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 91.44%/8324.81MB/00:01:10 Down: 9MB/s / Disk: 10.99MB/s
+(15:52:55) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 91.58%/8336.81MB/00:01:10 Down: 11.98MB/s / Disk: 5.99MB/s
+(15:52:56) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 91.73%/8350.81MB/00:01:08 Down: 13.98MB/s / Disk: 18.97MB/s
+(15:52:57) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 91.8%/8356.80MB/00:01:08 Down: 5.99MB/s / Disk: 4MB/s
+(15:52:58) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 91.93%/8368.80MB/00:01:08 Down: 11.98MB/s / Disk: 3.99MB/s
+(15:52:59) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 92.08%/8382.80MB/00:01:06 Down: 13.98MB/s / Disk: 23.96MB/s
+(15:53:00) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 92.2%/8393.80MB/00:01:05 Down: 10.99MB/s / Disk: 6MB/s
+(15:53:01) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 92.3%/8402.80MB/00:01:05 Down: 8.99MB/s / Disk: 8.99MB/s
+(15:53:02) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 92.44%/8415.80MB/00:01:03 Down: 12.98MB/s / Disk: 16.98MB/s
+(15:53:03) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 92.53%/8423.77MB/00:01:03 Down: 7.96MB/s / Disk: 2MB/s
+(15:53:04) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 92.68%/8437.76MB/00:01:02 Down: 13.97MB/s / Disk: 14.98MB/s
+(15:53:05) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 92.79%/8447.74MB/00:01:01 Down: 9.97MB/s / Disk: 11.98MB/s
+(15:53:06) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 92.89%/8456.73MB/00:01:01 Down: 8.98MB/s / Disk: 3MB/s
+(15:53:07) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 93.05%/8470.73MB/00:00:58 Down: 13.99MB/s / Disk: 22.91MB/s
+(15:53:08) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 93.13%/8478.73MB/00:00:58 Down: 7.99MB/s / Disk: 6.05MB/s
+(15:53:09) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 93.26%/8489.73MB/00:00:57 Down: 10.98MB/s / Disk: 4.99MB/s
+(15:53:10) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 93.4%/8502.73MB/00:00:56 Down: 12.99MB/s / Disk: 18.98MB/s
+(15:53:11) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 93.5%/8511.72MB/00:00:55 Down: 8.98MB/s / Disk: 4.99MB/s
+(15:53:12) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 93.63%/8523.69MB/00:00:54 Down: 11.95MB/s / Disk: 14.98MB/s
+(15:53:13) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 93.71%/8530.69MB/00:00:53 Down: 6.99MB/s / Disk: 10.99MB/s
+(15:53:14) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 93.85%/8543.68MB/00:00:52 Down: 12.97MB/s / Disk: 8.99MB/s
+(15:53:15) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 93.97%/8554.67MB/00:00:51 Down: 10.98MB/s / Disk: 14.98MB/s
+(15:53:16) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 94.09%/8565.67MB/00:00:50 Down: 10.99MB/s / Disk: 6.99MB/s
+(15:53:17) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 94.21%/8576.62MB/00:00:49 Down: 10.94MB/s / Disk: 15.98MB/s
+(15:53:18) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 94.34%/8588.62MB/00:00:48 Down: 11.98MB/s / Disk: 10.93MB/s
+(15:53:19) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 94.46%/8599.62MB/00:00:48 Down: 10.99MB/s / Disk: 0MB/s
+(15:53:20) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 94.59%/8611.62MB/00:00:46 Down: 11.98MB/s / Disk: 17.04MB/s
+(15:53:21) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 94.68%/8619.62MB/00:00:45 Down: 7.99MB/s / Disk: 10.98MB/s
+(15:53:22) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 94.81%/8631.62MB/00:00:44 Down: 11.99MB/s / Disk: 11.98MB/s
+(15:53:23) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 94.92%/8641.62MB/00:00:43 Down: 9.99MB/s / Disk: 8.99MB/s
+(15:53:24) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 95.07%/8654.62MB/00:00:42 Down: 12.98MB/s / Disk: 15.98MB/s
+(15:53:25) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 95.19%/8665.61MB/00:00:42 Down: 10.97MB/s / Disk: 6.99MB/s
+(15:53:26) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 95.31%/8676.60MB/00:00:41 Down: 10.98MB/s / Disk: 8.99MB/s
+(15:53:27) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 95.43%/8687.60MB/00:00:40 Down: 10.97MB/s / Disk: 7.98MB/s
+(15:53:28) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 95.56%/8699.60MB/00:00:39 Down: 11.98MB/s / Disk: 15.98MB/s
+(15:53:29) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 95.66%/8708.60MB/00:00:38 Down: 8.99MB/s / Disk: 10.98MB/s
+(15:53:30) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 95.8%/8721.60MB/00:00:38 Down: 12.99MB/s / Disk: 1MB/s
+(15:53:31) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 95.93%/8733.60MB/00:00:36 Down: 11.98MB/s / Disk: 22.91MB/s
+(15:53:32) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 96.06%/8744.58MB/00:00:35 Down: 10.96MB/s / Disk: 11.04MB/s
+(15:53:33) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 96.18%/8755.54MB/00:00:34 Down: 10.95MB/s / Disk: 8.99MB/s
+(15:53:34) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 96.27%/8764.54MB/00:00:33 Down: 8.98MB/s / Disk: 13.98MB/s
+(15:53:35) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 96.4%/8775.54MB/00:00:32 Down: 10.99MB/s / Disk: 11.99MB/s
+(15:53:36) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 96.51%/8785.54MB/00:00:32 Down: 9.99MB/s / Disk: 6.99MB/s
+(15:53:37) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 96.65%/8798.47MB/00:00:29 Down: 12.92MB/s / Disk: 20.99MB/s
+(15:53:38) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 96.76%/8808.47MB/00:00:28 Down: 9.99MB/s / Disk: 12.98MB/s
+(15:53:39) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 96.89%/8820.47MB/00:00:28 Down: 11.98MB/s / Disk: 7.99MB/s
+(15:53:40) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 97.01%/8831.47MB/00:00:27 Down: 10.99MB/s / Disk: 6.99MB/s
+(15:53:41) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 97.15%/8844.47MB/00:00:26 Down: 12.98MB/s / Disk: 15.98MB/s
+(15:53:42) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 97.25%/8853.47MB/00:00:25 Down: 8.99MB/s / Disk: 8.99MB/s
+(15:53:43) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 97.36%/8863.47MB/00:00:24 Down: 9.99MB/s / Disk: 11.99MB/s
+(15:53:44) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 97.49%/8875.45MB/00:00:23 Down: 11.97MB/s / Disk: 10.98MB/s
+(15:53:45) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 97.64%/8888.45MB/00:00:22 Down: 12.98MB/s / Disk: 15.98MB/s
+(15:53:46) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 97.76%/8899.45MB/00:00:22 Down: 10.99MB/s / Disk: 0MB/s
+(15:53:47) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 97.89%/8911.45MB/00:00:21 Down: 11.98MB/s / Disk: 11.98MB/s
+(15:53:48) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 97.97%/8918.45MB/00:00:21 Down: 6.99MB/s / Disk: 0MB/s
+(15:53:49) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 98.12%/8932.45MB/00:00:19 Down: 13.98MB/s / Disk: 18.98MB/s
+(15:53:50) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 98.25%/8944.45MB/00:00:18 Down: 11.98MB/s / Disk: 16.92MB/s
+(15:53:51) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 98.35%/8953.45MB/00:00:17 Down: 8.99MB/s / Disk: 10.04MB/s
+(15:53:52) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 98.5%/8967.45MB/00:00:15 Down: 13.98MB/s / Disk: 18.97MB/s
+(15:53:53) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 98.59%/8975.44MB/00:00:15 Down: 7.98MB/s / Disk: 2MB/s
+(15:53:54) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 98.7%/8985.41MB/00:00:14 Down: 9.95MB/s / Disk: 9.99MB/s
+(15:53:55) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 98.84%/8998.40MB/00:00:12 Down: 12.97MB/s / Disk: 20.97MB/s
+(15:53:56) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 98.95%/9008.35MB/00:00:12 Down: 9.94MB/s / Disk: 0MB/s
+(15:53:57) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 99.06%/9018.35MB/00:00:11 Down: 9.98MB/s / Disk: 13.93MB/s
+(15:53:58) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 99.17%/9028.35MB/00:00:11 Down: 9.99MB/s / Disk: 0MB/s
+(15:53:59) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 99.33%/9042.34MB/00:00:09 Down: 13.97MB/s / Disk: 20.03MB/s
+(15:54:00) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 99.45%/9053.33MB/00:00:08 Down: 10.98MB/s / Disk: 20.97MB/s
+(15:54:01) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 99.55%/9062.33MB/00:00:08 Down: 9MB/s / Disk: 1MB/s
+(15:54:02) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 99.68%/9074.33MB/00:00:08 Down: 11.99MB/s / Disk: 0MB/s
+(15:54:03) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 99.82%/9087.68MB/00:00:05 Down: 13.34MB/s / Disk: 30.94MB/s
+(15:54:04) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 99.98%/9101.70MB/00:00:04 Down: 14.01MB/s / Disk: 13.03MB/s
+(15:54:05) INFO:    [Legendary]:        Progress for Deponia The Complete Journey: 100%/9103.71MB/00:00:00 Down: 2MB/s / Disk: 26.92MB/s
+(15:54:07) INFO:    [Legendary]:        installed.json updated, refreshing library
+(15:54:07) INFO:    [Legendary]:        installed.json updated, refreshing library
+(15:54:07) INFO:    [Backend]:          Adding shortcuts for Deponia The Complete Journey
+(15:54:08) INFO:    [DownloadManager]:  Finished Installation of 03b7b25a77024cc0adf44777f791ffc4
+(15:54:08) INFO:    [DownloadManager]:  03b7b25a77024cc0adf44777f791ffc4 added to download manager finished.
+(15:54:08) INFO:    [DownloadManager]:  03b7b25a77024cc0adf44777f791ffc4 removed from download manager.
+(15:54:08) INFO:    [Frontend]:         Refreshing legendary Library
+(15:54:08) INFO:    [Legendary]:        Refreshing library...
+(15:54:08) INFO:    [Legendary]:        Refreshing Epic Games...
+(15:54:08) INFO:    [Legendary]:        Game list updated, got 342 games & DLCs
+(15:54:08) INFO:    [Legendary]:        Running command: XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary list --third-party
+(15:54:26) INFO:    [Legendary]:        Checking if EOS Overlay is enabled: XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary eos-overlay info --prefix /home/christian/Games/Heroic/Prefixes/default
+(15:54:26) INFO:    [ExtraGameInfo]:    Using cached ExtraGameInfo data for Bloons TD 6
+(15:54:26) INFO:    [Legendary]:        Getting more details with 'legendary info'
+(15:54:26) INFO:    [ExtraGameInfo]:    Using cached ExtraGameInfo data for Bloons TD 6
+(15:54:26) INFO:    [Legendary]:        Getting more details with 'legendary info'
+(15:54:26) INFO:    [Legendary]:        Getting more details with 'legendary info'
+(15:54:26) INFO:    [Legendary]:        Getting more details with 'legendary info'
+(15:54:26) INFO:    [Legendary]:        Running command: XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary info 7786b355a13b47a6b3915335117cd0b2 --platform Windows --json
+(15:54:26) INFO:    [Legendary]:        Running command: XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary info 7786b355a13b47a6b3915335117cd0b2 --platform Windows --json
+(15:54:26) INFO:    [Legendary]:        Running command: XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary info 7786b355a13b47a6b3915335117cd0b2 --platform Windows --json
+(15:54:26) INFO:    [Legendary]:        Running command: XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary info 7786b355a13b47a6b3915335117cd0b2 --platform Windows --json
+(15:54:36) INFO:    [Legendary]:        Uninstalling 7786b355a13b47a6b3915335117cd0b2: XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary uninstall 7786b355a13b47a6b3915335117cd0b2 -y
+(15:54:36) INFO:    [Backend]:          Preventing machine to sleep
+(15:54:36) DEBUG:   [Legendary]:        Using cached install info
+(15:54:36) DEBUG:   [Legendary]:        Using cached install info
+(15:54:36) INFO:    [Legendary]:        installed.json updated, refreshing library
+(15:54:36) INFO:    [Legendary]:        installed.json updated, refreshing library
+(15:54:36) INFO:    [Backend]:          Removing 7786b355a13b47a6b3915335117cd0b2.json
+(15:54:36) INFO:    [Backend]:          Removing 7786b355a13b47a6b3915335117cd0b2.log
+(15:54:36) INFO:    [Backend]:          Removing 7786b355a13b47a6b3915335117cd0b2-lastPlay.log
+(15:54:36) INFO:    [Backend]:          Finished uninstalling
+(15:54:36) INFO:    [Frontend]:         Refreshing legendary Library
+(15:54:36) INFO:    [Legendary]:        Refreshing library...
+(15:54:36) INFO:    [Legendary]:        Refreshing Epic Games...
+(15:54:36) INFO:    [Legendary]:        Game list updated, got 342 games & DLCs
+(15:54:36) INFO:    [Backend]:          Desktop shortcut removed
+(15:54:36) INFO:    [Backend]:          Applications shortcut removed
+(15:54:36) INFO:    [Backend]:          Stopping Power Saver Blocker
+(15:54:37) DEBUG:   [Legendary]:        Using cached install info
+(15:54:37) DEBUG:   [Legendary]:        Using cached install info
+(15:54:37) DEBUG:   [Legendary]:        Using cached install info
+(15:54:37) DEBUG:   [Legendary]:        Using cached install info
+(15:54:37) INFO:    [Legendary]:        Running command: XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary list --third-party
+(17:55:46) INFO:    [Legendary]:        Getting more details with 'legendary info'
+(17:55:46) DEBUG:   [Backend]:          {"free":739552669696,"diskSize":1006450962432,"message":"688.76 GiB / 937.33 GiB","validPath":true}
+(17:55:46) INFO:    [Legendary]:        Running command: XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary info Ginger --platform Windows --json
+(17:55:53) DEBUG:   [Backend]:          {"free":739552776192,"diskSize":1006450962432,"message":"688.76 GiB / 937.33 GiB","validPath":true}

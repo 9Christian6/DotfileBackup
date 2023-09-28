@@ -1,0 +1,27 @@
+{
+  "f9d6f0530ea140909f8e8a997a7532d7": {
+    "autoInstallDxvk": true,
+    "autoInstallVkd3d": true,
+    "preferSystemLibs": false,
+    "enableEsync": true,
+    "enableFsync": true,
+    "nvidiaPrime": false,
+    "enviromentOptions": [],
+    "wrapperOptions": [],
+    "showFps": false,
+    "useGameMode": false,
+    "language": "",
+    "wineVersion": {
+      "bin": "/home/christian/.local/share/Steam/steamapps/common/Proton 8.0/proton",
+      "name": "Proton - Proton 8.0",
+      "type": "proton"
+    },
+    "winePrefix": "/home/christian/Games/Heroic/Prefixes/default/BioShock Infinite Complete Edition",
+    "wineCrossoverBottle": "Heroic",
+    "autoInstallDxvkNvapi": true,
+    "eacRuntime": true,
+    "battlEyeRuntime": true
+  },
+  "version": "v0",
+  "explicit": true
+}

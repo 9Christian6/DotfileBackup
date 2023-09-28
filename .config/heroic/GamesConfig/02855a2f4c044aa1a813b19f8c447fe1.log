@@ -1,0 +1,58 @@
+[Core] INFO: Trying to re-use existing login session...
+[cli] INFO: Install candidate is DLC
+[cli] INFO: Preparing download for "Cyberpunk 2077 - REDmod" (02855a2f4c044aa1a813b19f8c447fe1)...
+[Core] INFO: Parsing game manifest...
+[Core] INFO: Install path: /home/christian/Games/Heroic/Cyberpunk2077
+[Core] INFO: Selected CDN: download.epicgames.com (https)
+[cli] INFO: Install size: 87.22 MiB
+[cli] INFO: Download size: 21.83 MiB (Compression savings: 76.0%)
+[cli] INFO: Reusable size: 0.00 MiB (chunks) / 0.00 MiB (unchanged / skipped)
+[cli] INFO: Downloads are resumable, you can interrupt the download with CTRL-C and resume it using the same command later on.
+[DLManager] INFO: Download Manager running with process-id: 36250
+[DLManager] INFO: Starting download workers...
+[DLManager] INFO: Starting file writing worker...
+[DLManager] INFO: = Progress: 0.00% (0/4501), Running for 00:00:00, ETA: 00:00:00
+[DLManager] INFO:  - Downloaded: 0.00 MiB, Written: 0.00 MiB
+[DLManager] INFO:  - Cache usage: 32.00 MiB, active tasks: 32
+[DLManager] INFO:  + Download	- 0.00 MiB/s (raw) / 0.00 MiB/s (decompressed)
+[DLManager] INFO:  + Disk	- 0.00 MiB/s (write) / 0.00 MiB/s (read)
+[DLManager] INFO: = Progress: 0.11% (5/4501), Running for 00:00:01, ETA: 00:15:05
+[DLManager] INFO:  - Downloaded: 6.70 MiB, Written: 2.02 MiB
+[DLManager] INFO:  - Cache usage: 48.00 MiB, active tasks: 32
+[DLManager] INFO:  + Download	- 6.68 MiB/s (raw) / 17.97 MiB/s (decompressed)
+[DLManager] INFO:  + Disk	- 2.01 MiB/s (write) / 0.00 MiB/s (read)
+[DLManager] INFO: = Progress: 1.16% (52/4501), Running for 00:00:02, ETA: 00:02:53
+[DLManager] INFO:  - Downloaded: 21.12 MiB, Written: 33.25 MiB
+[DLManager] INFO:  - Cache usage: 58.00 MiB, active tasks: 9
+[DLManager] INFO:  + Download	- 14.09 MiB/s (raw) / 62.54 MiB/s (decompressed)
+[DLManager] INFO:  + Disk	- 30.53 MiB/s (write) / 0.00 MiB/s (read)
+[DLManager] INFO: = Progress: 47.03% (2117/4501), Running for 00:00:03, ETA: 00:00:03
+[DLManager] INFO:  - Downloaded: 21.83 MiB, Written: 63.88 MiB
+[DLManager] INFO:  - Cache usage: 29.00 MiB, active tasks: 0
+[DLManager] INFO:  + Download	- 0.71 MiB/s (raw) / 8.99 MiB/s (decompressed)
+[DLManager] INFO:  + Disk	- 30.59 MiB/s (write) / 0.00 MiB/s (read)
+[DLManager] INFO: = Progress: 96.51% (4344/4501), Running for 00:00:04, ETA: 00:00:00
+[DLManager] INFO:  - Downloaded: 21.83 MiB, Written: 85.81 MiB
+[DLManager] INFO:  - Cache usage: 5.00 MiB, active tasks: 0
+[DLManager] INFO:  + Download	- 0.00 MiB/s (raw) / 0.00 MiB/s (decompressed)
+[DLManager] INFO:  + Disk	- 21.90 MiB/s (write) / 0.00 MiB/s (read)
+[DLManager] INFO: = Progress: 100.00% (4501/4501), Running for 00:00:05, ETA: 00:00:00
+[DLManager] INFO:  - Downloaded: 21.83 MiB, Written: 87.22 MiB
+[DLManager] INFO:  - Cache usage: 0.00 MiB, active tasks: 0
+[DLManager] INFO:  + Download	- 0.00 MiB/s (raw) / 0.00 MiB/s (decompressed)
+[DLManager] INFO:  + Disk	- 1.40 MiB/s (write) / 0.00 MiB/s (read)
+[DLManager] INFO: Waiting for installation to finish...
+[DLManager] INFO: All done! Download manager quitting...
+[cli] INFO: Finished installation process in 6.11 seconds.
+
+Legendary update available!
+- New version: 0.20.33 - "Undue Alarm"
+- Release summary:
+ [*] Improved handling of SDL changes
+ [*] Added safeguards to prevent two simultaneous instances from corrupting the database
+ [*] Added support for running uninstallers
+ [*] More gracefully handles account errors
+See full changelog for additional details.
+- Release URL: https://legendary.gl/release/0.20.33
+
+- Download URL: https://legendary.gl/release/download/0.20.33/legendary

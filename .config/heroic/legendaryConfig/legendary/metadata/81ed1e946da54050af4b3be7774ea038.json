@@ -1,0 +1,89 @@
+{
+  "app_name": "81ed1e946da54050af4b3be7774ea038",
+  "app_title": "Cyberpunk 2077 Bonus Content",
+  "asset_infos": {
+    "Windows": {
+      "app_name": "81ed1e946da54050af4b3be7774ea038",
+      "asset_id": "81ed1e946da54050af4b3be7774ea038",
+      "build_version": "1.01",
+      "catalog_item_id": "7cc6594cde4447f5a414dd791b997456",
+      "label_name": "Live-Windows",
+      "metadata": {},
+      "namespace": "77f2b98e2cef40c8a7437518bf420e47"
+    }
+  },
+  "base_urls": [],
+  "metadata": {
+    "ageGatings": {},
+    "applicationId": "",
+    "categories": [
+      {
+        "path": "public"
+      },
+      {
+        "path": "games"
+      },
+      {
+        "path": "applications"
+      }
+    ],
+    "creationDate": "2020-12-08T15:32:48.488Z",
+    "customAttributes": {
+      "CanRunOffline": {
+        "type": "STRING",
+        "value": "true"
+      },
+      "FolderName": {
+        "type": "STRING",
+        "value": "CP2077BonusContent"
+      }
+    },
+    "description": "Cyberpunk 2077 Bonus Content",
+    "developer": "CD PROJEKT RED",
+    "developerId": "o-x2vdjaf7cfakvlsgz8qf2gx8bkplcc",
+    "endOfSupport": false,
+    "entitlementName": "7cc6594cde4447f5a414dd791b997456",
+    "entitlementType": "EXECUTABLE",
+    "eulaIds": [
+      "(egstore && cp2077)"
+    ],
+    "id": "7cc6594cde4447f5a414dd791b997456",
+    "installModes": [],
+    "itemType": "DURABLE",
+    "keyImages": [
+      {
+        "height": 1440,
+        "md5": "359e77d3cd0a40aebf3bbc130d14c5c7",
+        "size": 684425,
+        "type": "DieselGameBox",
+        "uploadedDate": "2022-03-22T15:57:05.152Z",
+        "url": "https://cdn1.epicgames.com/item/77f2b98e2cef40c8a7437518bf420e47/EN_CDProjektRED_Cyberpunk2077NG_S1_2560x1440_2560x1440-359e77d3cd0a40aebf3bbc130d14c5c7",
+        "width": 2560
+      },
+      {
+        "height": 1600,
+        "md5": "b1847981214ac013383111fc457eb9c5",
+        "size": 747407,
+        "type": "DieselGameBoxTall",
+        "uploadedDate": "2022-03-22T15:57:10.376Z",
+        "url": "https://cdn1.epicgames.com/item/77f2b98e2cef40c8a7437518bf420e47/EN_CDProjektRED_Cyberpunk2077NG_S2_1200x1600_1200x1600-b1847981214ac013383111fc457eb9c5",
+        "width": 1200
+      }
+    ],
+    "lastModifiedDate": "2022-03-22T15:59:45.562Z",
+    "namespace": "77f2b98e2cef40c8a7437518bf420e47",
+    "releaseInfo": [
+      {
+        "appId": "81ed1e946da54050af4b3be7774ea038",
+        "dateAdded": "2020-10-29T00:00:00.000Z",
+        "id": "4eb10da6c9ca443483ce346261400b7a",
+        "platform": [
+          "Windows"
+        ]
+      }
+    ],
+    "status": "ACTIVE",
+    "title": "Cyberpunk 2077 Bonus Content",
+    "unsearchable": true
+  }
+}

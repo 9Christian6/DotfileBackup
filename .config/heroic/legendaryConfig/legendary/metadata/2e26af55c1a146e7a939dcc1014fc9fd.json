@@ -1,0 +1,359 @@
+{
+  "app_name": "2e26af55c1a146e7a939dcc1014fc9fd",
+  "app_title": "MORDHAU",
+  "asset_infos": {
+    "Windows": {
+      "app_name": "2e26af55c1a146e7a939dcc1014fc9fd",
+      "asset_id": "2e26af55c1a146e7a939dcc1014fc9fd",
+      "build_version": "1.10919.5378.502610919",
+      "catalog_item_id": "52bf29cddef541aeaea4605f5d9f3123",
+      "label_name": "Live-Windows",
+      "metadata": {},
+      "namespace": "2bda08f9230144a19e98373cc4a6ac2d"
+    }
+  },
+  "base_urls": [],
+  "metadata": {
+    "ageGatings": {},
+    "applicationId": "fghi45675OKykah5dIsLCZt7vyauO7yC",
+    "categories": [
+      {
+        "path": "public"
+      },
+      {
+        "path": "games"
+      },
+      {
+        "path": "applications"
+      }
+    ],
+    "creationDate": "2020-04-24T16:05:42.759Z",
+    "customAttributes": {
+      "CanSkipKoreanIdVerification": {
+        "type": "STRING",
+        "value": "true"
+      },
+      "FolderName": {
+        "type": "STRING",
+        "value": "Mordhau"
+      },
+      "MonitorPresence": {
+        "type": "STRING",
+        "value": "false"
+      },
+      "PresenceId": {
+        "type": "STRING",
+        "value": "2bda08f9230144a19e98373cc4a6ac2d"
+      },
+      "RequirementsJson": {
+        "type": "STRING",
+        "value": "[]"
+      },
+      "UseAccessControl": {
+        "type": "STRING",
+        "value": "false"
+      }
+    },
+    "description": "MORDHAU",
+    "developer": "Triternion",
+    "developerId": "o-tvu5xuu383665htjt4wez2tgl45exq",
+    "dlcItemList": [
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-01-27T10:06:59.023Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "Grotesque Set audience",
+        "developer": "Triternion",
+        "developerId": "o-tvu5xuu383665htjt4wez2tgl45exq",
+        "endOfSupport": false,
+        "entitlementName": "cdb51e4a218e49b1bfb86d4e7f646740",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "cdb51e4a218e49b1bfb86d4e7f646740",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2023-04-06T14:09:12.302Z",
+        "mainGameItem": {
+          "id": "52bf29cddef541aeaea4605f5d9f3123",
+          "namespace": "2bda08f9230144a19e98373cc4a6ac2d",
+          "unsearchable": false
+        },
+        "namespace": "2bda08f9230144a19e98373cc4a6ac2d",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Grotesque Set audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-01-27T10:03:58.447Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "Dragon Set audience",
+        "developer": "Triternion",
+        "developerId": "o-tvu5xuu383665htjt4wez2tgl45exq",
+        "endOfSupport": false,
+        "entitlementName": "02e9a85779e6489f82f0e6b43bb7e115",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "02e9a85779e6489f82f0e6b43bb7e115",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2023-04-06T14:09:12.303Z",
+        "mainGameItem": {
+          "id": "52bf29cddef541aeaea4605f5d9f3123",
+          "namespace": "2bda08f9230144a19e98373cc4a6ac2d",
+          "unsearchable": false
+        },
+        "namespace": "2bda08f9230144a19e98373cc4a6ac2d",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Dragon Set audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-01-27T10:05:53.004Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "Lion Set audience",
+        "developer": "Triternion",
+        "developerId": "o-tvu5xuu383665htjt4wez2tgl45exq",
+        "endOfSupport": false,
+        "entitlementName": "010c6ea48352488cbadf53436826c415",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "010c6ea48352488cbadf53436826c415",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2023-04-06T14:09:12.305Z",
+        "mainGameItem": {
+          "id": "52bf29cddef541aeaea4605f5d9f3123",
+          "namespace": "2bda08f9230144a19e98373cc4a6ac2d",
+          "unsearchable": false
+        },
+        "namespace": "2bda08f9230144a19e98373cc4a6ac2d",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Lion Set audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-03-03T15:07:30.006Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "MORDHAU - Continental Voice Pack 2 audience",
+        "developer": "Triternion",
+        "developerId": "o-tvu5xuu383665htjt4wez2tgl45exq",
+        "endOfSupport": false,
+        "entitlementName": "c697600155fc44c2919b9470a2945f7e",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "c697600155fc44c2919b9470a2945f7e",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2023-04-06T14:09:12.302Z",
+        "mainGameItem": {
+          "id": "52bf29cddef541aeaea4605f5d9f3123",
+          "namespace": "2bda08f9230144a19e98373cc4a6ac2d",
+          "unsearchable": false
+        },
+        "namespace": "2bda08f9230144a19e98373cc4a6ac2d",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "MORDHAU - Continental Voice Pack 2 audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-01-27T10:04:51.271Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "Continental Voice Pack 1 audience",
+        "developer": "Triternion",
+        "developerId": "o-tvu5xuu383665htjt4wez2tgl45exq",
+        "endOfSupport": false,
+        "entitlementName": "a1688a25dfd147a2a7630bbbb53a3638",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "a1688a25dfd147a2a7630bbbb53a3638",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2023-04-06T14:09:12.304Z",
+        "mainGameItem": {
+          "id": "52bf29cddef541aeaea4605f5d9f3123",
+          "namespace": "2bda08f9230144a19e98373cc4a6ac2d",
+          "unsearchable": false
+        },
+        "namespace": "2bda08f9230144a19e98373cc4a6ac2d",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Continental Voice Pack 1 audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2021-03-17T19:40:13.007Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "LionSupporterPackAudience",
+        "developer": "Triternion",
+        "developerId": "o-tvu5xuu383665htjt4wez2tgl45exq",
+        "endOfSupport": false,
+        "entitlementName": "0bdb858d862b4738b9a0a28193868edf",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "0bdb858d862b4738b9a0a28193868edf",
+        "itemType": "DURABLE",
+        "keyImages": [],
+        "lastModifiedDate": "2023-04-13T18:43:57.555Z",
+        "mainGameItem": {
+          "id": "52bf29cddef541aeaea4605f5d9f3123",
+          "namespace": "2bda08f9230144a19e98373cc4a6ac2d",
+          "unsearchable": false
+        },
+        "namespace": "2bda08f9230144a19e98373cc4a6ac2d",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "LionSupporterPackAudience",
+        "unsearchable": true
+      }
+    ],
+    "endOfSupport": false,
+    "entitlementName": "52bf29cddef541aeaea4605f5d9f3123",
+    "entitlementType": "EXECUTABLE",
+    "eulaIds": [
+      "egstore"
+    ],
+    "id": "52bf29cddef541aeaea4605f5d9f3123",
+    "itemType": "DURABLE",
+    "keyImages": [
+      {
+        "height": 1440,
+        "md5": "572876bb8bcb903e5c33235b7eba8797",
+        "size": 868500,
+        "type": "DieselGameBox",
+        "uploadedDate": "2023-01-27T10:45:19.196Z",
+        "url": "https://cdn1.epicgames.com/item/2bda08f9230144a19e98373cc4a6ac2d/EGS_MORDHAU_Triterniondoo_S1_2560x1440-572876bb8bcb903e5c33235b7eba8797",
+        "width": 2560
+      },
+      {
+        "height": 1600,
+        "md5": "3c795e67d44f02e4127ed4df435560f3",
+        "size": 712920,
+        "type": "DieselGameBoxTall",
+        "uploadedDate": "2023-01-27T10:45:21.654Z",
+        "url": "https://cdn1.epicgames.com/item/2bda08f9230144a19e98373cc4a6ac2d/EGS_MORDHAU_Triterniondoo_S2_1200x1600-3c795e67d44f02e4127ed4df435560f3",
+        "width": 1200
+      }
+    ],
+    "lastModifiedDate": "2023-04-13T18:43:57.765Z",
+    "namespace": "2bda08f9230144a19e98373cc4a6ac2d",
+    "releaseInfo": [
+      {
+        "appId": "2e26af55c1a146e7a939dcc1014fc9fd",
+        "dateAdded": "2020-04-24T16:07:57.578Z",
+        "id": "df7a71c27c844bb9bb38d36704840340",
+        "platform": [
+          "Windows"
+        ]
+      }
+    ],
+    "status": "ACTIVE",
+    "title": "MORDHAU",
+    "unsearchable": true
+  }
+}

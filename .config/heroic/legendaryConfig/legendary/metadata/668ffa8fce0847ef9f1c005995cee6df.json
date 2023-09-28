@@ -1,0 +1,294 @@
+{
+  "app_name": "668ffa8fce0847ef9f1c005995cee6df",
+  "app_title": "Prison Architect",
+  "asset_infos": {
+    "Windows": {
+      "app_name": "668ffa8fce0847ef9f1c005995cee6df",
+      "asset_id": "668ffa8fce0847ef9f1c005995cee6df",
+      "build_version": "1.15.0.1.2.24.150",
+      "catalog_item_id": "2562e55bc1f74683ba6b5180103775e1",
+      "label_name": "Live-Windows",
+      "metadata": {
+        "installationPoolId": "1757e2e79f154791bfb2e49f5ed2b781"
+      },
+      "namespace": "3ffb410dab2d409aacd39a1abc6fcbba"
+    }
+  },
+  "base_urls": [],
+  "metadata": {
+    "ageGatings": {},
+    "applicationId": "",
+    "categories": [
+      {
+        "path": "games"
+      },
+      {
+        "path": "applications"
+      }
+    ],
+    "creationDate": "2021-10-15T22:50:02.634Z",
+    "customAttributes": {
+      "CanRunOffline": {
+        "type": "STRING",
+        "value": "true"
+      },
+      "CanSkipKoreanIdVerification": {
+        "type": "STRING",
+        "value": "true"
+      },
+      "FolderName": {
+        "type": "STRING",
+        "value": "eurekaPublic"
+      },
+      "MonitorPresence": {
+        "type": "STRING",
+        "value": "false"
+      },
+      "PresenceId": {
+        "type": "STRING",
+        "value": "3ffb410dab2d409aacd39a1abc6fcbba"
+      },
+      "RequirementsJson": {
+        "type": "STRING",
+        "value": "[]"
+      },
+      "UseAccessControl": {
+        "type": "STRING",
+        "value": "false"
+      }
+    },
+    "description": "Prison Architect",
+    "developer": "Paradox Interactive",
+    "developerId": "o-tjvfg6rejs6h86qa7k9aa64rrgbxxb",
+    "dlcItemList": [
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2022-10-13T20:01:21.381Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "eureka Future Tech Pack audience",
+        "developer": "Paradox Interactive",
+        "developerId": "o-tjvfg6rejs6h86qa7k9aa64rrgbxxb",
+        "endOfSupport": false,
+        "entitlementName": "5a7064c9380e4f9b9a42d6f3e33efdbe",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "5a7064c9380e4f9b9a42d6f3e33efdbe",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2022-11-10T14:56:56.512Z",
+        "mainGameItem": {
+          "id": "2562e55bc1f74683ba6b5180103775e1",
+          "namespace": "3ffb410dab2d409aacd39a1abc6fcbba",
+          "unsearchable": false
+        },
+        "namespace": "3ffb410dab2d409aacd39a1abc6fcbba",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "eureka Future Tech Pack audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2022-03-30T18:26:18.706Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "eureka Gangs audience",
+        "developer": "Paradox Interactive",
+        "developerId": "o-tjvfg6rejs6h86qa7k9aa64rrgbxxb",
+        "endOfSupport": false,
+        "entitlementName": "25135a169c6a46e0b377e170c9a15c27",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "25135a169c6a46e0b377e170c9a15c27",
+        "installModes": [],
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2022-06-13T18:35:18.110Z",
+        "mainGameItem": {
+          "id": "2562e55bc1f74683ba6b5180103775e1",
+          "namespace": "3ffb410dab2d409aacd39a1abc6fcbba",
+          "unsearchable": false
+        },
+        "namespace": "3ffb410dab2d409aacd39a1abc6fcbba",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "eureka Gangs audience",
+        "unsearchable": true
+      },
+      {
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2022-07-12T20:27:26.126Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "eureka Update1",
+        "developer": "Paradox Interactive",
+        "developerId": "o-tjvfg6rejs6h86qa7k9aa64rrgbxxb",
+        "endOfSupport": false,
+        "entitlementName": "1d9e8f984cdb4860ba7d811a8fa0c6ea",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "1d9e8f984cdb4860ba7d811a8fa0c6ea",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2022-07-12T20:27:26.126Z",
+        "mainGameItem": {
+          "id": "2562e55bc1f74683ba6b5180103775e1",
+          "namespace": "3ffb410dab2d409aacd39a1abc6fcbba",
+          "unsearchable": false
+        },
+        "namespace": "3ffb410dab2d409aacd39a1abc6fcbba",
+        "releaseInfo": [
+          {
+            "appId": "a453bc822db84fd8aa4b5dd76c4e96f7",
+            "id": "ec33e1e4b3af45c58e3f59e88e12b1b2",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "eureka Update1",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2022-12-01T21:18:31.978Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "eureka Jungle audience",
+        "developer": "Paradox Interactive",
+        "developerId": "o-tjvfg6rejs6h86qa7k9aa64rrgbxxb",
+        "endOfSupport": false,
+        "entitlementName": "08a666f12c084456be96e6e8eb186369",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "08a666f12c084456be96e6e8eb186369",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2023-01-27T22:50:07.325Z",
+        "mainGameItem": {
+          "id": "2562e55bc1f74683ba6b5180103775e1",
+          "namespace": "3ffb410dab2d409aacd39a1abc6fcbba",
+          "unsearchable": false
+        },
+        "namespace": "3ffb410dab2d409aacd39a1abc6fcbba",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "eureka Jungle audience",
+        "unsearchable": true
+      }
+    ],
+    "endOfSupport": false,
+    "entitlementName": "2562e55bc1f74683ba6b5180103775e1",
+    "entitlementType": "EXECUTABLE",
+    "eulaIds": [
+      "egstore"
+    ],
+    "id": "2562e55bc1f74683ba6b5180103775e1",
+    "installModes": [],
+    "itemType": "DURABLE",
+    "keyImages": [
+      {
+        "height": 1600,
+        "md5": "414a3c16492da2d1500fc942fae1ef10",
+        "size": 341489,
+        "type": "DieselGameBoxTall",
+        "uploadedDate": "2021-12-01T11:55:21.027Z",
+        "url": "https://cdn1.epicgames.com/item/3ffb410dab2d409aacd39a1abc6fcbba/EGS_PrisonArchitect_DoubleEleven_S2_1200x1600-414a3c16492da2d1500fc942fae1ef10",
+        "width": 1200
+      },
+      {
+        "height": 1440,
+        "md5": "032995cc5b2eefb8ce2b7b3b446a76ce",
+        "size": 597335,
+        "type": "DieselGameBoxWide",
+        "uploadedDate": "2021-12-01T11:55:23.703Z",
+        "url": "https://cdn1.epicgames.com/item/3ffb410dab2d409aacd39a1abc6fcbba/EGS_PrisonArchitect_DoubleEleven_S1_2560x1440-032995cc5b2eefb8ce2b7b3b446a76ce",
+        "width": 2560
+      },
+      {
+        "height": 1440,
+        "md5": "032995cc5b2eefb8ce2b7b3b446a76ce",
+        "size": 597335,
+        "type": "DieselGameBox",
+        "uploadedDate": "2022-09-22T19:13:26.200Z",
+        "url": "https://cdn1.epicgames.com/item/3ffb410dab2d409aacd39a1abc6fcbba/EGS_PrisonArchitect_DoubleEleven_S1_2560x1440-032995cc5b2eefb8ce2b7b3b446a76ce_2560x1440-032995cc5b2eefb8ce2b7b3b446a76ce",
+        "width": 2560
+      }
+    ],
+    "lastModifiedDate": "2022-12-01T21:32:15.756Z",
+    "namespace": "3ffb410dab2d409aacd39a1abc6fcbba",
+    "releaseInfo": [
+      {
+        "appId": "668ffa8fce0847ef9f1c005995cee6df",
+        "compatibleApps": [],
+        "dateAdded": "2021-12-08T16:40:00.000Z",
+        "id": "0c84d72b46384475b339490266fcb3c9",
+        "platform": [
+          "Windows",
+          "Mac"
+        ]
+      }
+    ],
+    "requiresSecureAccount": false,
+    "status": "ACTIVE",
+    "title": "Prison Architect",
+    "unsearchable": true
+  }
+}

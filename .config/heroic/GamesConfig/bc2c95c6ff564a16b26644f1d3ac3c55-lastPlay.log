@@ -1,0 +1,436 @@
+Game Settings: {
+	"autoInstallDxvk": true,
+	"autoInstallVkd3d": true,
+	"preferSystemLibs": false,
+	"enableEsync": true,
+	"enableFsync": true,
+	"nvidiaPrime": false,
+	"enviromentOptions": [],
+	"wrapperOptions": [],
+	"showFps": false,
+	"useGameMode": false,
+	"language": "",
+	"wineVersion": {
+		"bin": "/home/christian/.local/share/Steam/steamapps/common/Proton 8.0/proton",
+		"name": "Proton - Proton 8.0",
+		"type": "proton"
+	},
+	"winePrefix": "/home/christian/Games/Heroic/Prefixes/default/BioShock Remastered",
+	"wineCrossoverBottle": ""
+}
+
+Game launched at: Sat Aug 26 2023 12:42:18 GMT+0200 (Central European Summer Time)
+
+System Info:
+Heroic Version: 2.9.1 Boa Hancock
+Legendary Version:  0.20.32 Dark Energy (hotfix #6)
+GOGdl Version: 0.7.3
+Nile Version: 1.0.0 Jonathan Joestar
+
+Electron Version: 24.4.1
+Chrome Version: 112.0.5615.204
+NodeJS Version: 18.14.0
+
+OS: Ubuntu KERNEL: 6.2.0-27-generic ARCH: x64
+CPU: Intel Xeon® E3-1230 v3 @3.3 GOVERNOR: schedutil
+RAM: Total: 15.54 GiB Available: 8.54 GiB
+GRAPHICS: GPU0: GP104 [GeForce GTX 1080]  VRAM: 32MB 
+PROTOCOL: wayland
+
+Launch Command: LD_PRELOAD= STEAM_COMPAT_CLIENT_INSTALL_PATH=/home/christian/.steam/steam STEAM_COMPAT_DATA_PATH="/home/christian/Games/Heroic/Prefixes/default/BioShock Remastered" STEAM_COMPAT_INSTALL_PATH=/home/christian/Games/Heroic/BioshockRemastered WINE_FULLSCREEN_FSR=0 STEAM_COMPAT_APP_ID=0 SteamAppId=0 SteamGameId=heroic-BioshockRemastered PROTON_LOG_DIR=/home/christian /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary launch bc2c95c6ff564a16b26644f1d3ac3c55 --language en --no-wine --wrapper " '/home/christian/.local/share/Steam/steamapps/common/Proton 8.0/proton' run" 
+
+Game Log:
+[cli] INFO: Logging in...
+[Core] INFO: Trying to re-use existing login session...
+[cli] INFO: Checking for updates...
+[Core] INFO: Getting authentication token...
+[cli] INFO: Launching bc2c95c6ff564a16b26644f1d3ac3c55...
+
+Legendary update available!
+- New version: 0.20.33 - "Undue Alarm"
+- Release summary:
+ [*] Improved handling of SDL changes
+ [*] Added safeguards to prevent two simultaneous instances from corrupting the database
+ [*] Added support for running uninstallers
+ [*] More gracefully handles account errors
+See full changelog for additional details.
+- Release URL: https://legendary.gl/release/0.20.33
+
+- Download URL: https://legendary.gl/release/download/0.20.33/legendary
+fsync: up and running.
+wine: RLIMIT_NICE is <= 20, unable to use setpriority safely
+[S_API FAIL] SteamAPI_Init() failed; no appID found.
+Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.
+*   Trying 192.81.242.131...
+* TCP_NODELAY set
+* Connected to 508223012e5a5ff19f30a391b2bdadc0.my.2k.com (192.81.242.131) port 443 (#0)
+* mbedTLS: Connecting to 508223012e5a5ff19f30a391b2bdadc0.my.2k.com:443
+* mbedTLS: Set min SSL version to TLS 1.0
+* mbedTLS: Handshake complete, cipher is TLS-ECDHE-RSA-WITH-AES-256-GCM-SHA384
+* Dumping cert info:
+* cert. version     : 3
+* serial number     : 0D:61:F3:ED:62:C5:09:39:50:9C:B6:FA:0A:85:13:CE
+* issuer name       : C=US, O=DigiCert Inc, CN=DigiCert TLS RSA SHA256 2020 CA1
+* subject name      : C=US, ST=California, L=Novato, O=2K Games, Inc., CN=*.my.2k.com
+* issued  on        : 2023-04-20 00:00:00
+* expires on        : 2024-04-30 23:59:59
+* signed using      : RSA with SHA-256
+* RSA key size      : 2048 bits
+* basic constraints : CA=false
+* subject alt name  : *.my.2k.com, my.2k.com
+* key usage         : Digital Signature, Key Encipherment
+* ext key usage     : TLS Web Server Authentication, TLS Web Client Authentication
+
+* SSL connected
+> GET /discovery/v1/services HTTP/1.1
+Host: 508223012e5a5ff19f30a391b2bdadc0.my.2k.com
+Accept: */*
+User-Agent:2K Coretech Client 4.1.0 (a2dd582b297144cdb3c246226b6d7f4a)
+Content-Type:application/json
+Cache-Control:no-cache
+Authorization:Application a2dd582b297144cdb3c246226b6d7f4a
+
+< HTTP/1.1 200 OK
+< Date: Sat, 26 Aug 2023 10:42:56 GMT
+< Content-Type: application/json
+< Content-Length: 1238
+< Connection: keep-alive
+< X-2k-Server-Time: 1693046576
+< Cache-Control: max-age=3600
+< ETag: 6575083e239cef25b590e132e59d5b0d
+< X-2k-Result-Total: 5
+< X-2k-Result-Count: 5
+< X-2k-Result-More: false
+< P3P: CP="See http://www.take2games.com/privacy"
+< 
+* Connection #0 to host 508223012e5a5ff19f30a391b2bdadc0.my.2k.com left intact
+*   Trying 52.45.47.192...
+* TCP_NODELAY set
+* Connected to telemetry.api.2kcoretech.online (52.45.47.192) port 443 (#1)
+* mbedTLS: Connecting to telemetry.api.2kcoretech.online:443
+* mbedTLS: Set min SSL version to TLS 1.0
+*   Trying 192.81.242.131...
+* TCP_NODELAY set
+* Connected to 34acf0414d836d3f8d491c6186153694.my.2k.com (192.81.242.131) port 443 (#2)
+* mbedTLS: Connecting to 34acf0414d836d3f8d491c6186153694.my.2k.com:443
+* mbedTLS: Set min SSL version to TLS 1.0
+* mbedTLS: Handshake complete, cipher is TLS-ECDHE-RSA-WITH-AES-128-GCM-SHA256
+* Dumping cert info:
+* cert. version     : 3
+* serial number     : 08:13:01:53:26:27:C0:4F:DF:F9:63:04:9C:31:01:17
+* issuer name       : C=US, O=DigiCert Inc, CN=DigiCert TLS RSA SHA256 2020 CA1
+* subject name      : C=US, ST=California, L=Novato, O=2K Games, Inc., CN=api.2kcoretech.online
+* issued  on        : 2023-03-15 00:00:00
+* expires on        : 2024-04-14 23:59:59
+* signed using      : RSA with SHA-256
+* RSA key size      : 2048 bits
+* basic constraints : CA=false
+* subject alt name  : api.2kcoretech.online, catalog.api.2kcoretech.online, codes.api.2kcoretech.online, discovery.api.2kcoretech.online, entitlements.api.2kcoretech.online, launcher.api.2kcoretech.online, leaderboard.api.2kcoretech.online, license.api.2kcoretech.online, promotions.api.2kcoretech.online, publications.api.2kcoretech.online, purchase.api.2kcoretech.online, telemetry.api.2kcoretech.online, telemetryk.api.2kcoretech.online, wallet.api.2kcoretech.online
+* key usage         : Digital Signature, Key Encipherment
+* ext key usage     : TLS Web Server Authentication, TLS Web Client Authentication
+
+* SSL connected
+> GET /telemetry/v2/configs?limit=100 HTTP/1.1
+Host: telemetry.api.2kcoretech.online
+Accept: */*
+Cache-Control:no-cache
+User-Agent:2K Coretech Client 4.1.0 (a2dd582b297144cdb3c246226b6d7f4a)
+Content-Type:application/json
+Authorization:Application a2dd582b297144cdb3c246226b6d7f4a
+
+< HTTP/1.1 200 OK
+< Cache-Control: max-age=3600
+< Content-Type: application/json
+< Date: Sat, 26 Aug 2023 10:42:57 GMT
+< ETag: 73483ca92ac7e75804e7f67c01f35a42
+< Server: Jetty(9.2.14.v20151106)
+< X-2k-Result-Count: 1
+< X-2k-Result-More: false
+< X-2k-Result-Total: 1
+< X-2k-Server-Time: 1693046577
+< Content-Length: 109
+< Connection: keep-alive
+< 
+* Connection #1 to host telemetry.api.2kcoretech.online left intact
+* mbedTLS: Handshake complete, cipher is TLS-ECDHE-RSA-WITH-AES-256-GCM-SHA384
+* Dumping cert info:
+* cert. version     : 3
+* serial number     : 0D:61:F3:ED:62:C5:09:39:50:9C:B6:FA:0A:85:13:CE
+* issuer name       : C=US, O=DigiCert Inc, CN=DigiCert TLS RSA SHA256 2020 CA1
+* subject name      : C=US, ST=California, L=Novato, O=2K Games, Inc., CN=*.my.2k.com
+* issued  on        : 2023-04-20 00:00:00
+* expires on        : 2024-04-30 23:59:59
+* signed using      : RSA with SHA-256
+* RSA key size      : 2048 bits
+* basic constraints : CA=false
+* subject alt name  : *.my.2k.com, my.2k.com
+* key usage         : Digital Signature, Key Encipherment
+* ext key usage     : TLS Web Server Authentication, TLS Web Client Authentication
+
+* SSL connected
+> POST /sso/v2.0/auth/tokens HTTP/1.1
+Host: 34acf0414d836d3f8d491c6186153694.my.2k.com
+Accept: */*
+User-Agent:2K Coretech Client 4.1.0 (a2dd582b297144cdb3c246226b6d7f4a)
+Content-Type:application/json
+Cache-Control:no-cache
+Authorization:Application a2dd582b297144cdb3c246226b6d7f4a
+Content-Length: 1299
+Expect: 100-continue
+
+< HTTP/1.1 100 Continue
+< Content-Length: 0
+* Found bundle for host telemetry.api.2kcoretech.online: 0x21c65540 [can pipeline]
+* Re-using existing connection! (#1) with host telemetry.api.2kcoretech.online
+* Connected to telemetry.api.2kcoretech.online (52.45.47.192) port 443 (#1)
+> GET /telemetry/v2/configs/e58b13471f8e4123a9c90926defee227 HTTP/1.1
+Host: telemetry.api.2kcoretech.online
+Accept: */*
+Cache-Control:no-cache
+User-Agent:2K Coretech Client 4.1.0 (a2dd582b297144cdb3c246226b6d7f4a)
+Content-Type:application/json
+Authorization:Application a2dd582b297144cdb3c246226b6d7f4a
+
+< HTTP/1.1 200 OK
+< Expires: 0
+< Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+< X-XSS-Protection: 1; mode=block
+< Pragma: no-cache
+< X-Frame-Options: DENY
+< Date: Sat, 26 Aug 2023 10:42:58 GMT
+< Connection: keep-alive
+< X-Content-Type-Options: nosniff
+< Content-Type: application/json
+< Content-Length: 2148
+< 
+* Connection #2 to host 34acf0414d836d3f8d491c6186153694.my.2k.com left intact
+< HTTP/1.1 200 OK
+< Cache-Control: max-age=3600
+< Content-Type: application/json
+< Date: Sat, 26 Aug 2023 10:42:58 GMT
+< ETag: fdd5c2570cc72b2b9f661274e3c4a933
+< Server: Jetty(9.2.14.v20151106)
+< X-2k-Server-Time: 1693046578
+< Content-Length: 2756
+< Connection: keep-alive
+< 
+* Connection #1 to host telemetry.api.2kcoretech.online left intact
+* Found bundle for host 34acf0414d836d3f8d491c6186153694.my.2k.com: 0x21c63030 [can pipeline]
+* Re-using existing connection! (#2) with host 34acf0414d836d3f8d491c6186153694.my.2k.com
+* Connected to 34acf0414d836d3f8d491c6186153694.my.2k.com (192.81.242.131) port 443 (#2)
+> GET /sso/v2.0/legal/documents/737e4dd160af436db21e488a4811512f?locale=en-US HTTP/1.1
+Host: 34acf0414d836d3f8d491c6186153694.my.2k.com
+Accept: */*
+User-Agent:2K Coretech Client 4.1.0 (a2dd582b297144cdb3c246226b6d7f4a)
+Content-Type:application/json
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTMwODk3NzgsImlhdCI6MTY5MzA0NjU3OCwianRpIjoiZDQ4ZDdlMGVhYzZlNDRiMThjYjhmMTlmNGJlNTc0MDMiLCJ0dHkiOjAsInBpZCI6IjEyZjIwNDBlNWYyYjQ1OTQ5YTEwNGZkOTQ3OGE3Mjk2IiwiZ2lkIjoiZjUzMTM2MjgzMmU0NGE3ZjgzNTYyYWRkNzk0MDUzY2MiLCJsb2MiOiJlbi1VUyIsImN0eSI6IkhvbWJ1cmciLCJjdHIiOiJERSIsImxhdCI6NDkuMzI3OSwibG9uIjo3LjM0ODMsInJ0aSI6ImQ0NGE4MGIyOTQ3MTRiNTI5YjgzOWNiNmE2MDMxNjM4IiwicmV4IjoxNjkzMDUzNzc4LCJpc3MiOiJhMmRkNTgyYjI5NzE0NGNkYjNjMjQ2MjI2YjZkN2Y0YSIsInN1YiI6IjIyM2VmOGFlNDZjMTQwMjFhNjE1OTcyZGM3NTg5ZTdlIiwiYXR5IjoxLCJvdHkiOjE1LCJhZ3AiOjksInNpZCI6IjJkMjU5NjU4YThkOTRmMjI4YjhhMDdmMzI0MjE3YjcyIiwiZnBpIjoidmwweU1xc1Q4aHJROUZCcmVvRDJ0UTJEWjhkdUFmb3piOTNDd3hTMkNkSUNmZ09YUzJvV0FGMGkyeU1sYUlXRyIsImZwYSI6IkhUa3pLd1loYUFwdlRPR2NHTS9JdGc9PSIsImRvYiI6InMyaTFub2U3TlZKTEtFc05uMis4YVE9PSIsImR0eSI6MywiYWdjIjoyLCJhcGMiOjB9.ELBpvXy-PKVELcVlgUx_baITr-51kP0sgiKkYjeqgwo
+
+< HTTP/1.1 200 OK
+< Connection: keep-alive
+< Cache-Control: max-age=3600, public
+< X-XSS-Protection: 1; mode=block
+< X-Content-Type-Options: nosniff
+< X-Frame-Options: DENY
+< Content-Type: application/json
+< Content-Length: 25377
+< Date: Sat, 26 Aug 2023 10:42:58 GMT
+< 
+* Connection #2 to host 34acf0414d836d3f8d491c6186153694.my.2k.com left intact
+* Found bundle for host 34acf0414d836d3f8d491c6186153694.my.2k.com: 0x21c63030 [can pipeline]
+* Re-using existing connection! (#2) with host 34acf0414d836d3f8d491c6186153694.my.2k.com
+* Connected to 34acf0414d836d3f8d491c6186153694.my.2k.com (192.81.242.131) port 443 (#2)
+> GET /sso/v2.0/legal/documents/1fcc96a527f845f9a41e216ab45afc4f?locale=en-US HTTP/1.1
+Host: 34acf0414d836d3f8d491c6186153694.my.2k.com
+Accept: */*
+User-Agent:2K Coretech Client 4.1.0 (a2dd582b297144cdb3c246226b6d7f4a)
+Content-Type:application/json
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTMwODk3NzgsImlhdCI6MTY5MzA0NjU3OCwianRpIjoiZDQ4ZDdlMGVhYzZlNDRiMThjYjhmMTlmNGJlNTc0MDMiLCJ0dHkiOjAsInBpZCI6IjEyZjIwNDBlNWYyYjQ1OTQ5YTEwNGZkOTQ3OGE3Mjk2IiwiZ2lkIjoiZjUzMTM2MjgzMmU0NGE3ZjgzNTYyYWRkNzk0MDUzY2MiLCJsb2MiOiJlbi1VUyIsImN0eSI6IkhvbWJ1cmciLCJjdHIiOiJERSIsImxhdCI6NDkuMzI3OSwibG9uIjo3LjM0ODMsInJ0aSI6ImQ0NGE4MGIyOTQ3MTRiNTI5YjgzOWNiNmE2MDMxNjM4IiwicmV4IjoxNjkzMDUzNzc4LCJpc3MiOiJhMmRkNTgyYjI5NzE0NGNkYjNjMjQ2MjI2YjZkN2Y0YSIsInN1YiI6IjIyM2VmOGFlNDZjMTQwMjFhNjE1OTcyZGM3NTg5ZTdlIiwiYXR5IjoxLCJvdHkiOjE1LCJhZ3AiOjksInNpZCI6IjJkMjU5NjU4YThkOTRmMjI4YjhhMDdmMzI0MjE3YjcyIiwiZnBpIjoidmwweU1xc1Q4aHJROUZCcmVvRDJ0UTJEWjhkdUFmb3piOTNDd3hTMkNkSUNmZ09YUzJvV0FGMGkyeU1sYUlXRyIsImZwYSI6IkhUa3pLd1loYUFwdlRPR2NHTS9JdGc9PSIsImRvYiI6InMyaTFub2U3TlZKTEtFc05uMis4YVE9PSIsImR0eSI6MywiYWdjIjoyLCJhcGMiOjB9.ELBpvXy-PKVELcVlgUx_baITr-51kP0sgiKkYjeqgwo
+
+< HTTP/1.1 200 OK
+< Connection: keep-alive
+< Cache-Control: max-age=3600, public
+< X-XSS-Protection: 1; mode=block
+< X-Content-Type-Options: nosniff
+< X-Frame-Options: DENY
+< Content-Type: application/json
+< Content-Length: 30452
+< Date: Sat, 26 Aug 2023 10:42:59 GMT
+< 
+* Connection #2 to host 34acf0414d836d3f8d491c6186153694.my.2k.com left intact
+* Found bundle for host 34acf0414d836d3f8d491c6186153694.my.2k.com: 0x21c63030 [can pipeline]
+* Re-using existing connection! (#2) with host 34acf0414d836d3f8d491c6186153694.my.2k.com
+* Connected to 34acf0414d836d3f8d491c6186153694.my.2k.com (192.81.242.131) port 443 (#2)
+> POST /sso/v2.0/user/accounts/me/responses HTTP/1.1
+Host: 34acf0414d836d3f8d491c6186153694.my.2k.com
+Accept: */*
+User-Agent:2K Coretech Client 4.1.0 (a2dd582b297144cdb3c246226b6d7f4a)
+Content-Type:application/json
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTMwODk3NzgsImlhdCI6MTY5MzA0NjU3OCwianRpIjoiZDQ4ZDdlMGVhYzZlNDRiMThjYjhmMTlmNGJlNTc0MDMiLCJ0dHkiOjAsInBpZCI6IjEyZjIwNDBlNWYyYjQ1OTQ5YTEwNGZkOTQ3OGE3Mjk2IiwiZ2lkIjoiZjUzMTM2MjgzMmU0NGE3ZjgzNTYyYWRkNzk0MDUzY2MiLCJsb2MiOiJlbi1VUyIsImN0eSI6IkhvbWJ1cmciLCJjdHIiOiJERSIsImxhdCI6NDkuMzI3OSwibG9uIjo3LjM0ODMsInJ0aSI6ImQ0NGE4MGIyOTQ3MTRiNTI5YjgzOWNiNmE2MDMxNjM4IiwicmV4IjoxNjkzMDUzNzc4LCJpc3MiOiJhMmRkNTgyYjI5NzE0NGNkYjNjMjQ2MjI2YjZkN2Y0YSIsInN1YiI6IjIyM2VmOGFlNDZjMTQwMjFhNjE1OTcyZGM3NTg5ZTdlIiwiYXR5IjoxLCJvdHkiOjE1LCJhZ3AiOjksInNpZCI6IjJkMjU5NjU4YThkOTRmMjI4YjhhMDdmMzI0MjE3YjcyIiwiZnBpIjoidmwweU1xc1Q4aHJROUZCcmVvRDJ0UTJEWjhkdUFmb3piOTNDd3hTMkNkSUNmZ09YUzJvV0FGMGkyeU1sYUlXRyIsImZwYSI6IkhUa3pLd1loYUFwdlRPR2NHTS9JdGc9PSIsImRvYiI6InMyaTFub2U3TlZKTEtFc05uMis4YVE9PSIsImR0eSI6MywiYWdjIjoyLCJhcGMiOjB9.ELBpvXy-PKVELcVlgUx_baITr-51kP0sgiKkYjeqgwo
+Content-Length: 137
+
+* upload completely sent off: 137 out of 137 bytes
+< HTTP/1.1 201 Created
+< Expires: 0
+< Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+< X-2k-Result-Account-Type: 2
+< X-XSS-Protection: 1; mode=block
+< Pragma: no-cache
+< X-Frame-Options: DENY
+< Date: Sat, 26 Aug 2023 10:43:08 GMT
+< Connection: keep-alive
+< X-Content-Type-Options: nosniff
+< Content-Length: 0
+< X-2k-Result-Access-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTMwODk3NzgsImlhdCI6MTY5MzA0NjU4OCwianRpIjoiZDQ4ZDdlMGVhYzZlNDRiMThjYjhmMTlmNGJlNTc0MDMiLCJ0dHkiOjAsInBpZCI6IjEyZjIwNDBlNWYyYjQ1OTQ5YTEwNGZkOTQ3OGE3Mjk2IiwiZ2lkIjoiZjUzMTM2MjgzMmU0NGE3ZjgzNTYyYWRkNzk0MDUzY2MiLCJsb2MiOiJlbi1VUyIsImN0eSI6IkhvbWJ1cmciLCJjdHIiOiJERSIsImxhdCI6NDkuMzI3OSwibG9uIjo3LjM0ODMsInJ0aSI6ImQ0NGE4MGIyOTQ3MTRiNTI5YjgzOWNiNmE2MDMxNjM4IiwicmV4IjoxNjkzMDUzNzc4LCJpc3MiOiJhMmRkNTgyYjI5NzE0NGNkYjNjMjQ2MjI2YjZkN2Y0YSIsInN1YiI6IjIyM2VmOGFlNDZjMTQwMjFhNjE1OTcyZGM3NTg5ZTdlIiwiYXR5IjoyLCJvdHkiOjE1LCJhZ3AiOjksInNpZCI6IjJkMjU5NjU4YThkOTRmMjI4YjhhMDdmMzI0MjE3YjcyIiwiZnBpIjoidmwweU1xc1Q4aHJROUZCcmVvRDJ0UTJEWjhkdUFmb3piOTNDd3hTMkNkSUNmZ09YUzJvV0FGMGkyeU1sYUlXRyIsImZwYSI6IkhUa3pLd1loYUFwdlRPR2NHTS9JdGc9PSIsImRvYiI6InMyaTFub2U3TlZKTEtFc05uMis4YVE9PSIsImR0eSI6MywiYWdjIjoyLCJhcGMiOjB9.p1ueVHX1Kn-rsOQsvtmjvFkh3GtHSgVcxLvH_MmE4S4
+< 
+* Connection #2 to host 34acf0414d836d3f8d491c6186153694.my.2k.com left intact
+* Found bundle for host 34acf0414d836d3f8d491c6186153694.my.2k.com: 0x21c63030 [can pipeline]
+* Re-using existing connection! (#2) with host 34acf0414d836d3f8d491c6186153694.my.2k.com
+* Connected to 34acf0414d836d3f8d491c6186153694.my.2k.com (192.81.242.131) port 443 (#2)
+> POST /sso/v2.0/presence/heartbeats HTTP/1.1
+Host: 34acf0414d836d3f8d491c6186153694.my.2k.com
+Accept: */*
+User-Agent:2K Coretech Client 4.1.0 (a2dd582b297144cdb3c246226b6d7f4a)
+Content-Type:application/json
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTMwODk3NzgsImlhdCI6MTY5MzA0NjU4OCwianRpIjoiZDQ4ZDdlMGVhYzZlNDRiMThjYjhmMTlmNGJlNTc0MDMiLCJ0dHkiOjAsInBpZCI6IjEyZjIwNDBlNWYyYjQ1OTQ5YTEwNGZkOTQ3OGE3Mjk2IiwiZ2lkIjoiZjUzMTM2MjgzMmU0NGE3ZjgzNTYyYWRkNzk0MDUzY2MiLCJsb2MiOiJlbi1VUyIsImN0eSI6IkhvbWJ1cmciLCJjdHIiOiJERSIsImxhdCI6NDkuMzI3OSwibG9uIjo3LjM0ODMsInJ0aSI6ImQ0NGE4MGIyOTQ3MTRiNTI5YjgzOWNiNmE2MDMxNjM4IiwicmV4IjoxNjkzMDUzNzc4LCJpc3MiOiJhMmRkNTgyYjI5NzE0NGNkYjNjMjQ2MjI2YjZkN2Y0YSIsInN1YiI6IjIyM2VmOGFlNDZjMTQwMjFhNjE1OTcyZGM3NTg5ZTdlIiwiYXR5IjoyLCJvdHkiOjE1LCJhZ3AiOjksInNpZCI6IjJkMjU5NjU4YThkOTRmMjI4YjhhMDdmMzI0MjE3YjcyIiwiZnBpIjoidmwweU1xc1Q4aHJROUZCcmVvRDJ0UTJEWjhkdUFmb3piOTNDd3hTMkNkSUNmZ09YUzJvV0FGMGkyeU1sYUlXRyIsImZwYSI6IkhUa3pLd1loYUFwdlRPR2NHTS9JdGc9PSIsImRvYiI6InMyaTFub2U3TlZKTEtFc05uMis4YVE9PSIsImR0eSI6MywiYWdjIjoyLCJhcGMiOjB9.p1ueVHX1Kn-rsOQsvtmjvFkh3GtHSgVcxLvH_MmE4S4
+Content-Length: 0
+
+< HTTP/1.1 201 Created
+< Expires: 0
+< Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+< X-XSS-Protection: 1; mode=block
+< Pragma: no-cache
+< X-Frame-Options: DENY
+< Date: Sat, 26 Aug 2023 10:43:29 GMT
+< Connection: keep-alive
+< X-Content-Type-Options: nosniff
+< Content-Length: 0
+< 
+* Connection #2 to host 34acf0414d836d3f8d491c6186153694.my.2k.com left intact
+* Connection 1 seems to be dead!
+* Closing connection 1
+* Found bundle for host 34acf0414d836d3f8d491c6186153694.my.2k.com: 0x21c63030 [can pipeline]
+* Re-using existing connection! (#2) with host 34acf0414d836d3f8d491c6186153694.my.2k.com
+* Connected to 34acf0414d836d3f8d491c6186153694.my.2k.com (192.81.242.131) port 443 (#2)
+> POST /sso/v2.0/presence/heartbeats HTTP/1.1
+Host: 34acf0414d836d3f8d491c6186153694.my.2k.com
+Accept: */*
+User-Agent:2K Coretech Client 4.1.0 (a2dd582b297144cdb3c246226b6d7f4a)
+Content-Type:application/json
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTMwODk3NzgsImlhdCI6MTY5MzA0NjU4OCwianRpIjoiZDQ4ZDdlMGVhYzZlNDRiMThjYjhmMTlmNGJlNTc0MDMiLCJ0dHkiOjAsInBpZCI6IjEyZjIwNDBlNWYyYjQ1OTQ5YTEwNGZkOTQ3OGE3Mjk2IiwiZ2lkIjoiZjUzMTM2MjgzMmU0NGE3ZjgzNTYyYWRkNzk0MDUzY2MiLCJsb2MiOiJlbi1VUyIsImN0eSI6IkhvbWJ1cmciLCJjdHIiOiJERSIsImxhdCI6NDkuMzI3OSwibG9uIjo3LjM0ODMsInJ0aSI6ImQ0NGE4MGIyOTQ3MTRiNTI5YjgzOWNiNmE2MDMxNjM4IiwicmV4IjoxNjkzMDUzNzc4LCJpc3MiOiJhMmRkNTgyYjI5NzE0NGNkYjNjMjQ2MjI2YjZkN2Y0YSIsInN1YiI6IjIyM2VmOGFlNDZjMTQwMjFhNjE1OTcyZGM3NTg5ZTdlIiwiYXR5IjoyLCJvdHkiOjE1LCJhZ3AiOjksInNpZCI6IjJkMjU5NjU4YThkOTRmMjI4YjhhMDdmMzI0MjE3YjcyIiwiZnBpIjoidmwweU1xc1Q4aHJROUZCcmVvRDJ0UTJEWjhkdUFmb3piOTNDd3hTMkNkSUNmZ09YUzJvV0FGMGkyeU1sYUlXRyIsImZwYSI6IkhUa3pLd1loYUFwdlRPR2NHTS9JdGc9PSIsImRvYiI6InMyaTFub2U3TlZKTEtFc05uMis4YVE9PSIsImR0eSI6MywiYWdjIjoyLCJhcGMiOjB9.p1ueVHX1Kn-rsOQsvtmjvFkh3GtHSgVcxLvH_MmE4S4
+Content-Length: 0
+
+< HTTP/1.1 201 Created
+< Expires: 0
+< Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+< X-XSS-Protection: 1; mode=block
+< Pragma: no-cache
+< X-Frame-Options: DENY
+< Date: Sat, 26 Aug 2023 10:44:00 GMT
+< Connection: keep-alive
+< X-Content-Type-Options: nosniff
+< Content-Length: 0
+< 
+* Connection #2 to host 34acf0414d836d3f8d491c6186153694.my.2k.com left intact
+* Connection 0 seems to be dead!
+* Closing connection 0
+* Found bundle for host 34acf0414d836d3f8d491c6186153694.my.2k.com: 0x21c63030 [can pipeline]
+* Re-using existing connection! (#2) with host 34acf0414d836d3f8d491c6186153694.my.2k.com
+* Connected to 34acf0414d836d3f8d491c6186153694.my.2k.com (192.81.242.131) port 443 (#2)
+> POST /sso/v2.0/presence/heartbeats HTTP/1.1
+Host: 34acf0414d836d3f8d491c6186153694.my.2k.com
+Accept: */*
+User-Agent:2K Coretech Client 4.1.0 (a2dd582b297144cdb3c246226b6d7f4a)
+Content-Type:application/json
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTMwODk3NzgsImlhdCI6MTY5MzA0NjU4OCwianRpIjoiZDQ4ZDdlMGVhYzZlNDRiMThjYjhmMTlmNGJlNTc0MDMiLCJ0dHkiOjAsInBpZCI6IjEyZjIwNDBlNWYyYjQ1OTQ5YTEwNGZkOTQ3OGE3Mjk2IiwiZ2lkIjoiZjUzMTM2MjgzMmU0NGE3ZjgzNTYyYWRkNzk0MDUzY2MiLCJsb2MiOiJlbi1VUyIsImN0eSI6IkhvbWJ1cmciLCJjdHIiOiJERSIsImxhdCI6NDkuMzI3OSwibG9uIjo3LjM0ODMsInJ0aSI6ImQ0NGE4MGIyOTQ3MTRiNTI5YjgzOWNiNmE2MDMxNjM4IiwicmV4IjoxNjkzMDUzNzc4LCJpc3MiOiJhMmRkNTgyYjI5NzE0NGNkYjNjMjQ2MjI2YjZkN2Y0YSIsInN1YiI6IjIyM2VmOGFlNDZjMTQwMjFhNjE1OTcyZGM3NTg5ZTdlIiwiYXR5IjoyLCJvdHkiOjE1LCJhZ3AiOjksInNpZCI6IjJkMjU5NjU4YThkOTRmMjI4YjhhMDdmMzI0MjE3YjcyIiwiZnBpIjoidmwweU1xc1Q4aHJROUZCcmVvRDJ0UTJEWjhkdUFmb3piOTNDd3hTMkNkSUNmZ09YUzJvV0FGMGkyeU1sYUlXRyIsImZwYSI6IkhUa3pLd1loYUFwdlRPR2NHTS9JdGc9PSIsImRvYiI6InMyaTFub2U3TlZKTEtFc05uMis4YVE9PSIsImR0eSI6MywiYWdjIjoyLCJhcGMiOjB9.p1ueVHX1Kn-rsOQsvtmjvFkh3GtHSgVcxLvH_MmE4S4
+Content-Length: 0
+
+< HTTP/1.1 201 Created
+< Expires: 0
+< Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+< X-XSS-Protection: 1; mode=block
+< Pragma: no-cache
+< X-Frame-Options: DENY
+< Date: Sat, 26 Aug 2023 10:44:31 GMT
+< Connection: keep-alive
+< X-Content-Type-Options: nosniff
+< Content-Length: 0
+< 
+* Connection #2 to host 34acf0414d836d3f8d491c6186153694.my.2k.com left intact
+*   Trying 54.157.102.177...
+* TCP_NODELAY set
+* Connected to telemetry.api.2kcoretech.online (54.157.102.177) port 443 (#3)
+* mbedTLS: Connecting to telemetry.api.2kcoretech.online:443
+* mbedTLS: Set min SSL version to TLS 1.0
+* mbedTLS: Handshake complete, cipher is TLS-ECDHE-RSA-WITH-AES-128-GCM-SHA256
+* Dumping cert info:
+* cert. version     : 3
+* serial number     : 08:13:01:53:26:27:C0:4F:DF:F9:63:04:9C:31:01:17
+* issuer name       : C=US, O=DigiCert Inc, CN=DigiCert TLS RSA SHA256 2020 CA1
+* subject name      : C=US, ST=California, L=Novato, O=2K Games, Inc., CN=api.2kcoretech.online
+* issued  on        : 2023-03-15 00:00:00
+* expires on        : 2024-04-14 23:59:59
+* signed using      : RSA with SHA-256
+* RSA key size      : 2048 bits
+* basic constraints : CA=false
+* subject alt name  : api.2kcoretech.online, catalog.api.2kcoretech.online, codes.api.2kcoretech.online, discovery.api.2kcoretech.online, entitlements.api.2kcoretech.online, launcher.api.2kcoretech.online, leaderboard.api.2kcoretech.online, license.api.2kcoretech.online, promotions.api.2kcoretech.online, publications.api.2kcoretech.online, purchase.api.2kcoretech.online, telemetry.api.2kcoretech.online, telemetryk.api.2kcoretech.online, wallet.api.2kcoretech.online
+* key usage         : Digital Signature, Key Encipherment
+* ext key usage     : TLS Web Server Authentication, TLS Web Client Authentication
+
+* SSL connected
+> POST /telemetry/v2/events HTTP/1.1
+Host: telemetry.api.2kcoretech.online
+Accept: */*
+User-Agent:2K Coretech Client 4.1.0 (a2dd582b297144cdb3c246226b6d7f4a)
+Content-Type:application/json
+Cache-Control:no-cache
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTMwODk3NzgsImlhdCI6MTY5MzA0NjU4OCwianRpIjoiZDQ4ZDdlMGVhYzZlNDRiMThjYjhmMTlmNGJlNTc0MDMiLCJ0dHkiOjAsInBpZCI6IjEyZjIwNDBlNWYyYjQ1OTQ5YTEwNGZkOTQ3OGE3Mjk2IiwiZ2lkIjoiZjUzMTM2MjgzMmU0NGE3ZjgzNTYyYWRkNzk0MDUzY2MiLCJsb2MiOiJlbi1VUyIsImN0eSI6IkhvbWJ1cmciLCJjdHIiOiJERSIsImxhdCI6NDkuMzI3OSwibG9uIjo3LjM0ODMsInJ0aSI6ImQ0NGE4MGIyOTQ3MTRiNTI5YjgzOWNiNmE2MDMxNjM4IiwicmV4IjoxNjkzMDUzNzc4LCJpc3MiOiJhMmRkNTgyYjI5NzE0NGNkYjNjMjQ2MjI2YjZkN2Y0YSIsInN1YiI6IjIyM2VmOGFlNDZjMTQwMjFhNjE1OTcyZGM3NTg5ZTdlIiwiYXR5IjoyLCJvdHkiOjE1LCJhZ3AiOjksInNpZCI6IjJkMjU5NjU4YThkOTRmMjI4YjhhMDdmMzI0MjE3YjcyIiwiZnBpIjoidmwweU1xc1Q4aHJROUZCcmVvRDJ0UTJEWjhkdUFmb3piOTNDd3hTMkNkSUNmZ09YUzJvV0FGMGkyeU1sYUlXRyIsImZwYSI6IkhUa3pLd1loYUFwdlRPR2NHTS9JdGc9PSIsImRvYiI6InMyaTFub2U3TlZKTEtFc05uMis4YVE9PSIsImR0eSI6MywiYWdjIjoyLCJhcGMiOjB9.p1ueVHX1Kn-rsOQsvtmjvFkh3GtHSgVcxLvH_MmE4S4
+Content-Length: 202
+
+* upload completely sent off: 202 out of 202 bytes
+< HTTP/1.1 200 OK
+< Cache-Control: no-cache
+< Content-Type: application/json
+< Date: Sat, 26 Aug 2023 10:44:59 GMT
+< Server: Jetty(9.2.14.v20151106)
+< X-2k-Server-Time: 1693046699
+< Content-Length: 27
+< Connection: keep-alive
+< 
+* Connection #3 to host telemetry.api.2kcoretech.online left intact
+* Found bundle for host 34acf0414d836d3f8d491c6186153694.my.2k.com: 0x21c63030 [can pipeline]
+* Re-using existing connection! (#2) with host 34acf0414d836d3f8d491c6186153694.my.2k.com
+* Connected to 34acf0414d836d3f8d491c6186153694.my.2k.com (192.81.242.131) port 443 (#2)
+> POST /sso/v2.0/presence/heartbeats HTTP/1.1
+Host: 34acf0414d836d3f8d491c6186153694.my.2k.com
+Accept: */*
+User-Agent:2K Coretech Client 4.1.0 (a2dd582b297144cdb3c246226b6d7f4a)
+Content-Type:application/json
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTMwODk3NzgsImlhdCI6MTY5MzA0NjU4OCwianRpIjoiZDQ4ZDdlMGVhYzZlNDRiMThjYjhmMTlmNGJlNTc0MDMiLCJ0dHkiOjAsInBpZCI6IjEyZjIwNDBlNWYyYjQ1OTQ5YTEwNGZkOTQ3OGE3Mjk2IiwiZ2lkIjoiZjUzMTM2MjgzMmU0NGE3ZjgzNTYyYWRkNzk0MDUzY2MiLCJsb2MiOiJlbi1VUyIsImN0eSI6IkhvbWJ1cmciLCJjdHIiOiJERSIsImxhdCI6NDkuMzI3OSwibG9uIjo3LjM0ODMsInJ0aSI6ImQ0NGE4MGIyOTQ3MTRiNTI5YjgzOWNiNmE2MDMxNjM4IiwicmV4IjoxNjkzMDUzNzc4LCJpc3MiOiJhMmRkNTgyYjI5NzE0NGNkYjNjMjQ2MjI2YjZkN2Y0YSIsInN1YiI6IjIyM2VmOGFlNDZjMTQwMjFhNjE1OTcyZGM3NTg5ZTdlIiwiYXR5IjoyLCJvdHkiOjE1LCJhZ3AiOjksInNpZCI6IjJkMjU5NjU4YThkOTRmMjI4YjhhMDdmMzI0MjE3YjcyIiwiZnBpIjoidmwweU1xc1Q4aHJROUZCcmVvRDJ0UTJEWjhkdUFmb3piOTNDd3hTMkNkSUNmZ09YUzJvV0FGMGkyeU1sYUlXRyIsImZwYSI6IkhUa3pLd1loYUFwdlRPR2NHTS9JdGc9PSIsImRvYiI6InMyaTFub2U3TlZKTEtFc05uMis4YVE9PSIsImR0eSI6MywiYWdjIjoyLCJhcGMiOjB9.p1ueVHX1Kn-rsOQsvtmjvFkh3GtHSgVcxLvH_MmE4S4
+Content-Length: 0
+
+< HTTP/1.1 201 Created
+< Expires: 0
+< Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+< X-XSS-Protection: 1; mode=block
+< Pragma: no-cache
+< X-Frame-Options: DENY
+< Date: Sat, 26 Aug 2023 10:45:02 GMT
+< Connection: keep-alive
+< X-Content-Type-Options: nosniff
+< Content-Length: 0
+< 
+* Connection #2 to host 34acf0414d836d3f8d491c6186153694.my.2k.com left intact
+* Found bundle for host telemetry.api.2kcoretech.online: 0x6a408b8 [can pipeline]
+* Re-using existing connection! (#3) with host telemetry.api.2kcoretech.online
+* Connected to telemetry.api.2kcoretech.online (54.157.102.177) port 443 (#3)
+> POST /telemetry/v2/events HTTP/1.1
+Host: telemetry.api.2kcoretech.online
+Accept: */*
+User-Agent:2K Coretech Client 4.1.0 (a2dd582b297144cdb3c246226b6d7f4a)
+Content-Type:application/json
+Cache-Control:no-cache
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTMwODk3NzgsImlhdCI6MTY5MzA0NjU4OCwianRpIjoiZDQ4ZDdlMGVhYzZlNDRiMThjYjhmMTlmNGJlNTc0MDMiLCJ0dHkiOjAsInBpZCI6IjEyZjIwNDBlNWYyYjQ1OTQ5YTEwNGZkOTQ3OGE3Mjk2IiwiZ2lkIjoiZjUzMTM2MjgzMmU0NGE3ZjgzNTYyYWRkNzk0MDUzY2MiLCJsb2MiOiJlbi1VUyIsImN0eSI6IkhvbWJ1cmciLCJjdHIiOiJERSIsImxhdCI6NDkuMzI3OSwibG9uIjo3LjM0ODMsInJ0aSI6ImQ0NGE4MGIyOTQ3MTRiNTI5YjgzOWNiNmE2MDMxNjM4IiwicmV4IjoxNjkzMDUzNzc4LCJpc3MiOiJhMmRkNTgyYjI5NzE0NGNkYjNjMjQ2MjI2YjZkN2Y0YSIsInN1YiI6IjIyM2VmOGFlNDZjMTQwMjFhNjE1OTcyZGM3NTg5ZTdlIiwiYXR5IjoyLCJvdHkiOjE1LCJhZ3AiOjksInNpZCI6IjJkMjU5NjU4YThkOTRmMjI4YjhhMDdmMzI0MjE3YjcyIiwiZnBpIjoidmwweU1xc1Q4aHJROUZCcmVvRDJ0UTJEWjhkdUFmb3piOTNDd3hTMkNkSUNmZ09YUzJvV0FGMGkyeU1sYUlXRyIsImZwYSI6IkhUa3pLd1loYUFwdlRPR2NHTS9JdGc9PSIsImRvYiI6InMyaTFub2U3TlZKTEtFc05uMis4YVE9PSIsImR0eSI6MywiYWdjIjoyLCJhcGMiOjB9.p1ueVHX1Kn-rsOQsvtmjvFkh3GtHSgVcxLvH_MmE4S4
+Content-Length: 237
+
+* upload completely sent off: 237 out of 237 bytes
+* Closing connection 3

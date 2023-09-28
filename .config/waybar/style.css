@@ -1,0 +1,170 @@
+* {
+    border: none;
+    border-radius: 20;
+    /* font-family: "UbuntuMono Nerd Font", "Hack", "Noto Color Emoji", sans-serif; */
+    font-family: sans-serif, "UbuntuMono Nerd Font", "FontAwesome", "Hack";
+    font-size: 15px;
+    /*font-weight: bold;*/
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(000, 000, 100, 0.5);
+    /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
+    color: #e5e9f0;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+#workspaces button {
+    padding: 0 5px;
+    /* background: transparent; */
+    background: #414054;
+    color: #ffffff;
+    /* border-bottom: 3px solid transparent; */
+}
+
+#workspaces button:hover {
+    box-shadow: inherit;
+    text-shadow: inherit;
+    background: #707070;
+    /* background: inherit; */
+}
+
+#workspaces button.focused {
+    background: #626080;
+    border-bottom: 3px solid #e5e9f0;
+}
+
+#workspaces button.urgent {
+    background-color: #bf616a;
+}
+
+#mode {
+    background: #64727D;
+    border-bottom: 3px solid #ffffff;
+}
+
+#clock, #battery, #cpu, #memory, #temperature, #backlight, #network, #pulseaudio, #custom-media, #tray, #mode, #idle_inhibitor {
+    padding: 0 10px;
+    margin: 0 5px;
+}
+
+#clock {
+    /*background-color: #64727D;*/
+    background: #414054;
+    color: #e5e9f0;
+    font-weight: bold;
+}
+
+#network {
+    background: #414054;
+}
+
+#battery {
+    /*background-color: #000000;*/
+    background: #414054;
+    color: #e5e9f0;
+}
+
+#battery.charging {
+    /*background-color: #000000;*/
+    background: #414054;
+    color: #00FF00;
+}
+
+@keyframes blink {
+    to {
+        /*background-color: #ffffff;*/
+        color: #000000;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background: #f53c3c;
+    color: #ffffff;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#cpu {
+    /*background: #2ecc71;*/
+    background: #414054;
+    color: #e5e9f0;
+}
+
+#memory {
+    /*background: #9b59b6;*/
+    background: #414054;
+    color: #e5e9f0;
+}
+
+#backlight {
+    /*background: #90b1b1;*/
+    background: #414054;
+    color: #e5e9f0;
+}
+
+#network {
+    /*background: #2980b9;*/
+    background: #414054;
+    color: #e5e9f0;
+}
+
+#network.disconnected {
+    /*background: #f53c3c;*/
+    background: #414054;
+    color: #e5e9f0;
+}
+
+#pulseaudio {
+    /*background: #000000;*/
+    background: #414054;
+    color: #e5e9f0;
+}
+
+#pulseaudio.muted {
+    /*background: #000000;*/
+    background: #414054;
+    color: #e5e9f0;
+}
+
+#custom-media {
+    background: #66cc99;
+    color: #2a5c45;
+}
+
+.custom-spotify {
+    background: #66cc99;
+}
+
+.custom-vlc {
+    background: #ffa000;
+}
+
+#temperature {
+    background: #414054;
+    /* color: #00FF00; */
+    /* background: #f0932b; */
+}
+
+#temperature.critical {
+    background: #414054;
+    color: #f0932b;
+}
+
+#tray {
+    /*background-color: #2980b9;*/
+    color: #e5e9f0;
+}
+
+#idle_inhibitor {
+    background-color: #2d3436;
+}
+
+#idle_inhibitor.activated {
+    background-color: #ecf0f1;
+    color: #2d3436;
+}

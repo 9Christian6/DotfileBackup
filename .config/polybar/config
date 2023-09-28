@@ -1,0 +1,347 @@
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;==========================================================
+
+[colors]
+background = #B0243969
+background-alt = #3306080a
+foreground = #dfdfdf
+foreground-alt = #555
+primary = #ff00ff
+secondary = #00cc00
+alert = #bd2c40
+
+[bar/left]
+enable-ipc = true
+monitor = DP-2 
+width = 100%
+height = 27
+radius = 6.0
+fixed-center = false
+bottom = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = #f00
+
+border-size = 0
+border-color = #00000000
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = DejaVu Sans Mono:size=10
+font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+font-2 = FontAwesome:style=Regular:size=10
+font-3 = "Font Awesome 6 Brands"
+
+modules-left = i3 
+modules-right= day date time shutdown
+
+tray-position = none
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[bar/right]
+enable-ipc = true
+monitor = DVI-D-0
+width = 100%
+height = 35
+radius = 6.0
+fixed-center = false
+bottom = true
+#tray-scale = 9.0
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = #f-01
+
+border-size = 0
+border-color = #00000000
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = DejaVu Sans Mono:size=14
+font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+font-2 = FontAwesome:style=Regular:size=14
+font-3 = FontAwesome:style=Brands:size=14
+font-4 = "Font Awesome 6 Brands"
+
+modules-left = i3
+modules-right = network memory-info cpu pulseaudio day date time shutdown
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[bar/rightTV]
+enable-ipc = true
+monitor = HDMI-0
+width = 100%
+height = 27
+radius = 6.0
+fixed-center = false
+bottom = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = #f-01
+
+border-size = 0
+border-color = #00000000
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = DejaVu Sans Mono
+font-1 = fixed:pixelsize=10;1
+font-2 = unifont:fontformat=truetype:size=8:antialias=false;0
+
+modules-left = i3
+modules-right = network cpu pulseaudio day date time shutdown
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[module/memory]
+type = internal/memory
+interval = 3
+format =  <label>
+format-suffix = " |"
+label = " %gb_used% / %gb_total%"
+
+[module/memory-info]
+type = custom/script
+interval = 3
+exec = ~/Bin/memory.sh
+click-left = ~/Bin/memory.sh --popup
+format-prefix =  " "
+format-suffix = " |"
+
+[module/shutdown]
+type = custom/script
+;exec = echo "| "
+exec = echo ""
+click-left = exec ~/Bin/Shutdown
+
+[module/programs]
+type = custom/script
+exec = echo ""
+click-left = exec ~/Bin/dmenu
+
+[module/i3]
+type = internal/i3
+format = <label-state><label-mode>
+pin-workspaces = true
+
+; This will split the workspace name on ':'
+; Default: false
+strip-wsnumbers = false
+
+; Sort the workspaces by index instead of the default
+; sorting that groups the workspaces by output
+; Default: false
+
+index-sort = true
+enable-click = true
+enable-scroll = false
+wrapping-scroll = false
+reverse-scroll = false
+fuzzy-match = false
+
+ws-icon-default = 
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;
+ws-icon-6 = 7;
+ws-icon-7 = 8;
+;ws-icon-8 = 9;
+ws-icon-8 = 9;
+ws-icon-9 = 10;
+ws-icon-10 = 11;
+ws-icon-11 = 12;
+ws-icon-12 = 13;
+ws-icon-13 = 14;
+
+label-separator = |
+label-separator-padding = 0
+label-separator-foreground = #ffffff
+
+; focused = Active workspace on focused monitor
+; label-focused = %name%
+label-focused-background = ${colors.background-alt}
+label-focused-underline= ${colors.primary}
+label-focused-padding = 1
+label-unfocused-padding = 1
+
+; unfocused = Inactive workspace on any monitor
+; label-unfocused = %name%
+; label-unfocused-padding = 2
+
+;label-urgent = %name%
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 1
+
+;label-visible = %name%
+label-visible-background = ${colors.background-alt}
+label-visible-underline = ${colors.secondary}
+label-visible-padding = 1
+
+[module/cpu]
+type = internal/cpu
+interval = 0.5
+format-suffix = " |"
+label = %percentage:2%
+format = %{A1:~/Bin/htop:}  <label> %{A}
+
+[module/time]
+type = internal/date
+interval = 1
+time =  %H:%M:%S
+label = %time%
+format-suffix = " |"
+
+[module/date]
+type = internal/date
+interval = 1
+date = "%d.%m.%Y"
+label = %date%
+format = %{A1:~/Bin/goToCalendar:}  <label> %{A}
+format-suffix = " |"
+
+[module/day]
+type = internal/date
+interval = 1
+date = "%A"
+label = %date%
+format = %{A1:~/Bin/goToCalendar:}<label> %{A}
+format-suffix = " |"
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+format-volume = <label-volume><bar-volume>
+format-volume-suffix = " |"
+label-volume =   %percentage%%
+label-volume-foreground = ${root.foreground}
+label-volume-maxlen = 8
+label-volume-minlen = 8
+
+#change volume on scroll
+scroll-up = pulseaudio-control --volume-max 10 up
+scroll-down = pulseaudio-control --volume-max 10 down
+
+#open audio manager on click
+click-right = exec pavucontrol &
+
+format-muted-suffix = " |"
+format-muted = <label-muted><bar-volume>
+label-muted =   %percentage%%
+label-muted-foreground = #666
+label-muted-maxlen = 8
+label-muted-minlen = 8
+
+bar-volume-width = 10
+bar-volume-foreground-0 = #55aa55
+bar-volume-foreground-1 = #55aa55
+bar-volume-foreground-2 = #55aa55
+bar-volume-foreground-3 = #55aa55
+bar-volume-foreground-4 = #55aa55
+bar-volume-foreground-5 = #f5a70a
+bar-volume-foreground-6 = #ff5555
+bar-volume-gradient = false
+bar-volume-indicator = |
+bar-volume-indicator-font = 2
+bar-volume-fill = ─
+bar-volume-fill-font = 2
+bar-volume-empty = ─
+bar-volume-empty-font = 2
+bar-volume-empty-foreground = ${colors.foreground-alt}
+
+[module/network]
+type = internal/network
+interface = enp0s25 
+interval = 0.5
+;format-connected = <label-connected>
+format-connected = <label-connected>
+format-connected-suffix = " |"
+label-connected = "%downspeed%"
+label-connected-alignment = right
+label-connected-maxlen = 8
+label-connected-minlen = 8
+label-disconnected = ""
+format-disconnected-suffix = " |"
+
+[module/previous]
+type = custom/ipc
+format-font = 2
+; Default
+hook-0 = echo ""
+; When spotify active
+hook-1 = echo ""
+click-left = "spotifyctl -q previous"
+
+[module/next]
+type = custom/ipc
+format-suffix = " |"
+; Default
+hook-0 = echo ""
+; When spotify active
+hook-1 = echo " "
+click-left = "spotifyctl -q next"
+
+[module/playpause]
+type = custom/ipc
+format-font = 5
+; Default
+hook-0 = echo ""
+; Playing
+hook-1 = echo ""
+; Paused
+hook-2 = echo ""
+click-left = "spotifyctl -q playpause"
+
+[module/spotify]
+type = custom/ipc
+; Default
+hook-0 = echo ""
+; Playing/paused show song name and artist
+hook-1 = spotifyctl -q status --format '%artist%: %title%'
+initial = 1
+click-left = polybar-msg hook spotify 0
+format-suffix = " |"
+
+[module/agenda]
+type = custom/script
+exec = i3-agenda -c ~/Opt/i3-agenda/client_secret_813316797865-o8vf7f9fd7pkbepp1f10aaegtm9gmhr2.apps.googleusercontent.com.json -ttl 1
+click-left = exec ~/Bin/goToCalendar
+click-right = notify-send "syncing..." && i3-agenda -c ~/Opt/i3-agenda/client_secret_813316797865-o8vf7f9fd7pkbepp1f10aaegtm9gmhr2.apps.googleusercontent.com.json  --update && notify-send -t 2000 "sync finished"
+interval = 1
+format-suffix = " |"
+
+; vim:ft=dosini:

@@ -1,0 +1,55 @@
+(21:05:36) INFO:    [Legendary]:        Legendary location: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary
+(21:05:36) INFO:    [Gog]:              GOGDL location: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/gogdl
+(21:05:36) INFO:    [Connection]:       Connectivity: check-online
+(21:05:36) INFO:    [Connection]:       Pinging external endpoints
+(21:05:36) INFO:    [Backend]:          DRM module staus {
+  "oimompecagnajdejgnnjijobebaeigek": {
+    "name": "Widevine Content Decryption Module",
+    "status": "new",
+    "version": "4.10.2557.0"
+  }
+}
+(21:05:36) WARNING: [Backend]:          Protocol already registered.
+(21:05:36) INFO:    [Connection]:       Connectivity: online
+(21:05:36) ERROR:   [Gog]:              Unable to syncQueued playtime, userData not present
+(21:05:36) INFO:    [Legendary]:        Running command: XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary --version
+(21:05:36) INFO:    [Gog]:              Running command: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/gogdl --auth-config-path /home/christian/.config/heroic/gog_store/auth.json --version
+(21:05:36) INFO:    [Nile]:             Running command: XDG_CONFIG_HOME=/home/christian/.config/heroic/nile_config /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/nile --version
+(21:05:37) INFO:    [Backend]:          AreWeAntiCheatYet data downloaded
+(21:05:37) INFO:    [Backend]:          
+System Information:
+CPU: 8x Intel(R) Xeon(R) CPU E3-1230 v3 @ 3.30GHz
+Memory: 16.69 GB (used: 4.19 GB)
+GPUs:
+  GPU 0:
+    Name: NVIDIA Corporation GP104 [GeForce GTX 1080]
+    IDs: D=1b80 V=10de SD=6183 SV=3842
+    Driver: nouveau
+OS: Ubuntu 23.04 (Lunar Lobster) (linux)
+
+The current system is not a Steam Deck
+We are not running inside a Flatpak container
+
+Software Versions:
+  Heroic: 2.9.2 Boa Hancock
+  Legendary: 0.20.32 Dark Energy (hotfix #6)
+  gogdl: 0.7.3
+  Nile: 1.0.0 Jonathan Joestar
+
+(21:05:37) INFO:    [Backend]:          Loading Screen Ready
+(21:05:37) INFO:    [Frontend]:         Refreshing undefined Library
+(21:05:37) WARNING: [Backend]:          refresh not implemented on Sideload Library Manager
+(21:05:37) INFO:    [Legendary]:        Refreshing library...
+(21:05:37) INFO:    [Legendary]:        Refreshing Epic Games...
+(21:05:37) INFO:    [Legendary]:        Game list updated, got 344 games & DLCs
+(21:05:37) INFO:    [Backend]:          Frontend Ready
+(21:05:37) WARNING: [Backend]:          listUpdateableGames not implemented on Sideload Library Manager
+(21:05:37) INFO:    [Gog]:              Found 0 game(s) to update
+(21:05:37) INFO:    [Backend]:          Checking for new Heroic Updates
+(21:05:37) INFO:    [Legendary]:        Running command: XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary list --third-party
+(21:05:37) INFO:    [Legendary]:        Checking for game updates: XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary list --third-party
+(21:05:37) INFO:    [Backend]:          Checking for current version changelog
+(21:05:39) WARNING: [DXVKInstaller]:    No GPU with Vulkan 1.1 support found, DXVK will not work
+(21:05:39) INFO:    [Winetricks]:       Downloading Winetricks
+(21:05:41) INFO:    [Legendary]:        Found 0 games to update
+(21:05:42) INFO:    [Backend]:          Starting the Download Queue

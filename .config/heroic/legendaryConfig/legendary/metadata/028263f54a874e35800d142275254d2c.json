@@ -1,0 +1,116 @@
+{
+  "app_name": "028263f54a874e35800d142275254d2c",
+  "app_title": "GRIME",
+  "asset_infos": {
+    "Windows": {
+      "app_name": "028263f54a874e35800d142275254d2c",
+      "asset_id": "028263f54a874e35800d142275254d2c",
+      "build_version": "1.2.45",
+      "catalog_item_id": "333b659134e448ac8c8e8fa47eb85dcc",
+      "label_name": "Live-Windows",
+      "metadata": {},
+      "namespace": "3bb4afc31dd241c787bad056e9b8dbf9"
+    }
+  },
+  "base_urls": [],
+  "metadata": {
+    "ageGatings": {},
+    "applicationId": "GRIME (fghi4567B2WbGZ21BiZvDrU4nplpCoow)",
+    "categories": [
+      {
+        "path": "public"
+      },
+      {
+        "path": "games"
+      },
+      {
+        "path": "applications"
+      }
+    ],
+    "creationDate": "2023-06-06T17:33:19.325Z",
+    "customAttributes": {
+      "CanRunOffline": {
+        "type": "STRING",
+        "value": "true"
+      },
+      "CanSkipKoreanIdVerification": {
+        "type": "STRING",
+        "value": "true"
+      },
+      "CloudSaveFolder": {
+        "type": "STRING",
+        "value": "{AppData}/../LocalLow/Clover Bite/Grime/Save Files/"
+      },
+      "FolderName": {
+        "type": "STRING",
+        "value": "GRIME"
+      },
+      "MonitorPresence": {
+        "type": "STRING",
+        "value": "true"
+      },
+      "PresenceId": {
+        "type": "STRING",
+        "value": "3bb4afc31dd241c787bad056e9b8dbf9"
+      },
+      "RequirementsJson": {
+        "type": "STRING",
+        "value": "[]"
+      },
+      "UseAccessControl": {
+        "type": "STRING",
+        "value": "false"
+      }
+    },
+    "description": "GRIME",
+    "developer": "Akupara Games",
+    "developerId": "o-vzv8n7jse99sluj4vaa8522rh45cvg",
+    "endOfSupport": false,
+    "entitlementName": "333b659134e448ac8c8e8fa47eb85dcc",
+    "entitlementType": "EXECUTABLE",
+    "eulaIds": [
+      "egstore"
+    ],
+    "id": "333b659134e448ac8c8e8fa47eb85dcc",
+    "installModes": [],
+    "itemType": "DURABLE",
+    "keyImages": [
+      {
+        "alt": "GRIME Offer",
+        "height": 1440,
+        "md5": "e09ff3a14e72baef4fb6db9072646eed",
+        "size": 642601,
+        "type": "DieselGameBox",
+        "uploadedDate": "2023-06-06T17:25:49.914Z",
+        "url": "https://cdn1.epicgames.com/spt-assets/2a14cec8a1fc4ab9a74dd46bf147c9e6/grime-1kdhr.jpg",
+        "width": 2560
+      },
+      {
+        "alt": "Download GRIME Offer",
+        "height": 1600,
+        "md5": "696bc73ed1c22718d8f9dee6cafdc943",
+        "size": 416601,
+        "type": "DieselGameBoxTall",
+        "uploadedDate": "2023-06-06T17:25:49.760Z",
+        "url": "https://cdn1.epicgames.com/spt-assets/2a14cec8a1fc4ab9a74dd46bf147c9e6/grime-18bxg.jpg",
+        "width": 1200
+      }
+    ],
+    "lastModifiedDate": "2023-06-07T16:02:30.333Z",
+    "namespace": "3bb4afc31dd241c787bad056e9b8dbf9",
+    "releaseInfo": [
+      {
+        "appId": "028263f54a874e35800d142275254d2c",
+        "id": "03672f12b1ac4cfeae9e235c5c952e5e",
+        "platform": [
+          "Windows",
+          "Win32"
+        ]
+      }
+    ],
+    "requiresSecureAccount": false,
+    "status": "ACTIVE",
+    "title": "GRIME",
+    "unsearchable": true
+  }
+}

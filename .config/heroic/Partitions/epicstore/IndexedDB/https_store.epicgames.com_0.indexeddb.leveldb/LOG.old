@@ -1,0 +1,3 @@
+2023/09/25-18:41:25.284 2310 Reusing MANIFEST /home/christian/.config/heroic/Partitions/epicstore/IndexedDB/https_store.epicgames.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/09/25-18:41:25.285 2310 Recovering log #4
+2023/09/25-18:41:25.286 2310 Reusing old log /home/christian/.config/heroic/Partitions/epicstore/IndexedDB/https_store.epicgames.com_0.indexeddb.leveldb/000004.log 

@@ -1,0 +1,56 @@
+(12:05:39) INFO:    [Legendary]:        Running command: XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary --version
+(12:05:39) INFO:    [Legendary]:        Legendary location: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary
+(12:05:39) INFO:    [Gog]:              GOGDL location: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/gogdl
+(12:05:39) INFO:    [Connection]:       Connectivity: check-online
+(12:05:39) INFO:    [Connection]:       Pinging external endpoints
+(12:05:39) INFO:    [Backend]:          DRM module staus {
+  "oimompecagnajdejgnnjijobebaeigek": {
+    "name": "Widevine Content Decryption Module",
+    "status": "new",
+    "version": "4.10.2557.0"
+  }
+}
+(12:05:39) WARNING: [Backend]:          Protocol already registered.
+(12:05:39) INFO:    [Connection]:       Connectivity: online
+(12:05:39) ERROR:   [Gog]:              Unable to syncQueued playtime, userData not present
+(12:05:39) INFO:    [Gog]:              Running command: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/gogdl --auth-config-path /home/christian/.config/heroic/gog_store/auth.json --version
+(12:05:39) INFO:    [Backend]:          AreWeAntiCheatYet data downloaded
+(12:05:40) INFO:    [Nile]:             Running command: XDG_CONFIG_HOME=/home/christian/.config/heroic/nile_config /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/nile --version
+(12:05:40) INFO:    [Backend]:          Loading Screen Ready
+(12:05:40) INFO:    [Frontend]:         Refreshing undefined Library
+(12:05:40) WARNING: [Backend]:          refresh not implemented on Sideload Library Manager
+(12:05:40) INFO:    [Legendary]:        Refreshing library...
+(12:05:40) INFO:    [Legendary]:        Refreshing Epic Games...
+(12:05:40) INFO:    [Legendary]:        Game list updated, got 343 games & DLCs
+(12:05:40) INFO:    [Backend]:          Frontend Ready
+(12:05:40) WARNING: [Backend]:          listUpdateableGames not implemented on Sideload Library Manager
+(12:05:40) INFO:    [Gog]:              Found 0 game(s) to update
+(12:05:40) INFO:    [Legendary]:        Running command: XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary list --third-party
+(12:05:40) INFO:    [Backend]:          
+
+Heroic Version: 2.9.1 Boa Hancock
+Legendary Version:  0.20.32 Dark Energy (hotfix #6)
+GOGdl Version: 0.7.3
+Nile Version: 1.0.0 Jonathan Joestar
+
+Electron Version: 24.4.1
+Chrome Version: 112.0.5615.204
+NodeJS Version: 18.14.0
+
+OS: Ubuntu KERNEL: 6.2.0-32-generic ARCH: x64
+CPU: Intel Xeon® E3-1230 v3 @3.3 GOVERNOR: schedutil
+RAM: Total: 15.54 GiB Available: 11.96 GiB
+GRAPHICS: GPU0: GP104 [GeForce GTX 1080]  VRAM: 32MB 
+PROTOCOL: wayland
+
+(12:05:40) INFO:    [Backend]:          Checking for new Heroic Updates
+(12:05:40) INFO:    [Backend]:          Checking for current version changelog
+(12:05:40) INFO:    [Legendary]:        Checking for game updates: XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary list --third-party
+(12:05:42) WARNING: [DXVKInstaller]:    No GPU with Vulkan 1.1 support found, DXVK will not work
+(12:05:42) INFO:    [Winetricks]:       Downloading Winetricks
+(12:05:42) INFO:    [DXVKInstaller]:    Updating vkd3d to: vkd3d-proton-v2.10
+(12:05:42) INFO:    [DXVKInstaller]:    downloaded vkd3d
+(12:05:42) INFO:    [DXVKInstaller]:    extracting vkd3d
+(12:05:43) INFO:    [DXVKInstaller]:    vkd3d updated!
+(12:05:44) INFO:    [Legendary]:        Found 0 games to update
+(12:05:45) INFO:    [Backend]:          Starting the Download Queue

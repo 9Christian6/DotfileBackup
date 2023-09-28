@@ -1,0 +1,112 @@
+System Info:
+CPU: 8x Intel(R) Xeon(R) CPU E3-1230 v3 @ 3.30GHz
+Memory: 16.69 GB (used: 4.4 GB)
+GPUs:
+  GPU 0:
+    Name: NVIDIA Corporation GP104 [GeForce GTX 1080]
+    IDs: D=1b80 V=10de SD=6183 SV=3842
+    Driver: nouveau
+OS: Ubuntu 23.04 (Lunar Lobster) (linux)
+
+The current system is not a Steam Deck
+We are not running inside a Flatpak container
+
+Software Versions:
+  Heroic: 2.9.2 Boa Hancock
+  Legendary: 0.20.32 Dark Energy (hotfix #6)
+  gogdl: 0.7.3
+  Nile: 1.0.0 Jonathan Joestar
+
+Game Settings: {
+	"autoInstallDxvk": true,
+	"autoInstallVkd3d": true,
+	"preferSystemLibs": false,
+	"enableEsync": true,
+	"enableFsync": true,
+	"nvidiaPrime": false,
+	"enviromentOptions": [],
+	"wrapperOptions": [],
+	"showFps": false,
+	"useGameMode": false,
+	"language": "",
+	"wineVersion": {
+		"bin": "/home/christian/.local/share/Steam/steamapps/common/Proton - Experimental/proton",
+		"name": "Proton - Proton - Experimental",
+		"type": "proton"
+	},
+	"winePrefix": "/home/christian/Games/Heroic/Prefixes/default/BioShock Infinite Complete Edition",
+	"wineCrossoverBottle": "Heroic",
+	"autoInstallDxvkNvapi": true,
+	"eacRuntime": true,
+	"battlEyeRuntime": true
+}
+
+Game launched at: Tue Sep 19 2023 21:13:52 GMT+0200 (Central European Summer Time)
+
+Launch Command: HEROIC_APP_NAME=f9d6f0530ea140909f8e8a997a7532d7 HEROIC_APP_RUNNER=legendary HEROIC_APP_SOURCE=epic LD_PRELOAD= DOTNET_BUNDLE_EXTRACT_BASE_DIR= STEAM_COMPAT_CLIENT_INSTALL_PATH=/home/christian/.steam/steam STEAM_COMPAT_DATA_PATH="/home/christian/Games/Heroic/Prefixes/default/BioShock Infinite Complete Edition" STEAM_COMPAT_INSTALL_PATH=/home/christian/Games/Heroic/BioshockInfiniteCompleteEdition WINE_FULLSCREEN_FSR=0 PROTON_ENABLE_NVAPI=1 DXVK_NVAPI_ALLOW_OTHER_DRIVERS=1 PROTON_EAC_RUNTIME=/home/christian/.config/heroic/tools/runtimes/eac_runtime PROTON_BATTLEYE_RUNTIME=/home/christian/.config/heroic/tools/runtimes/battleye_runtime STEAM_COMPAT_APP_ID=0 SteamAppId=0 SteamGameId=heroic-BioshockInfiniteCompleteEdition PROTON_LOG_DIR=/home/christian /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary launch f9d6f0530ea140909f8e8a997a7532d7 --no-wine --wrapper " '/home/christian/.local/share/Steam/steamapps/common/Proton - Experimental/proton' run" --language en
+
+Game Log:
+[cli] INFO: Logging in...
+[Core] INFO: Trying to re-use existing login session...
+[cli] INFO: Checking for updates...
+[Core] INFO: Getting authentication token...
+[cli] INFO: Launching f9d6f0530ea140909f8e8a997a7532d7...
+
+Legendary update available!
+- New version: 0.20.33 - "Undue Alarm"
+- Release summary:
+ [*] Improved handling of SDL changes
+ [*] Added safeguards to prevent two simultaneous instances from corrupting the database
+ [*] Added support for running uninstallers
+ [*] More gracefully handles account errors
+See full changelog for additional details.
+- Release URL: https://legendary.gl/release/0.20.33
+
+- Download URL: https://legendary.gl/release/download/0.20.33/legendary
+fsync: up and running.
+wine: RLIMIT_NICE is <= 20, unable to use setpriority safely
+[S_API] SteamAPI_Init(): SteamAPI_IsSteamRunning() did not locate a running instance of Steam.
+[S_API FAIL] SteamAPI_Init() failed
+*   Trying 192.81.242.130...
+* TCP_NODELAY set
+* Connected to 508223012e5a5ff19f30a391b2bdadc0.my.2k.com (192.81.242.130) port 443 (#0)
+* mbedTLS: Connecting to 508223012e5a5ff19f30a391b2bdadc0.my.2k.com:443
+* mbedTLS: Set min SSL version to TLS 1.0
+* mbedTLS: Handshake complete, cipher is TLS-ECDHE-RSA-WITH-AES-256-GCM-SHA384
+* Dumping cert info:
+* cert. version     : 3
+* serial number     : 0D:61:F3:ED:62:C5:09:39:50:9C:B6:FA:0A:85:13:CE
+* issuer name       : C=US, O=DigiCert Inc, CN=DigiCert TLS RSA SHA256 2020 CA1
+* subject name      : C=US, ST=California, L=Novato, O=2K Games, Inc., CN=*.my.2k.com
+* issued  on        : 2023-04-20 00:00:00
+* expires on        : 2024-04-30 23:59:59
+* signed using      : RSA with SHA-256
+* RSA key size      : 2048 bits
+* basic constraints : CA=false
+* subject alt name  : *.my.2k.com, my.2k.com
+* key usage         : Digital Signature, Key Encipherment
+* ext key usage     : TLS Web Server Authentication, TLS Web Client Authentication
+
+* SSL connected
+> GET /discovery/v1/services HTTP/1.1
+Host: 508223012e5a5ff19f30a391b2bdadc0.my.2k.com
+Accept: */*
+User-Agent:2K Coretech Client 4.1.0 (da477150a0974fc3bd4015421fd61832)
+Content-Type:application/json
+Cache-Control:no-cache
+Authorization:Application da477150a0974fc3bd4015421fd61832
+
+< HTTP/1.1 200 OK
+< Date: Tue, 19 Sep 2023 19:14:05 GMT
+< Content-Type: application/json
+< Content-Length: 1238
+< Connection: keep-alive
+< X-2k-Server-Time: 1695150845
+< Cache-Control: max-age=3600
+< ETag: 00f6299822543c3dcdf739d8acd24e80
+< X-2k-Result-Total: 5
+< X-2k-Result-Count: 5
+< X-2k-Result-More: false
+< P3P: CP="See http://www.take2games.com/privacy"
+< 
+* Connection #0 to host 508223012e5a5ff19f30a391b2bdadc0.my.2k.com left intact

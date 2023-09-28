@@ -1,0 +1,1613 @@
+{
+	"epic_f9d6f0530ea140909f8e8a997a7532d7": {
+		"id": "55484903116017493",
+		"game_id": "51141816144016910",
+		"platform_id": "epic",
+		"external_id": "f9d6f0530ea140909f8e8a997a7532d7",
+		"dlcs_ids": [],
+		"dlcs": [],
+		"parent_id": null,
+		"supported_operating_systems": [
+			{
+				"slug": "linux",
+				"name": "Linux"
+			},
+			{
+				"slug": "osx",
+				"name": "macOS"
+			},
+			{
+				"slug": "windows",
+				"name": "Windows"
+			}
+		],
+		"available_languages": [
+			{
+				"code": "en-US"
+			}
+		],
+		"first_release_date": null,
+		"game": {
+			"id": "51141816144016910",
+			"parent_id": null,
+			"dlcs_ids": [
+				"51141815410975750",
+				"51141815411750721",
+				"52180192230917732",
+				"52861140824169390",
+				"53283435267260524",
+				"53283665396629622",
+				"55231873683985271"
+			],
+			"first_release_date": "2013-02-26T00:00:00+0000",
+			"releases": [
+				{
+					"id": "51141816139457502",
+					"platform_id": "steam",
+					"external_id": "8870",
+					"release_per_platform_id": "steam_8870"
+				},
+				{
+					"id": "51439913826476545",
+					"platform_id": "xboxone",
+					"external_id": "699731308",
+					"release_per_platform_id": "xboxone_699731308"
+				},
+				{
+					"id": "52231867517886298",
+					"platform_id": "gog",
+					"external_id": "1752654506",
+					"release_per_platform_id": "gog_1752654506"
+				},
+				{
+					"id": "52499142862615851",
+					"platform_id": "xboxone",
+					"external_id": "149827734",
+					"release_per_platform_id": "xboxone_149827734"
+				},
+				{
+					"id": "52625432092481378",
+					"platform_id": "humble",
+					"external_id": "bioshockinfinite_bundle_steam",
+					"release_per_platform_id": "humble_bioshockinfinite_bundle_steam"
+				},
+				{
+					"id": "52820538468161865",
+					"platform_id": "humble",
+					"external_id": "bioshockinfinite_steam",
+					"release_per_platform_id": "humble_bioshockinfinite_steam"
+				},
+				{
+					"id": "52831936686970370",
+					"platform_id": "humble",
+					"external_id": "bioshock_infinite_br_steam",
+					"release_per_platform_id": "humble_bioshock_infinite_br_steam"
+				},
+				{
+					"id": "52880378560680681",
+					"platform_id": "vision",
+					"external_id": "BLUS30629",
+					"release_per_platform_id": "vision_BLUS30629"
+				},
+				{
+					"id": "52896662507118787",
+					"platform_id": "vision",
+					"external_id": "NPUB31128",
+					"release_per_platform_id": "vision_NPUB31128"
+				},
+				{
+					"id": "52956990091551665",
+					"platform_id": "test",
+					"external_id": "EP1001-NPEB01290_00-BSIPSNEFIGSPSCEE",
+					"release_per_platform_id": "test_EP1001-NPEB01290_00-BSIPSNEFIGSPSCEE"
+				},
+				{
+					"id": "53043746239016805",
+					"platform_id": "humble",
+					"external_id": "bioshockinfinite_aspyr_steam",
+					"release_per_platform_id": "humble_bioshockinfinite_aspyr_steam"
+				},
+				{
+					"id": "53236253924957437",
+					"platform_id": "itch",
+					"external_id": "3ae64bdf2e3b4bd6fd307c8ba41ad6815418b4070c0cf2efca02a159",
+					"release_per_platform_id": "itch_3ae64bdf2e3b4bd6fd307c8ba41ad6815418b4070c0cf2efca02a159"
+				},
+				{
+					"id": "53236253930415755",
+					"platform_id": "itch",
+					"external_id": "451c54e372c52cc893aa6fcab03b1b59d57a38c5ea35c1849e0aa8b8",
+					"release_per_platform_id": "itch_451c54e372c52cc893aa6fcab03b1b59d57a38c5ea35c1849e0aa8b8"
+				},
+				{
+					"id": "53257651695379176",
+					"platform_id": "origin",
+					"external_id": "6bf4032e239066178e292dfab8bfb3ab69340ae7",
+					"release_per_platform_id": "origin_6bf4032e239066178e292dfab8bfb3ab69340ae7"
+				},
+				{
+					"id": "53257651695441299",
+					"platform_id": "origin",
+					"external_id": "f68454aee9982595fd3099daba737f2d8d7bff28",
+					"release_per_platform_id": "origin_f68454aee9982595fd3099daba737f2d8d7bff28"
+				},
+				{
+					"id": "53257744056543001",
+					"platform_id": "origin",
+					"external_id": "f202e1eeaa50ad58feb8040a2db824455c4cf9228bb9b6c95b3e18eada45864b",
+					"release_per_platform_id": "origin_f202e1eeaa50ad58feb8040a2db824455c4cf9228bb9b6c95b3e18eada45864b"
+				},
+				{
+					"id": "53257744070188449",
+					"platform_id": "origin",
+					"external_id": "75c31f562d06be0ee6eb56e4a6fd7ef58a3fabe60eadd8cb0d65fdc406ded730",
+					"release_per_platform_id": "origin_75c31f562d06be0ee6eb56e4a6fd7ef58a3fabe60eadd8cb0d65fdc406ded730"
+				},
+				{
+					"id": "53307297126544109",
+					"platform_id": "psn",
+					"external_id": "EP1001-NPEB01290_00-BSIPSNEFIGSPSCEE",
+					"release_per_platform_id": "psn_EP1001-NPEB01290_00-BSIPSNEFIGSPSCEE"
+				},
+				{
+					"id": "53350790212166376",
+					"platform_id": "vision",
+					"external_id": "BLES01705",
+					"release_per_platform_id": "vision_BLES01705"
+				},
+				{
+					"id": "53376896800221244",
+					"platform_id": "psx",
+					"external_id": "BioShock Infinite",
+					"release_per_platform_id": "psx_BioShock Infinite"
+				},
+				{
+					"id": "53508774047947502",
+					"platform_id": "psn",
+					"external_id": "NPUB31128_00",
+					"release_per_platform_id": "psn_NPUB31128_00"
+				},
+				{
+					"id": "53992077952138578",
+					"platform_id": "test",
+					"external_id": "/bioshock-infinite-free-download/",
+					"release_per_platform_id": "test_/bioshock-infinite-free-download/"
+				},
+				{
+					"id": "54024460243987730",
+					"platform_id": "test",
+					"external_id": "bioshock-infinite",
+					"release_per_platform_id": "test_bioshock-infinite"
+				},
+				{
+					"id": "54143737211141950",
+					"platform_id": "xboxone",
+					"external_id": "1414793309",
+					"release_per_platform_id": "xboxone_1414793309"
+				},
+				{
+					"id": "54881159916045706",
+					"platform_id": "humble",
+					"external_id": "bioshockinfinite_eu_bundle_steam",
+					"release_per_platform_id": "humble_bioshockinfinite_eu_bundle_steam"
+				},
+				{
+					"id": "54881344850024338",
+					"platform_id": "humble",
+					"external_id": "bioshockinfinite_rucis_bundle_steam",
+					"release_per_platform_id": "humble_bioshockinfinite_rucis_bundle_steam"
+				},
+				{
+					"id": "54882482160373756",
+					"platform_id": "humble",
+					"external_id": "bioshockinfinite_row_bundle_steam",
+					"release_per_platform_id": "humble_bioshockinfinite_row_bundle_steam"
+				},
+				{
+					"id": "55292099295401464",
+					"platform_id": "humble",
+					"external_id": "bioshockinfinite_cn_bundle_steam",
+					"release_per_platform_id": "humble_bioshockinfinite_cn_bundle_steam"
+				},
+				{
+					"id": "55484903116017493",
+					"platform_id": "epic",
+					"external_id": "f9d6f0530ea140909f8e8a997a7532d7",
+					"release_per_platform_id": "epic_f9d6f0530ea140909f8e8a997a7532d7"
+				},
+				{
+					"id": "56454259794305454",
+					"platform_id": "test",
+					"external_id": "8870",
+					"release_per_platform_id": "test_8870"
+				},
+				{
+					"id": "51141816144016910",
+					"platform_id": "generic",
+					"external_id": "51141816144016910",
+					"release_per_platform_id": "generic_51141816144016910"
+				}
+			],
+			"title": {
+				"*": "BioShock Infinite",
+				"en-US": "BioShock Infinite"
+			},
+			"sorting_title": {
+				"*": "Bioshock 3",
+				"en-US": "Bioshock 3"
+			},
+			"type": "game",
+			"developers_ids": [
+				"51141815288620035"
+			],
+			"developers": [
+				{
+					"id": "51141815288620035",
+					"name": "Irrational Games",
+					"slug": "irrational-games"
+				}
+			],
+			"publishers_ids": [
+				"51141231110368142"
+			],
+			"publishers": [
+				{
+					"id": "51141231110368142",
+					"name": "2K Games",
+					"slug": "2k-games"
+				}
+			],
+			"genres_ids": [
+				"51071842251704278",
+				"51141224821260861"
+			],
+			"genres": [
+				{
+					"id": "51071842251704278",
+					"name": {
+						"*": "Adventure",
+						"en-US": "Adventure"
+					},
+					"slug": "adventure"
+				},
+				{
+					"id": "51141224821260861",
+					"name": {
+						"*": "Shooter",
+						"en-US": "Shooter"
+					},
+					"slug": "shooter"
+				}
+			],
+			"themes_ids": [
+				"51071842231533391",
+				"51071842246739768",
+				"51071842249505927",
+				"51141224819961538",
+				"51141225463821636",
+				"51141227910729860"
+			],
+			"themes": [
+				{
+					"id": "51071842231533391",
+					"name": {
+						"*": "Action",
+						"en-US": "Action"
+					},
+					"slug": "action"
+				},
+				{
+					"id": "51071842246739768",
+					"name": {
+						"*": "Fantasy",
+						"en-US": "Fantasy"
+					},
+					"slug": "fantasy"
+				},
+				{
+					"id": "51071842249505927",
+					"name": {
+						"*": "Historical",
+						"en-US": "Historical"
+					},
+					"slug": "historical"
+				},
+				{
+					"id": "51141224819961538",
+					"name": {
+						"*": "Horror",
+						"en-US": "Horror"
+					},
+					"slug": "horror"
+				},
+				{
+					"id": "51141225463821636",
+					"name": {
+						"*": "Science fiction",
+						"en-US": "Science fiction"
+					},
+					"slug": "science-fiction"
+				},
+				{
+					"id": "51141227910729860",
+					"name": {
+						"*": "Drama",
+						"en-US": "Drama"
+					},
+					"slug": "drama"
+				}
+			],
+			"screenshots": [
+				{
+					"url_format": "https://images.gog.com/3ba408464dc53bdea70be130fe8754f1ee3ba1b7dbccb7a4dec31058501a6976{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/aabc56c658cae0f2e8ac90fa61152db4d398e159ff7295c7c02c25c94614b8d1{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/1c1094261532798d587eb3afd4bef617bbe0c2161881b2054c947e8aaae1efac{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/b6216420b53e69d740e6339b3fa3e23324dd10ea5b9d247857166ea3ccc3460f{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/b3a0d1a9bd0711095e0108766bd955f9950d1051a8898a3cd21f517e7a85d25e{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/3ad91a7b4b2200e47259878291dfee2812ebd7469035210b79e1f4d7c6b8f984{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/592336f645eca6fafaa09d0b5e9cac1cb269ba0deba2cca85611b3ec2801bbbf{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/0b416adda4425dc4f02ae35bf0d574a61dc9bf1903205a2016da62e3f0d162fc{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/b119c28b5b6bfb65f9c54357a28e23b12a377fe3b644b1c6fcc10bd0670e4fa9{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/a9ee1867c08407ce5236e7da89735fbf8e4c80fd169f9b86aa8870ef7fb1813a{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/0a26770f866af43e764ffd2c5ae7cee6f51ffb234a4c43954f8631aeea0aba6c{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/e17f5d584c5c38d77cbe5c81912e5f5b32246aeff2310fee6669d7d9ae562e48{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/193ba713494c04c4b417a1e4b7bcf5d044d1f6c0628cb87a7c32815670b38225{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/8d4938c641d12aed6bbf7c06c4d6e6163a98571231e6bd5cb67188e0e92d43ae{formatter}.{ext}?namespace=gamesdb"
+				}
+			],
+			"videos": [],
+			"artworks": [
+				{
+					"url_format": "https://images.gog.com/7436cc0febe570f820a1328da57ba789f4c096b8b1fa0c52bcb09e9f005732e9{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/a282bb6005682d13f7ade332df5426a4aeb071a6e8f29870d556bacd1a878404{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/774616f1d941ceb13b598657f1641caa2891b9c90f06ad5953ec9a688382bf87{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/1e6c31c7dfc483fa8c2b02bf99269ef84ed63e2b530e5bfc12f49e5863331625{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/85736622fe1cd8cd61edfa01fdae7109ac50156b0b24707180a5420ea41790ba{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/040cffd08de0ad1da28391bcb66058e6e5fc12deaf48f19ca122268050db5cae{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/e1cc32c0de15b96ecbb60875161ebcde25853f09a47b785938071d92175a6e92{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/ce0e3763111073e3d7c5553dc47a6c884a2b1fc13aa8c5dc6d9742f55755f72c{formatter}.{ext}?namespace=gamesdb"
+				}
+			],
+			"summary": {
+				"*": "BioShock Infinite is the third game in the BioShock series. It is not a direct sequel/prequel to any of the previous BioShock games but takes place in an entirely different setting, although it shares similar features, gameplay and concepts with the previous games. BioShock Infinite features a range of environments that force the player to adapt, with different weapons and strategies for each situation. Interior spaces feature close combat with enemies, but unlike previous games set in Rapture, the setting of Infinite contains open spaces with emphasis on sniping and ranged combat against as many as fifteen enemies at once.",
+				"en-US": "BioShock Infinite is the third game in the BioShock series. It is not a direct sequel/prequel to any of the previous BioShock games but takes place in an entirely different setting, although it shares similar features, gameplay and concepts with the previous games. BioShock Infinite features a range of environments that force the player to adapt, with different weapons and strategies for each situation. Interior spaces feature close combat with enemies, but unlike previous games set in Rapture, the setting of Infinite contains open spaces with emphasis on sniping and ranged combat against as many as fifteen enemies at once."
+			},
+			"visible_in_library": true,
+			"aggregated_rating": 93.2143,
+			"game_modes": [
+				{
+					"id": "53051895165351137",
+					"name": "Single player",
+					"slug": "single-player"
+				}
+			],
+			"horizontal_artwork": {
+				"url_format": "https://images.gog.com/1712b2e8feb95e9e8237299d08168c2ad9aa1c7620b3463367260b0403faab6a{formatter}.{ext}?namespace=gamesdb"
+			},
+			"background": {
+				"url_format": "https://images.gog.com/1712b2e8feb95e9e8237299d08168c2ad9aa1c7620b3463367260b0403faab6a{formatter}.{ext}?namespace=gamesdb"
+			},
+			"vertical_cover": {
+				"url_format": "https://images.gog.com/7f5f0b28a2d93580010dec745b655bbfa4185ac90049895baa4fce7fc12f2fdd{formatter}.{ext}?namespace=gamesdb"
+			},
+			"cover": {
+				"url_format": "https://images.gog.com/7f5f0b28a2d93580010dec745b655bbfa4185ac90049895baa4fce7fc12f2fdd{formatter}.{ext}?namespace=gamesdb"
+			},
+			"logo": {
+				"url_format": "https://images.gog.com/77ad37d4690675e04e9d77dcdbb95175cc4726b720a5453282a13c660ae72caa{formatter}.{ext}?namespace=gamesdb"
+			},
+			"square_icon": {
+				"url_format": "https://images.gog.com/ce0e3763111073e3d7c5553dc47a6c884a2b1fc13aa8c5dc6d9742f55755f72c{formatter}.{ext}?namespace=gamesdb"
+			},
+			"global_popularity_all_time": 0,
+			"global_popularity_current": 0,
+			"series": {
+				"id": "53028465547543070",
+				"name": "Bioshock",
+				"slug": "bioshock"
+			}
+		},
+		"title": {
+			"*": "Bioshock Infinite: Complete Collection",
+			"en-US": "BioShock Infinite"
+		},
+		"sorting_title": {
+			"*": "Bioshock Infinite: Complete Collection",
+			"en-US": "Bioshock Infinite: Complete Collection"
+		},
+		"type": "game",
+		"summary": {
+			"*": "This first-person story-driven shooter and entry in the Bioshock franchise follows Booker DeWitt as he enters the floating independent (formerly US) city of Columbia in 1912 and attempts to retrieve a girl trapped in a tower by the city's self-proclaimed despot/prophet in order to erase his financial debt. Throughout the story, themes of violence, racism and fatalism are brought up.",
+			"en-US": "BioShock Infinite is the third game in the BioShock series. It is not a direct sequel/prequel to any of the previous BioShock games but takes place in an entirely different setting, although it shares similar features, gameplay and concepts with the previous games. BioShock Infinite features a range of environments that force the player to adapt, with different weapons and strategies for each situation. Interior spaces feature close combat with enemies, but unlike previous games set in Rapture, the setting of Infinite contains open spaces with emphasis on sniping and ranged combat against as many as fifteen enemies at once."
+		},
+		"videos": [],
+		"game_modes": [
+			{
+				"id": "53051895165351137",
+				"name": "Single player",
+				"slug": "single-player"
+			}
+		],
+		"logo": {
+			"url_format": "https://images.gog.com/77ad37d4690675e04e9d77dcdbb95175cc4726b720a5453282a13c660ae72caa{formatter}.{ext}?namespace=gamesdb"
+		},
+		"series": {
+			"id": "53028465547543070",
+			"name": "Bioshock",
+			"slug": "bioshock"
+		},
+		"etag": "\"c46b04cec69345c13cc31ace22937962\""
+	},
+	"__timestamp": {
+		"epic_f9d6f0530ea140909f8e8a997a7532d7": "Sun Sep 17 2023 13:11:48 GMT+0200 (Central European Summer Time)",
+		"epic_Flagfin": "Fri Sep 22 2023 21:33:56 GMT+0200 (Central European Summer Time)",
+		"epic_Ginger": "Sat Sep 23 2023 09:48:07 GMT+0200 (Central European Summer Time)"
+	},
+	"epic_Flagfin": {
+		"id": "53536648289419371",
+		"game_id": "51154313226865472",
+		"platform_id": "epic",
+		"external_id": "Flagfin",
+		"dlcs_ids": [],
+		"dlcs": [],
+		"parent_id": null,
+		"supported_operating_systems": [
+			{
+				"slug": "linux",
+				"name": "Linux"
+			},
+			{
+				"slug": "osx",
+				"name": "macOS"
+			},
+			{
+				"slug": "windows",
+				"name": "Windows"
+			}
+		],
+		"available_languages": [
+			{
+				"code": "en-US"
+			}
+		],
+		"first_release_date": null,
+		"game": {
+			"id": "51154313226865472",
+			"parent_id": null,
+			"dlcs_ids": [],
+			"first_release_date": "2017-08-02T00:00:00+0000",
+			"releases": [
+				{
+					"id": "51154313217851160",
+					"platform_id": "steam",
+					"external_id": "343860",
+					"release_per_platform_id": "steam_343860"
+				},
+				{
+					"id": "51428758656246758",
+					"platform_id": "gog",
+					"external_id": "1452577588",
+					"release_per_platform_id": "gog_1452577588"
+				},
+				{
+					"id": "52374259031613918",
+					"platform_id": "psn",
+					"external_id": "CUSA11515_00",
+					"release_per_platform_id": "psn_CUSA11515_00"
+				},
+				{
+					"id": "52382535659137019",
+					"platform_id": "xboxone",
+					"external_id": "1725136156",
+					"release_per_platform_id": "xboxone_1725136156"
+				},
+				{
+					"id": "52382536298409613",
+					"platform_id": "psn",
+					"external_id": "CUSA11366_00",
+					"release_per_platform_id": "psn_CUSA11366_00"
+				},
+				{
+					"id": "52448257362437456",
+					"platform_id": "humble",
+					"external_id": "tacoma",
+					"release_per_platform_id": "humble_tacoma"
+				},
+				{
+					"id": "52478171930331892",
+					"platform_id": "humble",
+					"external_id": "tacoma_trove",
+					"release_per_platform_id": "humble_tacoma_trove"
+				},
+				{
+					"id": "52511054854457650",
+					"platform_id": "amazon",
+					"external_id": "605cea63-330e-4386-a5b0-17200970226f",
+					"release_per_platform_id": "amazon_605cea63-330e-4386-a5b0-17200970226f"
+				},
+				{
+					"id": "52512109377859689",
+					"platform_id": "humble",
+					"external_id": "605cea63-330e-4386-a5b0-17200970226f",
+					"release_per_platform_id": "humble_605cea63-330e-4386-a5b0-17200970226f"
+				},
+				{
+					"id": "52579177370302476",
+					"platform_id": "humble",
+					"external_id": "tacoma_monthly_steam",
+					"release_per_platform_id": "humble_tacoma_monthly_steam"
+				},
+				{
+					"id": "52626263064389854",
+					"platform_id": "twitch",
+					"external_id": "605cea63-330e-4386-a5b0-17200970226f",
+					"release_per_platform_id": "twitch_605cea63-330e-4386-a5b0-17200970226f"
+				},
+				{
+					"id": "52678350684907635",
+					"platform_id": "origin",
+					"external_id": "Origin.OFR.50.0003831",
+					"release_per_platform_id": "origin_Origin.OFR.50.0003831"
+				},
+				{
+					"id": "52952305102270750",
+					"platform_id": "3ds",
+					"external_id": "605cea63-330e-4386-a5b0-17200970226f",
+					"release_per_platform_id": "3ds_605cea63-330e-4386-a5b0-17200970226f"
+				},
+				{
+					"id": "52953494261021463",
+					"platform_id": "winstore",
+					"external_id": "9p4wkzxwp1qw",
+					"release_per_platform_id": "winstore_9p4wkzxwp1qw"
+				},
+				{
+					"id": "53234294865566480",
+					"platform_id": "humble",
+					"external_id": "tacoma_steam",
+					"release_per_platform_id": "humble_tacoma_steam"
+				},
+				{
+					"id": "53236254568735487",
+					"platform_id": "itch",
+					"external_id": "fa184cbe663818ece8e763228f772240bb87887ad98aa6752d185e3a",
+					"release_per_platform_id": "itch_fa184cbe663818ece8e763228f772240bb87887ad98aa6752d185e3a"
+				},
+				{
+					"id": "53236432697224754",
+					"platform_id": "itch",
+					"external_id": "XFxSYWlkc2VydmVyXGdcTXkgRHJpdmVcRml0R2lybCBHYW1lc1xUYWNvbWEgW0ZpdEdpcmwgUmVwYWNrXQ==",
+					"release_per_platform_id": "itch_XFxSYWlkc2VydmVyXGdcTXkgRHJpdmVcRml0R2lybCBHYW1lc1xUYWNvbWEgW0ZpdEdpcmwgUmVwYWNrXQ=="
+				},
+				{
+					"id": "53257652354037556",
+					"platform_id": "origin",
+					"external_id": "06f64b823f694d79cbf32de313086ba3d46bf033",
+					"release_per_platform_id": "origin_06f64b823f694d79cbf32de313086ba3d46bf033"
+				},
+				{
+					"id": "53257744787730119",
+					"platform_id": "origin",
+					"external_id": "ea68589688fc8b09e8203ebb6d961ec1b00fcafb0b05ff4d46e01181b3a1b17d",
+					"release_per_platform_id": "origin_ea68589688fc8b09e8203ebb6d961ec1b00fcafb0b05ff4d46e01181b3a1b17d"
+				},
+				{
+					"id": "53262339265843463",
+					"platform_id": "test",
+					"external_id": "8259",
+					"release_per_platform_id": "test_8259"
+				},
+				{
+					"id": "53262468464190826",
+					"platform_id": "test",
+					"external_id": "Tacoma",
+					"release_per_platform_id": "test_Tacoma"
+				},
+				{
+					"id": "53536648289419371",
+					"platform_id": "epic",
+					"external_id": "Flagfin",
+					"release_per_platform_id": "epic_Flagfin"
+				},
+				{
+					"id": "53983815646852733",
+					"platform_id": "humble",
+					"external_id": "tacoma_bundle_steam",
+					"release_per_platform_id": "humble_tacoma_bundle_steam"
+				},
+				{
+					"id": "54201252167520302",
+					"platform_id": "itch",
+					"external_id": "154931",
+					"release_per_platform_id": "itch_154931"
+				},
+				{
+					"id": "54220565731452881",
+					"platform_id": "origin",
+					"external_id": "Origin.OFR.50.0003831@subscription",
+					"release_per_platform_id": "origin_Origin.OFR.50.0003831@subscription"
+				},
+				{
+					"id": "54372687208399428",
+					"platform_id": "test",
+					"external_id": "Flagfin",
+					"release_per_platform_id": "test_Flagfin"
+				},
+				{
+					"id": "54931313030571353",
+					"platform_id": "fanatical",
+					"external_id": "tacoma",
+					"release_per_platform_id": "fanatical_tacoma"
+				},
+				{
+					"id": "55093799749278993",
+					"platform_id": "test",
+					"external_id": "gfn_100855611",
+					"release_per_platform_id": "test_gfn_100855611"
+				},
+				{
+					"id": "55403729352057327",
+					"platform_id": "beamdog",
+					"external_id": "00000000-0000-0000-0000-000000007922",
+					"release_per_platform_id": "beamdog_00000000-0000-0000-0000-000000007922"
+				},
+				{
+					"id": "55406709932701921",
+					"platform_id": "beamdog",
+					"external_id": "Flagfin",
+					"release_per_platform_id": "beamdog_Flagfin"
+				},
+				{
+					"id": "55407077113467607",
+					"platform_id": "humble",
+					"external_id": "Flagfin",
+					"release_per_platform_id": "humble_Flagfin"
+				},
+				{
+					"id": "55420956084000447",
+					"platform_id": "egg",
+					"external_id": "Flagfin",
+					"release_per_platform_id": "egg_Flagfin"
+				},
+				{
+					"id": "55678376956353314",
+					"platform_id": "test",
+					"external_id": "2b05e7eba9a7487e6dfe83a1a5b96981d5f94d1c",
+					"release_per_platform_id": "test_2b05e7eba9a7487e6dfe83a1a5b96981d5f94d1c"
+				},
+				{
+					"id": "55678472283226926",
+					"platform_id": "test",
+					"external_id": "bcfb319c1959ca7a4a0c21dd1f0456a37e05c2ed",
+					"release_per_platform_id": "test_bcfb319c1959ca7a4a0c21dd1f0456a37e05c2ed"
+				},
+				{
+					"id": "56207655261918209",
+					"platform_id": "itch",
+					"external_id": "Flagfin",
+					"release_per_platform_id": "itch_Flagfin"
+				},
+				{
+					"id": "51154313226865472",
+					"platform_id": "generic",
+					"external_id": "51154313226865472",
+					"release_per_platform_id": "generic_51154313226865472"
+				}
+			],
+			"title": {
+				"*": "Tacoma",
+				"en-US": "Tacoma"
+			},
+			"sorting_title": {
+				"*": "Tacoma",
+				"en-US": "Tacoma"
+			},
+			"type": "game",
+			"developers_ids": [
+				"51152925923761232"
+			],
+			"developers": [
+				{
+					"id": "51152925923761232",
+					"name": "Fullbright",
+					"slug": "fullbright"
+				}
+			],
+			"publishers_ids": [
+				"51152925923761232"
+			],
+			"publishers": [
+				{
+					"id": "51152925923761232",
+					"name": "Fullbright",
+					"slug": "fullbright"
+				}
+			],
+			"genres_ids": [
+				"51071842251704278",
+				"51121492616405278"
+			],
+			"genres": [
+				{
+					"id": "51071842251704278",
+					"name": {
+						"*": "Adventure",
+						"en-US": "Adventure"
+					},
+					"slug": "adventure"
+				},
+				{
+					"id": "51121492616405278",
+					"name": {
+						"*": "Indie",
+						"en-US": "Indie"
+					},
+					"slug": "indie"
+				}
+			],
+			"themes_ids": [
+				"51141225463821636",
+				"51141227696328058",
+				"51141227910729860"
+			],
+			"themes": [
+				{
+					"id": "51141225463821636",
+					"name": {
+						"*": "Science fiction",
+						"en-US": "Science fiction"
+					},
+					"slug": "science-fiction"
+				},
+				{
+					"id": "51141227696328058",
+					"name": {
+						"*": "Mystery",
+						"en-US": "Mystery"
+					},
+					"slug": "mystery"
+				},
+				{
+					"id": "51141227910729860",
+					"name": {
+						"*": "Drama",
+						"en-US": "Drama"
+					},
+					"slug": "drama"
+				}
+			],
+			"screenshots": [
+				{
+					"url_format": "https://images.gog.com/3e24604c9af577c119a5cd11a82daf04b63f2cae6d150d0919f280784dda871f{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/76dd54350bc4d3337f77bad8fdedbe69c10e57208090db7c254acd68a25ef0bd{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/51765eb5b4bd4fc18753970eb5254f7ad0ff67e98fd630a8ca2c48117b5357c8{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/e37a3827de26fde3aac54bf57bb6726518974fa440e0b0e6b7dcae42aa0d1481{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/e82518c0f7efda394efd742ddb0e16b3192823516d3bca051752b595b909ad8a{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/ca8ae415f0586705ed5b22c5296aef3027f58cd836271fc4425f777a6220e640{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/c68fd383de425297763cabfc93d3cc20f3b41c51677f2356de1979c5a48587e1{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/a182a04014367512a6ed6bd4224a8aee49247da45a621fd3a2a03feb5342f41c{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/ef0edc39963540bb228204d55d8acd6b14155a67616eb632d6edc1eee29bc6c3{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/0129a319f67b15656bd2ee472309f5c3be0c4a12166015e04b0dced4ea164da5{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/52f6f601a8ae9f8c0029aa288ae3e02c7971c7d36e4f3cb549c981581589eca1{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/a9cb133309bf82c81b98b6a3f896c68b78bdca04cbc2a4297caeec62acd41ea9{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/1a9c60252a3d01dc2a102a2e218f4b6dde11c8aaeb4c7ab400e8fd5453954c74{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/63952acb9174c322855b52e44a27b8e48bee4f4fc5c8d643f16b432b539f6ef3{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/7ff68f240753da4bf3598d0867e36aa21994c95e3f159b964edd9c86a7c849d5{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/078c59d6a5801eac2c7d0d669bdd739f028cd04e2776b7116b77b769fdd4f794{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/07fa28170563aa2a4f744e0f1d81072c58accfcf29e7b11629be7f33133dcea6{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/48739fcc178e6222a6b20a1ab1743dc00e4d85f078b620441bbe730430395004{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/43d1d52e79d93f4f7c8e3155113585f963c07dfb8b11465a07e18fe20a993d01{formatter}.{ext}?namespace=gamesdb"
+				}
+			],
+			"videos": [
+				{
+					"provider": "youtube",
+					"video_id": "nE508CuP9wU",
+					"thumbnail_id": "nE508CuP9wU",
+					"name": "Teaser"
+				},
+				{
+					"provider": "youtube",
+					"video_id": "2e19B7vsYMM",
+					"thumbnail_id": "2e19B7vsYMM",
+					"name": "Trailer"
+				},
+				{
+					"provider": "youtube",
+					"video_id": "osgba8G_LWw",
+					"thumbnail_id": "osgba8G_LWw",
+					"name": "Trailer"
+				},
+				{
+					"provider": "youtube",
+					"video_id": "ySTa2GsVYAQ",
+					"thumbnail_id": "ySTa2GsVYAQ",
+					"name": "Trailer"
+				},
+				{
+					"provider": "youtube",
+					"video_id": "8BkLMgaoQcM",
+					"thumbnail_id": "8BkLMgaoQcM",
+					"name": "Announce Trailer for Xbox One"
+				},
+				{
+					"provider": "youtube",
+					"video_id": "7sKwv8XjIVg",
+					"thumbnail_id": "7sKwv8XjIVg",
+					"name": "Trailer"
+				}
+			],
+			"artworks": [
+				{
+					"url_format": "https://images.gog.com/1cccb07f957fa3d965f30e9983d23a500421a25e9c31543012522744b3658853{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/5d78de33df8648586ed9042ebbdaa306fef8fedcc30f504c9cb42f0f3477800d{formatter}.{ext}?namespace=gamesdb"
+				}
+			],
+			"summary": {
+				"*": "Tacoma is a sci-fi narrative adventure set aboard a high-tech space station in the year 2088. Explore every detail of how the station's crew lived and worked, finding the clues that add up to a gripping story of trust, fear, and resolve in the face of disaster.",
+				"en-US": "Tacoma is a sci-fi narrative adventure set aboard a high-tech space station in the year 2088. Explore every detail of how the station's crew lived and worked, finding the clues that add up to a gripping story of trust, fear, and resolve in the face of disaster."
+			},
+			"visible_in_library": true,
+			"aggregated_rating": 78.1875,
+			"game_modes": [
+				{
+					"id": "53051895165351137",
+					"name": "Single player",
+					"slug": "single-player"
+				}
+			],
+			"horizontal_artwork": {
+				"url_format": "https://images.gog.com/b0d7c355bdfd43f59fb0659f29b277cf8a64a7ee0ac7deeaa5c41bc66a78156c{formatter}.{ext}?namespace=gamesdb"
+			},
+			"background": {
+				"url_format": "https://images.gog.com/b0d7c355bdfd43f59fb0659f29b277cf8a64a7ee0ac7deeaa5c41bc66a78156c{formatter}.{ext}?namespace=gamesdb"
+			},
+			"vertical_cover": {
+				"url_format": "https://images.gog.com/b0fe17d3e6a7e115737680febc78822ab495d1aeb872cf35b7b2f53ae422d896{formatter}.{ext}?namespace=gamesdb"
+			},
+			"cover": {
+				"url_format": "https://images.gog.com/b0fe17d3e6a7e115737680febc78822ab495d1aeb872cf35b7b2f53ae422d896{formatter}.{ext}?namespace=gamesdb"
+			},
+			"logo": {
+				"url_format": "https://images.gog.com/b3aca20449d2a1021c2a02dbf7ae1e5e3c1380760c841a9139ab6a339fe44181{formatter}.{ext}?namespace=gamesdb"
+			},
+			"icon": {
+				"url_format": "https://images.gog.com/02f88533b3d04302b665060383448cda9b86c643974bba60ba1d61896fb80348{formatter}.{ext}?namespace=gamesdb"
+			},
+			"square_icon": {
+				"url_format": "https://images.gog.com/5d78de33df8648586ed9042ebbdaa306fef8fedcc30f504c9cb42f0f3477800d{formatter}.{ext}?namespace=gamesdb"
+			},
+			"global_popularity_all_time": 0,
+			"global_popularity_current": 0
+		},
+		"title": {
+			"*": "Tacoma",
+			"en-US": "Tacoma"
+		},
+		"sorting_title": {
+			"*": "Tacoma",
+			"en-US": "Tacoma"
+		},
+		"type": "game",
+		"summary": {
+			"*": "Tacoma is a sci-fi narrative adventure set aboard a high-tech space station in the year 2088. Explore every detail of how the station's crew lived and worked, finding the clues that add up to a gripping story of trust, fear, and resolve in the face of disaster.",
+			"en-US": "Tacoma is a sci-fi narrative adventure set aboard a high-tech space station in the year 2088. Explore every detail of how the station's crew lived and worked, finding the clues that add up to a gripping story of trust, fear, and resolve in the face of disaster."
+		},
+		"videos": [],
+		"game_modes": [
+			{
+				"id": "53051895165351137",
+				"name": "Single player",
+				"slug": "single-player"
+			}
+		],
+		"icon": {
+			"url_format": "https://images.gog.com/02f88533b3d04302b665060383448cda9b86c643974bba60ba1d61896fb80348{formatter}.{ext}?namespace=gamesdb"
+		},
+		"logo": {
+			"url_format": "https://images.gog.com/b3aca20449d2a1021c2a02dbf7ae1e5e3c1380760c841a9139ab6a339fe44181{formatter}.{ext}?namespace=gamesdb"
+		},
+		"etag": "\"044946c2a5bef09546d24826b931c760\""
+	},
+	"epic_Ginger": {
+		"id": "52501637373555127",
+		"game_id": "51152725611062641",
+		"platform_id": "epic",
+		"external_id": "Ginger",
+		"dlcs_ids": [],
+		"dlcs": [],
+		"parent_id": null,
+		"supported_operating_systems": [
+			{
+				"slug": "windows",
+				"name": "Windows"
+			}
+		],
+		"available_languages": [
+			{
+				"code": "en-US"
+			}
+		],
+		"first_release_date": null,
+		"game": {
+			"id": "51152725611062641",
+			"parent_id": null,
+			"dlcs_ids": [
+				"52269239054819130",
+				"52411975779057925",
+				"52411980424342415",
+				"52411980782373609",
+				"52415040049424338",
+				"52418105654127520",
+				"52421169614113591",
+				"52424230166771414",
+				"52427294354601046",
+				"52430352556386657",
+				"52433422415177469",
+				"52436479513893008",
+				"52439548451123583",
+				"52442615483789637",
+				"52445681771846948",
+				"52448748186193593",
+				"52451820746483727",
+				"52455104930492730",
+				"52458176402472110",
+				"52461256875954538",
+				"52463600473656919",
+				"52464335592433334",
+				"52467406962694961",
+				"52470477390269215",
+				"52473551886533923",
+				"52476622836988420",
+				"52479698161845185",
+				"52482775713480461",
+				"52485854211738093",
+				"52488940619284374",
+				"52492029876477410",
+				"52495122203742089",
+				"52498208233789668",
+				"52501312021033430",
+				"52504407042189708",
+				"52507498818226174",
+				"52510586474270452",
+				"52513692720855952",
+				"52516812118327160",
+				"52519921042884280",
+				"52523012357335698",
+				"52526101512426601",
+				"52529188032165185",
+				"52532274894199653",
+				"52535363086700106",
+				"52538448558543566",
+				"52541533899679168",
+				"52544627629918103",
+				"52547716436847979",
+				"52550812944195181",
+				"52553905619953974",
+				"52556994883761826",
+				"52560094437501560",
+				"52563183353148676",
+				"52566271005852933",
+				"52569357292889266",
+				"52572448252812968",
+				"52575534916020714",
+				"52578619679900467",
+				"52581717711025765",
+				"52584803774033761",
+				"52587895933756539",
+				"52591015633499867",
+				"52594131373654193",
+				"52597233176893580",
+				"52600348083648776",
+				"52603472760880641",
+				"52606575248702198",
+				"52609691201153222",
+				"52612786770972250",
+				"52615894282139305",
+				"52618990806744757",
+				"52622095693774281",
+				"52625201542970292",
+				"52628300724205544",
+				"52631401567953236",
+				"52634501696427889",
+				"52637601672306542",
+				"52640705407278911",
+				"52643815265579563",
+				"52646925053360235",
+				"52650030624107451",
+				"52653135628811834",
+				"52656241176396502",
+				"52659359429330865",
+				"52903575448809284",
+				"53448971734326669",
+				"53672782032806405",
+				"53936013922139665",
+				"53937272880726549",
+				"53937273117878970",
+				"53937273731964832",
+				"53937274761920444",
+				"54707454043401820",
+				"55780421819614703",
+				"55783711563409221",
+				"55889890129969712",
+				"56458045498223878",
+				"56702456087286867"
+			],
+			"first_release_date": "2020-12-09T00:00:00+0000",
+			"releases": [
+				{
+					"id": "51811581085313589",
+					"platform_id": "gog",
+					"external_id": "1423049311",
+					"release_per_platform_id": "gog_1423049311"
+				},
+				{
+					"id": "52417732545587215",
+					"platform_id": "steam",
+					"external_id": "1091500",
+					"release_per_platform_id": "steam_1091500"
+				},
+				{
+					"id": "52501637373555127",
+					"platform_id": "epic",
+					"external_id": "Ginger",
+					"release_per_platform_id": "epic_Ginger"
+				},
+				{
+					"id": "52642791501989641",
+					"platform_id": "epic",
+					"external_id": "GingerDummy",
+					"release_per_platform_id": "epic_GingerDummy"
+				},
+				{
+					"id": "52883223658429343",
+					"platform_id": "psn",
+					"external_id": "CUSA16596_00",
+					"release_per_platform_id": "psn_CUSA16596_00"
+				},
+				{
+					"id": "53252728058752227",
+					"platform_id": "test",
+					"external_id": "test_game_id",
+					"release_per_platform_id": "test_test_game_id"
+				},
+				{
+					"id": "53316652759061724",
+					"platform_id": "discord",
+					"external_id": "364f18ab-253a-4d89-9f97-afb7ef302324",
+					"release_per_platform_id": "discord_364f18ab-253a-4d89-9f97-afb7ef302324"
+				},
+				{
+					"id": "53437389850667754",
+					"platform_id": "origin",
+					"external_id": "2093619782",
+					"release_per_platform_id": "origin_2093619782"
+				},
+				{
+					"id": "53461732600455749",
+					"platform_id": "origin",
+					"external_id": "1091500",
+					"release_per_platform_id": "origin_1091500"
+				},
+				{
+					"id": "53472660611351782",
+					"platform_id": "steam",
+					"external_id": "100004",
+					"release_per_platform_id": "steam_100004"
+				},
+				{
+					"id": "53480651634136335",
+					"platform_id": "origin",
+					"external_id": "412023",
+					"release_per_platform_id": "origin_412023"
+				},
+				{
+					"id": "53919941014709370",
+					"platform_id": "xboxone",
+					"external_id": "222473492",
+					"release_per_platform_id": "xboxone_222473492"
+				},
+				{
+					"id": "53926456556620193",
+					"platform_id": "humble",
+					"external_id": "cyberpunk2077_gog_keyless",
+					"release_per_platform_id": "humble_cyberpunk2077_gog_keyless"
+				},
+				{
+					"id": "53939250316111839",
+					"platform_id": "stadia",
+					"external_id": "stadia_cp77-stub",
+					"release_per_platform_id": "stadia_stadia_cp77-stub"
+				},
+				{
+					"id": "53940877390905165",
+					"platform_id": "psn",
+					"external_id": "CUSA16579_00",
+					"release_per_platform_id": "psn_CUSA16579_00"
+				},
+				{
+					"id": "53946988558553985",
+					"platform_id": "psn",
+					"external_id": "CUSA16496_00",
+					"release_per_platform_id": "psn_CUSA16496_00"
+				},
+				{
+					"id": "53947223458796419",
+					"platform_id": "psn",
+					"external_id": "CUSA16570_00",
+					"release_per_platform_id": "psn_CUSA16570_00"
+				},
+				{
+					"id": "53947579849808005",
+					"platform_id": "psn",
+					"external_id": "CUSA18278_00",
+					"release_per_platform_id": "psn_CUSA18278_00"
+				},
+				{
+					"id": "53957317388649915",
+					"platform_id": "origin",
+					"external_id": "1209025141",
+					"release_per_platform_id": "origin_1209025141"
+				},
+				{
+					"id": "53992078260521863",
+					"platform_id": "test",
+					"external_id": "/cyberpunk-2077-free-latest-download/",
+					"release_per_platform_id": "test_/cyberpunk-2077-free-latest-download/"
+				},
+				{
+					"id": "53992222782977881",
+					"platform_id": "test",
+					"external_id": "1234",
+					"release_per_platform_id": "test_1234"
+				},
+				{
+					"id": "54024436799441651",
+					"platform_id": "test",
+					"external_id": "cyberpunk-2077",
+					"release_per_platform_id": "test_cyberpunk-2077"
+				},
+				{
+					"id": "54027325371074928",
+					"platform_id": "playfire",
+					"external_id": "cyberpunk-2077",
+					"release_per_platform_id": "playfire_cyberpunk-2077"
+				},
+				{
+					"id": "54636390742569042",
+					"platform_id": "test",
+					"external_id": "gog_cyberpunk2077",
+					"release_per_platform_id": "test_gog_cyberpunk2077"
+				},
+				{
+					"id": "54640359983505164",
+					"platform_id": "test",
+					"external_id": "gfn_100838211",
+					"release_per_platform_id": "test_gfn_100838211"
+				},
+				{
+					"id": "54786871846395400",
+					"platform_id": "test",
+					"external_id": "Cyberpunk 2077",
+					"release_per_platform_id": "test_Cyberpunk 2077"
+				},
+				{
+					"id": "54786984541512787",
+					"platform_id": "psp",
+					"external_id": "Cyberpunk 2077",
+					"release_per_platform_id": "psp_Cyberpunk 2077"
+				},
+				{
+					"id": "55195060166429224",
+					"platform_id": "psn",
+					"external_id": "PPSA04029_00",
+					"release_per_platform_id": "psn_PPSA04029_00"
+				},
+				{
+					"id": "55195071955752689",
+					"platform_id": "psn",
+					"external_id": "PPSA03974_00",
+					"release_per_platform_id": "psn_PPSA03974_00"
+				},
+				{
+					"id": "55195074267486797",
+					"platform_id": "psn",
+					"external_id": "PPSA04027_00",
+					"release_per_platform_id": "psn_PPSA04027_00"
+				},
+				{
+					"id": "55196416931181839",
+					"platform_id": "psn",
+					"external_id": "PPSA04028_00",
+					"release_per_platform_id": "psn_PPSA04028_00"
+				},
+				{
+					"id": "55392046219272206",
+					"platform_id": "test",
+					"external_id": "gfn_101606111",
+					"release_per_platform_id": "test_gfn_101606111"
+				},
+				{
+					"id": "55560379936024560",
+					"platform_id": "psn",
+					"external_id": "PPSA04026_00",
+					"release_per_platform_id": "psn_PPSA04026_00"
+				},
+				{
+					"id": "55754237673386582",
+					"platform_id": "test",
+					"external_id": "PPSA04029_00",
+					"release_per_platform_id": "test_PPSA04029_00"
+				},
+				{
+					"id": "56140854084509906",
+					"platform_id": "test",
+					"external_id": "1091500",
+					"release_per_platform_id": "test_1091500"
+				},
+				{
+					"id": "51152725611062641",
+					"platform_id": "generic",
+					"external_id": "51152725611062641",
+					"release_per_platform_id": "generic_51152725611062641"
+				}
+			],
+			"title": {
+				"*": "Cyberpunk 2077",
+				"en-US": "Cyberpunk 2077"
+			},
+			"sorting_title": {
+				"*": "Cyberpunk 2077",
+				"en-US": "Cyberpunk 2077"
+			},
+			"type": "game",
+			"developers_ids": [
+				"51071842246821153"
+			],
+			"developers": [
+				{
+					"id": "51071842246821153",
+					"name": "CD Projekt RED",
+					"slug": "cd-projekt-red"
+				}
+			],
+			"publishers_ids": [
+				"51154157012317521"
+			],
+			"publishers": [
+				{
+					"id": "51154157012317521",
+					"name": "CD Projekt",
+					"slug": "cd-projekt"
+				}
+			],
+			"genres_ids": [
+				"51071842242881003",
+				"51071842251704278",
+				"51141224821260861"
+			],
+			"genres": [
+				{
+					"id": "51071842242881003",
+					"name": {
+						"*": "Role-playing (RPG)",
+						"en-US": "Role-playing (RPG)"
+					},
+					"slug": "role-playing-rpg"
+				},
+				{
+					"id": "51071842251704278",
+					"name": {
+						"*": "Adventure",
+						"en-US": "Adventure"
+					},
+					"slug": "adventure"
+				},
+				{
+					"id": "51141224821260861",
+					"name": {
+						"*": "Shooter",
+						"en-US": "Shooter"
+					},
+					"slug": "shooter"
+				}
+			],
+			"themes_ids": [
+				"51071842227872529",
+				"51071842231533391",
+				"51141225463821636",
+				"51141225990825995"
+			],
+			"themes": [
+				{
+					"id": "51071842227872529",
+					"name": {
+						"*": "Open world",
+						"en-US": "Open world"
+					},
+					"slug": "open-world"
+				},
+				{
+					"id": "51071842231533391",
+					"name": {
+						"*": "Action",
+						"en-US": "Action"
+					},
+					"slug": "action"
+				},
+				{
+					"id": "51141225463821636",
+					"name": {
+						"*": "Science fiction",
+						"en-US": "Science fiction"
+					},
+					"slug": "science-fiction"
+				},
+				{
+					"id": "51141225990825995",
+					"name": {
+						"*": "Sandbox",
+						"en-US": "Sandbox"
+					},
+					"slug": "sandbox"
+				}
+			],
+			"screenshots": [
+				{
+					"url_format": "https://images.gog.com/f05ef013a91d8091ad5ce0a8f29c7d188aa4d87258783719df31826e2877ee78{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/2bd3640119fe76c8c7c2fac26a9c6c17302170273c9f7ed179f07f14104ff515{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/9494b93aa4b50ab587d06faf380e97c312db7c519c3d8a67ebf03b757332b596{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/ed901a789d01459e783342c5c84a244401e4c4334fe28f13f67dc48f83527dd8{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/a011aa75e9e56e0b923029a934edd27517cce29321ee4d90c66d98d0e93e6a97{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/f164d522af0867701d7236f9d31b5fc68c84acd8c21b468887857cd135fae53e{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/94fa4ef9d0eff5f16416dabfd42f1451348d9a0a330092b2dc247480e2f66f53{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/cea09ff95affc3a1f6a8d7cf64e32fd66d7c50468cfbaf4c6afc718286eb7166{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/eb423b81caf140252f2f1bdaa81569f57f0a47014554ccb28eeca4b9848abef1{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/d200609646f88736bb9863f8644eb3cee8a5e4669fd41b66e8086431cdbb02e0{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/c63f7b963656ab0cf205521ad1c3793271324ad1fd2d57451cdd30658144892f{formatter}.{ext}?namespace=gamesdb"
+				}
+			],
+			"videos": [
+				{
+					"provider": "youtube",
+					"video_id": "UnA7tepsc7s",
+					"thumbnail_id": "UnA7tepsc7s",
+					"name": "Cyberpunk 2077 — Official Launch Trailer — V"
+				},
+				{
+					"provider": "youtube",
+					"video_id": "BO8lX3hDU30",
+					"thumbnail_id": "BO8lX3hDU30",
+					"name": "Cyberpunk 2077 — Official Gameplay Trailer"
+				}
+			],
+			"artworks": [
+				{
+					"url_format": "https://images.gog.com/a0d14c082b375ca5ccaa12a8c5db53a16e5ac39e2c5bc1f164d1870f554dac7c{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/93f37739aa0a46fe5035fb20c89116f5bebab3953a77bde07ff7136ae8def03b{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/ad76b9f5b2619cd4f72215926da119694ca7e79a35ebe68c5a11681ef70df42d{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/61d8c8eccc3abac4e7a41e7940b9cfff2268889c29dfa1fa4628822fc1e07e57{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/286f171996b2c14637d3771773a61682f782a1d2adf00a8206ac24ae0b31aebf{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/bfe14fbc4b12c65d37a295dc5b93575a3f06570a217d256d33fffc35c0893601{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/052279de7ff17a7dd7f091b331fc1ac54ad6199a43f1ebb120a72b00fc5b1c68{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/ce172ab948f8b927114e6a08bebde192227391a44e738ec66170adfb06bab77a{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/70ef4e3d65d24a7e4d84194e174d77c4defe2693dcaf5cc2e68eef85cecc64cf{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/eaec718c50de0d826183c3f43b34b8d545beccd0dade58c7e4ada7c12a8d83f9{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/b1ba54ef35ba298decb597cc00051607910b547078c26f05fd445caa89e30fca{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/22637fe471a45e6db3efedfe344c5d0b609baf38bc4f293dacbf788fdb1c4243{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/28e87f829c3f9238d6619c32e70f30be57a2a04a146df669ff684861a5bb97b6{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/9b891e5c6c6c9c09793757b5943f198c7b6bf944738f1608fc7cea9318224fa6{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/7e8058de5c84592943343a6a1fda8aece67cd167419ea9873849d7f45ea06b4c{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/c7e50b30e3d616f57995abb606d8b634f4ac56c8ead00470c9af88be64b4fd4c{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/a3a7e3792d6ad84df8a5e095f97c3193b3f8e27e175d837434db838c40ca3a32{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/0aa486d86ed3fee864666531af7f6bde3aba0a88d924d5217590892ebb362bba{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/ae652c050900e43d46257f47268ee45402bb708b6326a79488fe516c2a6a53ec{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/a74977c0e81bcba428238f200b3589fb5648619d96987dcd4cb8afd2a25af906{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/03a4efb96344488e1b5e8026344f43d0288a3e8995df3b45defc0059f6c2deb4{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/a2d3e3d9b9ad2182be74ee39afe9524c07f38434f35a972dbaa39ff0c7b07521{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/4000fbb5965721f87dea0f4bd00f6fcc99631e6c60cedb28fae58687fc66018d{formatter}.{ext}?namespace=gamesdb"
+				}
+			],
+			"summary": {
+				"*": "The RPG from CD Projekt RED based on the Cyberpunk 2020 tabletop RPG created by Mike Pondsmith. \r\n \r\nIn Cyberpunk 2077 you play as V — a hired gun on the rise — and you just got your first serious contract. In a world of cyberenhanced street warriors, tech-savvy netrunners and corporate lifehackers, today you take your first step towards becoming an urban legend.",
+				"en-US": "Cyberpunk 2077 is an open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour and body modification. You play as V, a mercenary outlaw going after a one-of-a-kind implant that is the key to immortality. You can customize your character’s cyberware, skillset and playstyle, and explore a vast city where the choices you make shape the story and the world around you."
+			},
+			"visible_in_library": true,
+			"aggregated_rating": 75.2381,
+			"game_modes": [
+				{
+					"id": "53051895165351137",
+					"name": "Single player",
+					"slug": "single-player"
+				}
+			],
+			"horizontal_artwork": {
+				"url_format": "https://images.gog.com/b6cd05d236181817eddd6cba234275eb9e7957e2e04214c3ac7a281d88521f9c{formatter}.{ext}?namespace=gamesdb"
+			},
+			"background": {
+				"url_format": "https://images.gog.com/b6cd05d236181817eddd6cba234275eb9e7957e2e04214c3ac7a281d88521f9c{formatter}.{ext}?namespace=gamesdb"
+			},
+			"vertical_cover": {
+				"url_format": "https://images.gog.com/8b37ef624d6f8a4092c43daed92660cde499434f8c0a2078f342bc34f4e752f2{formatter}.{ext}?namespace=gamesdb"
+			},
+			"cover": {
+				"url_format": "https://images.gog.com/8b37ef624d6f8a4092c43daed92660cde499434f8c0a2078f342bc34f4e752f2{formatter}.{ext}?namespace=gamesdb"
+			},
+			"logo": {
+				"url_format": "https://images.gog.com/21bb7830e75e529e0a276debeaff132c2062ea08864dee57eef579d4057e2d52{formatter}.{ext}?namespace=gamesdb"
+			},
+			"square_icon": {
+				"url_format": "https://images.gog.com/d874e44db18f4604f25934fe141043812e21f20733072b3f2eded2014a4308f7{formatter}.{ext}?namespace=gamesdb"
+			},
+			"global_popularity_all_time": 0,
+			"global_popularity_current": 0
+		},
+		"title": {
+			"*": "Cyberpunk 2077",
+			"en-US": "Cyberpunk 2077"
+		},
+		"sorting_title": {
+			"*": "Cyberpunk 2077",
+			"en-US": "Cyberpunk 2077"
+		},
+		"type": "game",
+		"summary": {
+			"*": "The RPG from CD Projekt RED based on the Cyberpunk 2020 tabletop RPG created by Mike Pondsmith. \r\n \r\nIn Cyberpunk 2077 you play as V — a hired gun on the rise — and you just got your first serious contract. In a world of cyberenhanced street warriors, tech-savvy netrunners and corporate lifehackers, today you take your first step towards becoming an urban legend.",
+			"en-US": "Cyberpunk 2077 is an open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour and body modification. You play as V, a mercenary outlaw going after a one-of-a-kind implant that is the key to immortality. You can customize your character’s cyberware, skillset and playstyle, and explore a vast city where the choices you make shape the story and the world around you."
+		},
+		"videos": [],
+		"game_modes": [
+			{
+				"id": "53051895165351137",
+				"name": "Single player",
+				"slug": "single-player"
+			}
+		],
+		"logo": {
+			"url_format": "https://images.gog.com/21bb7830e75e529e0a276debeaff132c2062ea08864dee57eef579d4057e2d52{formatter}.{ext}?namespace=gamesdb"
+		},
+		"etag": "\"15cff2f8430194256261e4cb77249d02\""
+	}
+}

@@ -1,0 +1,331 @@
+{
+	"f9d6f0530ea140909f8e8a997a7532d7": {
+		"game": {
+			"app_name": "f9d6f0530ea140909f8e8a997a7532d7",
+			"title": "BioShock Infinite: Complete Edition",
+			"version": "1.0.0_BN-314_CL-17899",
+			"platform_versions": {
+				"Windows": "1.0.0_BN-314_CL-17899"
+			},
+			"cloud_saves_supported": false,
+			"cloud_save_folder": null,
+			"cloud_save_folder_mac": null,
+			"is_dlc": false,
+			"external_activation": null,
+			"launch_options": [],
+			"owned_dlc": []
+		},
+		"install": null,
+		"manifest": {
+			"size": 3338715,
+			"type": "binary",
+			"version": 17,
+			"feature_level": 17,
+			"app_name": "458fe4dada6f4a3e93b8fb3d33b4f406",
+			"launch_exe": "2KLauncher/LauncherPatcher.exe",
+			"launch_command": "",
+			"build_version": "1.0.0_BN-314_CL-17899",
+			"build_id": "EPn7ynnYZ9suttNnj4qID7Fg3N0",
+			"prerequisites": {
+				"ids": [
+					"753D6947CD52478DAE324C60307BF8E26F167C4E"
+				],
+				"name": "",
+				"path": "Binaries/Prerequisites/PrerequisiteInstaller.exe",
+				"args": ""
+			},
+			"install_tags": [
+				""
+			],
+			"num_files": 16112,
+			"num_chunks": 40660,
+			"disk_size": 47672779527,
+			"download_size": 38587128465,
+			"tag_disk_size": [],
+			"tag_download_size": []
+		}
+	},
+	"__timestamp": {
+		"f9d6f0530ea140909f8e8a997a7532d7": "Sun Sep 17 2023 12:15:03 GMT+0200 (Central European Summer Time)",
+		"Flagfin": "Fri Sep 22 2023 21:34:01 GMT+0200 (Central European Summer Time)",
+		"02855a2f4c044aa1a813b19f8c447fe1": "Mon Sep 25 2023 21:45:24 GMT+0200 (Central European Summer Time)",
+		"Ginger": "Tue Sep 26 2023 17:24:25 GMT+0200 (Central European Summer Time)"
+	},
+	"Flagfin": {
+		"game": {
+			"app_name": "Flagfin",
+			"title": "Tacoma",
+			"version": "1.0",
+			"platform_versions": {
+				"Windows": "1.0"
+			},
+			"cloud_saves_supported": true,
+			"cloud_save_folder": "{AppData}/../LocalLow/Fullbright/Tacoma/",
+			"cloud_save_folder_mac": "{UserLibrary}/Application Support/com.fullbright.tacoma/",
+			"is_dlc": false,
+			"external_activation": null,
+			"launch_options": [],
+			"owned_dlc": []
+		},
+		"install": null,
+		"manifest": {
+			"size": 681234,
+			"type": "binary",
+			"version": 17,
+			"feature_level": 17,
+			"app_name": "FlagfinStaging",
+			"launch_exe": "/Tacoma.exe",
+			"launch_command": "",
+			"build_version": "1.0",
+			"build_id": "3VLNiMjbgWWaCpdDsqYO46gUAmA",
+			"prerequisites": null,
+			"install_tags": [
+				""
+			],
+			"num_files": 195,
+			"num_chunks": 10556,
+			"disk_size": 11068586517,
+			"download_size": 2741263857,
+			"tag_disk_size": [],
+			"tag_download_size": []
+		}
+	},
+	"02855a2f4c044aa1a813b19f8c447fe1": {
+		"game": {
+			"app_name": "02855a2f4c044aa1a813b19f8c447fe1",
+			"title": "Cyberpunk 2077 - REDmod",
+			"version": "Build_4902785Change_6408866_1_RedMod",
+			"platform_versions": {
+				"Windows": "Build_4902785Change_6408866_1_RedMod"
+			},
+			"cloud_saves_supported": false,
+			"cloud_save_folder": null,
+			"cloud_save_folder_mac": null,
+			"is_dlc": true,
+			"external_activation": null,
+			"launch_options": [],
+			"owned_dlc": []
+		},
+		"install": null,
+		"manifest": {
+			"size": 168889,
+			"type": "binary",
+			"version": 17,
+			"feature_level": 17,
+			"app_name": "02855a2f4c044aa1a813b19f8c447fe1",
+			"launch_exe": "",
+			"launch_command": "",
+			"build_version": "Build_4902785Change_6408866_1_RedMod",
+			"build_id": "NraFDQY2BndlGnXQsqhHnVXON4g",
+			"prerequisites": null,
+			"install_tags": [
+				""
+			],
+			"num_files": 4395,
+			"num_chunks": 91,
+			"disk_size": 91453650,
+			"download_size": 22892148,
+			"tag_disk_size": [],
+			"tag_download_size": []
+		}
+	},
+	"Ginger": {
+		"game": {
+			"app_name": "Ginger",
+			"title": "Cyberpunk 2077",
+			"version": "Build_4902785Change_6408866_RL",
+			"platform_versions": {
+				"Windows": "Build_4902785Change_6408866_RL"
+			},
+			"cloud_saves_supported": true,
+			"cloud_save_folder": "{UserSavedGames}/CD Projekt Red/Cyberpunk 2077/",
+			"cloud_save_folder_mac": null,
+			"is_dlc": false,
+			"external_activation": null,
+			"launch_options": [],
+			"owned_dlc": [
+				{
+					"app_name": "02855a2f4c044aa1a813b19f8c447fe1",
+					"title": "Cyberpunk 2077 - REDmod",
+					"installable": [
+						{
+							"id": "39b413ad1f434aee92d225a2d3b61b8e",
+							"appId": "02855a2f4c044aa1a813b19f8c447fe1",
+							"platform": [
+								"Windows"
+							]
+						}
+					],
+					"id": "563d27afe4544a648a0c222d73dedd84"
+				}
+			]
+		},
+		"install": {
+			"platform": "Windows",
+			"version": "Build_4902785Change_6408866_1_RedMod",
+			"disk_size": 91453650,
+			"install_path": "/home/christian/Games/Heroic/Cyberpunk2077",
+			"save_path": null,
+			"synced_egl_guid": "",
+			"install_tags": [],
+			"requires_ovt": false,
+			"installed_dlc": [
+				{
+					"app_name": "02855a2f4c044aa1a813b19f8c447fe1",
+					"title": "Cyberpunk 2077 - REDmod",
+					"install_size": 91453650
+				}
+			]
+		},
+		"manifest": {
+			"size": 6950153,
+			"type": "binary",
+			"version": 17,
+			"feature_level": 17,
+			"app_name": "Ginger",
+			"launch_exe": "redprelauncher.exe",
+			"launch_command": "",
+			"build_version": "Build_4902785Change_6408866_RL",
+			"build_id": "OAt3utZyQ5vVH6jmZYh-NRDH_lI",
+			"prerequisites": {
+				"ids": [
+					"VCRedist1519"
+				],
+				"name": "",
+				"path": "vc/vc_redist.x64.exe",
+				"args": "/install /passive /norestart"
+			},
+			"install_tags": [
+				"",
+				"voice_de_de",
+				"voice_es_es",
+				"voice_fr_fr",
+				"voice_it_it",
+				"voice_ja_jp",
+				"voice_ko_kr",
+				"voice_pl_pl",
+				"voice_pt_br",
+				"voice_ru_ru",
+				"voice_zh_cn"
+			],
+			"num_files": 158,
+			"num_chunks": 105295,
+			"disk_size": 110588867119,
+			"download_size": 106545405798,
+			"tag_disk_size": [
+				{
+					"tag": "",
+					"size": 60228977199,
+					"count": 148
+				},
+				{
+					"tag": "voice_de_de",
+					"size": 5034274816,
+					"count": 1
+				},
+				{
+					"tag": "voice_es_es",
+					"size": 5392031744,
+					"count": 1
+				},
+				{
+					"tag": "voice_fr_fr",
+					"size": 4956405760,
+					"count": 1
+				},
+				{
+					"tag": "voice_it_it",
+					"size": 5136171008,
+					"count": 1
+				},
+				{
+					"tag": "voice_ja_jp",
+					"size": 4831322112,
+					"count": 1
+				},
+				{
+					"tag": "voice_ko_kr",
+					"size": 4959379456,
+					"count": 1
+				},
+				{
+					"tag": "voice_pl_pl",
+					"size": 4830871552,
+					"count": 1
+				},
+				{
+					"tag": "voice_pt_br",
+					"size": 5074096128,
+					"count": 1
+				},
+				{
+					"tag": "voice_ru_ru",
+					"size": 5318959104,
+					"count": 1
+				},
+				{
+					"tag": "voice_zh_cn",
+					"size": 4826378240,
+					"count": 1
+				}
+			],
+			"tag_download_size": [
+				{
+					"tag": "",
+					"size": 58282896472,
+					"count": 57268
+				},
+				{
+					"tag": "voice_de_de",
+					"size": 4825968685,
+					"count": 4805
+				},
+				{
+					"tag": "voice_es_es",
+					"size": 5183491057,
+					"count": 5145
+				},
+				{
+					"tag": "voice_fr_fr",
+					"size": 4747826732,
+					"count": 4730
+				},
+				{
+					"tag": "voice_it_it",
+					"size": 4930019857,
+					"count": 4903
+				},
+				{
+					"tag": "voice_ja_jp",
+					"size": 4629732020,
+					"count": 4611
+				},
+				{
+					"tag": "voice_ko_kr",
+					"size": 4757221278,
+					"count": 4734
+				},
+				{
+					"tag": "voice_pl_pl",
+					"size": 4619756820,
+					"count": 4609
+				},
+				{
+					"tag": "voice_pt_br",
+					"size": 4870624890,
+					"count": 4844
+				},
+				{
+					"tag": "voice_ru_ru",
+					"size": 5110120447,
+					"count": 5075
+				},
+				{
+					"tag": "voice_zh_cn",
+					"size": 4619710558,
+					"count": 4607
+				}
+			]
+		}
+	}
+}

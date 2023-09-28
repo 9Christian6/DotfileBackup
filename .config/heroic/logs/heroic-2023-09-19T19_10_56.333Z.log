@@ -1,0 +1,108 @@
+(21:10:56) INFO:    [Legendary]:        Legendary location: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary
+(21:10:56) INFO:    [Gog]:              GOGDL location: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/gogdl
+(21:10:56) INFO:    [Connection]:       Connectivity: check-online
+(21:10:56) INFO:    [Connection]:       Pinging external endpoints
+(21:10:56) INFO:    [Backend]:          DRM module staus {
+  "oimompecagnajdejgnnjijobebaeigek": {
+    "name": "Widevine Content Decryption Module",
+    "status": "new",
+    "version": "4.10.2557.0"
+  }
+}
+(21:10:56) WARNING: [Backend]:          Protocol already registered.
+(21:10:56) INFO:    [Connection]:       Connectivity: online
+(21:10:56) ERROR:   [Gog]:              Unable to syncQueued playtime, userData not present
+(21:10:57) INFO:    [Legendary]:        Running command: XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary --version
+(21:10:57) INFO:    [Gog]:              Running command: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/gogdl --auth-config-path /home/christian/.config/heroic/gog_store/auth.json --version
+(21:10:57) INFO:    [Nile]:             Running command: XDG_CONFIG_HOME=/home/christian/.config/heroic/nile_config /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/nile --version
+(21:10:57) INFO:    [Backend]:          
+System Information:
+CPU: 8x Intel(R) Xeon(R) CPU E3-1230 v3 @ 3.30GHz
+Memory: 16.69 GB (used: 4.4 GB)
+GPUs:
+  GPU 0:
+    Name: NVIDIA Corporation GP104 [GeForce GTX 1080]
+    IDs: D=1b80 V=10de SD=6183 SV=3842
+    Driver: nouveau
+OS: Ubuntu 23.04 (Lunar Lobster) (linux)
+
+The current system is not a Steam Deck
+We are not running inside a Flatpak container
+
+Software Versions:
+  Heroic: 2.9.2 Boa Hancock
+  Legendary: 0.20.32 Dark Energy (hotfix #6)
+  gogdl: 0.7.3
+  Nile: 1.0.0 Jonathan Joestar
+
+(21:10:57) INFO:    [Backend]:          AreWeAntiCheatYet data downloaded
+(21:10:57) INFO:    [Backend]:          Loading Screen Ready
+(21:10:57) INFO:    [Frontend]:         Refreshing undefined Library
+(21:10:57) WARNING: [Backend]:          refresh not implemented on Sideload Library Manager
+(21:10:57) INFO:    [Legendary]:        Refreshing library...
+(21:10:57) INFO:    [Legendary]:        Refreshing Epic Games...
+(21:10:58) INFO:    [Legendary]:        Game list updated, got 344 games & DLCs
+(21:10:58) INFO:    [Backend]:          Frontend Ready
+(21:10:58) WARNING: [Backend]:          listUpdateableGames not implemented on Sideload Library Manager
+(21:10:58) INFO:    [Gog]:              Found 0 game(s) to update
+(21:10:58) INFO:    [Backend]:          Checking for new Heroic Updates
+(21:10:58) INFO:    [Backend]:          Checking for current version changelog
+(21:10:58) INFO:    [Legendary]:        Checking for game updates: XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary list --third-party
+(21:10:58) INFO:    [Legendary]:        Running command: XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary list --third-party
+(21:10:59) WARNING: [DXVKInstaller]:    No GPU with Vulkan 1.1 support found, DXVK will not work
+(21:10:59) INFO:    [Winetricks]:       Downloading Winetricks
+(21:11:02) INFO:    [Legendary]:        Found 0 games to update
+(21:11:03) INFO:    [Backend]:          Starting the Download Queue
+(21:11:22) INFO:    [Backend]:          Launching BioShock Infinite: Complete Edition (f9d6f0530ea140909f8e8a997a7532d7)
+(21:11:22) INFO:    [Backend]:          Preventing display from sleep
+(21:11:22) INFO:    [Backend]:          Checking if wine version exists: Proton - Proton - Experimental
+(21:11:22) INFO:    [Backend]:          Checking if wine version exists: Proton - Proton - Experimental
+(21:11:22) WARNING: [Backend]:          You are using Proton, this can lead to some bugs. Please do not open issues with bugs related to games
+(21:11:22) INFO:    [Backend]:          Checking if wine version exists: Proton - Proton - Experimental
+(21:11:22) INFO:    [Backend]:          Checking if wine version exists: Proton - Proton - Experimental
+(21:11:22) DEBUG:   [Backend]:          Running Wine command: run wineboot --init
+(21:11:22) INFO:    [Backend]:          Preventing machine to sleep
+(21:11:22) INFO:    [Backend]:          Stopping Power Saver Blocker
+(21:11:24) INFO:    [Legendary]:        Launching BioShock Infinite: Complete Edition: HEROIC_APP_NAME=f9d6f0530ea140909f8e8a997a7532d7 HEROIC_APP_RUNNER=legendary HEROIC_APP_SOURCE=epic LD_PRELOAD= DOTNET_BUNDLE_EXTRACT_BASE_DIR= STEAM_COMPAT_CLIENT_INSTALL_PATH=/home/christian/.steam/steam STEAM_COMPAT_DATA_PATH="/home/christian/Games/Heroic/Prefixes/default/BioShock Infinite Complete Edition" STEAM_COMPAT_INSTALL_PATH=/home/christian/Games/Heroic/BioshockInfiniteCompleteEdition WINE_FULLSCREEN_FSR=0 PROTON_ENABLE_NVAPI=1 DXVK_NVAPI_ALLOW_OTHER_DRIVERS=1 PROTON_EAC_RUNTIME=/home/christian/.config/heroic/tools/runtimes/eac_runtime PROTON_BATTLEYE_RUNTIME=/home/christian/.config/heroic/tools/runtimes/battleye_runtime STEAM_COMPAT_APP_ID=0 SteamAppId=0 SteamGameId=heroic-BioshockInfiniteCompleteEdition PROTON_LOG_DIR=/home/christian XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary launch f9d6f0530ea140909f8e8a997a7532d7 --no-wine --wrapper " '/home/christian/.local/share/Steam/steamapps/common/Proton - Experimental/proton' run" --language en
+(21:12:35) INFO:    [Backend]:          Trying to kill f9d6f0530ea140909f8e8a997a7532d7
+(21:12:35) INFO:    [Backend]:          Killed f9d6f0530ea140909f8e8a997a7532d7
+(21:12:35) INFO:    [Backend]:          Checking if wine version exists: Proton - Proton - Experimental
+(21:12:35) DEBUG:   [Backend]:          Running Wine command: waitforexitandrun wineboot -k
+(21:12:35) INFO:    [Backend]:          Stopping Display Power Saver Blocker
+(21:12:36) INFO:    [Frontend]:         Refreshing legendary Library
+(21:12:36) INFO:    [Legendary]:        Refreshing library...
+(21:12:36) INFO:    [Legendary]:        Refreshing Epic Games...
+(21:12:40) INFO:    [Legendary]:        Game list updated, got 344 games & DLCs
+(21:12:40) ERROR:   [Backend]:          Aborting not possible. Could not find a matching abort controller for f9d6f0530ea140909f8e8a997a7532d7
+(21:12:40) INFO:    [Backend]:          Trying to kill f9d6f0530ea140909f8e8a997a7532d7
+(21:12:40) INFO:    [Backend]:          Killed f9d6f0530ea140909f8e8a997a7532d7
+(21:12:40) INFO:    [Backend]:          Checking if wine version exists: Proton - Proton - Experimental
+(21:12:40) DEBUG:   [Backend]:          Running Wine command: waitforexitandrun wineboot -k
+(21:12:40) INFO:    [Legendary]:        Running command: XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary list --third-party
+(21:12:40) ERROR:   [Backend]:          Aborting not possible. Could not find a matching abort controller for f9d6f0530ea140909f8e8a997a7532d7
+(21:12:40) INFO:    [Backend]:          Trying to kill f9d6f0530ea140909f8e8a997a7532d7
+(21:12:41) INFO:    [Backend]:          Killed f9d6f0530ea140909f8e8a997a7532d7
+(21:12:41) INFO:    [Backend]:          Checking if wine version exists: Proton - Proton - Experimental
+(21:12:41) DEBUG:   [Backend]:          Running Wine command: waitforexitandrun wineboot -k
+(21:12:41) ERROR:   [Backend]:          Aborting not possible. Could not find a matching abort controller for f9d6f0530ea140909f8e8a997a7532d7
+(21:12:41) INFO:    [Backend]:          Trying to kill f9d6f0530ea140909f8e8a997a7532d7
+(21:12:41) INFO:    [Backend]:          Killed f9d6f0530ea140909f8e8a997a7532d7
+(21:12:41) INFO:    [Backend]:          Checking if wine version exists: Proton - Proton - Experimental
+(21:12:41) DEBUG:   [Backend]:          Running Wine command: waitforexitandrun wineboot -k
+(21:13:52) INFO:    [Backend]:          Launching BioShock Infinite: Complete Edition (f9d6f0530ea140909f8e8a997a7532d7)
+(21:13:52) INFO:    [Backend]:          Preventing display from sleep
+(21:13:52) INFO:    [Backend]:          Checking if wine version exists: Proton - Proton - Experimental
+(21:13:52) INFO:    [Backend]:          Checking if wine version exists: Proton - Proton - Experimental
+(21:13:52) WARNING: [Backend]:          You are using Proton, this can lead to some bugs. Please do not open issues with bugs related to games
+(21:13:52) INFO:    [Backend]:          Checking if wine version exists: Proton - Proton - Experimental
+(21:13:52) INFO:    [Backend]:          Checking if wine version exists: Proton - Proton - Experimental
+(21:13:52) DEBUG:   [Backend]:          Running Wine command: run wineboot --init
+(21:13:52) INFO:    [Backend]:          Stopping Power Saver Blocker
+(21:13:54) INFO:    [Legendary]:        Launching BioShock Infinite: Complete Edition: HEROIC_APP_NAME=f9d6f0530ea140909f8e8a997a7532d7 HEROIC_APP_RUNNER=legendary HEROIC_APP_SOURCE=epic LD_PRELOAD= DOTNET_BUNDLE_EXTRACT_BASE_DIR= STEAM_COMPAT_CLIENT_INSTALL_PATH=/home/christian/.steam/steam STEAM_COMPAT_DATA_PATH="/home/christian/Games/Heroic/Prefixes/default/BioShock Infinite Complete Edition" STEAM_COMPAT_INSTALL_PATH=/home/christian/Games/Heroic/BioshockInfiniteCompleteEdition WINE_FULLSCREEN_FSR=0 PROTON_ENABLE_NVAPI=1 DXVK_NVAPI_ALLOW_OTHER_DRIVERS=1 PROTON_EAC_RUNTIME=/home/christian/.config/heroic/tools/runtimes/eac_runtime PROTON_BATTLEYE_RUNTIME=/home/christian/.config/heroic/tools/runtimes/battleye_runtime STEAM_COMPAT_APP_ID=0 SteamAppId=0 SteamGameId=heroic-BioshockInfiniteCompleteEdition PROTON_LOG_DIR=/home/christian XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary launch f9d6f0530ea140909f8e8a997a7532d7 --no-wine --wrapper " '/home/christian/.local/share/Steam/steamapps/common/Proton - Experimental/proton' run" --language en
+(21:16:04) INFO:    [Backend]:          Stopping Display Power Saver Blocker
+(21:16:04) INFO:    [Frontend]:         Refreshing legendary Library
+(21:16:04) INFO:    [Legendary]:        Refreshing library...
+(21:16:04) INFO:    [Legendary]:        Refreshing Epic Games...
+(21:16:05) INFO:    [Legendary]:        Game list updated, got 344 games & DLCs
+(21:16:05) INFO:    [Legendary]:        Running command: XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary list --third-party
+(21:16:17) INFO:    [Backend]:          f9d6f0530ea140909f8e8a997a7532d7: Setting wineVersion to {"bin":"/home/christian/.local/share/Steam/steamapps/common/Proton 8.0/proton","name":"Proton - Proton 8.0","type":"proton"}

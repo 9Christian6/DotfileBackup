@@ -1,0 +1,140 @@
+(17:00:16) INFO:    [Legendary]:        Legendary location: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary
+(17:00:16) INFO:    [Gog]:              GOGDL location: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/gogdl
+(17:00:16) INFO:    [Connection]:       Connectivity: check-online
+(17:00:16) INFO:    [Connection]:       Pinging external endpoints
+(17:00:16) INFO:    [Backend]:          DRM module staus {
+  "oimompecagnajdejgnnjijobebaeigek": {
+    "name": "Widevine Content Decryption Module",
+    "status": "new",
+    "version": "4.10.2557.0"
+  }
+}
+(17:00:16) WARNING: [Backend]:          Protocol already registered.
+(17:00:16) INFO:    [Connection]:       Connectivity: online
+(17:00:16) ERROR:   [Gog]:              Unable to syncQueued playtime, userData not present
+(17:00:16) INFO:    [Backend]:          AreWeAntiCheatYet data downloaded
+(17:00:17) INFO:    [Legendary]:        Running command: XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary --version
+(17:00:17) INFO:    [Gog]:              Running command: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/gogdl --auth-config-path /home/christian/.config/heroic/gog_store/auth.json --version
+(17:00:17) INFO:    [Nile]:             Running command: XDG_CONFIG_HOME=/home/christian/.config/heroic/nile_config /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/nile --version
+(17:00:17) INFO:    [Backend]:          Loading Screen Ready
+(17:00:17) INFO:    [Frontend]:         Refreshing undefined Library
+(17:00:17) WARNING: [Backend]:          refresh not implemented on Sideload Library Manager
+(17:00:17) INFO:    [Legendary]:        Refreshing library...
+(17:00:17) INFO:    [Legendary]:        Refreshing Epic Games...
+(17:00:17) INFO:    [Legendary]:        Game list updated, got 346 games & DLCs
+(17:00:17) INFO:    [Backend]:          Frontend Ready
+(17:00:17) WARNING: [Backend]:          listUpdateableGames not implemented on Sideload Library Manager
+(17:00:17) INFO:    [Gog]:              Found 0 game(s) to update
+(17:00:18) INFO:    [Legendary]:        Running command: XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary list --third-party
+(17:00:18) INFO:    [Backend]:          Checking for new Heroic Updates
+(17:00:18) INFO:    [Legendary]:        Checking for game updates: XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary list --third-party
+(17:00:18) INFO:    [Backend]:          Checking for current version changelog
+(17:00:18) INFO:    [Backend]:          
+System Information:
+CPU: 8x Intel(R) Xeon(R) CPU E3-1230 v3 @ 3.30GHz
+Memory: 16.69 GB (used: 2.41 GB)
+GPUs:
+  GPU 0:
+    Name: NVIDIA Corporation GP104 [GeForce GTX 1080]
+    IDs: D=1b80 V=10de SD=6183 SV=3842
+    Driver: nouveau
+OS: Ubuntu 23.04 (Lunar Lobster) (linux)
+
+The current system is not a Steam Deck
+We are not running inside a Flatpak container
+
+Software Versions:
+  Heroic: 2.9.2 Boa Hancock
+  Legendary: 0.20.32 Dark Energy (hotfix #6)
+  gogdl: 0.7.3
+  Nile: 1.0.0 Jonathan Joestar
+
+(17:00:19) WARNING: [DXVKInstaller]:    No GPU with Vulkan 1.1 support found, DXVK will not work
+(17:00:19) INFO:    [Winetricks]:       Downloading Winetricks
+(17:00:21) DEBUG:   [Legendary]:        Update is available for Ginger: Build_4902785Change_6408866_1 != Build_4902785Change_6408866_RL
+(17:00:21) INFO:    [Legendary]:        Found 1 game to update
+(17:00:22) INFO:    [Backend]:          Starting the Download Queue
+(17:24:18) INFO:    [Legendary]:        Getting more details with 'legendary info'
+(17:24:18) INFO:    [Backend]:          Preventing machine to sleep
+(17:24:18) INFO:    [Legendary]:        Running command: XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary info Ginger --json --platform Windows
+(17:24:25) INFO:    [DownloadManager]:  Cyberpunk 2077  was added to the download queue.
+(17:24:25) DEBUG:   [Legendary]:        Using cached install info
+(17:24:25) INFO:    [Legendary]:        Updating Ginger: XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary update Ginger -y
+(17:24:25) DEBUG:   [Legendary]:        Logging to file "/home/christian/.config/heroic/GamesConfig/Ginger.log"
+(17:24:29) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.38%/0.00MB/00:00:00 Down: 0MB/s / Disk: 0MB/s
+(17:24:30) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.39%/5.15MB/00:00:37 Down: 5.14MB/s / Disk: 1.4MB/s
+(17:24:31) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.4%/13.49MB/00:00:30 Down: 8.33MB/s / Disk: 9.43MB/s
+(17:24:32) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.41%/24.44MB/00:00:44 Down: 10.94MB/s / Disk: 0MB/s
+(17:24:33) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.42%/34.37MB/00:00:19 Down: 9.91MB/s / Disk: 75.98MB/s
+(17:24:34) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.43%/46.37MB/00:00:20 Down: 11.98MB/s / Disk: 15.98MB/s
+(17:24:35) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.44%/57.37MB/00:00:21 Down: 10.99MB/s / Disk: 19.97MB/s
+(17:24:36) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.45%/66.37MB/00:00:24 Down: 8.99MB/s / Disk: 2MB/s
+(17:24:37) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.46%/79.37MB/00:00:24 Down: 12.98MB/s / Disk: 17.98MB/s
+(17:24:38) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.47%/89.37MB/00:00:25 Down: 9.99MB/s / Disk: 6.99MB/s
+(17:24:39) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.48%/101.37MB/00:00:27 Down: 11.99MB/s / Disk: 7.99MB/s
+(17:24:40) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.49%/108.37MB/00:00:27 Down: 6.99MB/s / Disk: 10.99MB/s
+(17:24:41) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.5%/118.37MB/00:00:28 Down: 9.99MB/s / Disk: 7.99MB/s
+(17:24:42) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.51%/128.37MB/00:00:30 Down: 9.99MB/s / Disk: 3MB/s
+(17:24:43) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.52%/139.37MB/00:00:29 Down: 10.99MB/s / Disk: 15.98MB/s
+(17:24:44) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.53%/147.37MB/00:00:31 Down: 7.99MB/s / Disk: 0MB/s
+(17:24:45) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.54%/159.37MB/00:00:33 Down: 11.99MB/s / Disk: 0MB/s
+(17:24:46) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.55%/171.37MB/00:00:28 Down: 11.99MB/s / Disk: 39.98MB/s
+(17:24:47) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.56%/181.37MB/00:00:28 Down: 9.99MB/s / Disk: 8.99MB/s
+(17:24:48) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.57%/194.38MB/00:00:28 Down: 13MB/s / Disk: 7MB/s
+(17:24:49) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.58%/203.38MB/00:00:27 Down: 8.99MB/s / Disk: 16.98MB/s
+(17:24:50) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.6%/216.38MB/00:00:28 Down: 12.99MB/s / Disk: 1MB/s
+(17:24:51) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.6%/225.38MB/00:00:27 Down: 8.99MB/s / Disk: 16.98MB/s
+(17:24:52) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.61%/234.38MB/00:00:27 Down: 8.99MB/s / Disk: 5.99MB/s
+(17:24:53) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.63%/247.38MB/00:00:28 Down: 12.98MB/s / Disk: 4.99MB/s
+(17:24:54) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.63%/254.38MB/00:00:26 Down: 6.99MB/s / Disk: 18.98MB/s
+(17:24:55) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.65%/269.38MB/00:00:25 Down: 14.98MB/s / Disk: 15.98MB/s
+(17:24:57) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.66%/277.38MB/00:00:25 Down: 7.99MB/s / Disk: 7.99MB/s
+(17:24:57) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.67%/288.38MB/00:00:24 Down: 11MB/s / Disk: 10MB/s
+(17:24:58) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.68%/300.38MB/00:00:24 Down: 11.99MB/s / Disk: 9.99MB/s
+(17:24:59) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.69%/311.38MB/00:00:22 Down: 10.98MB/s / Disk: 15.98MB/s
+(17:25:00) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.7%/319.38MB/00:00:23 Down: 7.99MB/s / Disk: 0MB/s
+(17:25:01) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.71%/332.38MB/00:00:22 Down: 12.98MB/s / Disk: 12.98MB/s
+(17:25:02) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.72%/343.38MB/00:00:21 Down: 10.99MB/s / Disk: 12.99MB/s
+(17:25:03) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.73%/353.39MB/00:00:22 Down: 9.99MB/s / Disk: 3MB/s
+(17:25:04) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.74%/361.39MB/00:00:22 Down: 8MB/s / Disk: 0MB/s
+(17:25:05) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.75%/376.39MB/00:00:20 Down: 14.99MB/s / Disk: 24.98MB/s
+(17:25:06) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.76%/385.39MB/00:00:20 Down: 8.99MB/s / Disk: 0MB/s
+(17:25:07) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.77%/397.39MB/00:00:18 Down: 11.99MB/s / Disk: 25.98MB/s
+(17:25:08) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.79%/409.39MB/00:00:17 Down: 11.99MB/s / Disk: 14.99MB/s
+(17:25:09) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.79%/418.39MB/00:00:16 Down: 8.99MB/s / Disk: 8.99MB/s
+(17:25:10) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.81%/431.39MB/00:00:15 Down: 12.99MB/s / Disk: 14.98MB/s
+(17:25:11) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.82%/441.39MB/00:00:14 Down: 9.99MB/s / Disk: 6.99MB/s
+(17:25:12) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.83%/451.39MB/00:00:15 Down: 9.99MB/s / Disk: 2MB/s
+(17:25:13) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.84%/460.39MB/00:00:15 Down: 8.99MB/s / Disk: 0MB/s
+(17:25:14) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.85%/472.39MB/00:00:12 Down: 11.99MB/s / Disk: 30.96MB/s
+(17:25:15) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.86%/481.39MB/00:00:12 Down: 8.99MB/s / Disk: 6.99MB/s
+(17:25:16) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.87%/491.39MB/00:00:12 Down: 9.99MB/s / Disk: 1MB/s
+(17:25:17) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.88%/502.39MB/00:00:12 Down: 10.99MB/s / Disk: 0MB/s
+(17:25:18) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.89%/513.39MB/00:00:12 Down: 10.99MB/s / Disk: 0MB/s
+(17:25:19) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.9%/523.40MB/00:00:13 Down: 9.99MB/s / Disk: 0MB/s
+(17:25:20) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.91%/534.40MB/00:00:08 Down: 10.99MB/s / Disk: 41.94MB/s
+(17:25:21) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.92%/545.40MB/00:00:06 Down: 10.99MB/s / Disk: 22.97MB/s
+(17:25:22) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.93%/554.40MB/00:00:06 Down: 8.99MB/s / Disk: 2MB/s
+(17:25:23) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.94%/567.40MB/00:00:07 Down: 12.98MB/s / Disk: 0MB/s
+(17:25:24) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.95%/575.40MB/00:00:07 Down: 8MB/s / Disk: 0MB/s
+(17:25:25) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.96%/583.40MB/00:00:07 Down: 7.99MB/s / Disk: 0MB/s
+(17:25:26) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.97%/596.40MB/00:00:03 Down: 12.99MB/s / Disk: 43.97MB/s
+(17:25:27) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.98%/605.36MB/00:00:02 Down: 8.95MB/s / Disk: 12.98MB/s
+(17:25:28) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 99.99%/620.34MB/00:00:01 Down: 14.96MB/s / Disk: 11.98MB/s
+(17:25:29) INFO:    [Legendary]:        Progress for Cyberpunk 2077: 100%/626.96MB/00:00:00 Down: 6.61MB/s / Disk: 13.26MB/s
+(17:25:30) INFO:    [Legendary]:        installed.json updated, refreshing library
+(17:25:30) INFO:    [Legendary]:        installed.json updated, refreshing library
+(17:25:31) INFO:    [Legendary]:        installed.json updated, refreshing library
+(17:25:31) INFO:    [Legendary]:        installed.json updated, refreshing library
+(17:25:31) INFO:    [DownloadManager]:  Finished Update of Ginger
+(17:25:31) INFO:    [DownloadManager]:  Ginger added to download manager finished.
+(17:25:31) INFO:    [DownloadManager]:  Ginger removed from download manager.
+(17:25:31) INFO:    [Frontend]:         Refreshing legendary Library
+(17:25:31) INFO:    [Legendary]:        Refreshing library...
+(17:25:31) INFO:    [Legendary]:        Refreshing Epic Games...
+(17:25:32) INFO:    [Legendary]:        Game list updated, got 346 games & DLCs
+(17:25:32) WARNING: [Backend]:          listUpdateableGames not implemented on Sideload Library Manager
+(17:25:32) INFO:    [Gog]:              Found 0 game(s) to update
+(17:25:32) INFO:    [Legendary]:        Running command: XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary list --third-party
+(17:25:32) INFO:    [Legendary]:        Checking for game updates: XDG_CONFIG_HOME=/home/christian/.config/heroic/legendaryConfig /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary list --third-party
+(17:25:35) INFO:    [Legendary]:        Found 0 games to update

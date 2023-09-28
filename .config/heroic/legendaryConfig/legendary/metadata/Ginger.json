@@ -1,0 +1,353 @@
+{
+  "app_name": "Ginger",
+  "app_title": "Cyberpunk 2077",
+  "asset_infos": {
+    "Windows": {
+      "app_name": "Ginger",
+      "asset_id": "Ginger",
+      "build_version": "Build_4902785Change_6408866_RL",
+      "catalog_item_id": "5beededaad9743df90e8f07d92df153f",
+      "label_name": "Live-Windows",
+      "metadata": {
+        "installationPoolId": "57ea17d8ac1546be8534b152698b0773"
+      },
+      "namespace": "77f2b98e2cef40c8a7437518bf420e47"
+    }
+  },
+  "base_urls": [
+    "https://download.epicgames.com/Builds/Org/o-x2vdjaf7cfakvlsgz8qf2gx8bkplcc/0741a5496ea5492e8bba61e9087b32f7/default",
+    "https://download2.epicgames.com/Builds/Org/o-x2vdjaf7cfakvlsgz8qf2gx8bkplcc/0741a5496ea5492e8bba61e9087b32f7/default",
+    "https://download3.epicgames.com/Builds/Org/o-x2vdjaf7cfakvlsgz8qf2gx8bkplcc/0741a5496ea5492e8bba61e9087b32f7/default",
+    "https://download4.epicgames.com/Builds/Org/o-x2vdjaf7cfakvlsgz8qf2gx8bkplcc/0741a5496ea5492e8bba61e9087b32f7/default",
+    "https://epicgames-download1.akamaized.net/Builds/Org/o-x2vdjaf7cfakvlsgz8qf2gx8bkplcc/0741a5496ea5492e8bba61e9087b32f7/default",
+    "https://fastly-download.epicgames.com/Builds/Org/o-x2vdjaf7cfakvlsgz8qf2gx8bkplcc/0741a5496ea5492e8bba61e9087b32f7/default"
+  ],
+  "metadata": {
+    "ageGatings": {},
+    "applicationId": "fghi4567ay5jIOq6Vy3yzQe8RNUYiURd",
+    "categories": [
+      {
+        "path": "public"
+      },
+      {
+        "path": "games"
+      },
+      {
+        "path": "applications"
+      }
+    ],
+    "creationDate": "2019-06-07T19:03:29.226Z",
+    "customAttributes": {
+      "CanRunOffline": {
+        "type": "STRING",
+        "value": "true"
+      },
+      "CanSkipKoreanIdVerification": {
+        "type": "STRING",
+        "value": "true"
+      },
+      "CloudSaveFolder": {
+        "type": "STRING",
+        "value": "{UserSavedGames}/CD Projekt Red/Cyberpunk 2077/"
+      },
+      "FolderName": {
+        "type": "STRING",
+        "value": "Cyberpunk2077"
+      },
+      "MaxSizeMB": {
+        "type": "STRING",
+        "value": "4000"
+      },
+      "MonitorPresence": {
+        "type": "STRING",
+        "value": "false"
+      },
+      "PresenceId": {
+        "type": "STRING",
+        "value": "77f2b98e2cef40c8a7437518bf420e47"
+      },
+      "RequirementsJson": {
+        "type": "STRING",
+        "value": "{}"
+      },
+      "UseAccessControl": {
+        "type": "STRING",
+        "value": "false"
+      }
+    },
+    "description": "Cyberpunk 2077",
+    "developer": "CD PROJEKT RED",
+    "developerId": "o-x2vdjaf7cfakvlsgz8qf2gx8bkplcc",
+    "dlcItemList": [
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2022-08-30T20:06:44.417Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Cyberpunk 2077: Phantom Liberty",
+        "developer": "CD PROJEKT RED",
+        "developerId": "o-x2vdjaf7cfakvlsgz8qf2gx8bkplcc",
+        "endOfSupport": false,
+        "entitlementName": "44b40d9063c74eb99d7b417c39fbcb33",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "44b40d9063c74eb99d7b417c39fbcb33",
+        "itemType": "DURABLE",
+        "keyImages": [
+          {
+            "height": 1440,
+            "md5": "15e79640f240b1652ad72c0ff72b2b17",
+            "size": 861776,
+            "type": "DieselGameBox",
+            "uploadedDate": "2023-05-18T15:02:17.513Z",
+            "url": "https://cdn1.epicgames.com/item/77f2b98e2cef40c8a7437518bf420e47/EGS_Cyberpunk2077PhantomLiberty_CDPROJEKTRED_DLC_S1_2560x1440-15e79640f240b1652ad72c0ff72b2b17",
+            "width": 2560
+          },
+          {
+            "height": 1600,
+            "md5": "2bed426d87c9d876eba28d9140a53c3f",
+            "size": 787272,
+            "type": "DieselGameBoxTall",
+            "uploadedDate": "2023-05-18T15:02:20.712Z",
+            "url": "https://cdn1.epicgames.com/item/77f2b98e2cef40c8a7437518bf420e47/EGS_Cyberpunk2077PhantomLiberty_CDPROJEKTRED_DLC_S2_1200x1600-2bed426d87c9d876eba28d9140a53c3f",
+            "width": 1200
+          }
+        ],
+        "lastModifiedDate": "2023-09-25T23:57:47.844Z",
+        "mainGameItem": {
+          "id": "5beededaad9743df90e8f07d92df153f",
+          "namespace": "77f2b98e2cef40c8a7437518bf420e47",
+          "unsearchable": false
+        },
+        "namespace": "77f2b98e2cef40c8a7437518bf420e47",
+        "releaseInfo": [
+          {
+            "appId": "c7250f768ab74180895fd781cbc32921",
+            "id": "b88060e9a24043ea881171af64517c90",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Cyberpunk 2077: Phantom Liberty",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "digitalextras"
+          },
+          {
+            "path": "applications"
+          }
+        ],
+        "creationDate": "2022-08-10T14:21:47.051Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          },
+          "FolderName": {
+            "type": "STRING",
+            "value": "REDmod"
+          }
+        },
+        "description": "Cyberpunk 2077 - REDmod",
+        "developer": "CD PROJEKT RED",
+        "developerId": "o-x2vdjaf7cfakvlsgz8qf2gx8bkplcc",
+        "endOfSupport": false,
+        "entitlementName": "563d27afe4544a648a0c222d73dedd84",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "(egstore && redmod)"
+        ],
+        "id": "563d27afe4544a648a0c222d73dedd84",
+        "itemType": "DURABLE",
+        "keyImages": [
+          {
+            "height": 1440,
+            "md5": "922b2931e9d4d400e63a4ad2cdb3b036",
+            "size": 1703569,
+            "type": "DieselGameBox",
+            "uploadedDate": "2022-09-02T16:28:57.178Z",
+            "url": "https://cdn1.epicgames.com/item/77f2b98e2cef40c8a7437518bf420e47/REDMOD_EGS_2560x1440_2560x1440-922b2931e9d4d400e63a4ad2cdb3b036",
+            "width": 2560
+          },
+          {
+            "height": 1600,
+            "md5": "766087f5b842a58adafbc2a36f2ef7a3",
+            "size": 1232553,
+            "type": "DieselGameBoxTall",
+            "uploadedDate": "2022-09-02T16:28:53.579Z",
+            "url": "https://cdn1.epicgames.com/item/77f2b98e2cef40c8a7437518bf420e47/REDMOD_EGS_1200x1600_1200x1600-766087f5b842a58adafbc2a36f2ef7a3",
+            "width": 1200
+          }
+        ],
+        "lastModifiedDate": "2022-09-06T15:59:25.534Z",
+        "mainGameItem": {
+          "id": "5beededaad9743df90e8f07d92df153f",
+          "namespace": "77f2b98e2cef40c8a7437518bf420e47",
+          "unsearchable": false
+        },
+        "namespace": "77f2b98e2cef40c8a7437518bf420e47",
+        "releaseInfo": [
+          {
+            "appId": "02855a2f4c044aa1a813b19f8c447fe1",
+            "id": "39b413ad1f434aee92d225a2d3b61b8e",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Cyberpunk 2077 - REDmod",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-05-17T14:55:36.498Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "Phantom Liberty: Quadra Vigilante Pre-Order Bonus audience",
+        "developer": "CD PROJEKT RED",
+        "developerId": "o-x2vdjaf7cfakvlsgz8qf2gx8bkplcc",
+        "endOfSupport": false,
+        "entitlementName": "7a8820e92f904cce9856916e72322153",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "7a8820e92f904cce9856916e72322153",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2023-09-25T22:52:48.201Z",
+        "mainGameItem": {
+          "id": "5beededaad9743df90e8f07d92df153f",
+          "namespace": "77f2b98e2cef40c8a7437518bf420e47",
+          "unsearchable": false
+        },
+        "namespace": "77f2b98e2cef40c8a7437518bf420e47",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Phantom Liberty: Quadra Vigilante Pre-Order Bonus audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-04-27T22:04:32.910Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "Ginger EP1 Prepurchase audience",
+        "developer": "CD PROJEKT RED",
+        "developerId": "o-x2vdjaf7cfakvlsgz8qf2gx8bkplcc",
+        "endOfSupport": false,
+        "entitlementName": "989327d8839e4d47996edd29401403aa",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "989327d8839e4d47996edd29401403aa",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2023-06-28T17:22:46.636Z",
+        "mainGameItem": {
+          "id": "5beededaad9743df90e8f07d92df153f",
+          "namespace": "77f2b98e2cef40c8a7437518bf420e47",
+          "unsearchable": false
+        },
+        "namespace": "77f2b98e2cef40c8a7437518bf420e47",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Ginger EP1 Prepurchase audience",
+        "unsearchable": true
+      }
+    ],
+    "endOfSupport": false,
+    "entitlementName": "5beededaad9743df90e8f07d92df153f",
+    "entitlementType": "EXECUTABLE",
+    "eulaIds": [
+      "(egstore && cp2077)"
+    ],
+    "id": "5beededaad9743df90e8f07d92df153f",
+    "installModes": [],
+    "itemType": "DURABLE",
+    "keyImages": [
+      {
+        "height": 1440,
+        "md5": "359e77d3cd0a40aebf3bbc130d14c5c7",
+        "size": 684425,
+        "type": "DieselGameBox",
+        "uploadedDate": "2022-03-22T15:56:14.855Z",
+        "url": "https://cdn1.epicgames.com/item/77f2b98e2cef40c8a7437518bf420e47/EN_CDProjektRED_Cyberpunk2077NG_S1_2560x1440_2560x1440-359e77d3cd0a40aebf3bbc130d14c5c7",
+        "width": 2560
+      },
+      {
+        "height": 1600,
+        "md5": "b1847981214ac013383111fc457eb9c5",
+        "size": 747407,
+        "type": "DieselGameBoxTall",
+        "uploadedDate": "2022-03-22T15:56:22.204Z",
+        "url": "https://cdn1.epicgames.com/item/77f2b98e2cef40c8a7437518bf420e47/EN_CDProjektRED_Cyberpunk2077NG_S2_1200x1600_1200x1600-b1847981214ac013383111fc457eb9c5",
+        "width": 1200
+      }
+    ],
+    "lastModifiedDate": "2023-09-26T00:09:53.259Z",
+    "namespace": "77f2b98e2cef40c8a7437518bf420e47",
+    "releaseInfo": [
+      {
+        "appId": "Ginger",
+        "dateAdded": "2020-12-07T00:00:00.000Z",
+        "id": "9b8641b9bbb941269f91b40bce913816",
+        "platform": [
+          "Windows"
+        ]
+      }
+    ],
+    "status": "ACTIVE",
+    "title": "Cyberpunk 2077",
+    "unsearchable": false
+  }
+}
