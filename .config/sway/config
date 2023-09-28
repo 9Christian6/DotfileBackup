@@ -1,0 +1,400 @@
+# Default config for sway
+
+gaps inner 5
+default_border none
+default_floating_border none
+titlebar_padding 1
+titlebar_border_thickness 0
+
+input "1:1:AT_Translated_Set_2_keyboard" {
+	xkb_layout de,de
+}
+
+output DP-2 {
+        pos 0 0
+        background ~/Opt/Wallpapers/RoomAtNightCroppedWithBackground.png fill
+        resolution 2560x1440
+}
+output DVI-D-1 {
+        pos 2560 0
+        background ~/Opt/Wallpapers/RoomAtNightCroppedWithBackground.png fill
+        resolution 1920x1080
+}
+#exec_always --no-startup-id feh --bg-scale ~/Desktop/Wallpaper/RoomAtNight.png 
+
+#make GTK applications start faster
+exec_always dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+
+#disable mouse focus follow
+focus_follows_mouse no
+
+default_border none
+default_floating_border none
+# font pango:monospace 0
+# titlebar_padding 1
+# titlebar_border_thickness 0
+
+# Copy this to ~/.config/sway/config and edit it to your liking.
+#
+# Read `man 5 sway` for a complete reference.
+
+### Variables
+#
+# Logo key. Use Mod1 for Alt.
+set $mod Mod4
+bindsym $mod+a exec --no-startup-id swaylock -i /home/christian/Opt/Wallpapers/RoomAtNightCroppedWithBackground.png
+# Home row direction keys, like vim
+set $left h
+set $down j
+set $up k
+set $right l
+# Your preferred terminal emulator
+set $term /home/christian/Bin/alacritty
+# Your preferred application launcher
+# Note: pass the final command to swaymsg so that the resulting window can be opened
+# on the original workspace that the command was run on.
+set $menu exec rofi -show drun
+
+### Output configuration
+#
+# Default wallpaper (more resolutions are available in @datadir@/backgrounds/sway/)
+# output * bg @datadir@/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+#
+# Example configuration:
+#
+#   output HDMI-A-1 resolution 1920x1080 position 1920,0
+#
+# You can get the names of your outputs by running: swaymsg -t get_outputs
+
+### Idle configuration
+#
+# Example configuration:
+#
+# exec swayidle -w \
+#          timeout 300 'swaylock -f -c 000000' \
+#          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+#          before-sleep 'swaylock -f -c 000000'
+#
+# This will lock your screen after 300 seconds of inactivity, then turn off
+# your displays after another 300 seconds, and turn your screens back on when
+# resumed. It will also lock your screen before your computer goes to sleep.
+
+### Input configuration
+#
+# Example configuration:
+#
+#   input "2:14:SynPS/2_Synaptics_TouchPad" {
+#       dwt enabled
+#       tap enabled
+#       natural_scroll enabled
+#       middle_emulation enabled
+#   }
+#
+# You can get the names of your inputs by running: swaymsg -t get_inputs
+# Read `man 5 sway-input` for more information about this section.
+
+### Key bindings
+#
+# Basics:
+#
+    # Start a terminal
+    bindsym $mod+Return exec $term
+
+    # Kill focused window
+    bindsym $mod+Shift+q kill
+
+    # Start your launcher
+    bindsym $mod+d exec $menu
+
+    # Start browser
+    bindsym $mod+c exec --no-startup-id firefox -new-window
+
+    # Drag floating windows by holding down $mod and left mouse button.
+    # Resize them with right mouse button + $mod.
+    # Despite the name, also works for non-floating windows.
+    # Change normal to inverse to use left mouse button for resizing and right
+    # mouse button for dragging.
+    floating_modifier $mod normal
+
+    # Reload the configuration file
+    bindsym $mod+Shift+c reload
+
+    # Exit sway (logs you out of your Wayland session)
+    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+#
+# Moving around:
+#
+    # Move your focus around
+    bindsym $mod+$left focus left
+    bindsym $mod+$down focus down
+    bindsym $mod+$up focus up
+    bindsym $mod+$right focus right
+    # Or use $mod+[up|down|left|right]
+    bindsym $mod+Left focus left
+    bindsym $mod+Down focus down
+    bindsym $mod+Up focus up
+    bindsym $mod+Right focus right
+
+    # Move the focused window with the same, but add Shift
+    bindsym $mod+Shift+$left move left
+    bindsym $mod+Shift+$down move down
+    bindsym $mod+Shift+$up move up
+    bindsym $mod+Shift+$right move right
+    # Ditto, with arrow keys
+    bindsym $mod+Shift+Left move left
+    bindsym $mod+Shift+Down move down
+    bindsym $mod+Shift+Up move up
+    bindsym $mod+Shift+Right move right
+    # Move workspace using vim bindings
+    bindsym $mod+Shift+Control+l move workspace to output right
+    bindsym $mod+Shift+Control+h move workspace to output left
+#
+# Workspaces:
+#
+
+    # Define names for default workspaces for which we configure key bindings later on.
+    # We use variables to avoid repeating the names in multiple places.
+    set $ws1 workspace number 1
+    set $ws2 workspace number 2
+    set $ws3 workspace number 3
+    set $ws4 workspace number 4
+    set $ws5 workspace number 5
+    set $ws6 workspace number 6
+    set $ws7 workspace number 7
+    set $ws8 workspace number 8
+    set $ws9 workspace number 9
+    set $ws10 workspace number 10
+    set $ws11 workspace number 11
+    set $ws12 workspace number 12
+    set $ws13 workspace number 13
+    set $ws14 workspace number 14
+    set $ws15 workspace number 15
+    set $ws16 workspace number 16
+    set $ws17 workspace number 17
+    set $ws18 workspace number 18
+    set $ws19 workspace number 19
+
+    # Switch to workspace
+    bindsym $mod+1 $ws1
+    bindsym $mod+2 $ws2
+    bindsym $mod+3 $ws3
+    bindsym $mod+4 $ws4
+    bindsym $mod+5 $ws5
+    bindsym $mod+6 $ws6
+    bindsym $mod+7 $ws7
+    bindsym $mod+8 $ws8
+    bindsym $mod+9 $ws9
+    bindsym $mod+0 $ws10
+    bindsym $mod+Control+1 $ws11
+    bindsym $mod+Control+2 $ws12
+    bindsym $mod+Control+3 $ws13
+    bindsym $mod+Control+4 $ws14
+    bindsym $mod+Control+5 $ws15
+    bindsym $mod+Control+6 $ws16
+    bindsym $mod+Control+7 $ws17
+    bindsym $mod+Control+8 $ws18
+    bindsym $mod+Control+9 $ws19
+    bindsym $mod+Control+0 $ws20
+    # Move focused container to workspace
+    bindsym $mod+Shift+1 move container to $ws1
+    bindsym $mod+Shift+2 move container to $ws2
+    bindsym $mod+Shift+3 move container to $ws3
+    bindsym $mod+Shift+4 move container to $ws4
+    bindsym $mod+Shift+5 move container to $ws5
+    bindsym $mod+Shift+6 move container to $ws6
+    bindsym $mod+Shift+7 move container to $ws7
+    bindsym $mod+Shift+8 move container to $ws8
+    bindsym $mod+Shift+9 move container to $ws9
+    bindsym $mod+Shift+0 move container to $ws10
+    bindsym $mod+Control+Shift+1 move container to $ws11
+    bindsym $mod+Control+Shift+2 move container to $ws12
+    bindsym $mod+Control+Shift+3 move container to $ws13
+    bindsym $mod+Control+Shift+4 move container to $ws14
+    bindsym $mod+Control+Shift+5 move container to $ws15
+    bindsym $mod+Control+Shift+6 move container to $ws16
+    bindsym $mod+Control+Shift+7 move container to $ws17
+    bindsym $mod+Control+Shift+8 move container to $ws18
+    bindsym $mod+Control+Shift+9 move container to $ws19
+    bindsym $mod+Control+Shift+0 move container to $ws20
+    # Note: workspaces can have any name you want, not just numbers.
+    # We just use 1-10 as the default.
+
+    #Shortcuts
+    #shortcuts
+    #Hotkeys
+    #hotkeys
+    #KeyBindings
+    #Key Bindings
+    bindsym $mod+Shift+y exec --no-startup-id ~/Opt/emojipick/emojipick
+    # bindsym $mod+a exec --no-startup-id /home/christian/Bin/Lock
+    bindsym $mod+u exec --no-startup-id /home/christian/Bin/removeUrgency
+    bindsym $mod+Control+c exec --no-startup-id  firefox --private-window
+    bindsym $mod+y exec --no-startup-id firefox -new-window www.youtube.com 
+    bindsym $mod+t exec --no-startup-id firefox -new-window www.twitch.tv/following/live 
+    bindsym $mod+Control+r exec --no-startup-id firefox -new-window old.reddit.com 
+    bindsym $mod+Control+s exec /home/christian/Bin/Shutdown
+    bindsym $mod+Control+h workspace prev_on_output
+    bindsym $mod+Control+Left workspace prev_on_output
+    bindsym $mod+Control+l workspace next_on_output
+    bindsym $mod+Control+Right workspace next_on_output
+    bindsym $mod+m move scratchpad
+    bindsym $mod+n scratchpad show, floating disable
+    bindsym $mod+F4 exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
+    bindsym $mod+q exec /home/christian/Bin/Screenshot.py -s region
+
+# Sound Control
+bindsym $mod+F1 exec --no-startup-id amixer -q -D pulse sset Master toggle
+bindsym $mod+F2 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10%
+bindsym $mod+F3 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10%
+
+#
+# program to Workspace assignments
+#
+assign [class="WhatSie"] $ws2
+assign [class="Signal"] $ws2
+assign [class="steam"] $ws8
+assign [class="heroic"] $ws8
+assign [class="discord"] $ws9
+assign [class="Microsoft Teams - Preview"] $ws10
+assign [class="explorer.exe"] $ws11
+assign [class="leagueclient.exe"] $ws11
+assign [class="leagueclientux.exe"] $ws11
+assign [class="league of legends.exe"] $ws11
+assign [class="leagueclient.exe"] $ws11
+assign [class="Untitled Goose Game"] $ws11
+assign [class="Todoist"] $ws14
+assign [class="Code"] $ws1
+assign [app_id="thunderbird"] workspace number 12
+# assign [class="WebApp"] $ws2
+assign [app_id="whatsapp-for-linux"] $ws2
+assign [title="christianschulz1996@tutanota.com - Tutanota — Mozilla Firefox"] $ws13
+# for_window [app_id="Alacritty"] move to workspace number 4
+for_window [title="christianschulz1996@tutanota.com - Tutanota — Mozilla Firefox"] move to workspace number 13
+for_window [title="christianschulz1996@tutanota.com - Tutanota — Mozilla Firefox"] fullscreen disable
+for_window [class="Spotify"] move to workspace number 5
+for_window [title="^Sekiro$"] move to workspace $ws11
+for_window [title="^ELDEN$"] move to workspace $ws11
+for_window [title="^Celeste$"] move to workspace $ws11
+for_window [title="^Factorio$"] move to workspace $ws11
+for_window [title="^PORTAL 2 - OpenGL$"] move to workspace $ws11
+for_window [title="^MONSTER HUNTER: WORLD$"] move to workspace $ws11
+for_window [title="^DARK SOULS III$"] move to workspace $ws11
+for_window [title="^The Witcher 3$"] move to workspace $ws11
+for_window [class="mupen64plus"] move to workspace $ws11
+for_window [class="^Hollow$"] move to workspace $ws11
+
+for_window [class="Gnome-calculator"] floating enable
+for_window [class="Shutter"] floating enable
+for_window [class="zoom"] floating enable
+for_window [class="Lutris"] floating enable
+for_window [class="battle.net.exe"] floating enable
+for_window [class="Pavucontrol"] floating enable
+for_window [class="Desmume"] floating enable
+for_window [class="SFML works!"] floating enable
+for_window [class="Gimp"] floating enable
+for_window [class="Signal"] fullscreen disable
+
+# workspace to output assignments
+workspace 1 output DP-2
+workspace 2 output DVI-D-1
+workspace 5 output DVI-D-1
+workspace 4 output DVI-D-1
+workspace 8 output DVI-D-1
+workspace 9 output DVI-D-1
+workspace 11 output DP-2
+workspace 12 output DVI-D-1
+workspace 13 output DVI-D-1
+
+#
+# Layout stuff:
+#
+    # You can "split" the current object of your focus with
+    # $mod+b or $mod+v, for horizontal and vertical splits
+    # respectively.
+    bindsym $mod+b splith
+    bindsym $mod+v splitv
+    bindsym $mod+x split toggle; border none
+
+    # Switch the current container between different layout styles
+    bindsym $mod+s layout stacking
+    bindsym $mod+w layout tabbed
+    bindsym $mod+e layout toggle split
+
+    # Make the current focus fullscreen
+    bindsym $mod+f fullscreen
+
+    # Toggle the current focus between tiling and floating mode
+    bindsym $mod+Shift+space floating toggle
+
+    # Swap focus between the tiling area and the floating area
+    bindsym $mod+space focus mode_toggle
+
+    # Move focus to the parent container
+    bindsym $mod+p focus parent
+#
+# Scratchpad:
+#
+    # Sway has a "scratchpad", which is a bag of holding for windows.
+    # You can send windows there and get them back later.
+
+    # Move the currently focused window to the scratchpad
+    bindsym $mod+Shift+minus move scratchpad
+
+    # Show the next scratchpad window or hide the focused scratchpad window.
+    # If there are multiple scratchpad windows, this command cycles through them.
+    bindsym $mod+minus scratchpad show
+
+
+# Resizing containers:
+#
+mode "resize" {
+    # left will shrink the containers width
+    # right will grow the containers width
+    # up will shrink the containers height
+    # down will grow the containers height
+    bindsym $left resize shrink width 10px
+    bindsym $down resize grow height 10px
+    bindsym $up resize shrink height 10px
+    bindsym $right resize grow width 10px
+
+    # Ditto, with arrow keys
+    bindsym Left resize shrink width 10px
+    bindsym Down resize grow height 10px
+    bindsym Up resize shrink height 10px
+    bindsym Right resize grow width 10px
+
+    # Return to default mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+
+exec_always /home/christian/Bin/workstyle
+#
+# Status Bar:
+#
+# Read `man 5 sway-bar` for more information about this section.
+# bar {
+#     position bottom
+# 
+#     # When the status_command prints a new line to stdout, swaybar updates.
+#     # The default just shows the current date and time.
+#     # status_command while date +'%Y-%m-%d %I:%M:%S %p'; do sleep 1; done
+#     status_command while date +'%A | %d.%m.%Y | %H:%M:%S | %p'; do sleep 1; done
+#     font UbuntuMono Nerd Font
+# 
+#     colors {
+#         statusline #ffffff
+#         background #00225050
+#         inactive_workspace #32323200 #32323200 #5c5c5c
+#     }
+# }
+bar { 
+     swaybar_command waybar
+}
+#startup
+exec /home/christian/Bin/Startup
+#startup on every Reload
+exec_always /home/christian/Bin/AlwaysStartup
+
+include @sysconfdir@/sway/config.d/*
