@@ -1,7 +1,0 @@
-2023/07/26-22:59:01.600 3d80 Reusing MANIFEST /home/christian/.config/Signal/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
-2023/07/26-22:59:01.601 3d80 Recovering log #4
-2023/07/26-22:59:01.601 3d80 Reusing old log /home/christian/.config/Signal/IndexedDB/file__0.indexeddb.leveldb/000004.log 
-2023/07/26-22:59:01.613 3d7f Level-0 table #8: started
-2023/07/26-22:59:01.615 3d7f Level-0 table #8: 467 bytes OK
-2023/07/26-22:59:01.617 3d7f Delete type=0 #4
-2023/07/26-22:59:01.617 3d65 Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)
