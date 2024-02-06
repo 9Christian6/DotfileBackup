@@ -136,6 +136,7 @@ function addAlias(){echo "alias $1='$2'" >> ~/.zshrc; }
 function search(){la | grep -i $1}
 function showInstalled(){dpkg --list "*$1*"}
 function makecd(){mkdir $1 && cd $1}
+function startSilent(){nohup "$@"& >> /dev/null}
 
 #aliases
 alias :Q='exit'
@@ -154,7 +155,7 @@ alias cleanmakerun='cleanmake && makerun'
 alias clearmake='cmake --build . && clear'
 alias cls="cd ~ && clear"
 alias config='/usr/bin/git --git-dir=/home/christian/dotfiles/ --work-tree=/home/christian'
-alias dankbarkeit='nvim $HOME/Desktop/Dankbarkeitstagebuch'
+alias Dankbarkeit='nvim $HOME/Desktop/Dankbarkeitstagebuch'
 alias delete='gio trash'
 alias disableXBox='sudo systemctl stop xow.service'
 alias dotfileBackup='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
@@ -181,5 +182,6 @@ alias vim='nvim'
 alias zshrc='nvim $HOME/.zshrc && source $HOME/.zshrc'
 alias Weather='curl wttr.in/Heusweiler'
 alias calculator='bc -l'
+alias timer='$HOME/Bin/timer.sh'
 
 source /home/christian/Opt/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
