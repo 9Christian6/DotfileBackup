@@ -95,7 +95,8 @@
     "clock#date": {
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": " {:%d.%m.%Y}"
+        //"format": " {:%d.%m.%Y}"
+        "format": "󰸗 {:%d.%m.%Y}"
     },
     "clock#day": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
@@ -110,7 +111,7 @@
         "tooltip": false
     },
     "memory": {
-        "format": "  {}%"
+        "format": "󰆓 {}%"
     },
     "temperature": {
         // "thermal-zone": 2,
@@ -179,7 +180,7 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click": "$HOME/Bin/PickSoundSink.sh"
     },
     "custom/media": {
         "format": "{icon} {}",

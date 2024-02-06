@@ -20,6 +20,11 @@ output DVI-D-1 {
         background ~/Opt/Wallpapers/RoomAtNightCroppedWithBackground.png fill
         resolution 1920x1080
 }
+output HDMI-A-1 {
+        pos 4480 0
+        background ~/Opt/Wallpapers/RoomAtNightCroppedWithBackground.png fill
+        resolution 1920x1080
+}
 #exec_always --no-startup-id feh --bg-scale ~/Desktop/Wallpaper/RoomAtNight.png 
 
 #make GTK applications start faster
@@ -30,7 +35,7 @@ focus_follows_mouse no
 
 default_border none
 default_floating_border none
-# font pango:monospace 0
+font pango:monospace 0
 # titlebar_padding 1
 # titlebar_border_thickness 0
 
@@ -107,7 +112,8 @@ set $menu exec rofi -show drun
     bindsym $mod+d exec $menu
 
     # Start browser
-    bindsym $mod+c exec --no-startup-id firefox -new-window
+    # bindsym $mod+c exec --no-startup-id firefox -new-window
+    bindsym $mod+c exec --no-startup-id brave-browser -new-window --use-gl=egl --ozone-platform-hint=auto --enable-features=VaapiVideoDecoder --disable-features=UseChromeOSDirectVideoDecoder
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -147,7 +153,10 @@ set $menu exec rofi -show drun
     bindsym $mod+Shift+Right move right
     # Move workspace using vim bindings
     bindsym $mod+Shift+Control+l move workspace to output right
+    bindsym $mod+Shift+Control+right move workspace to output right
+
     bindsym $mod+Shift+Control+h move workspace to output left
+    bindsym $mod+Shift+Control+left move workspace to output left
 #
 # Workspaces:
 #
@@ -225,13 +234,14 @@ set $menu exec rofi -show drun
     #hotkeys
     #KeyBindings
     #Key Bindings
-    bindsym $mod+Shift+y exec --no-startup-id ~/Opt/emojipick/emojipick
+    bindsym $mod+Shift+y exec --no-startup-id /home/christian/Opt/emojipick/emojipick
     # bindsym $mod+a exec --no-startup-id /home/christian/Bin/Lock
-    bindsym $mod+u exec --no-startup-id /home/christian/Bin/removeUrgency
-    bindsym $mod+Control+c exec --no-startup-id  firefox --private-window
-    bindsym $mod+y exec --no-startup-id firefox -new-window www.youtube.com 
-    bindsym $mod+t exec --no-startup-id firefox -new-window www.twitch.tv/following/live 
-    bindsym $mod+Control+r exec --no-startup-id firefox -new-window old.reddit.com 
+    bindsym $mod+u exec --no-startup-id python3 /home/christian/Bin/removeUrgency.py
+    # bindsym $mod+Control+c exec --no-startup-id  firefox --private-window
+    bindsym $mod+Control+c exec --no-startup-id  brave-browser --incognito --use-gl=egl --ozone-platform-hint=auto --enable-features=VaapiVideoDecoder --disable-features=UseChromeOSDirectVideoDecoder
+    bindsym $mod+y exec --no-startup-id brave-browser -new-window www.youtube.com --use-gl=egl --ozone-platform-hint=auto --enable-features=VaapiVideoDecoder --disable-features=UseChromeOSDirectVideoDecoder
+    bindsym $mod+t exec --no-startup-id brave-browser -new-window www.twitch.tv/following/live --use-gl=egl --ozone-platform-hint=auto --enable-features=VaapiVideoDecoder --disable-features=UseChromeOSDirectVideoDecoder
+    bindsym $mod+Control+r exec --no-startup-id brave-browser -new-window old.reddit.com --use-gl=egl --ozone-platform-hint=auto --enable-features=VaapiVideoDecoder --disable-features=UseChromeOSDirectVideoDecoder
     bindsym $mod+Control+s exec /home/christian/Bin/Shutdown
     bindsym $mod+Control+h workspace prev_on_output
     bindsym $mod+Control+Left workspace prev_on_output
@@ -239,7 +249,7 @@ set $menu exec rofi -show drun
     bindsym $mod+Control+Right workspace next_on_output
     bindsym $mod+m move scratchpad
     bindsym $mod+n scratchpad show, floating disable
-    bindsym $mod+F4 exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
+    bindsym $mod+F6 exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
     bindsym $mod+q exec /home/christian/Bin/Screenshot.py -s region
 
 # Sound Control
@@ -250,8 +260,9 @@ bindsym $mod+F3 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10%
 #
 # program to Workspace assignments
 #
-assign [class="WhatSie"] $ws2
 assign [class="Signal"] $ws2
+assign [class="franz"] $ws2
+assign [class="Franz"] $ws2
 assign [class="steam"] $ws8
 assign [class="heroic"] $ws8
 assign [class="discord"] $ws9
@@ -265,23 +276,27 @@ assign [class="Untitled Goose Game"] $ws11
 assign [class="Todoist"] $ws14
 assign [class="Code"] $ws1
 assign [app_id="thunderbird"] workspace number 12
-# assign [class="WebApp"] $ws2
+assign [title="Google Calendar*"] $ws13
 assign [app_id="whatsapp-for-linux"] $ws2
 assign [title="christianschulz1996@tutanota.com - Tutanota — Mozilla Firefox"] $ws13
-# for_window [app_id="Alacritty"] move to workspace number 4
 for_window [title="christianschulz1996@tutanota.com - Tutanota — Mozilla Firefox"] move to workspace number 13
 for_window [title="christianschulz1996@tutanota.com - Tutanota — Mozilla Firefox"] fullscreen disable
+for_window [title="Google Calendar*"] fullscreen disable
+for_window [title="Google Calendar*"] move container to $ws13
+for_window [title="WhatsApp — Mozilla Firefox"] fullscreen disable
+for_window [title="WhatsApp — Mozilla Firefox"] move container to $ws2
+for_window [class="WebApp"] fullscreen disable
 for_window [class="Spotify"] move to workspace number 5
-for_window [title="^Sekiro$"] move to workspace $ws11
-for_window [title="^ELDEN$"] move to workspace $ws11
-for_window [title="^Celeste$"] move to workspace $ws11
-for_window [title="^Factorio$"] move to workspace $ws11
-for_window [title="^PORTAL 2 - OpenGL$"] move to workspace $ws11
-for_window [title="^MONSTER HUNTER: WORLD$"] move to workspace $ws11
-for_window [title="^DARK SOULS III$"] move to workspace $ws11
-for_window [title="^The Witcher 3$"] move to workspace $ws11
-for_window [class="mupen64plus"] move to workspace $ws11
-for_window [class="^Hollow$"] move to workspace $ws11
+for_window [title="^Sekiro$"] move to $ws11
+for_window [title="^ELDEN$"] move to $ws11
+for_window [title="^Celeste$"] move to $ws11
+for_window [title="^Factorio$"] move to $ws11
+for_window [title="^PORTAL 2 - OpenGL$"] move to $ws11
+for_window [title="^MONSTER HUNTER: WORLD$"] move to $ws11
+for_window [title="^DARK SOULS III$"] move to $ws11
+for_window [title="^The Witcher 3$"] move to $ws11
+for_window [class="mupen64plus"] move to $ws11
+for_window [class="^Hollow$"] move to $ws11
 
 for_window [class="Gnome-calculator"] floating enable
 for_window [class="Shutter"] floating enable
@@ -298,6 +313,7 @@ for_window [class="Signal"] fullscreen disable
 workspace 1 output DP-2
 workspace 2 output DVI-D-1
 workspace 5 output DVI-D-1
+workspace 6 output HDMI-A-1 
 workspace 4 output DVI-D-1
 workspace 8 output DVI-D-1
 workspace 9 output DVI-D-1
