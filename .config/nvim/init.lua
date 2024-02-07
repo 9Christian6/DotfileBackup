@@ -1,3 +1,6 @@
+--////////////////////////////////////////////////////////////////////////////
+--set variables
+--////////////////////////////////////////////////////////////////////////////
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.path = vim.opt.path + "**"
@@ -5,6 +8,9 @@ vim.opt.wildmenu = true
 vim.opt.mouse = a
 
 
+--////////////////////////////////////////////////////////////////////////////
+--call vim Plug
+--////////////////////////////////////////////////////////////////////////////
 local Plug = vim.fn['plug#']
 vim.call('plug#begin')
 	Plug 'nvim-tree/nvim-web-devicons' -- optional
@@ -13,14 +19,42 @@ vim.call('plug#begin')
 	Plug 'karb94/neoscroll.nvim'
 vim.call('plug#end')
 
--- Nvim-tree.lua begin
+--////////////////////////////////////////////////////////////////////////////
+--set colorscheme
+--////////////////////////////////////////////////////////////////////////////
+vim.cmd('colorscheme onedark')
+
+--////////////////////////////////////////////////////////////////////////////
+--nvim-tree begin
+--////////////////////////////////////////////////////////////////////////////
 -- disable netrw at the very start of your init.lua
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 -- optionally enable 24-bit colour
 vim.opt.termguicolors = true
+
+local function my_on_attach(bufnr)
+  local api = require "nvim-tree.api"
+
+  local function opts(desc)
+    return { desc = "nvim-tree: " .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
+  end
+
+  -- default mappings
+  api.config.mappings.default_on_attach(bufnr)
+
+  -- custom mappings
+    -- vim.keymap.set('n', '<C-t>', api.tree.change_root_to_parent,        opts('Up'))
+    vim.keymap.set('n', 'l', api.node.open.edit,        opts('Up'))
+    vim.keymap.set('n', 'h', api.node.navigate.parent_close,        opts('Up'))
+    vim.keymap.set('n', '?',     api.tree.toggle_help,                  opts('Help'))
+    vim.keymap.set('n', 'A', api.tree.expand_all, opts('Expand All'))
+end
+
+
 -- empty setup using defaults
 require("nvim-tree").setup({
+  on_attach = my_on_attach,
   sort = {
     sorter = "case_sensitive",
   },
@@ -34,9 +68,9 @@ require("nvim-tree").setup({
     dotfiles = true,
   },
 })
--- Nvim-tree.lua end
-
---smooth scrolling
+--////////////////////////////////////////////////////////////////////////////
+--smooth scrolling begin
+--////////////////////////////////////////////////////////////////////////////
 require('neoscroll').setup({
     easing_function = "quadratic" -- Default easing function
     -- Set any other options as needed
@@ -59,14 +93,54 @@ t['zz']    = {'zz', {'300'}}
 t['zb']    = {'zb', {'300'}}
 
 require('neoscroll.config').set_mappings(t)
---smooth scrolling end
 
--- SET LEADER
+--////////////////////////////////////////////////////////////////////////////
+-- automatically closing nvim-tree if buffer is closed
+--////////////////////////////////////////////////////////////////////////////
+local function tab_win_closed(winnr)
+  local api = require"nvim-tree.api"
+  local tabnr = vim.api.nvim_win_get_tabpage(winnr)
+  local bufnr = vim.api.nvim_win_get_buf(winnr)
+  local buf_info = vim.fn.getbufinfo(bufnr)[1]
+  local tab_wins = vim.tbl_filter(function(w) return w~=winnr end, vim.api.nvim_tabpage_list_wins(tabnr))
+  local tab_bufs = vim.tbl_map(vim.api.nvim_win_get_buf, tab_wins)
+  if buf_info.name:match(".*NvimTree_%d*$") then            -- close buffer was nvim tree
+    -- Close all nvim tree on :q
+    if not vim.tbl_isempty(tab_bufs) then                      -- and was not the last window (not closed automatically by code below)
+      api.tree.close()
+    end
+  else                                                      -- else closed buffer was normal buffer
+    if #tab_bufs == 1 then                                    -- if there is only 1 buffer left in the tab
+      local last_buf_info = vim.fn.getbufinfo(tab_bufs[1])[1]
+      if last_buf_info.name:match(".*NvimTree_%d*$") then       -- and that buffer is nvim tree
+        vim.schedule(function ()
+          if #vim.api.nvim_list_wins() == 1 then                -- if its the last buffer in vim
+            vim.cmd "quit"                                        -- then close all of vim
+          else                                                  -- else there are more tabs open
+            vim.api.nvim_win_close(tab_wins[1], true)             -- then close only the tab
+          end
+        end)
+      end
+    end
+  end
+end
+
+vim.api.nvim_create_autocmd("WinClosed", {
+  callback = function ()
+    local winnr = tonumber(vim.fn.expand("<amatch>"))
+    vim.schedule_wrap(tab_win_closed(winnr))
+  end,
+  nested = true
+})
+
+--////////////////////////////////////////////////////////////////////////////
+-- Set Leader
+--////////////////////////////////////////////////////////////////////////////
 vim.g.mapleader = "\\"
 
--- vim.api.nvim_set_keymap("n", "<ScrollWheelUp>", "<C-y>", { noremap = true })
--- vim.api.nvim_set_keymap("n", "<ScrollWheelDown>", "<C-e>", { noremap = true })
-
+--////////////////////////////////////////////////////////////////////////////
+-- Set Keybinds
+--////////////////////////////////////////////////////////////////////////////
 vim.api.nvim_set_keymap(
 	"n",
 	"<LEADER>w",
@@ -167,4 +241,3 @@ vim.api.nvim_set_keymap(
 -- Changed source $HOME/.config/nvim/vim-plug/plugins.vim
 
 
-vim.cmd('colorscheme onedark')
