@@ -114,6 +114,8 @@ set $menu exec rofi -show drun
     # Start browser
     # bindsym $mod+c exec --no-startup-id firefox -new-window
     bindsym $mod+c exec --no-startup-id brave-browser -new-window --use-gl=egl --ozone-platform-hint=auto --enable-features=VaapiVideoDecoder --disable-features=UseChromeOSDirectVideoDecoder
+    bindsym $mod+Control+c exec --no-startup-id  brave-browser --incognito 
+    # bindsym $mod+Control+c exec --no-startup-id  brave-browser --incognito --use-gl=egl --ozone-platform-hint=auto --enable-features=VaapiVideoDecoder --disable-features=UseChromeOSDirectVideoDecoder
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -238,7 +240,6 @@ set $menu exec rofi -show drun
     # bindsym $mod+a exec --no-startup-id /home/christian/Bin/Lock
     bindsym $mod+u exec --no-startup-id python3 /home/christian/Bin/removeUrgency.py
     # bindsym $mod+Control+c exec --no-startup-id  firefox --private-window
-    bindsym $mod+Control+c exec --no-startup-id  brave-browser --incognito --use-gl=egl --ozone-platform-hint=auto --enable-features=VaapiVideoDecoder --disable-features=UseChromeOSDirectVideoDecoder
     bindsym $mod+y exec --no-startup-id brave-browser -new-window www.youtube.com --use-gl=egl --ozone-platform-hint=auto --enable-features=VaapiVideoDecoder --disable-features=UseChromeOSDirectVideoDecoder
     bindsym $mod+t exec --no-startup-id brave-browser -new-window www.twitch.tv/following/live --use-gl=egl --ozone-platform-hint=auto --enable-features=VaapiVideoDecoder --disable-features=UseChromeOSDirectVideoDecoder
     bindsym $mod+Control+r exec --no-startup-id brave-browser -new-window old.reddit.com --use-gl=egl --ozone-platform-hint=auto --enable-features=VaapiVideoDecoder --disable-features=UseChromeOSDirectVideoDecoder
