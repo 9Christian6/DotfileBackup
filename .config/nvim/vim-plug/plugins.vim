@@ -38,4 +38,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'cdelledonne/vim-cmake'
     "Firefox vim integration
     Plug 'glacambre/firenvim'
+    "YouCompleteMe
+    Plug 'ycm-core/YouCompleteMe'
 call plug#end()

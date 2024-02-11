@@ -17,6 +17,7 @@ vim.call('plug#begin')
 	Plug 'nvim-tree/nvim-tree.lua'
     	Plug 'joshdick/onedark.vim'
 	Plug 'karb94/neoscroll.nvim'
+	Plug 'vimlab/split-term.vim'
 vim.call('plug#end')
 
 --////////////////////////////////////////////////////////////////////////////
@@ -139,8 +140,24 @@ vim.api.nvim_create_autocmd("WinClosed", {
 vim.g.mapleader = "\\"
 
 --////////////////////////////////////////////////////////////////////////////
--- Set Keybinds
+-- Set Keybinds / Keybinds
 --////////////////////////////////////////////////////////////////////////////
+-- Integrated terminal stuff
+vim.api.nvim_set_keymap(
+	"n",
+	"<LEADER>t",
+	":set splitbelow<CR>:10Term<CR>",
+	--":set splitbelow :vsplit term://zsh<CR>I",
+	{noremap = true}
+)
+
+vim.api.nvim_set_keymap(
+	"t",
+	"<Esc>",
+	"<C-\\><C-n>",
+	{noremap = true}
+)
+
 vim.api.nvim_set_keymap(
 	"n",
 	"<LEADER>w",
