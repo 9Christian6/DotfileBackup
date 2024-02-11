@@ -46,6 +46,8 @@ local function my_on_attach(bufnr)
 
   -- custom mappings
     -- vim.keymap.set('n', '<C-t>', api.tree.change_root_to_parent,        opts('Up'))
+    vim.keymap.set('n', '<C-l>', api.tree.change_root_to_node,        opts('Up'))
+    vim.keymap.set('n', '<C-h>', api.node.navigate.parent_close,        opts('Up'))
     vim.keymap.set('n', 'l', api.node.open.edit,        opts('Up'))
     vim.keymap.set('n', 'h', api.node.navigate.parent_close,        opts('Up'))
     vim.keymap.set('n', '?',     api.tree.toggle_help,                  opts('Help'))
@@ -158,6 +160,7 @@ vim.api.nvim_set_keymap(
 	{noremap = true}
 )
 
+-- Write Quit hotkeys
 vim.api.nvim_set_keymap(
 	"n",
 	"<LEADER>w",
@@ -179,6 +182,7 @@ vim.api.nvim_set_keymap(
 	{noremap = true}
 )
 
+-- Format hotkey
 vim.api.nvim_set_keymap(
 	"n",
 	"<LEADER>f",
