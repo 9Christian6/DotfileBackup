@@ -18,6 +18,7 @@ vim.call('plug#begin')
     	Plug 'joshdick/onedark.vim'
 	Plug 'karb94/neoscroll.nvim'
 	Plug 'vimlab/split-term.vim'
+	Plug 'lervag/vimtex'
 vim.call('plug#end')
 
 --////////////////////////////////////////////////////////////////////////////
@@ -48,6 +49,7 @@ local function my_on_attach(bufnr)
     -- vim.keymap.set('n', '<C-t>', api.tree.change_root_to_parent,        opts('Up'))
     vim.keymap.set('n', '<C-l>', api.tree.change_root_to_node,        opts('Up'))
     vim.keymap.set('n', '<C-h>', api.node.navigate.parent_close,        opts('Up'))
+    -- vim.keymap.set('n', '<C-h>', api.tree.change_root_to_parent,        opts('Up'))
     vim.keymap.set('n', 'l', api.node.open.edit,        opts('Up'))
     vim.keymap.set('n', 'h', api.node.navigate.parent_close,        opts('Up'))
     vim.keymap.set('n', '?',     api.tree.toggle_help,                  opts('Help'))
@@ -202,6 +204,14 @@ vim.api.nvim_set_keymap(
 	"n",
 	"k",
 	"gk",
+	{noremap = true}
+)
+
+-- Compile on Leader l
+vim.api.nvim_set_keymap(
+	"n",
+	"<Leader>l",
+	":VimtexCompile<CR>",
 	{noremap = true}
 )
 
