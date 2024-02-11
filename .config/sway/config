@@ -277,7 +277,7 @@ assign [class="Untitled Goose Game"] $ws11
 assign [class="Todoist"] $ws14
 assign [class="Code"] $ws1
 assign [app_id="thunderbird"] workspace number 12
-assign [title="Google Calendar*"] $ws13
+# assign [title="Google Calendar*"] $ws13
 assign [app_id="whatsapp-for-linux"] $ws2
 assign [title="christianschulz1996@tutanota.com - Tutanota — Mozilla Firefox"] $ws13
 for_window [title="christianschulz1996@tutanota.com - Tutanota — Mozilla Firefox"] move to workspace number 13
@@ -314,10 +314,10 @@ for_window [class="Signal"] fullscreen disable
 workspace 1 output DP-2
 workspace 2 output DVI-D-1
 workspace 5 output DVI-D-1
-workspace 6 output HDMI-A-1 
 workspace 4 output DVI-D-1
 workspace 8 output DVI-D-1
 workspace 9 output DVI-D-1
+workspace 10 output HDMI-A-1 
 workspace 11 output DP-2
 workspace 12 output DVI-D-1
 workspace 13 output DVI-D-1
