@@ -1,6 +1,6 @@
 * {
     border: none;
-    border-radius: 20;
+    border-radius: 0;
     /* font-family: "UbuntuMono Nerd Font", "Hack", "Noto Color Emoji", sans-serif; */
     font-family: sans-serif, "UbuntuMono Nerd Font", "FontAwesome", "Hack";
     font-size: 15px;
@@ -16,6 +16,7 @@ window#waybar {
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button {
+    border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 0 5px;
     /* background: transparent; */
     background: #414054;
@@ -45,8 +46,9 @@ window#waybar {
 }
 
 #clock, #battery, #cpu, #memory, #temperature, #backlight, #network, #pulseaudio, #custom-media, #tray, #mode, #idle_inhibitor {
+    border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 0 10px;
-    margin: 0 5px;
+    margin: 0 0px;
 }
 
 #clock {
