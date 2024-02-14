@@ -8,6 +8,7 @@
 #
 # Note if multiple patterns are present in the same application name,
 # precedence is given in order of apparition in this file.
+"teamspeak" = ""
 "reddit" = ""
 "gimp" ="󱇣" 
 "twitch" = ""
@@ -47,5 +48,5 @@
 "steam" = ""
 "heroic" = ""
 [other]
-fallback_icon = " "
+fallback_icon = " "
 deduplicate_icons = true
