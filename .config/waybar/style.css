@@ -24,6 +24,11 @@ window#waybar {
     /* border-bottom: 3px solid transparent; */
 }
 
+#workspaces button.visible{
+    background: #484760;
+    border-bottom: 3px solid #e5e9f0;
+}
+
 #workspaces button:hover {
     box-shadow: inherit;
     text-shadow: inherit;
