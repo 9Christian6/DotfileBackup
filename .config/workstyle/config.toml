@@ -8,46 +8,51 @@
 #
 # Note if multiple patterns are present in the same application name,
 # precedence is given in order of apparition in this file.
-"teamspeak" = ""
-"reddit" = ""
-"gimp" ="󱇣" 
-"twitch" = ""
-"youtube" = ""
+
+#communication
+"signal" = ""
+"franz" = ""
 "whatsapp" = ""
 "telegram-desktop" = ""
+"discord" = ""
+"teamspeak" = ""
+"thunderbird" = ""
+
+#browsing
 "brave" = ""
 "chrome" = ""
-"vim" = ""
+"twitch" = ""
+"youtube" = ""
+"reddit" = ""
+
+#images and pdfs
+"gimp" ="󱇣" 
+"gthumb" = ""
+"feh" = ""
+"image" = ""
+".pdf" = ""
+
+#files
 "nautilus" = ""
 "Vifm" = ""
+
+#terminal applications
+"vim" = ""
 "alacritty" = ""
-"calculator" = ""
+
+#gaming
+"steam" = ""
+"heroic" = ""
+
+#rest
 "calendar" = ""
-"discord" = ""
-"disk usage" = ""
 "spotify" = ""
 "github" = ""
-"rust" = ""
-"thunderbird" = ""
-"tutanota" = ""
 "google" = ""
 "private browsing" = ""
 "firefox" = ""
-"libreoffice calc" = ""
-"libreoffice writer" = ""
-"libreoffice" = ""
-"gthumb" = ""
-"feh" = ""
-"menu" = ""
 "transmission" = ""
-"videostream" = ""
-"mpv" = ""
 "music" = ""
-".pdf" = ""
-"signal" = ""
-"franz" = ""
-"steam" = ""
-"heroic" = ""
 [other]
 fallback_icon = "󰍹"
 deduplicate_icons = true
