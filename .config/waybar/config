@@ -148,7 +148,8 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "$HOME/Bin/PickSoundSink.sh"
+        "on-click-right": "$HOME/Bin/PickSoundSink.sh",
+	"on-click": "pavucontrol"
     },
     "custom/media": {
         "format": "{icon} {}",
