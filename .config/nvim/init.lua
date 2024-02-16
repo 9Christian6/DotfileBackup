@@ -217,7 +217,7 @@ vim.api.nvim_set_keymap(
 	{noremap = true}
 )
 
--- Compile on Leader l
+-- Compile LaTeX on Leader l
 vim.api.nvim_set_keymap(
 	"n",
 	"<Leader>l",
@@ -225,6 +225,13 @@ vim.api.nvim_set_keymap(
 	{noremap = true}
 )
 
+-- YcmCompleter GoTo on Leader g
+vim.api.nvim_set_keymap(
+	"n",
+	"<Leader>g",
+	":YcmCompleter GoTo<CR>",
+	{noremap = true}
+)
 -- Colored column end
 -- Changed vim.opt.cc = 80
 
