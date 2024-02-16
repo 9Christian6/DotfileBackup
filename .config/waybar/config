@@ -12,26 +12,6 @@
     //////////////////////////////////////////////////////////////////
     // Modules configuration
     //////////////////////////////////////////////////////////////////
-    "sway/workspaces": {
-        "disable-scroll": true,
-        "all-outputs": false,
-        // "format": "{index}: {name}: {icon}",
-        "format": "{index}:{name}",
-        "format-icons": {
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": "",
-            "6": "",
-            "7": "",
-            "8": "",
-            "9": "",
-            "urgent": "",
-            "focused": "",
-            "default": ""
-        }
-    },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -94,7 +74,7 @@
     },
     "clock#date": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "󰸗 {:%d.%m.%Y}"
+        "format": " {:%d.%m.%Y}"
     },
     "clock#day": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
