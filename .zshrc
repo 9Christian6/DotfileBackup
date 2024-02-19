@@ -133,7 +133,8 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 #functions
 function addAlias(){echo "alias $1='$2'" >> ~/.zshrc; }
-function search(){la | grep -i $1}
+#function search(){la | grep -i $1}
+function search(){lsa|awk '{print $9}' | grep -i $1}
 function showInstalled(){dpkg --list "*$1*"}
 function makecd(){mkdir $1 && cd $1}
 function startSilent(){nohup "$@"& >> /dev/null}
