@@ -30,6 +30,20 @@ vim.call('plug#end')
 --////////////////////////////////////////////////////////////////////////////
 --Telescope
 --////////////////////////////////////////////////////////////////////////////
+local telescope = require("telescope")
+local actions = require("telescope.actions")
+require('telescope').setup{
+	defaults = {
+		path_display = { "truncate " },
+		mappings = {
+			i = {
+				["<C-k>"] = actions.move_selection_previous, -- move to prev result
+				["<C-j>"] = actions.move_selection_next, -- move to next result
+				["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
+			},
+		},
+	}
+}
 local function find_in_current()
 	require('telescope.builtin').find_files( { cwd = vim.fn.expand('%:p:h') })
 end
@@ -131,7 +145,6 @@ vim.g.mapleader = "\\"
 --////////////////////////////////////////////////////////////////////////////
 -- Set Keybinds / Keybinds
 --////////////////////////////////////////////////////////////////////////////
-
 vim.api.nvim_set_keymap(
 	"n",
 	"<LEADER>t",
@@ -146,6 +159,7 @@ vim.api.nvim_set_keymap(
 	"<C-\\><C-n>",
 	{noremap = true}
 )
+
 
 vim.api.nvim_set_keymap(
 	"n",
@@ -172,6 +186,13 @@ vim.api.nvim_set_keymap(
 	"n",
 	"<LEADER>f",
 	":Telescope find_files hidden=true cwd=.<CR>",
+	{noremap = true}
+)
+
+vim.api.nvim_set_keymap(
+	"n",
+	"<C-k>",
+	"telescope.actions.move_selection_previous()",
 	{noremap = true}
 )
 
