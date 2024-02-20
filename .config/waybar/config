@@ -31,6 +31,12 @@
         "tooltip": true,
         "tooltip-format": "{app}: {title}"
     },
+    "custom/gpu-usage": {
+    	"exec": "cat /sys/class/hwmon/hwmon2/device/gpu_busy_percent",
+    	"format": "GPU: {}%",
+    	"return-type": "",
+    	"interval": 1
+    },
     "mpd": {
         "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
         "format-disconnected": "Disconnected ",
