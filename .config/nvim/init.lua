@@ -28,7 +28,7 @@ vim.call('plug#begin')
 vim.call('plug#end')
 
 --////////////////////////////////////////////////////////////////////////////
---configure Telescope
+--Telescope
 --////////////////////////////////////////////////////////////////////////////
 local function find_in_current()
 	require('telescope.builtin').find_files( { cwd = vim.fn.expand('%:p:h') })
@@ -41,13 +41,21 @@ vim.cmd('colorscheme onedark')
 vim.cmd('hi Search guibg=#B31B97')
 
 --////////////////////////////////////////////////////////////////////////////
---nvim-tree begin
+--nvim-tree
 --////////////////////////////////////////////////////////////////////////////
 -- disable netrw at the very start of your init.lua
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 -- optionally enable 24-bit colour
 vim.opt.termguicolors = true
+-- disable annoying banner
+vim.g.netrw_banner = 0        
+-- open in prior window
+vim.g.netrw_browse_split = 4  
+-- open splits to the right
+vim.g.netrw_altv = 1          
+-- tree view
+vim.g.netrw_liststyle = 3     
 
 local function my_on_attach(bufnr)
   local api = require "nvim-tree.api"
@@ -60,16 +68,13 @@ local function my_on_attach(bufnr)
   api.config.mappings.default_on_attach(bufnr)
 
   -- custom mappings
-    -- vim.keymap.set('n', '<C-t>', api.tree.change_root_to_parent,        opts('Up'))
     vim.keymap.set('n', '<C-l>', api.tree.change_root_to_node,        opts('Up'))
     vim.keymap.set('n', '<C-h>', api.node.navigate.parent_close,        opts('Up'))
-    -- vim.keymap.set('n', '<C-h>', api.tree.change_root_to_parent,        opts('Up'))
     vim.keymap.set('n', 'l', api.node.open.edit,        opts('Up'))
     vim.keymap.set('n', 'h', api.node.navigate.parent_close,        opts('Up'))
     vim.keymap.set('n', '?',     api.tree.toggle_help,                  opts('Help'))
     vim.keymap.set('n', 'A', api.tree.expand_all, opts('Expand All'))
 end
-
 
 -- empty setup using defaults
 require("nvim-tree").setup({
@@ -87,12 +92,12 @@ require("nvim-tree").setup({
     dotfiles = true,
   },
 })
+
 --////////////////////////////////////////////////////////////////////////////
---smooth scrolling begin
+--smooth scrolling
 --////////////////////////////////////////////////////////////////////////////
 require('neoscroll').setup({
     easing_function = "quadratic" -- Default easing function
-    -- Set any other options as needed
 })
 
 local t = {}
@@ -114,43 +119,9 @@ t['zb']    = {'zb', {'300'}}
 require('neoscroll.config').set_mappings(t)
 
 --////////////////////////////////////////////////////////////////////////////
--- automatically closing nvim-tree if buffer is closed
+--vimtex 
 --////////////////////////////////////////////////////////////////////////////
--- local function tab_win_closed(winnr)
---   local api = require"nvim-tree.api"
---   local tabnr = vim.api.nvim_win_get_tabpage(winnr)
---   local bufnr = vim.api.nvim_win_get_buf(winnr)
---   local buf_info = vim.fn.getbufinfo(bufnr)[1]
---   local tab_wins = vim.tbl_filter(function(w) return w~=winnr end, vim.api.nvim_tabpage_list_wins(tabnr))
---   local tab_bufs = vim.tbl_map(vim.api.nvim_win_get_buf, tab_wins)
---   if buf_info.name:match(".*NvimTree_%d*$") then            -- close buffer was nvim tree
---     -- Close all nvim tree on :q
---     if not vim.tbl_isempty(tab_bufs) then                      -- and was not the last window (not closed automatically by code below)
---       api.tree.close()
---     end
---   else                                                      -- else closed buffer was normal buffer
---     if #tab_bufs == 1 then                                    -- if there is only 1 buffer left in the tab
---       local last_buf_info = vim.fn.getbufinfo(tab_bufs[1])[1]
---       if last_buf_info.name:match(".*NvimTree_%d*$") then       -- and that buffer is nvim tree
---         vim.schedule(function ()
---           if #vim.api.nvim_list_wins() == 1 then                -- if its the last buffer in vim
---             vim.cmd "quit"                                        -- then close all of vim
---           else                                                  -- else there are more tabs open
---             vim.api.nvim_win_close(tab_wins[1], true)             -- then close only the tab
---           end
---         end)
---       end
---     end
---   end
--- end
--- 
--- vim.api.nvim_create_autocmd("WinClosed", {
---   callback = function ()
---     local winnr = tonumber(vim.fn.expand("<amatch>"))
---     vim.schedule_wrap(tab_win_closed(winnr))
---   end,
---   nested = true
--- })
+vim.g.syntax = enable
 
 --////////////////////////////////////////////////////////////////////////////
 -- Set Leader
@@ -160,7 +131,7 @@ vim.g.mapleader = "\\"
 --////////////////////////////////////////////////////////////////////////////
 -- Set Keybinds / Keybinds
 --////////////////////////////////////////////////////////////////////////////
--- Integrated terminal stuff
+
 vim.api.nvim_set_keymap(
 	"n",
 	"<LEADER>t",
@@ -176,7 +147,6 @@ vim.api.nvim_set_keymap(
 	{noremap = true}
 )
 
--- Write Quit hotkeys
 vim.api.nvim_set_keymap(
 	"n",
 	"<LEADER>w",
@@ -198,7 +168,6 @@ vim.api.nvim_set_keymap(
 	{noremap = true}
 )
 
--- Format hotkey
 vim.api.nvim_set_keymap(
 	"n",
 	"<LEADER>f",
@@ -206,7 +175,6 @@ vim.api.nvim_set_keymap(
 	{noremap = true}
 )
 
--- Remap for browsing in big text blocks
 vim.api.nvim_set_keymap(
 	"n",
 	"j",
@@ -221,7 +189,6 @@ vim.api.nvim_set_keymap(
 	{noremap = true}
 )
 
--- Compile LaTeX on Leader l
 vim.api.nvim_set_keymap(
 	"n",
 	"<Leader>l",
@@ -229,67 +196,16 @@ vim.api.nvim_set_keymap(
 	{noremap = true}
 )
 
--- YcmCompleter GoTo on Leader g
 vim.api.nvim_set_keymap(
 	"n",
 	"<Leader>g",
 	":YcmCompleter GoTo<CR>",
 	{noremap = true}
 )
--- Colored column end
--- Changed vim.opt.cc = 80
 
--- FILE BROWSING:
--- Tweaks for browsing
-vim.g.netrw_banner = 0        -- disable annoying banner
-vim.g.netrw_browse_split = 4  -- open in prior window
-vim.g.netrw_altv = 1          -- open splits to the right
-vim.g.netrw_liststyle = 3     -- tree view
--- Changed vim.g.netrw_list_hide = netrw_gitignore#Hide()
--- Changed vim.g.netrw_list_hide. = ',\(^\|\s\s\)\zs\.\S\+'
-
--- NOW WE CAN:
--- - :edit a folder to open a file browser
--- - <CR>/v/t to open in an h-split/v-split/tab
--- - check |netrw-browse-maps| for more mappings
-
---VIMTEX CONFIGURATION BEGIN
-
---Ignore Warnings
--- let g:vimtex_quickfix_enabled = 0
-
--- This is necessary for VimTeX to load properly. The "indent" is optional.
---- Note that most plugin managers will do this automatically.
--- filetype plugin indent on
-
--- This enables Vim's and neovim's syntax-related features. Without this, some
--- VimTeX features will not work (see ":help vimtex-requirements" for more
--- info).
-vim.g.syntax = enable
-
--- Viewer options: One may configure the viewer either by specifying a built-in
--- viewer method:
--- let g:vimtex_view_method = 'okular'
-
--- Or with a generic interface:
---Open nerdtree on F6
 vim.api.nvim_set_keymap(
 	"n",
 	"<F6>",
 	":NvimTreeToggle<CR>",
 	{noremap = true}
 )
-
--- Changed vim.api.nvim_set_keymap(
--- Changed 	"n",
--- Changed 	"<Esc>",
--- Changed 	"<C-\><C-n>",
--- Changed 	{noremap = true}
--- Changed )
-
--- Changed vim.opt.g:NERDTreeMapCustomOpen = "l"
--- Changed vim.opt.g:NERDTreeMapCloseDir = "h"
-
--- Changed source $HOME/.config/nvim/vim-plug/plugins.vim
-
-
