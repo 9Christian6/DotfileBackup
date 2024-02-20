@@ -26,7 +26,8 @@ window#waybar {
 
 #workspaces button.visible{
     background: #484760;
-    border-bottom: 3px solid #e5e9f0;
+    /* border-bottom: 3px solid #e5e9f0; */
+    border-bottom: 3px solid #72db85
 }
 
 #workspaces button:hover {
@@ -38,7 +39,8 @@ window#waybar {
 
 #workspaces button.focused {
     background: #626080;
-    border-bottom: 3px solid #e5e9f0;
+    /* border-bottom: 3px solid #e5e9f0; */
+    border-bottom: 3px solid #db72da;
 }
 
 #workspaces button.urgent {
