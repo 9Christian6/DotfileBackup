@@ -24,11 +24,15 @@ vim.call('plug#begin')
 	Plug 'nvim-treesitter/nvim-treesitter'
     	Plug 'cdelledonne/vim-cmake'
     	Plug 'Valloric/YouCompleteMe' 
+	Plug 'lambdalisue/suda.vim'
 vim.call('plug#end')
 
 --////////////////////////////////////////////////////////////////////////////
 --configure Telescope
 --////////////////////////////////////////////////////////////////////////////
+local function find_in_current()
+	require('telescope.builtin').find_files( { cwd = vim.fn.expand('%:p:h') })
+end
 
 --////////////////////////////////////////////////////////////////////////////
 --set colorscheme
@@ -198,7 +202,7 @@ vim.api.nvim_set_keymap(
 vim.api.nvim_set_keymap(
 	"n",
 	"<LEADER>f",
-	":Telescope find_files<CR>",
+	":Telescope find_files hidden=true cwd=.<CR>",
 	{noremap = true}
 )
 
