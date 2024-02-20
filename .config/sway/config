@@ -129,6 +129,9 @@ set $menu exec rofi -show drun
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+
+    #Taking screenshots
+    bindsym $mod+q exec grim -g "$(slurp)"
 #
 # Moving around:
 #
@@ -251,7 +254,6 @@ set $menu exec rofi -show drun
     bindsym $mod+m move scratchpad
     bindsym $mod+n scratchpad show, floating disable
     bindsym $mod+F6 exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
-    bindsym $mod+q exec /home/christian/Bin/Screenshot.py -s region
 
 # Sound Control
 bindsym $mod+F1 exec --no-startup-id amixer -q -D pulse sset Master toggle
