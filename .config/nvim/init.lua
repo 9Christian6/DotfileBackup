@@ -147,6 +147,27 @@ vim.g.mapleader = "\\"
 --////////////////////////////////////////////////////////////////////////////
 vim.api.nvim_set_keymap(
 	"n",
+	"<LEADER>tt",
+	":tabnew<CR>",
+	{noremap = true}
+)
+
+vim.api.nvim_set_keymap(
+	"n",
+	"<LEADER>tn",
+	":tabnext<CR>",
+	{noremap = true}
+)
+
+vim.api.nvim_set_keymap(
+	"n",
+	"<LEADER>tp",
+	":tabprevious<CR>",
+	{noremap = true}
+)
+
+vim.api.nvim_set_keymap(
+	"n",
 	"<LEADER>t",
 	":set splitbelow<CR>:10Term<CR>",
 	--":set splitbelow :vsplit term://zsh<CR>I",
