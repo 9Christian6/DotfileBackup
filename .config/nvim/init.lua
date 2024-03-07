@@ -6,7 +6,12 @@ vim.opt.relativenumber = true
 vim.opt.path = vim.opt.path + "**"
 vim.opt.wildmenu = true
 vim.opt.mouse = a
-
+vim.cmd(':set shiftwidth=2 smarttab')
+--////////////////////////////////////////////////////////////////////////////
+--Set code folding
+--////////////////////////////////////////////////////////////////////////////
+vim.cmd(':set foldmethod=indent')
+vim.cmd(':set foldcolumn=1')
 
 --////////////////////////////////////////////////////////////////////////////
 --call vim Plug
@@ -25,6 +30,7 @@ vim.call('plug#begin')
     	Plug 'cdelledonne/vim-cmake'
     	Plug 'Valloric/YouCompleteMe' 
 	Plug 'lambdalisue/suda.vim'
+	Plug 'jiangmiao/auto-pairs'
 vim.call('plug#end')
 
 --////////////////////////////////////////////////////////////////////////////
@@ -249,5 +255,12 @@ vim.api.nvim_set_keymap(
 	"n",
 	"<F6>",
 	":NvimTreeToggle<CR>",
+	{noremap = true}
+)
+
+vim.api.nvim_set_keymap(
+	"n",
+	"<LEADER>cm",
+	":CMakeBuild<CR>",
 	{noremap = true}
 )
