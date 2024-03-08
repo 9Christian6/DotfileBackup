@@ -69,7 +69,7 @@ colors:
     text:       '0x0a1124'
     cursor:     '0xeec49a'
   normal:
-    black:      '0x000000'
+    black:      '0x444444'
     red:        '0x990000'
     green:      '0x009900'
     yellow:     '0x009999'
@@ -78,7 +78,7 @@ colors:
     cyan:       '0x009999'
     white:      '0x999999'
   bright:
-    black:      '0x000000'
+    black:      '0x888888'
     red:        '0xFF0000'
     green:      '0x00FF00'
     yellow:     '0xFFFF00'
