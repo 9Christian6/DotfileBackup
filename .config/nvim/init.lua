@@ -153,6 +153,13 @@ vim.g.mapleader = "\\"
 --////////////////////////////////////////////////////////////////////////////
 vim.api.nvim_set_keymap(
 	"n",
+	"<LEADER>yf",
+	":YcmCompleter Format<CR>",
+	{noremap = true}
+)
+
+vim.api.nvim_set_keymap(
+	"n",
 	"<LEADER>tt",
 	":tabnew<CR>",
 	{noremap = true}
