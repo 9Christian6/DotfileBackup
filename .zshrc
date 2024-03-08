@@ -175,6 +175,7 @@ alias listDisks='sudo fdisk -l | grep -i "Disk /dev/sd"'
 alias network='sudo nethogs'
 alias open=xdg-open
 alias scriptBackup='/usr/bin/git --git-dir=/home/christian/scripts/ --work-tree=/home/christian'
+alias sudo='doas'
 alias sudoDotfileBackup='sudo /usr/bin/git --git-dir=/home/christian/dotfiles/ --work-tree=/home/christian'
 alias sudoconfig='sudo /usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
 alias tetris='vitetris'
