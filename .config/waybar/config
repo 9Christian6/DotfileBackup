@@ -87,8 +87,8 @@
         "format": "{:%A}"
     },
     "cpu": {
-        "min-length": 5,
-        "max-length": 5,
+        "min-length": 6,
+        "max-length": 6,
         "format": " {usage}%",
         "interval": 1,
         "on-click": "/home/christian/Bin/alacritty -e btop",
