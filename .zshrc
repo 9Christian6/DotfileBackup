@@ -137,7 +137,8 @@ function addAlias(){echo "alias $1='$2'" >> ~/.zshrc; }
 function search(){lsa|awk '{print $9}' | grep -i $1}
 function showInstalled(){dpkg --list "*$1*"}
 function makecd(){mkdir $1 && cd $1}
-function startSilent(){nohup "$@"& >> /dev/null}
+function startSilent(){nohup "$@" >/dev/null 2>&1&}
+function open(){nohup xdg-open "$@"& >> /dev/null}
 
 #aliases
 alias :Q='exit'
@@ -173,7 +174,7 @@ alias la="ls -a"
 alias lgrep='la | grep'
 alias listDisks='sudo fdisk -l | grep -i "Disk /dev/sd"'
 alias network='sudo nethogs'
-alias open=xdg-open
+# alias open='xdg-open'
 alias scriptBackup='/usr/bin/git --git-dir=/home/christian/scripts/ --work-tree=/home/christian'
 alias sudo='doas'
 alias sudoDotfileBackup='sudo /usr/bin/git --git-dir=/home/christian/dotfiles/ --work-tree=/home/christian'
