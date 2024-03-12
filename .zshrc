@@ -138,7 +138,7 @@ function search(){lsa|awk '{print $9}' | grep -i $1}
 function showInstalled(){dpkg --list "*$1*"}
 function makecd(){mkdir $1 && cd $1}
 function startSilent(){nohup "$@" >/dev/null 2>&1&}
-function open(){nohup xdg-open "$@"& >> /dev/null}
+function open(){nohup xdg-open "$@" >/dev/null 2>&1&}
 
 #aliases
 alias :Q='exit'
