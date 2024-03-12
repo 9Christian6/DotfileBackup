@@ -12,6 +12,7 @@ vim.cmd(':set shiftwidth=2 smarttab')
 --////////////////////////////////////////////////////////////////////////////
 vim.cmd(':set foldmethod=indent')
 vim.cmd(':set foldcolumn=1')
+vim.cmd(':set nofoldenable')
 
 --////////////////////////////////////////////////////////////////////////////
 --call vim Plug
@@ -153,8 +154,22 @@ vim.g.mapleader = "\\"
 --////////////////////////////////////////////////////////////////////////////
 vim.api.nvim_set_keymap(
 	"n",
-	"<LEADER>yf",
+	"<LEADER>yfo",
 	":YcmCompleter Format<CR>",
+	{noremap = true}
+)
+
+vim.api.nvim_set_keymap(
+	"n",
+	"<LEADER>yfi",
+	":YcmCompleter FixIt<CR>",
+	{noremap = true}
+)
+
+vim.api.nvim_set_keymap(
+	"n",
+	"<C-l>",
+	":noh<CR>",
 	{noremap = true}
 )
 
