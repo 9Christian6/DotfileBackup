@@ -1,12 +1,6 @@
 #make windows have no bars
 for_window [class=".*"] border pixel 0
 
-# Set background picture and order screens
-#exec_always --no-startup-id $HOME/.fehbg
-#exec_always --no-startup-id ~/.screenlayout/Default.sh
-#exec --no-startup-id $HOME/Opt/foo-Wallpaper-Feh-Gif/back4.sh auto $HOME/Desktop/Wallpaper/RoomAtNight.gif
-#exec_always --no-startup-id feh --bg-scale ~/Desktop/Wallpaper/RoomAtNight.png 
-
 #Gaps configuration
 gaps inner 2
 gaps outer 2
@@ -88,7 +82,6 @@ bindsym $mod+d exec --no-startup-id rofi -show drun -ignored-prefixes 'chrome'
 bindsym $mod+q exec "shutter -s"
 bindsym $mod+a exec --no-startup-id /home/christian/Bin/Lock
 bindsym $mod+u exec --no-startup-id /home/christian/Bin/removeUrgency
-# bindsym $mod+c exec --no-startup-id chromium-browser
 bindsym $mod+c exec --no-startup-id brave-browser -new-window
 bindsym $mod+y exec --no-startup-id brave-browser -new-window www.youtube.com 
 bindsym $mod+t exec --no-startup-id brave-browser -new-window www.twitch.tv/following/live 
@@ -111,13 +104,10 @@ bindsym $mod+F2 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10%
 bindsym $mod+F3 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10%
 
 # Spotify
-
 # play/pause
 bindsym $mod+F6 exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
-
 # next
 bindsym $mod+F7 exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
-
 # previous
 bindsym $mod+F5 exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
 
@@ -190,8 +180,6 @@ set $ws17 "17"
 set $ws18 "18"
 set $ws19 "19"
 
-
-
 workspace $ws1 output DP-2
 workspace $ws2 output DVI-D-0
 workspace $ws4 output DVI-D-0
@@ -205,53 +193,29 @@ workspace $ws13 output DVI-D-0
 workspace $ws14 output DVI-D-0
 workspace $ws15 output HDMI-0
 
-
 #Workspace assignments
-
 assign [class="TelegramDesktop"] $ws2
 assign [class="whatsdesk"] $ws2
 assign [class="Signal"] $ws2
-no_focus [class="walc"]
-#assign [class="gnome-terminal-server"] $ws4
+
 assign [class="Steam"] number $ws11
 assign [class="heroic"] number $ws8
-assign [class="discord"] $ws9
-assign [class="Microsoft Teams - Preview"] $ws10
-assign [class="explorer.exe"] $ws11
-assign [class="leagueclient.exe"] $ws11
-assign [class="leagueclientux.exe"] $ws11
-assign [class="league of legends.exe"] $ws11
-assign [class="leagueclient.exe"] $ws11
-assign [class="Untitled Goose Game"] $ws11
-assign [class="Todoist"] $ws14
-assign [class="Code"] $ws1
-assign [class="steam"] $ws8
-assign [class="Chromium" instance="calendar.google.com"] $ws13
-assign [title="WhatsApp — Mozilla Firefox"] $ws2
+assign [class="discord"] number $ws9
+assign [class="Microsoft Teams - Preview"] number $ws10
+assign [class="explorer.exe"] number $ws11
+assign [class="Code"] number $ws1
+assign [class="steam"] number number $ws8
+assign [class="Chromium" instance="calendar.google.com"] number $ws13
+assign [title="WhatsApp — Mozilla Firefox"] number $ws2
+assign [class="thunderbird"] number $ws12
 for_window [title="WhatsApp — Mozilla Firefox"] move to workspace number $ws2
 for_window [class="WebApp"] move to workspace number $ws13
-for_window [class="WebApp"] fullscreen disable
-# assign [class="WebApp"] $ws13
-assign [class="Chromium" instance="webmail.uni-saarland.de__imp_dynamic.php"] $ws12
-assign [class="Chromium" instance="mail.google.com__mail_u_0"] $ws12
-assign [class="thunderbird"] $ws12
-for_window [class="Chromium" instance="calendar.google.com"] floating disable
-for_window [class="Chromium" instance="webmail.uni-saarland.de__imp_dynamic.php"] floating disable
-for_window [class="Chromium" instance="mail.google.com__mail_u_0"] floating disable
-assign [class="go-for-it"] $ws14
-assign [class="Go-for-it"] $ws14
 for_window [class="Spotify"] move to workspace $ws5
-for_window [title="^Sekiro$"] move to workspace $ws11
-for_window [title="^ELDEN$"] move to workspace $ws11
-for_window [title="^Celeste$"] move to workspace $ws11
-for_window [title="^Factorio$"] move to workspace $ws11
-for_window [title="^PORTAL 2 - OpenGL$"] move to workspace $ws11
-for_window [title="^MONSTER HUNTER: WORLD$"] move to workspace $ws11
-for_window [title="^DARK SOULS III$"] move to workspace $ws11
-for_window [title="^The Witcher 3$"] move to workspace $ws11
-for_window [class="mupen64plus"] move to workspace $ws11
-for_window [class="^Hollow$"] move to workspace $ws11
 
+for_window [class="WebApp"] fullscreen disable
+
+for_window [class="Chromium" instance="calendar.google.com"] floating disable
+for_window [class="Chromium" instance="mail.google.com__mail_u_0"] floating disable
 for_window [class="Gnome-calculator"] floating enable
 for_window [class="Shutter"] floating enable
 for_window [class="zoom"] floating enable
@@ -261,9 +225,6 @@ for_window [class="Pavucontrol"] floating enable
 for_window [class="Desmume"] floating enable
 for_window [class="SFML works!"] floating enable
 for_window [class="Gimp"] floating enable
-
-#go to University workspace
-bindsym $mod+Control+space workspace $ws10; workspace $ws1; exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ 1 && $refresh_i3status
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -347,58 +308,20 @@ mode "resize" {
         bindsym $mod+Control+r mode "default"
 }
 
+# enter resize mode windows
+bindsym $mod+r mode "resize"
+
 # window colors
-#                       border              background         text                 indicator
 client.focused          $bg-color           $bg-color          $text-color          #aaaaaa
 client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-color #aaaaaa
 client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color #aaaaaa
 client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #aaaaaa
 
-# bar color
-bindsym $mod+r mode "resize"
-
-#Start i3bar to display a workspace bar (plus the system information i3status finds out, if available)
-#bar {
-#	tray_output DVI-D-0 
-#	font pango:DejaVu Sans Mono, FontAwesome 9 
-#	separator_symbol "|"
-#        status_command i3status
-#        colors {
-#		background $bg-color
-#	    	separator $text-color
-#		#                  border             background         text
-#		focused_workspace  $bg-color          $bg-color          $text-color
-#		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
-#		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
-#	}
-#}
-
 
 #Startup
 #Autostart
 #autostart
-
 exec_always --no-startup-id $HOME/Bin/AlwaysStartup
 exec --no-startup-id $HOME/Bin/Startupi3.sh
 
-#exec_always --no-startup-id /home/christian/Bin/picom --config /home/christian/Opt/picom/picom.sample.conf -b
-#exec_always --no-startup-id $HOME/Bin/StartDiscord
-#exec_always --no-startup-id $HOME/Bin/PolybarStart
-#exec_always --no-startup-id ~/.i3/i3-chrome-tab-dragging.py
-
-#exec --no-startup-id telegram-desktop
-#exec --no-startup-id signal-desktop
-#exec --no-startup-id whatsdesk
-#exec --no-startup-id spotify
-#exec --no-stratup-id todoist
-#exec --no-startup-id $HOME/Bin/TerminalStartup
-#exec --no-startup-id i3-msg workspace 2
-#exec --no-startup-id $HOME/Bin/Calendar
-#exec --no-startup-id $HOME/Bin/Mails
-#exec --no-startup-id go-for-it
-#exec "xrandr --output HDMI-0 --auto --right-of DVI-D-0"
-#exec "i3-msg '[instance=gnome-terminal-server] move to workspace 4'"
-
-# prevent screen from going into energy save mode
-#exec --no-startup-id xset -dpms s off
 # vim: filetype=i3config
