@@ -204,10 +204,11 @@ assign [title="WhatsApp — Mozilla Firefox"] number $ws2
 assign [class="thunderbird"] number $ws12
 
 for_window [title="WhatsApp — Mozilla Firefox"] move to workspace number $ws2
-for_window [class="WebApp"] move to workspace number $ws13
+for_window [title="\bGoogle Calendar"] move to workspace number $ws13
 for_window [class="Spotify"] move to workspace number $ws5
 
 for_window [title="WhatsApp — Mozilla Firefox"] fullscreen disable
+for_window [title="\bGoogle Calendar"] fullscreen disable
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
