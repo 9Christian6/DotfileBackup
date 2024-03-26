@@ -194,37 +194,20 @@ workspace $ws14 output DVI-D-0
 workspace $ws15 output HDMI-0
 
 #Workspace assignments
-assign [class="TelegramDesktop"] $ws2
-assign [class="whatsdesk"] $ws2
-assign [class="Signal"] $ws2
-
-assign [class="Steam"] number $ws11
+assign [class="TelegramDesktop"] number $ws2
+assign [class="whatsdesk"] number $ws2
+assign [class="Signal"] number $ws2
 assign [class="heroic"] number $ws8
 assign [class="discord"] number $ws9
-assign [class="Microsoft Teams - Preview"] number $ws10
-assign [class="explorer.exe"] number $ws11
-assign [class="Code"] number $ws1
-assign [class="steam"] number number $ws8
-assign [class="Chromium" instance="calendar.google.com"] number $ws13
+assign [class="steam"] number $ws8
 assign [title="WhatsApp — Mozilla Firefox"] number $ws2
 assign [class="thunderbird"] number $ws12
+
 for_window [title="WhatsApp — Mozilla Firefox"] move to workspace number $ws2
 for_window [class="WebApp"] move to workspace number $ws13
-for_window [class="Spotify"] move to workspace $ws5
+for_window [class="Spotify"] move to workspace number $ws5
 
-for_window [class="WebApp"] fullscreen disable
-
-for_window [class="Chromium" instance="calendar.google.com"] floating disable
-for_window [class="Chromium" instance="mail.google.com__mail_u_0"] floating disable
-for_window [class="Gnome-calculator"] floating enable
-for_window [class="Shutter"] floating enable
-for_window [class="zoom"] floating enable
-for_window [class="Lutris"] floating enable
-for_window [class="battle.net.exe"] floating enable
-for_window [class="Pavucontrol"] floating enable
-for_window [class="Desmume"] floating enable
-for_window [class="SFML works!"] floating enable
-for_window [class="Gimp"] floating enable
+for_window [title="WhatsApp — Mozilla Firefox"] fullscreen disable
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
