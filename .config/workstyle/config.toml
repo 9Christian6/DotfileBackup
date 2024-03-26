@@ -13,6 +13,7 @@
 "signal" = ""
 "franz" = ""
 "whatsapp" = ""
+"telegram" = ""
 "telegram-desktop" = ""
 "discord" = ""
 "teamspeak" = ""
@@ -37,7 +38,7 @@
 "Vifm" = ""
 
 #terminal applications
-"vim" = ""
+"vim" = "_"
 "alacritty" = ""
 
 #gaming
