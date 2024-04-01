@@ -88,6 +88,9 @@ DEFAULT_USER="$USER"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(git vi-mode zsh-syntax-highlighting)
+plugins=(
+  zsh-autosuggestions
+  )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -149,13 +152,13 @@ alias DS='flatpak run org.desmume.DeSmuME'
 alias M64='nohup mupen64plus ~/Opt/N64Games/Mario64.n64 &'
 alias update='/home/christian/Bin/Update.sh'
 alias Update='/home/christian/Bin/Update.sh'
-alias cl="cd . && clear"
+alias cl="xdotool key ctrl+l"
 #alias clear="cd . && clear"
-alias cla="clear && la"
+alias cla="cl"
 alias cleanmake='cmake --build . --target clean'
 alias cleanmakerun='cleanmake && makerun'
 alias clearmake='cmake --build . && clear'
-alias cls="cd ~ && clear"
+alias cls="cd ~ && cl"
 alias config='/usr/bin/git --git-dir=/home/christian/dotfiles/ --work-tree=/home/christian'
 alias Dankbarkeit='nvim $HOME/Desktop/Dankbarkeitstagebuch'
 alias delete='gio trash'
