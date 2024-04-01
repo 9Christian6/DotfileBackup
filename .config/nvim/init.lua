@@ -152,6 +152,42 @@ vim.g.mapleader = "\\"
 --////////////////////////////////////////////////////////////////////////////
 -- Set Keybinds / Keybinds
 --////////////////////////////////////////////////////////////////////////////
+
+vim.api.nvim_set_keymap(
+	"n",
+	"<C-W>+",
+	":horizontal resize +10<CR>",
+	{noremap = true}
+)
+
+vim.api.nvim_set_keymap(
+	"n",
+	"<C-W>-",
+	":horizontal resize -10<CR>",
+	{noremap = true}
+)
+
+vim.api.nvim_set_keymap(
+	"n",
+	"<C-W>>",
+	":vertical resize +10<CR>",
+	{noremap = true}
+)
+
+vim.api.nvim_set_keymap(
+	"n",
+	"<C-W><",
+	":vertical resize -10<CR>",
+	{noremap = true}
+)
+
+vim.api.nvim_set_keymap(
+	"n",
+	"<LEADER>yfo",
+	":YcmCompleter Format<CR>",
+	{noremap = true}
+)
+
 vim.api.nvim_set_keymap(
 	"n",
 	"<LEADER>yfo",
