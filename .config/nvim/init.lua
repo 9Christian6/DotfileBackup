@@ -6,6 +6,7 @@ vim.opt.relativenumber = true
 vim.opt.path = vim.opt.path + "**"
 vim.opt.wildmenu = true
 vim.opt.mouse = a
+vim.opt.scrolloff = 10
 vim.cmd(':set shiftwidth=2 smarttab')
 --////////////////////////////////////////////////////////////////////////////
 --Set code folding
@@ -27,11 +28,12 @@ vim.call('plug#begin')
 	Plug 'lervag/vimtex'
 	Plug 'nvim-lua/plenary.nvim'
 	Plug 'nvim-telescope/telescope.nvim'
-	Plug 'nvim-treesitter/nvim-treesitter'
     	Plug 'cdelledonne/vim-cmake'
-    	Plug 'Valloric/YouCompleteMe' 
 	Plug 'lambdalisue/suda.vim'
 	Plug 'jiangmiao/auto-pairs'
+	Plug 'mbbill/undotree'
+	Plug 'ThePrimeagen/harpoon'
+	-- Plugin manager
 vim.call('plug#end')
 
 --////////////////////////////////////////////////////////////////////////////
@@ -117,32 +119,34 @@ require("nvim-tree").setup({
 --////////////////////////////////////////////////////////////////////////////
 --smooth scrolling
 --////////////////////////////////////////////////////////////////////////////
-require('neoscroll').setup({
-    easing_function = "quadratic" -- Default easing function
-})
+-- require('neoscroll').setup({
+--     easing_function = "quadratic" -- Default easing function
+-- })
 
-local t = {}
+-- local t = {}
 -- Syntax: t[keys] = {function, {function arguments}}
 -- Use the "sine" easing function
-t['<C-u>'] = {'scroll', {'-vim.wo.scroll', 'true', '350', [['sine']]}}
-t['<C-d>'] = {'scroll', { 'vim.wo.scroll', 'true', '350', [['sine']]}}
+-- t['<C-u>'] = {'scroll', {'-vim.wo.scroll', 'true', '350', [['sine']]}}
+-- t['<C-d>'] = {'scroll', { 'vim.wo.scroll', 'true', '350', [['sine']]}}
 -- Use the "circular" easing function
-t['<C-b>'] = {'scroll', {'-vim.api.nvim_win_get_height(0)', 'true', '500', [['circular']]}}
-t['<C-f>'] = {'scroll', { 'vim.api.nvim_win_get_height(0)', 'true', '500', [['circular']]}}
+-- t['<C-b>'] = {'scroll', {'-vim.api.nvim_win_get_height(0)', 'true', '500', [['circular']]}}
+-- t['<C-f>'] = {'scroll', { 'vim.api.nvim_win_get_height(0)', 'true', '500', [['circular']]}}
 -- Pass "nil" to disable the easing animation (constant scrolling speed)
-t['<C-y>'] = {'scroll', {'-0.10', 'false', '100', nil}}
-t['<C-e>'] = {'scroll', { '0.10', 'false', '100', nil}}
+-- t['<C-y>'] = {'scroll', {'-0.10', 'false', '100', nil}}
+-- t['<C-e>'] = {'scroll', { '0.10', 'false', '100', nil}}
 -- When no easing function is provided the default easing function (in this case "quadratic") will be used
-t['zt']    = {'zt', {'300'}}
-t['zz']    = {'zz', {'300'}}
-t['zb']    = {'zb', {'300'}}
+-- t['zt']    = {'zt', {'300'}}
+-- t['zz']    = {'zz', {'300'}}
+-- t['zb']    = {'zb', {'300'}}
 
-require('neoscroll.config').set_mappings(t)
+-- require('neoscroll.config').set_mappings(t)
 
 --////////////////////////////////////////////////////////////////////////////
 --vimtex 
 --////////////////////////////////////////////////////////////////////////////
 vim.g.syntax = enable
+vim.g.vimtex_view_method = 'zathura'
+vim.g.vimtex_compiler_method = 'luatex'
 
 --////////////////////////////////////////////////////////////////////////////
 -- Set Leader

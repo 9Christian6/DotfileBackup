@@ -9,6 +9,18 @@
 # Note if multiple patterns are present in the same application name,
 # precedence is given in order of apparition in this file.
 
+#browsing
+"twitch" = ""
+"youtube" = ""
+"invidious" = ""
+"reddit" = ""
+"brave" = ""
+"chrome" = ""
+
+#terminal applications
+"vim" = "_"
+"alacritty" = ""
+
 #communication
 "signal" = ""
 "franz" = ""
@@ -18,14 +30,8 @@
 "discord" = ""
 "teamspeak" = ""
 "thunderbird" = ""
-
-#browsing
-"twitch" = ""
-"youtube" = ""
-"invidious" = ""
-"reddit" = ""
-"brave" = ""
-"chrome" = ""
+"proton" = ""
+"teams-for-linux" = ""
 
 #images and pdfs
 "gimp" ="󱇣" 
@@ -37,10 +43,6 @@
 #files
 "nautilus" = ""
 "Vifm" = ""
-
-#terminal applications
-"vim" = "_"
-"alacritty" = ""
 
 #gaming
 "steam" = ""
@@ -55,6 +57,8 @@
 "firefox" = ""
 "transmission" = ""
 "music" = ""
+"mpv" = ""
+"teamviewer" = "󰔀"
 [other]
 fallback_icon = "󰍹"
 deduplicate_icons = true

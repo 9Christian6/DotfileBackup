@@ -91,6 +91,8 @@ DEFAULT_USER="$USER"
 plugins=(
   zsh-autosuggestions
   )
+# Keybinds
+bindkey '^ ' autosuggest-accept
 
 source $ZSH/oh-my-zsh.sh
 
@@ -160,15 +162,16 @@ alias cleanmakerun='cleanmake && makerun'
 alias clearmake='cmake --build . && clear'
 alias cls="cd ~ && cl"
 alias config='/usr/bin/git --git-dir=/home/christian/dotfiles/ --work-tree=/home/christian'
-alias Dankbarkeit='nvim $HOME/Desktop/Dankbarkeitstagebuch'
+alias Dankbarkeit='$HOME/Bin/Dankbarkeit.sh'
 alias delete='gio trash'
 alias disableXBox='sudo systemctl stop xow.service'
 alias dotfileBackup='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+alias editi3='nvim $HOME/.config/i3/config'
 alias editPolybar='nvim $HOME/.config/polybar/config'
 alias editZsh='nvim $HOME/.zshrc && source $HOME/.zshrc'
 alias editZshrc='nvim $HOME/.zshrc && source $HOME/.zshrc'
 alias editsway='$HOME/Bin/editsway.sh'
-alias editpolybar='nvim $HOME/.config/polybar/config'
+alias editpolybar='nvim $HOME/.config/polybar/config.ini'
 alias editzsh='nvim $HOME/.zshrc && source $HOME/.zshrc'
 alias editzshrc='nvim $HOME/.zshrc && source $HOME/.zshrc'
 alias enableXBox='sudo systemctl start xow.service'
@@ -179,8 +182,8 @@ alias listDisks='sudo fdisk -l | grep -i "Disk /dev/sd"'
 alias network='sudo nethogs'
 # alias open='xdg-open'
 alias scriptBackup='/usr/bin/git --git-dir=/home/christian/scripts/ --work-tree=/home/christian'
-alias sudo='doas '
-alias doas='doas '
+# alias sudo='doas '
+# alias doas='doas '
 alias sudoDotfileBackup='sudo /usr/bin/git --git-dir=/home/christian/dotfiles/ --work-tree=/home/christian'
 alias sudoconfig='sudo /usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
 alias tetris='vitetris'
@@ -190,5 +193,7 @@ alias zshrc='nvim $HOME/.zshrc && source $HOME/.zshrc'
 alias Weather='curl wttr.in/Heusweiler'
 alias calculator='bc -l'
 alias timer='$HOME/Bin/timer.sh'
+alias lock='$HOME/Opt/i3lock-multimonitor/lock $HOME/Opt/Wallpapers/RoomAtNightCroppedWithBackground.png'
+alias lsa='ls -lt -c -r'
 
 source /home/christian/Opt/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

@@ -79,8 +79,7 @@ bindsym $mod+d exec --no-startup-id rofi -show drun -ignored-prefixes 'chrome'
 #hotkeys
 #KeyBindings
 #Key Bindings
-bindsym $mod+q exec "shutter -s"
-bindsym $mod+a exec --no-startup-id /home/christian/Bin/Lock
+bindsym $mod+Control+q exec --no-startup-id /home/christian/Bin/takeScreenshot.sh
 bindsym $mod+u exec --no-startup-id /home/christian/Bin/removeUrgency
 bindsym $mod+c exec --no-startup-id brave-browser -new-window
 bindsym $mod+y exec --no-startup-id brave-browser -new-window www.youtube.com 
@@ -97,6 +96,8 @@ bindsym $mod+Control+l workspace next_on_output
 bindsym $mod+Control+Right workspace next_on_output
 bindsym $mod+Shift+y exec --no-startup-id ~/Opt/emojipicki3/emojipick
 bindsym $mod+Shift+s exec --no-startup-id pulsemixer
+bindsym $mod+a exec --no-startup-id /home/christian/Opt/i3lock-multimonitor/lock /home/christian/Opt/Wallpapers/RoomAtNightCroppedWithBackground.png
+bindsym --release $mod+Shift+p exec --no-startup-id /home/christian/Bin/Screenshot.sh
 
 # Sound Control
 bindsym $mod+F1 exec --no-startup-id amixer -q -D pulse sset Master toggle
@@ -110,9 +111,6 @@ bindsym $mod+F6 exec --no-startup-id dbus-send --print-reply --dest=org.mpris.Me
 bindsym $mod+F7 exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
 # previous
 bindsym $mod+F5 exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
-
-# take screenshot
-bindsym $mod+shift+p exec --no-startup-id shutter -f
 
 # change focus
 bindsym $mod+$left focus left
@@ -179,6 +177,7 @@ set $ws16 "16"
 set $ws17 "17"
 set $ws18 "18"
 set $ws19 "19"
+set $ws20 "20"
 
 workspace $ws1 output DP-2
 workspace $ws2 output DVI-D-0
@@ -191,7 +190,7 @@ workspace $ws11 output DP-2
 workspace $ws12 output DVI-D-0
 workspace $ws13 output DVI-D-0
 workspace $ws14 output DVI-D-0
-workspace $ws15 output HDMI-0
+workspace $ws20 output HDMI-0
 
 #Workspace assignments
 assign [class="TelegramDesktop"] number $ws2
@@ -202,13 +201,16 @@ assign [class="discord"] number $ws9
 assign [class="steam"] number $ws8
 assign [title="WhatsApp — Mozilla Firefox"] number $ws2
 assign [class="thunderbird"] number $ws12
+assign [class="Morgen"] number $ws13
+assign [class="korganizer"] number $ws13
 
 for_window [title="WhatsApp — Mozilla Firefox"] move to workspace number $ws2
-for_window [title="\bGoogle Calendar"] move to workspace number $ws13
-for_window [class="Spotify"] move to workspace number $ws5
-
 for_window [title="WhatsApp — Mozilla Firefox"] fullscreen disable
-for_window [title="\bGoogle Calendar"] fullscreen disable
+for_window [title="Proton Mail: Sign-in — Mozilla Firefox"] move to workspace number $ws12
+for_window [title="Proton Mail — Mozilla Firefox"] move to workspace number $ws12
+for_window [title="Proton Mail: Sign-in — Mozilla Firefox"] fullscreen disable
+for_window [title="Proton Mail — Mozilla Firefox"] fullscreen disable
+for_window [class="Spotify"] move to workspace number $ws5
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -306,6 +308,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 #Autostart
 #autostart
 exec_always --no-startup-id $HOME/Bin/AlwaysStartup
+exec_always --no-startup-id sudo /usr/bin/nvidia-xconfig
 exec --no-startup-id $HOME/Bin/Startupi3.sh
 
 # vim: filetype=i3config
