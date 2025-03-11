@@ -154,6 +154,13 @@ vim.api.nvim_set_keymap(
 
 vim.api.nvim_set_keymap(
 	"n",
+	"<Leader>r",
+	"<CMD>lua vim.lsp.buf.references()<CR>",
+	{noremap = true}
+)
+
+vim.api.nvim_set_keymap(
+	"n",
 	"<F6>",
 	":NvimTreeToggle<CR>",
 	{noremap = true}
