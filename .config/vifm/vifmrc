@@ -11,7 +11,9 @@
 " If you would like to use another vi clone such as Elvis or Vile
 " you will need to change this setting.
 
-set vicmd=/home/christian/Bin/nvim
+" set vicmd=/home/christian/Bin/nvim
+" set vicmd=/usr/bin/nvim
+set vicmd=$HOME/Bin/openVim.sh&
 " set vicmd=elvis\ -G\ termcap
 " set vicmd=vile
 
