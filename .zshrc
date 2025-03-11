@@ -91,8 +91,6 @@ DEFAULT_USER="$USER"
 plugins=(
   zsh-autosuggestions
   )
-# Keybinds
-bindkey '^ ' autosuggest-accept
 
 source $ZSH/oh-my-zsh.sh
 
@@ -115,6 +113,12 @@ export EDITOR='nvim'
 # else
 #   export EDITOR='mvim'
 # fi
+
+# Enable vi mode
+set -o vi
+
+# Keybinds
+bindkey '^ ' autosuggest-accept
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -192,7 +196,7 @@ alias vim='nvim'
 alias zshrc='nvim $HOME/.zshrc && source $HOME/.zshrc'
 alias Weather='curl wttr.in/Heusweiler'
 alias calculator='bc -l'
-alias timer='$HOME/Bin/timer.sh'
+alias timer='$HOME/Bin/timer.py'
 alias lock='$HOME/Opt/i3lock-multimonitor/lock $HOME/Opt/Wallpapers/RoomAtNightCroppedWithBackground.png'
 alias lsa='ls -lt -c -r'
 
