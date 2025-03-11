@@ -199,17 +199,25 @@ assign [class="Signal"] number $ws2
 assign [class="heroic"] number $ws8
 assign [class="discord"] number $ws9
 assign [class="steam"] number $ws8
+assign [class="Steam"] number $ws8
 assign [title="WhatsApp — Mozilla Firefox"] number $ws2
 assign [class="thunderbird"] number $ws12
 assign [class="Morgen"] number $ws13
 assign [class="korganizer"] number $ws13
+assign [class="reminders"] number $ws13
 
 for_window [title="WhatsApp — Mozilla Firefox"] move to workspace number $ws2
 for_window [title="WhatsApp — Mozilla Firefox"] fullscreen disable
 for_window [title="Proton Mail: Sign-in — Mozilla Firefox"] move to workspace number $ws12
+for_window [title="Proton Mail: Sign-in — Brave"] move to workspace number $ws12
 for_window [title="Proton Mail — Mozilla Firefox"] move to workspace number $ws12
 for_window [title="Proton Mail: Sign-in — Mozilla Firefox"] fullscreen disable
+for_window [title="Proton Mail: Sign-in — Brave"] fullscreen disable
 for_window [title="Proton Mail — Mozilla Firefox"] fullscreen disable
+
+for_window [title="Webmail HIZ :: Willkommen bei Webmail HIZ — Mozilla Firefox"] move to workspace number $ws12
+for_window [title="Webmail HIZ :: Willkommen bei Webmail HIZ — Mozilla Firefox"] fullscreen disable
+
 for_window [class="Spotify"] move to workspace number $ws5
 
 # switch to workspace
