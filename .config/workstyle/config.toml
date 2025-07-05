@@ -12,8 +12,11 @@
 #browsing
 "twitch" = ""
 "youtube" = " "
-"invidious" = "`"
+"invidious" = " "
 "reddit" = ""
+"todoist" = ""
+"audible" = ""
+"soundcloud" = ""
 "brave" = ""
 "chrome" = ""
 
@@ -21,6 +24,7 @@
 #"vim" = "_"
 "vim" = "."
 "alacritty" = ""
+"volume control" = ""
 
 #communication
 "signal" = ""
@@ -53,6 +57,8 @@
 "unity" = ""
 
 #rest
+"cursor" = "󰂮 "
+"code" = "󰨞"
 "calendar" = ""
 "reminders" = ""
 "spotify" = ""
@@ -64,6 +70,7 @@
 "music" = ""
 "mpv" = ""
 "teamviewer" = "󰔀"
+"bitwarden" = ""
 [other]
 fallback_icon = "󰍹."
 deduplicate_icons = true
