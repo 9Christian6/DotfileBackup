@@ -2,8 +2,8 @@
 for_window [class=".*"] border pixel 0
 
 #Gaps configuration
-gaps inner 2
-gaps outer 2
+gaps inner 4
+gaps outer 4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -72,6 +72,8 @@ bindsym $mod+Shift+d exec --no-startup-id rofi -show run -ignored-prefixes 'chro
 
 # Program Launcher
 bindsym $mod+d exec --no-startup-id rofi -show drun -ignored-prefixes 'chrome'
+# Command Launcher
+bindsym $mod+Control+d exec --no-startup-id $HOME/Bin/CommandPallette.sh
 
 #Shortcuts
 #shortcuts
@@ -82,8 +84,10 @@ bindsym $mod+d exec --no-startup-id rofi -show drun -ignored-prefixes 'chrome'
 bindsym $mod+Control+q exec --no-startup-id /home/christian/Bin/takeScreenshot.sh
 bindsym $mod+u exec --no-startup-id /home/christian/Bin/removeUrgency
 bindsym $mod+c exec --no-startup-id brave-browser -new-window
-bindsym $mod+y exec --no-startup-id brave-browser -new-window www.youtube.com 
+bindsym $mod+y exec --no-startup-id $HOME/Bin/OpenInvidiousInstance.py
+#brave-browser -new-window www.youtube.com 
 bindsym $mod+t exec --no-startup-id brave-browser -new-window www.twitch.tv/following/live 
+bindsym $mod+Shift+t exec --no-startup-id $HOME/Bin/TwitchFollowedStreamersList.py --no-pretty-prints --time 1 --notify
 bindsym $mod+m move scratchpad
 bindsym $mod+n scratchpad show, floating disable
 bindsym $mod+Control+x exec --no-startup-id copyq
@@ -190,7 +194,7 @@ workspace $ws11 output DP-2
 workspace $ws12 output DVI-D-0
 workspace $ws13 output DVI-D-0
 workspace $ws14 output DVI-D-0
-workspace $ws20 output HDMI-0
+workspace $ws19 output HDMI-0
 
 #Workspace assignments
 assign [class="TelegramDesktop"] number $ws2
@@ -205,6 +209,11 @@ assign [class="thunderbird"] number $ws12
 assign [class="Morgen"] number $ws13
 assign [class="korganizer"] number $ws13
 assign [class="reminders"] number $ws13
+assign [class="gnome-calendar"] number $ws13
+assign [class="pavucontrol"] number $ws15
+assign [class="teams-for-linux"] number $ws10
+assign [class="Todoist"] number $ws13
+for_window [title="Steam"] move to workspace number $ws8
 
 for_window [title="WhatsApp — Mozilla Firefox"] move to workspace number $ws2
 for_window [title="WhatsApp — Mozilla Firefox"] fullscreen disable
@@ -317,6 +326,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 #autostart
 exec_always --no-startup-id $HOME/Bin/AlwaysStartup
 exec_always --no-startup-id sudo /usr/bin/nvidia-xconfig
-exec --no-startup-id $HOME/Bin/Startupi3.sh
+#exec --no-startup-id $HOME/Bin/Startupi3.sh
+#exec --no-startup-id $HOME/Bin/StartupGrace.sh
 
 # vim: filetype=i3config
