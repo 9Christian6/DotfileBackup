@@ -179,7 +179,8 @@ command! extract! extract -f %a %f %n
    \ %pc
    \ vifmimg clear
 
-filetype *.pdf okular &
+" filetype *.pdf okular &
+filetype *.pdf nohup okular &
 
 fileviewer *.djvu
     \ vifmimg djvu %px %py %pw %ph %c
