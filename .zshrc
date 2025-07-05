@@ -137,9 +137,6 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 #/home/christian/Bin/fm6000 -dog -c magenta
 #/usr/local/bin/pokemon-colorscripts -r
 
-#Print Habit stack
-#cat ~/Habits
-
 #functions
 function addAlias(){echo "alias $1='$2'" >> ~/.zshrc; }
 #function search(){la | grep -i $1}
@@ -199,5 +196,11 @@ alias calculator='bc -l'
 alias timer='$HOME/Bin/timer.py'
 alias lock='$HOME/Opt/i3lock-multimonitor/lock $HOME/Opt/Wallpapers/RoomAtNightCroppedWithBackground.png'
 alias lsa='ls -lt -c -r'
+alias picom='exec $HOME/Opt/picom-animations/build/src/picom --config $HOME/.config/picom/picom.conf --experimental-backends --animations -b&'
 
 source /home/christian/Opt/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+alias gemini='npx https://github.com/google-gemini/gemini-cli'
