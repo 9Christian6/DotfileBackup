@@ -1,6 +1,6 @@
 require('plugins')
 require('globals')
-require('masonConfig')
+--require('masonConfig')
 require('lspConfig')
 require('telescopeConfig')
 require('nvimtree')

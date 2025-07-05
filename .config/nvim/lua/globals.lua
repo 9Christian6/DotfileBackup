@@ -5,7 +5,7 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.path = vim.opt.path + "**"
 vim.opt.wildmenu = true
-vim.opt.mouse = a
+vim.opt.mouse = 'a'
 vim.opt.scrolloff = 10
 vim.cmd(':set shiftwidth=2 smarttab')
 

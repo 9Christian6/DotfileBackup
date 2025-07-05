@@ -1,16 +1,48 @@
+-- local capabilities = require('cmp_nvim_lsp').default_capabilities()
+-- local servers = { "clangd", "texlab" }
+-- local lspconfig = require('lspconfig')
+-- lspconfig.clangd.setup({
+--     capabilities = capabilities,
+--     offsetEncoding = { "utf-8", "utf-16" },
+--     textDocument = {
+--       completion = {
+--         editsNearCursor = true
+--       }
+--     }
+-- })
+-- 
+-- local on_attach = function(clinet, bufnr)
+--   vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
+-- end
+-- //PREVIOUS FILE VERISON
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
-local servers = { "clangd" }
+
+-- Define which LSP servers you want to use
+local servers = { "clangd", "texlab" }
+
 local lspconfig = require('lspconfig')
-lspconfig.clangd.setup({
+
+-- Define on_attach before using it
+local on_attach = function(client, bufnr)
+  vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
+
+  -- Optional: Add keymaps or other buffer-local settings here
+end
+
+-- Setup Clangd
+lspconfig.clangd.setup {
     capabilities = capabilities,
+    on_attach = on_attach,
     offsetEncoding = { "utf-8", "utf-16" },
     textDocument = {
       completion = {
         editsNearCursor = true
       }
     }
-})
+}
 
-local on_attach = function(clinet, bufnr)
-  vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
-end
+-- Setup TexLab
+lspconfig.texlab.setup {
+    capabilities = capabilities,
+    on_attach = on_attach,
+}

@@ -3,172 +3,148 @@
 --////////////////////////////////////////////////////////////////////////////
 vim.g.mapleader = "\\"
 
-vim.api.nvim_set_keymap(
-	"n",
-	"<C-W>+",
-	":horizontal resize +10<CR>",
-	{noremap = true}
-)
+local opts = { noremap = true, silent = true }
 
-vim.api.nvim_set_keymap(
-	"n",
-	"<C-W>-",
-	":horizontal resize -10<CR>",
-	{noremap = true}
-)
+--//////////////////////////////////////////////////////////////////////////
+-- Global Keybindings
+--//////////////////////////////////////////////////////////////////////////
 
-vim.api.nvim_set_keymap(
-	"n",
-	"<C-W>>",
-	":vertical resize +10<CR>",
-	{noremap = true}
-)
+-- Scroll remapping
+vim.api.nvim_set_keymap("n", "<ScrollWheelUp>",   "<C-y>", opts)
+vim.api.nvim_set_keymap("n", "<ScrollWheelDown>", "<C-e>", opts)
+vim.api.nvim_set_keymap("v", "<ScrollWheelUp>",   "<C-y>", opts)
+vim.api.nvim_set_keymap("v", "<ScrollWheelDown>", "<C-e>", opts)
+vim.api.nvim_set_keymap("i", "<ScrollWheelUp>",   "<C-o><C-y>", opts)
+vim.api.nvim_set_keymap("i", "<ScrollWheelDown>", "<C-o><C-e>", opts)
 
-vim.api.nvim_set_keymap(
-	"n",
-	"<C-W><",
-	":vertical resize -10<CR>",
-	{noremap = true}
-)
+-- Disable Ctrl+Scroll entirely
+for _, mode in ipairs({ "n", "v", "i" }) do
+  vim.api.nvim_set_keymap(mode, "<C-ScrollWheelUp>",   "gk", opts)
+  vim.api.nvim_set_keymap(mode, "<C-ScrollWheelDown>", "gj", opts)
+end
 
-vim.api.nvim_set_keymap(
-	"n",
-	"<LEADER>qf",
-	":lua vim.lsp.buf.code_action()<CR>",
-	{noremap = true}
-)
+-- Resize windows
+vim.api.nvim_set_keymap("n", "<C-W>+", ":horizontal resize +10<CR>", opts)
+vim.api.nvim_set_keymap("n", "<C-W>-", ":horizontal resize -10<CR>", opts)
+vim.api.nvim_set_keymap("n", "<C-W>>", ":vertical resize +10<CR>", opts)
+vim.api.nvim_set_keymap("n", "<C-W><", ":vertical resize -10<CR>", opts)
 
-vim.api.nvim_set_keymap(
-	"n",
-	"<LEADER>e",
-	":lua vim.diagnostic.goto_next()<CR>",
-	{noremap = true}
-)
+-- LSP Actions
+vim.api.nvim_set_keymap("n", "<LEADER>qf", ":lua vim.lsp.buf.code_action()<CR>", opts)
+vim.api.nvim_set_keymap("n", "<LEADER>e",  ":lua vim.diagnostic.goto_next()<CR>", opts)
+vim.api.nvim_set_keymap("n", "<C-l>",      ":noh<CR>", opts)
 
-vim.api.nvim_set_keymap(
-	"n",
-	"<C-l>",
-	":noh<CR>",
-	{noremap = true}
-)
+-- Tab navigation
+vim.api.nvim_set_keymap("n", "<LEADER>tt", ":tabnew<CR>", opts)
+vim.api.nvim_set_keymap("n", "<LEADER>tn", ":tabnext<CR>", opts)
+vim.api.nvim_set_keymap("n", "<LEADER>tp", ":tabprevious<CR>", opts)
 
-vim.api.nvim_set_keymap(
-	"n",
-	"<LEADER>tt",
-	":tabnew<CR>",
-	{noremap = true}
-)
+-- Terminal
+vim.api.nvim_set_keymap("n", "<LEADER>t", ":set splitbelow<CR>:10Term<CR>", opts)
+vim.api.nvim_set_keymap("t", "<Esc>",      "<C-\\><C-n>", opts)
 
-vim.api.nvim_set_keymap(
-	"n",
-	"<LEADER>tn",
-	":tabnext<CR>",
-	{noremap = true}
-)
+-- Save / Quit
+vim.api.nvim_set_keymap("n", "<LEADER>w",  ":w<CR>", opts)
+vim.api.nvim_set_keymap("n", "<LEADER>q",  ":q<CR>", opts)
+vim.api.nvim_set_keymap("n", "<LEADER>wq", ":wq<CR>", opts)
 
-vim.api.nvim_set_keymap(
-	"n",
-	"<LEADER>tp",
-	":tabprevious<CR>",
-	{noremap = true}
-)
+-- File finding
+vim.api.nvim_set_keymap("n", "<LEADER>f", ":Files .<CR>", opts)
 
-vim.api.nvim_set_keymap(
-	"n",
-	"<LEADER>t",
-	":set splitbelow<CR>:10Term<CR>",
-	--":set splitbelow :vsplit term://zsh<CR>I",
-	{noremap = true}
-)
+-- Hover / Move Selection
+vim.api.nvim_set_keymap("n", "<C-h>", ":lua vim.lsp.buf.hover()<CR>", opts)
+vim.api.nvim_set_keymap("n", "<C-k>", "telescope.actions.move_selection_previous()", opts)
 
-vim.api.nvim_set_keymap(
-	"t",
-	"<Esc>",
-	"<C-\\><C-n>",
-	{noremap = true}
-)
+-- Movement fixes
+vim.api.nvim_set_keymap("n", "j", "gj", opts)
+vim.api.nvim_set_keymap("n", "k", "gk", opts)
 
+-- Vimtex compile
+vim.api.nvim_set_keymap("n", "<Leader>l", ":VimtexCompile<CR>", opts)
 
-vim.api.nvim_set_keymap(
-	"n",
-	"<LEADER>w",
-	":w<CR>",
-	{noremap = true}
-)
+-- Goto Definition
+vim.api.nvim_set_keymap("n", "<Leader>g", "<CMD>lua vim.lsp.buf.definition()<CR>", opts)
 
-vim.api.nvim_set_keymap(
-	"n",
-	"<LEADER>q",
-	":q<CR>",
-	{noremap = true}
-)
+-- Find References
+vim.api.nvim_set_keymap("n", "<Leader>r", "<CMD>lua vim.lsp.buf.references()<CR>", opts)
 
-vim.api.nvim_set_keymap(
-	"n",
-	"<LEADER>wq",
-	":wq<CR>",
-	{noremap = true}
-)
+-- Toggle NvimTree
+vim.api.nvim_set_keymap("n", "<F6>", ":NvimTreeToggle<CR>", opts)
 
-vim.api.nvim_set_keymap(
-	"n",
-	"<LEADER>f",
-	":Telescope find_files hidden=true cwd=.<CR>",
-	{noremap = true}
-)
+-- CMake Build
+vim.api.nvim_set_keymap("n", "<LEADER>cm", ":CMakeBuild<CR>", opts)
 
-vim.api.nvim_set_keymap(
-	"n",
-	"<C-k>",
-	"telescope.actions.move_selection_previous()",
-	{noremap = true}
-)
+-- Case-insensitive search
+vim.api.nvim_set_keymap("n", "/", "/\\c", opts)
 
-vim.api.nvim_set_keymap(
-	"n",
-	"j",
-	"gj",
-	{noremap = true}
-)
+-- Undotree toggle
+vim.api.nvim_set_keymap("n", "<LEADER>u", ":UndotreeToggle<CR>", opts)
 
-vim.api.nvim_set_keymap(
-	"n",
-	"k",
-	"gk",
-	{noremap = true}
-)
+--//////////////////////////////////////////////////////////////////////////
+-- LaTeX-specific Keybindings
+--//////////////////////////////////////////////////////////////////////////
 
-vim.api.nvim_set_keymap(
-	"n",
-	"<Leader>l",
-	":VimtexCompile<CR>",
-	{noremap = true}
-)
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "tex",
+  callback = function()
+    local bufnr = vim.api.nvim_get_current_buf()
 
-vim.api.nvim_set_keymap(
-	"n",
-	"<Leader>g",
-	"<CMD>lua vim.lsp.buf.definition()<CR>",
-	{noremap = true}
-)
+    -- LSP Bindings
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', opts)
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>', opts)
+    --vim.api.nvim_buf_set_keymap(bufnr, 'n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', 'K', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', 'KK', ':lua vim.diagnostic.setloclist()<CR>', opts)
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>wa', '<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>', opts)
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>wr', '<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>', opts)
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>wl', '<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>', opts)
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>D', '<cmd>lua vim.lsp.buf.type_definition()<CR>', opts)
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
 
-vim.api.nvim_set_keymap(
-	"n",
-	"<Leader>r",
-	"<CMD>lua vim.lsp.buf.references()<CR>",
-	{noremap = true}
-)
+    -- Build & View
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<localleader>b', ':VimtexCompile<CR>', opts)
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<localleader>v', ':VimtexView<CR>', opts)
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<localleader>o', ':VimtexTocOpen<CR>', opts)
 
-vim.api.nvim_set_keymap(
-	"n",
-	"<F6>",
-	":NvimTreeToggle<CR>",
-	{noremap = true}
-)
+    -- Navigation
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', '[s', ':VimtexGotoPrevSection<CR>', opts)
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', ']s', ':VimtexGotoNextSection<CR>', opts)
 
-vim.api.nvim_set_keymap(
-	"n",
-	"<LEADER>cm",
-	":CMakeBuild<CR>",
-	{noremap = true}
-)
+    -- Spell toggle
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<localleader>S', ':set spell!<CR>', opts)
+  end
+})
+
+--//////////////////////////////////////////////////////////////////////////
+-- C++ Programming Keybindings
+--//////////////////////////////////////////////////////////////////////////
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "cpp,c",
+  callback = function()
+    local bufnr = vim.api.nvim_get_current_buf()
+
+    -- LSP Bindings
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', opts)
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>', opts)
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>wa', '<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>', opts)
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>wr', '<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>', opts)
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>wl', '<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>', opts)
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>D', '<cmd>lua vim.lsp.buf.type_definition()<CR>', opts)
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
+
+    -- Build with CMake
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<Leader>cmb', ':CMakeBuild<CR>', opts)
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<Leader>cmr', ':CMakeRun<CR>', opts)
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<Leader>cmt', ':CMakeToggleTerminal<CR>', opts)
+  end
+})

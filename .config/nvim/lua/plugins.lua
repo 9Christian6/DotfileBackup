@@ -8,7 +8,6 @@ vim.call('plug#begin')
     	Plug 'joshdick/onedark.vim'
 	Plug 'karb94/neoscroll.nvim'
 	Plug 'vimlab/split-term.vim'
-	Plug 'lervag/vimtex'
 	Plug 'nvim-lua/plenary.nvim'
 	Plug 'nvim-telescope/telescope.nvim'
     	Plug 'cdelledonne/vim-cmake'
@@ -29,6 +28,9 @@ vim.call('plug#begin')
 	Plug 'L3MON4D3/LuaSnip'
 	Plug 'saadparwaiz1/cmp_luasnip'
 	Plug 'rafamadriz/friendly-snippets'
+	Plug 'junegunn/fzf'
+	Plug 'junegunn/fzf.vim'
+	Plug 'lervag/vimtex'
+	--Plug 'neoclide/coc.nvim'
 	-- Plugin manager
 vim.call('plug#end')
-
