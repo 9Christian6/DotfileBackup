@@ -50,6 +50,8 @@ vim.api.nvim_set_keymap("n", "<LEADER>wq", ":wq<CR>", opts)
 
 -- File finding
 vim.api.nvim_set_keymap("n", "<LEADER>f", ":Files .<CR>", opts)
+-- vim.api.nvim_set_keymap("n", "<LEADER>fs", ":lua require('telescope.builtin').live_grep"<CR>, opts)
+vim.api.nvim_set_keymap("n", "<LEADER>fs", ":lua require('telescope.builtin').live_grep()<CR>", opts)
 
 -- Hover / Move Selection
 vim.api.nvim_set_keymap("n", "<C-h>", ":lua vim.lsp.buf.hover()<CR>", opts)
@@ -141,6 +143,7 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>fu', '<cmd>lua require(\'telescope.builtin\').lsp_document_symbols({ symbols=\'function\' })<CR>', opts)
 
     -- Build with CMake
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<Leader>cmb', ':CMakeBuild<CR>', opts)
