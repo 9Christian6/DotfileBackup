@@ -466,6 +466,9 @@ nnoremap S :sort<cr>
 nnoremap w :view<cr>
 vnoremap w :view<cr>gv
 
+" Toggle showing hidden files
+nnoremap H :set dotfiles!<cr>
+
 " Open file in existing instance of gvim
 nnoremap o :!gvim --remote-tab-silent %f<cr>
 " Open file in new instance of gvim
