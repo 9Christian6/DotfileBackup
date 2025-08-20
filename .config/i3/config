@@ -55,7 +55,9 @@ floating_modifier $mod
 focus_follows_mouse no
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id /home/christian/Bin/alacritty
+# bindsym $mod+Return exec --no-startup-id /home/christian/Bin/alacritty
+# bindsym $mod+Return exec --no-startup-id /usr/bin/xterm
+bindsym $mod+Return exec --no-startup-id $HOME/Bin/alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -81,6 +83,7 @@ bindsym $mod+Control+d exec --no-startup-id $HOME/Bin/CommandPallette.sh
 #hotkeys
 #KeyBindings
 #Key Bindings
+#Keybinds
 bindsym $mod+Control+q exec --no-startup-id /home/christian/Bin/takeScreenshot.sh
 bindsym $mod+u exec --no-startup-id /home/christian/Bin/removeUrgency
 bindsym $mod+c exec --no-startup-id brave-browser -new-window
@@ -287,7 +290,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec --no-startup-id "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
-mode "resize" {
+mode " resize" {
         # These bindings trigger as soon as you enter the resize mode
 
         # Pressing left will shrink the window’s width.
@@ -312,7 +315,7 @@ mode "resize" {
 }
 
 # enter resize mode windows
-bindsym $mod+r mode "resize"
+bindsym $mod+r mode " resize"
 
 # window colors
 client.focused          $bg-color           $bg-color          $text-color          #aaaaaa
@@ -321,12 +324,9 @@ client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-co
 client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #aaaaaa
 
 
-#Startup
 #Autostart
-#autostart
-exec_always --no-startup-id $HOME/Bin/AlwaysStartup
+exec_always --no-startup-id $HOME/Bin/StartupAlways.sh
 exec_always --no-startup-id sudo /usr/bin/nvidia-xconfig
-#exec --no-startup-id $HOME/Bin/Startupi3.sh
-#exec --no-startup-id $HOME/Bin/StartupGrace.sh
+exec --no-startup-id $HOME/Bin/Startupi3.sh
 
 # vim: filetype=i3config
