@@ -17,6 +17,7 @@
 "todoist" = ""
 "audible" = ""
 "soundcloud" = ""
+"teams" = ""
 "brave" = ""
 "chrome" = ""
 
@@ -24,6 +25,7 @@
 #"vim" = "_"
 "vim" = "."
 "alacritty" = ""
+"xterm" = ""
 "volume control" = ""
 
 #communication
