@@ -88,12 +88,15 @@ DEFAULT_USER="$USER"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(git vi-mode zsh-syntax-highlighting)
-plugins=(
-  zsh-autosuggestions
-  )
+
+plugins=( zsh-autosuggestions git )
 
 source $ZSH/oh-my-zsh.sh
 
+#enable zsh autocomplete after git commands
+compdef -d git
+#completion after git command
+zstyle ':completion:*:*:git:*' user-commands new-branch:'custom new branch function'
 
 # User configuration
 
@@ -150,7 +153,7 @@ function open(){nohup xdg-open "$@" >/dev/null 2>&1&}
 alias :Q='exit'
 alias :q='exit'
 alias :wq='exit'
-alias Backup='sudo rsnapshot -v alpha'
+# alias Backup='sudo rsnapshot -v alpha'
 alias DS='flatpak run org.desmume.DeSmuME'
 alias M64='nohup mupen64plus ~/Opt/N64Games/Mario64.n64 &'
 alias update='/home/christian/Bin/Update.sh'
@@ -203,4 +206,3 @@ source /home/christian/Opt/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-alias gemini='npx https://github.com/google-gemini/gemini-cli'
