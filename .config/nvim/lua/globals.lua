@@ -24,13 +24,4 @@ vim.cmd('hi Search guibg=#B31B97')
 
 
 vim.o.laststatus = 2  -- always show statusline
-vim.o.statusline = "%f %h%m%r %=%{v:lua.StatuslineWordCount()} words %l:%c %p%%"
 
-function _G.StatuslineWordCount()
-  local wc = vim.fn.wordcount()
-  if vim.fn.mode():match("[vV]") and wc.visual_words then
-    return wc.visual_words
-  else
-    return wc.words
-  end
-end
