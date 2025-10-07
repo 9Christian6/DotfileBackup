@@ -12,6 +12,9 @@ fi
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/christian/.oh-my-zsh"
+export BIN="/home/christian/Bin"
+export OPT="/home/christian/Opt"
+export CONFIG="/home/christian/.config"
 
 # Set emulator
 # export TERMINAL="/usr/bin/xterm"
@@ -104,6 +107,7 @@ zstyle ':completion:*:*:git:*' user-commands new-branch:'custom new branch funct
 export PATH="$HOME/Bin:$PATH"
 export PATH="$HOME/Opt:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/Opt/PythonEnvs/myVirtualEnv/bin:$PATH"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -148,7 +152,17 @@ function showInstalled(){dpkg --list "*$1*"}
 function makecd(){mkdir $1 && cd $1}
 function startSilent(){nohup "$@" >/dev/null 2>&1&}
 function open(){nohup xdg-open "$@" >/dev/null 2>&1&}
+function unzip() {
+  if [[ $# -eq 1 && "$1" == *.zip ]]; then
+    local zipfile="$1"
+    local dirname="${zipfile%.zip}"
 
+    mkdir -p "$dirname"
+    command unzip "$zipfile" -d "$dirname"
+  else
+    command unzip "$@"
+  fi
+}
 #aliases
 alias :Q='exit'
 alias :q='exit'
@@ -204,5 +218,9 @@ alias picom='exec $HOME/Opt/picom-animations/build/src/picom --config $HOME/.con
 source /home/christian/Opt/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export NVM_DIR="$HOME/.nvm"
+export XDG_CONFIG_HOME="$HOME/.config"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+#gifetch alias
+alias gifetch="/home/christian/Opt/Gifetch/scripts/gifetch.sh"
+alias gif2ascii="/home/christian/Opt/Gifetch/scripts/gif2ascii.sh"
