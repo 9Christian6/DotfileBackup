@@ -31,6 +31,7 @@ vim.call('plug#begin')
 	Plug 'junegunn/fzf'
 	Plug 'junegunn/fzf.vim'
 	Plug 'lervag/vimtex'
-	--Plug 'neoclide/coc.nvim'
-	-- Plugin manager
+	Plug 'stevearc/conform.nvim' -- , { 'for': ['python', 'lua', 'javascript'] }
+	Plug 'frabjous/knap'
+	Plug 'MeanderingProgrammer/render-markdown.nvim'
 vim.call('plug#end')

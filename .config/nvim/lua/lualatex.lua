@@ -13,6 +13,7 @@ vim.g.vimtex_compiler_latexmk = {
 }
 
 vim.o.statusline = "%f %h%m%r %=%{v:lua.StatuslineWordCount()} words %l:%c %p%%"
+
 function _G.StatuslineWordCount()
   local wc = vim.fn.wordcount()
   if vim.fn.mode():match("[vV]") and wc.visual_words then
@@ -21,3 +22,5 @@ function _G.StatuslineWordCount()
     return wc.words
   end
 end
+
+
