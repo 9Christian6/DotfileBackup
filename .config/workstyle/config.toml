@@ -11,19 +11,23 @@
 
 #browsing
 "twitch" = ""
-"youtube" = " "
-"invidious" = " "
+"youtube" = ""
+"invidious" = ""
+"prime" = ""
+"amazon" = ""
 "reddit" = ""
 "todoist" = ""
 "audible" = ""
 "soundcloud" = ""
+"duckduckgo" = "󰇥"
 "teams" = ""
 "brave" = ""
 "chrome" = ""
 
 #terminal applications
 #"vim" = "_"
-"vim" = "."
+"vim" = " "
+"nvim" = " "
 "alacritty" = ""
 "xterm" = ""
 "volume control" = ""
@@ -51,7 +55,7 @@
 
 #files
 "nautilus" = ""
-"Vifm" = ""
+"vifm" = ""
 
 #gaming
 "steam" = ""
@@ -59,8 +63,9 @@
 "unity" = ""
 
 #rest
-"cursor" = "󰂮 "
-"code" = "󰨞"
+"windsurf" = "󱝆 "
+"cursor" = "󰆽 "
+"code" = "󰨞 "
 "calendar" = ""
 "reminders" = ""
 "spotify" = ""
@@ -74,5 +79,5 @@
 "teamviewer" = "󰔀"
 "bitwarden" = ""
 [other]
-fallback_icon = "󰍹."
+fallback_icon = "󰍹"
 deduplicate_icons = true
