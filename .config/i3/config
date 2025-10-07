@@ -69,9 +69,6 @@ set $text-color          #f3f4f5
 set $inactive-text-color #676E7D
 set $urgent-bg-color     #E53935
 
-# All Program Launcher
-bindsym $mod+Shift+d exec --no-startup-id rofi -show run -ignored-prefixes 'chrome'
-
 # Program Launcher
 bindsym $mod+d exec --no-startup-id rofi -show drun -ignored-prefixes 'chrome'
 # Command Launcher
@@ -87,10 +84,12 @@ bindsym $mod+Control+d exec --no-startup-id $HOME/Bin/CommandPallette.sh
 bindsym $mod+Control+q exec --no-startup-id /home/christian/Bin/takeScreenshot.sh
 bindsym $mod+u exec --no-startup-id /home/christian/Bin/removeUrgency
 bindsym $mod+c exec --no-startup-id brave-browser -new-window
-bindsym $mod+y exec --no-startup-id $HOME/Bin/OpenInvidiousInstance.py
+#bindsym $mod+y exec --no-startup-id $HOME/Bin/OpenInvidiousInstance.py
+bindsym $mod+y exec --no-startup-id brave-browser -new-window www.youtube.com
 #brave-browser -new-window www.youtube.com 
 bindsym $mod+t exec --no-startup-id brave-browser -new-window www.twitch.tv/following/live 
-bindsym $mod+Shift+t exec --no-startup-id $HOME/Bin/TwitchFollowedStreamersList.py --no-pretty-prints --time 1 --notify
+# bindsym $mod+Shift+t exec --no-startup-id $HOME/Bin/TwitchFollowedStreamersList.py --no-pretty-prints --time 1 --notify
+bindsym $mod+Shift+t exec --no-startup-id $HOME/Bin/RofiStreamPicker.sh
 bindsym $mod+m move scratchpad
 bindsym $mod+n scratchpad show, floating disable
 bindsym $mod+Control+x exec --no-startup-id copyq
@@ -103,7 +102,8 @@ bindsym $mod+Control+l workspace next_on_output
 bindsym $mod+Control+Right workspace next_on_output
 bindsym $mod+Shift+y exec --no-startup-id ~/Opt/emojipicki3/emojipick
 bindsym $mod+Shift+s exec --no-startup-id pulsemixer
-bindsym $mod+a exec --no-startup-id /home/christian/Opt/i3lock-multimonitor/lock /home/christian/Opt/Wallpapers/RoomAtNightCroppedWithBackground.png
+# bindsym $mod+a exec --no-startup-id /home/christian/Opt/i3lock-multimonitor/lock /home/christian/Opt/Wallpapers/RoomAtNightCroppedWithBackground.png
+bindsym $mod+a exec --no-startup-id /home/christian/Bin/i3lockClock.sh
 bindsym --release $mod+Shift+p exec --no-startup-id /home/christian/Bin/Screenshot.sh
 
 # Sound Control
@@ -326,7 +326,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 
 #Autostart
 exec_always --no-startup-id $HOME/Bin/StartupAlways.sh
+# exec --no-startup-id $HOME/Bin/Startupi3.sh
 exec_always --no-startup-id sudo /usr/bin/nvidia-xconfig
-exec --no-startup-id $HOME/Bin/Startupi3.sh
 
 # vim: filetype=i3config
