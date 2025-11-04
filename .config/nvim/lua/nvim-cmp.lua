@@ -39,3 +39,13 @@ cmp.setup({
     { name = "path" }, -- file system paths
   }),
 })
+
+cmp.setup.filetype({ "tex", "latex" }, {
+  sources = cmp.config.sources({
+    { name = "latex_symbols", option = { strategy = 0 } }, -- LaTeX symbols preview
+    { name = "nvim_lsp" },
+    { name = "luasnip" },
+    { name = "buffer" },
+    { name = "path" },
+  }),
+})

@@ -1,26 +1,28 @@
-vim.g.syntax = enable
+-- Enable syntax highlighting
+vim.g.syntax = 'enable'
+
+-- VimTeX settings
 vim.g.vimtex_view_method = 'general'
 vim.g.vimtex_compiler_method = 'latexmk'
 
+-- LaTeXmk configuration for LuaLaTeX
 vim.g.vimtex_compiler_latexmk = {
   engine = '-lualatex',
-  build_dir = 'build',
   options = {
     '-file-line-error',
     '-halt-on-error',
     '-interaction=nonstopmode',
+    '-gg',  -- force full rebuild
   },
 }
 
-vim.o.statusline = "%f %h%m%r %=%{v:lua.StatuslineWordCount()} words %l:%c %p%%"
-
-function _G.StatuslineWordCount()
-  local wc = vim.fn.wordcount()
-  if vim.fn.mode():match("[vV]") and wc.visual_words then
-    return wc.visual_words
-  else
-    return wc.words
-  end
-end
-
+-- Clean auxiliary files in the build directory after compilation stops
+vim.api.nvim_create_autocmd("User", {
+  pattern = "VimtexEventCompileStopped",
+  callback = function()
+    -- Delete auxiliary files inside 'build/'
+    vim.fn.system('latexmk -c')
+    print("✓ Cleaned auxiliary files in build directory.")
+  end,
+})
 

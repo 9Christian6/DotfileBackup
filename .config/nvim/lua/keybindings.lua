@@ -49,6 +49,7 @@ vim.api.nvim_set_keymap("t", "<Esc>",      "<C-\\><C-n>", opts)
 -- Save / Quit
 vim.api.nvim_set_keymap("n", "<LEADER>w",  ":w<CR>", opts)
 vim.api.nvim_set_keymap("n", "<LEADER>q",  ":q<CR>", opts)
+vim.api.nvim_set_keymap("n", ":Q<CR>",  ":q<CR>", opts)
 vim.api.nvim_set_keymap("n", "<LEADER>wq", ":wq<CR>", opts)
 
 -- File finding

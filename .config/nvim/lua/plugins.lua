@@ -34,4 +34,5 @@ vim.call('plug#begin')
 	Plug 'stevearc/conform.nvim' -- , { 'for': ['python', 'lua', 'javascript'] }
 	Plug 'frabjous/knap'
 	Plug 'MeanderingProgrammer/render-markdown.nvim'
+	Plug 'kdheepak/cmp-latex-symbols'
 vim.call('plug#end')
