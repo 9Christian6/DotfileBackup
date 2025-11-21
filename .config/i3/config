@@ -7,7 +7,7 @@ gaps outer 4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 8
+font pango:monospace 10
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -57,7 +57,8 @@ focus_follows_mouse no
 # start a terminal
 # bindsym $mod+Return exec --no-startup-id /home/christian/Bin/alacritty
 # bindsym $mod+Return exec --no-startup-id /usr/bin/xterm
-bindsym $mod+Return exec --no-startup-id $HOME/Bin/alacritty
+# bindsym $mod+Return exec --no-startup-id $HOME/Bin/alacritty
+bindsym $mod+Return exec --no-startup-id /usr/bin/kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -101,7 +102,7 @@ bindsym $mod+Control+Left workspace prev_on_output
 bindsym $mod+Control+l workspace next_on_output
 bindsym $mod+Control+Right workspace next_on_output
 bindsym $mod+Shift+y exec --no-startup-id ~/Opt/emojipicki3/emojipick
-bindsym $mod+Shift+s exec --no-startup-id pulsemixer
+bindsym $mod+Control+p exec --no-startup-id /home/christian/Bin/togglePicom.sh
 # bindsym $mod+a exec --no-startup-id /home/christian/Opt/i3lock-multimonitor/lock /home/christian/Opt/Wallpapers/RoomAtNightCroppedWithBackground.png
 bindsym $mod+a exec --no-startup-id /home/christian/Bin/i3lockClock.sh
 bindsym --release $mod+Shift+p exec --no-startup-id /home/christian/Bin/Screenshot.sh
@@ -165,26 +166,27 @@ bindsym $mod+p focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5"
-set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10"
-set $ws11 "11"
-set $ws12 "12"
-set $ws13 "13"
-set $ws14 "14"
-set $ws15 "15"
-set $ws16 "16"
-set $ws17 "17"
-set $ws18 "18"
-set $ws19 "19"
-set $ws20 "20"
+set $ws1 "1:1"
+set $ws2 "2:2"
+set $ws3 "3:3"
+set $ws4 "4:4"
+set $ws5 "5:5"
+set $ws6 "6:6"
+set $ws7 "7:7"
+set $ws8 "8:8"
+set $ws9 "9:9"
+set $ws10 "10:10"
+set $ws11 "11:11"
+set $ws12 "12:12"
+set $ws13 "13:13"
+set $ws14 "14:14"
+set $ws15 "15:15"
+set $ws16 "16:16"
+set $ws17 "17:17"
+set $ws18 "18:18"
+set $ws19 "19:19"
+set $ws20 "20:20"
+set $ws21 "21:"
 
 workspace $ws1 output DP-2
 workspace $ws2 output DVI-D-0
@@ -198,6 +200,7 @@ workspace $ws12 output DVI-D-0
 workspace $ws13 output DVI-D-0
 workspace $ws14 output DVI-D-0
 workspace $ws19 output HDMI-0
+workspace $ws21 output DVI-D-0
 
 #Workspace assignments
 assign [class="TelegramDesktop"] number $ws2
@@ -205,19 +208,22 @@ assign [class="whatsdesk"] number $ws2
 assign [class="Signal"] number $ws2
 assign [class="heroic"] number $ws8
 assign [class="discord"] number $ws9
-assign [class="steam"] number $ws8
-assign [class="Steam"] number $ws8
-assign [title="WhatsApp — Mozilla Firefox"] number $ws2
+# assign [class="steam"] number $ws8
+assign [title="Steam"] number $ws8
+# assign [title="WhatsApp — Mozilla Firefox"] number $ws2
 assign [class="thunderbird"] number $ws12
 assign [class="Morgen"] number $ws13
 assign [class="korganizer"] number $ws13
 assign [class="reminders"] number $ws13
 assign [class="gnome-calendar"] number $ws13
-assign [class="pavucontrol"] number $ws15
+assign [class="NextcloudCalendar"] number $ws13
+assign [class="pavucontrol"] $ws21
 assign [class="teams-for-linux"] number $ws10
 assign [class="Todoist"] number $ws13
-for_window [title="Steam"] move to workspace number $ws8
+# for_window [title="Steam"] move to workspace number $ws8
 
+for_window [class="^NextcloudCalendar$"] fullscreen disable
+for_window [title="NextcloudCalendar"] fullscreen disable
 for_window [title="WhatsApp — Mozilla Firefox"] move to workspace number $ws2
 for_window [title="WhatsApp — Mozilla Firefox"] fullscreen disable
 for_window [title="Proton Mail: Sign-in — Mozilla Firefox"] move to workspace number $ws12
@@ -226,11 +232,11 @@ for_window [title="Proton Mail — Mozilla Firefox"] move to workspace number $w
 for_window [title="Proton Mail: Sign-in — Mozilla Firefox"] fullscreen disable
 for_window [title="Proton Mail: Sign-in — Brave"] fullscreen disable
 for_window [title="Proton Mail — Mozilla Firefox"] fullscreen disable
-
 for_window [title="Webmail HIZ :: Willkommen bei Webmail HIZ — Mozilla Firefox"] move to workspace number $ws12
 for_window [title="Webmail HIZ :: Willkommen bei Webmail HIZ — Mozilla Firefox"] fullscreen disable
-
 for_window [class="Spotify"] move to workspace number $ws5
+
+exec_always --no-startup-id /home/christian/Bin/i3ClassApplyer.sh
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -252,6 +258,7 @@ bindsym $mod+Control+6 workspace number $ws16
 bindsym $mod+Control+7 workspace number $ws17
 bindsym $mod+Control+8 workspace number $ws18
 bindsym $mod+Control+9 workspace number $ws19
+bindsym $mod+Shift+s workspace $ws21
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
@@ -272,7 +279,6 @@ bindsym $mod+Shift+Control+5 move container to workspace number $ws15
 bindsym $mod+Shift+Control+6 move container to workspace number $ws16
 bindsym $mod+Shift+Control+7 move container to workspace number $ws17
 bindsym $mod+Shift+Control+8 move container to workspace number $ws18
-bindsym $mod+Shift+Control+9 move container to workspace number $ws19
 
 #move workspaces between monitors
 bindsym $mod+Shift+Control+h move workspace to output left
@@ -317,16 +323,46 @@ mode " resize" {
 # enter resize mode windows
 bindsym $mod+r mode " resize"
 
+# Always show app name instead of window title
+# for_window [title=".*"] title_format "%app_id"
+# for_window [class=".*"]  title_format "%class"
+for_window [class="WebApp"] title_format "%title"
+for_window [class="heroic"] title_format "Heroic"
+for_window [class="steam"] title_format "Steam"
+for_window [title="okular"] title_format "Okular"
+for_window [title="org.wireshark.Wireshark"] title_format "Wireshark"
+for_window [class="kitty"] title_format "Kitty"
+
+# Define colors
+set $green   #008800
+set $magenta #880088
+set $split   #00F000
+set $white   #FFFFFF
+
+# Define complementary text colors
+set $text_on_green   #FF77FF
+set $text_on_magenta #77FF77
+set $text_on_split   #FF0FFF
+set $text_on_white   #000000
+
+
 # window colors
-client.focused          $bg-color           $bg-color          $text-color          #aaaaaa
-client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-color #aaaaaa
-client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color #aaaaaa
-client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #aaaaaa
+# Format: 		client.<state> 		<border> 		<background> 		<text> 		<indicator>	<child_border>
+# client.focused          $bg-color           	$bg-color          	$text-color          	#aaaaaa
+# client.unfocused        $inactive-bg-color  	$inactive-bg-color 	$inactive-text-color 	#aaaaaa
+# client.focused_inactive $inactive-bg-color  	$inactive-bg-color 	$inactive-text-color 	#aaaaaa
+# client.urgent           $urgent-bg-color    	$urgent-bg-color   	$text-color          	#aaaaaa
+
+client.focused          $magenta $magenta $text_on_magenta $magenta $magenta
+client.focused_inactive $green   $green   $text_on_green   $green   $green
+client.unfocused        $green   $split   $text_on_split   $green   $green
+client.urgent           $green   $green   $text_on_green   $green   $green
+client.placeholder      $green   $green   $text_on_green   $green   $green
 
 
 #Autostart
-exec_always --no-startup-id $HOME/Bin/StartupAlways.sh
-# exec --no-startup-id $HOME/Bin/Startupi3.sh
+exec --no-startup-id /home/christian/Bin/Startupi3.sh
+exec_always --no-startup-id /home/christian/Bin/StartupAlways.sh
 exec_always --no-startup-id sudo /usr/bin/nvidia-xconfig
 
 # vim: filetype=i3config
