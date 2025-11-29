@@ -11,8 +11,9 @@
 
 #browsing
 "twitch" = ""
-"youtube" = ""
-"invidious" = ""
+"youtube" = ""
+#"youtube" = ""
+"invidious" = ""
 "prime" = ""
 "amazon" = ""
 "reddit" = ""
@@ -22,13 +23,16 @@
 "duckduckgo" = "󰇥"
 "teams" = ""
 "brave" = ""
+"Brave-browser" = ""
 "chrome" = ""
+"overleaf" = " "
 
 #terminal applications
 #"vim" = "_"
 "vim" = " "
 "nvim" = " "
-"alacritty" = ""
+"alacritty" = "󱧶 "
+"kitty" = ""
 "xterm" = ""
 "volume control" = ""
 
@@ -49,9 +53,9 @@
 "gimp" ="󱇣" 
 "gthumb" = ""
 "feh" = ""
-"image" = ""
 ".pdf" = "`"
 "okular" = "`"
+"image" = ""
 
 #files
 "nautilus" = ""
@@ -79,5 +83,5 @@
 "teamviewer" = "󰔀"
 "bitwarden" = ""
 [other]
-fallback_icon = "󰍹"
+fallback_icon = "󰍹 "
 deduplicate_icons = true
