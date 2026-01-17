@@ -1,5 +1,9 @@
 #make windows have no bars
-for_window [class=".*"] border pixel 2
+default_border pixel 2
+default_floating_border pixel 2
+#for_window [class=".*"] border pixel 2
+# for_window [floating] border none
+hide_edge_borders none
 
 #Gaps configuration
 gaps inner 4
@@ -51,6 +55,10 @@ for_window [window_type="menu"]                         floating enable
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+#define minimum and maximum floating size
+floating_minimum_size 75 x 50
+floating_maximum_size 2560 x 1440
+
 # Disable mouse focus
 focus_follows_mouse no
 
@@ -71,9 +79,9 @@ set $inactive-text-color #676E7D
 set $urgent-bg-color     #E53935
 
 # Program Launcher
-bindsym $mod+d exec --no-startup-id rofi -show drun -ignored-prefixes 'chrome'
+bindsym $mod+d exec --no-startup-id rofi -show drun
 # Command Launcher
-bindsym $mod+Control+d exec --no-startup-id $HOME/Bin/CommandPallette.sh
+bindsym $mod+Control+d exec --no-startup-id $HOME/Bin/CommandPalletteLogging.py >> $HOME/commandPallette.log 2>&1
 
 #Shortcuts
 #shortcuts
@@ -101,7 +109,8 @@ bindsym $mod+Control+h workspace prev_on_output
 bindsym $mod+Control+Left workspace prev_on_output
 bindsym $mod+Control+l workspace next_on_output
 bindsym $mod+Control+Right workspace next_on_output
-bindsym $mod+Shift+y exec --no-startup-id ~/Opt/emojipicki3/emojipick
+# bindsym $mod+Shift+y exec --no-startup-id ~/Opt/emojipicki3/emojipick
+bindsym $mod+Shift+y exec --no-startup-id ~/Bin/emojipick.py
 bindsym $mod+Control+p exec --no-startup-id /home/christian/Bin/togglePicom.sh
 # bindsym $mod+a exec --no-startup-id /home/christian/Opt/i3lock-multimonitor/lock /home/christian/Opt/Wallpapers/RoomAtNightCroppedWithBackground.png
 bindsym $mod+a exec --no-startup-id /home/christian/Bin/i3lockClock.sh
@@ -145,7 +154,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # toggle horizontal and vertical split
-bindsym $mod+x split toggle; border none
+bindsym $mod+x split toggle
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -217,6 +226,15 @@ assign [class="korganizer"] number $ws13
 assign [class="reminders"] number $ws13
 assign [class="gnome-calendar"] number $ws13
 assign [class="NextcloudCalendar"] number $ws13
+for_window [title=".*Calendar - Nextcloud"] move to workspace number $ws13
+for_window [title=".*Calendar - Nextcloud"] floating disable
+for_window [title="web.whatsapp.com"] move to workspace number $ws2
+for_window [title="web.whatsapp.com"] floating disable
+for_window [title="webmail.hiz-saarland.de"] move to workspace number $ws12
+for_window [title="webmail.hiz-saarland.de"] floating disable
+for_window [title="Postfach | christian.schulz1996@proton.me | Proton Mail"] move to workspace number $ws12
+for_window [title="Postfach | christian.schulz1996@proton.me | Proton Mail"] floating disable
+for_window [class="Brave-browser"] floating disable
 assign [class="pavucontrol"] $ws21
 assign [class="teams-for-linux"] number $ws10
 assign [class="Todoist"] number $ws13
@@ -224,16 +242,16 @@ assign [class="Todoist"] number $ws13
 
 for_window [class="^NextcloudCalendar$"] fullscreen disable
 for_window [title="NextcloudCalendar"] fullscreen disable
-for_window [title="WhatsApp — Mozilla Firefox"] move to workspace number $ws2
-for_window [title="WhatsApp — Mozilla Firefox"] fullscreen disable
-for_window [title="Proton Mail: Sign-in — Mozilla Firefox"] move to workspace number $ws12
-for_window [title="Proton Mail: Sign-in — Brave"] move to workspace number $ws12
-for_window [title="Proton Mail — Mozilla Firefox"] move to workspace number $ws12
-for_window [title="Proton Mail: Sign-in — Mozilla Firefox"] fullscreen disable
-for_window [title="Proton Mail: Sign-in — Brave"] fullscreen disable
-for_window [title="Proton Mail — Mozilla Firefox"] fullscreen disable
-for_window [title="Webmail HIZ :: Willkommen bei Webmail HIZ — Mozilla Firefox"] move to workspace number $ws12
-for_window [title="Webmail HIZ :: Willkommen bei Webmail HIZ — Mozilla Firefox"] fullscreen disable
+# for_window [title="WhatsApp — Mozilla Firefox"] move to workspace number $ws2
+# for_window [title="WhatsApp — Mozilla Firefox"] fullscreen disable
+# for_window [title="Proton Mail: Sign-in — Mozilla Firefox"] move to workspace number $ws12
+# for_window [title="Proton Mail: Sign-in — Brave"] move to workspace number $ws12
+# for_window [title="Proton Mail — Mozilla Firefox"] move to workspace number $ws12
+# for_window [title="Proton Mail: Sign-in — Mozilla Firefox"] fullscreen disable
+# for_window [title="Proton Mail: Sign-in — Brave"] fullscreen disable
+# for_window [title="Proton Mail — Mozilla Firefox"] fullscreen disable
+# for_window [title="Webmail HIZ :: Willkommen bei Webmail HIZ — Mozilla Firefox"] move to workspace number $ws12
+# for_window [title="Webmail HIZ :: Willkommen bei Webmail HIZ — Mozilla Firefox"] fullscreen disable
 for_window [class="Spotify"] move to workspace number $ws5
 
 exec_always --no-startup-id /home/christian/Bin/i3ClassApplyer.sh
@@ -336,7 +354,8 @@ for_window [class="kitty"] title_format "Kitty"
 # Define colors
 set $green   #008800
 set $magenta #FF00FF
-set $split   #00F000
+#set $split   #00F000
+set $split #00CC00
 set $white   #FFFFFF
 
 # Define complementary text colors
@@ -354,8 +373,9 @@ set $text_on_white   #000000
 # client.urgent           $urgent-bg-color    	$urgent-bg-color   	$text-color          	#aaaaaa
 
 client.focused          $magenta 	$magenta 	$text_on_white 	$magenta	$magenta
-client.focused_inactive $green   	$split   	$text_on_white  $green   	$green
+client.focused_inactive $split   	$split   	$text_on_white  $split   	$split
 client.unfocused        #00000000	$green		$text_on_white 	#00000000     	#00000000
+# client.unfocused        #00000000	#00000000	#00000000 	#00000000	#00000000
 client.urgent           $green   	$split   	$text_on_white  $green   	$green
 client.placeholder      $green   	$split   	$text_on_white 	$green   	$green
 
