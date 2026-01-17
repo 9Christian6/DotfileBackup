@@ -44,6 +44,9 @@ set nofollowlinks
 " Natural sort of (version) numbers within text.
 
 set sortnumbers
+set sort=ctime
+set sort+=dir
+:invert o
 
 " Maximum number of changes that can be undone.
 
@@ -67,7 +70,7 @@ colorscheme Default
 " TIME_STAMP_FORMAT=%m/%d-%H:%M
 " See man date or man strftime for details.
 
-set timefmt=%m/%d\ %H:%M
+set timefmt=%d.%m.%y\ %H:%M
 
 " Show list of matches on tab completion in command-line mode
 
@@ -143,6 +146,7 @@ command! vgrep vim "+grep %a"
 command! reload :write | restart full
 command! extract extract %a %f %n
 command! extract! extract -f %a %f %n
+command! unzip 7z x %f -o\*
 
 " ------------------------------------------------------------------------------
 
@@ -180,7 +184,7 @@ command! extract! extract -f %a %f %n
    \ vifmimg clear
 
 " filetype *.pdf okular &
-filetype *.pdf nohup okular &
+filetype *.pdf nohup okular 2>/dev/null &
 
 fileviewer *.djvu
     \ vifmimg djvu %px %py %pw %ph %c
@@ -188,6 +192,8 @@ fileviewer *.djvu
     \ vifmimg clear
 
 filetype *.exr tev &
+
+filetype *.tex $HOME/Bin/openVim.sh &
 
 fileviewer *.epub
     \ vifmimg epub %px %py %pw %ph %c
@@ -203,8 +209,12 @@ fileviewer <image/*>
     \ vifmimg draw %px %py %pw %ph %c
     \ %pc
     \ vifmimg clear
+
 filetype *.jpg feh &
+
 filetype *.png feh &
+
+filetype *.svg gimp &
 
 fileviewer <audio/*>
     \ vifmimg audio %px %py %pw %ph %c
@@ -315,14 +325,16 @@ filetype {*.torrent},<application/x-bittorrent> ktorrent %f &
 fileviewer {*.torrent},<application/x-bittorrent> dumptorrent -v %c
 
 " FuseZipMount
-filetype {*.zip,*.jar,*.war,*.ear,*.oxt,*.apkg},
-        \<application/zip,application/java-archive>
-       \ {Mount with fuse-zip}
-       \ FUSE_MOUNT|fuse-zip %SOURCE_FILE %DESTINATION_DIR,
-       \ {View contents}
-       \ zip -sf %c | less,
-       \ {Extract here}
-       \ tar -xf %c,
+" filetype {*.zip,*.jar,*.war,*.ear,*.oxt,*.apkg},
+"         \<application/zip,application/java-archive>
+"        \ {Mount with fuse-zip}
+"        \ FUSE_MOUNT|fuse-zip %SOURCE_FILE %DESTINATION_DIR,
+"        \ {View contents}
+"        \ zip -sf %c | less,
+"        \ {Extract here}
+"        \ tar -xf %c,
+
+filetype *.7z,*.zip 7z x %f -o\*
 fileviewer *.zip,*.jar,*.war,*.ear,*.oxt zip -sf %c
 
 " ArchiveMount
@@ -393,7 +405,7 @@ set classify+='  ::../::,  ::*.sh::,  ::*.[hc]pp::,  ::*.[hc]::, 
 " archives
 set classify+='  ::*.7z,,*.ace,,*.arj,,*.bz2,,*.cpio,,*.deb,,*.dz,,*.gz,,*.jar,,*.lzh,,*.lzma,,*.rar,,*.rpm,,*.rz,,*.tar,,*.taz,,*.tb2,,*.tbz,,*.tbz2,,*.tgz,,*.tlz,,*.trz,,*.txz,,*.tz,,*.tz2,,*.xz,,*.z,,*.zip,,*.zoo::'
 " images
-set classify+='  ::*.bmp,,*.gif,,*.jpeg,,*.jpg,,*.ico,,*.png,,*.ppm,,*.svg,,*.svgz,,*.tga,,*.tif,,*.tiff,,*.xbm,,*.xcf,,*.xpm,,*.xspf,,*.xwd::'
+set classify+='  ::*.svg,,*.bmp,,*.gif,,*.jpeg,,*.jpg,,*.ico,,*.png,,*.ppm,,*.svg,,*.svgz,,*.tga,,*.tif,,*.tiff,,*.xbm,,*.xcf,,*.xpm,,*.xspf,,*.xwd::'
 " audio
 set classify+='  ::*.aac,,*.anx,,*.asf,,*.au,,*.axa,,*.flac,,*.m2a,,*.m4a,,*.mid,,*.midi,,*.mp3,,*.mpc,,*.oga,,*.ogg,,*.ogx,,*.ra,,*.ram,,*.rm,,*.spx,,*.wav,,*.wma,,*.ac3::'
 " media
@@ -446,7 +458,7 @@ set vifminfo=dhistory,savedirs,chistory,state,tui,shistory,
 
 " Customize view columns a bit (enable ellipsis for truncated file names)
 "
-" set viewcolumns=-{name}..,6{}.
+set viewcolumns=-{name}..,20{}.
 
 " Filter-out build and temporary files
 "

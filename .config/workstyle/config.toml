@@ -9,10 +9,24 @@
 # Note if multiple patterns are present in the same application name,
 # precedence is given in order of apparition in this file.
 
+#terminal applications
+"ranger" = ""
+"vifm" = ""
+"vim" = " "
+"nvim" = " "
+"alacritty" = ""
+"kitty" = ""
+
+"calendar" = ""
+"NextcloudCalendar" = ""
+"whatsapp" = ""
+"thunderbird" = ""
+"proton" = ""
+"webmail" = ""
 #browsing
+"consorsbank" = ""
 "twitch" = ""
 "youtube" = ""
-#"youtube" = ""
 "invidious" = ""
 "prime" = ""
 "amazon" = ""
@@ -22,31 +36,21 @@
 "soundcloud" = ""
 "duckduckgo" = "󰇥"
 "teams" = ""
-"brave" = ""
-"Brave-browser" = ""
+"overleaf" = " "
+"photos" = ""
+"brave" = ""
 "chrome" = ""
-"overleaf" = " "
 
-#terminal applications
-#"vim" = "_"
-"vim" = " "
-"nvim" = " "
-"alacritty" = "󱧶 "
-"kitty" = ""
 "xterm" = ""
 "volume control" = ""
 
 #communication
 "signal" = ""
 "franz" = ""
-"whatsapp" = ""
 "telegram" = ""
 "telegram-desktop" = ""
 "discord" = ""
 "teamspeak" = ""
-"thunderbird" = ""
-"proton" = ""
-"webmail" = ""
 "teams-for-linux" = ""
 
 #images and pdfs
@@ -56,10 +60,10 @@
 ".pdf" = "`"
 "okular" = "`"
 "image" = ""
+"blender" = "󰂫"
 
 #files
 "nautilus" = ""
-"vifm" = ""
 
 #gaming
 "steam" = ""
@@ -70,7 +74,6 @@
 "windsurf" = "󱝆 "
 "cursor" = "󰆽 "
 "code" = "󰨞 "
-"calendar" = ""
 "reminders" = ""
 "spotify" = ""
 "github" = ""
