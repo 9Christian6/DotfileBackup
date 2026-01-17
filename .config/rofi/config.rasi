@@ -7,6 +7,10 @@ configuration {
   show-icons: true;
   kb-mode-complete: "";
   kb-mode-next: "Control+l";
+  kb-row-up: "Up,Control+p,Control+k";
+  kb-row-down: "Down,Control+n,Control+j";
+  kb-accept-entry: "Control+m,Return,KP_Enter";
+  kb-remove-to-eol: "";
 }
 
 @theme "/home/christian/.config/rofi/themes/command-palette.rasi"
