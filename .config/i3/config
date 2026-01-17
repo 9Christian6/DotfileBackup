@@ -1,8 +1,6 @@
 #make windows have no bars
 default_border pixel 2
 default_floating_border pixel 2
-#for_window [class=".*"] border pixel 2
-# for_window [floating] border none
 hide_edge_borders none
 
 #Gaps configuration
@@ -63,9 +61,6 @@ floating_maximum_size 2560 x 1440
 focus_follows_mouse no
 
 # start a terminal
-# bindsym $mod+Return exec --no-startup-id /home/christian/Bin/alacritty
-# bindsym $mod+Return exec --no-startup-id /usr/bin/xterm
-# bindsym $mod+Return exec --no-startup-id $HOME/Bin/alacritty
 bindsym $mod+Return exec --no-startup-id /usr/bin/kitty
 
 # kill focused window
@@ -93,11 +88,8 @@ bindsym $mod+Control+d exec --no-startup-id $HOME/Bin/CommandPalletteLogging.py 
 bindsym $mod+Control+q exec --no-startup-id /home/christian/Bin/takeScreenshot.sh
 bindsym $mod+u exec --no-startup-id /home/christian/Bin/removeUrgency
 bindsym $mod+c exec --no-startup-id brave-browser -new-window
-#bindsym $mod+y exec --no-startup-id $HOME/Bin/OpenInvidiousInstance.py
 bindsym $mod+y exec --no-startup-id brave-browser -new-window www.youtube.com
-#brave-browser -new-window www.youtube.com 
 bindsym $mod+t exec --no-startup-id brave-browser -new-window www.twitch.tv/following/live 
-# bindsym $mod+Shift+t exec --no-startup-id $HOME/Bin/TwitchFollowedStreamersList.py --no-pretty-prints --time 1 --notify
 bindsym $mod+Shift+t exec --no-startup-id $HOME/Bin/RofiStreamPicker.sh
 bindsym $mod+m move scratchpad
 bindsym $mod+n scratchpad show, floating disable
@@ -109,10 +101,8 @@ bindsym $mod+Control+h workspace prev_on_output
 bindsym $mod+Control+Left workspace prev_on_output
 bindsym $mod+Control+l workspace next_on_output
 bindsym $mod+Control+Right workspace next_on_output
-# bindsym $mod+Shift+y exec --no-startup-id ~/Opt/emojipicki3/emojipick
 bindsym $mod+Shift+y exec --no-startup-id ~/Bin/emojipick.py
 bindsym $mod+Control+p exec --no-startup-id /home/christian/Bin/togglePicom.sh
-# bindsym $mod+a exec --no-startup-id /home/christian/Opt/i3lock-multimonitor/lock /home/christian/Opt/Wallpapers/RoomAtNightCroppedWithBackground.png
 bindsym $mod+a exec --no-startup-id /home/christian/Bin/i3lockClock.sh
 bindsym --release $mod+Shift+p exec --no-startup-id /home/christian/Bin/Screenshot.sh
 
@@ -217,44 +207,30 @@ assign [class="whatsdesk"] number $ws2
 assign [class="Signal"] number $ws2
 assign [class="heroic"] number $ws8
 assign [class="discord"] number $ws9
-# assign [class="steam"] number $ws8
 assign [title="Steam"] number $ws8
-# assign [title="WhatsApp — Mozilla Firefox"] number $ws2
 assign [class="thunderbird"] number $ws12
 assign [class="Morgen"] number $ws13
 assign [class="korganizer"] number $ws13
 assign [class="reminders"] number $ws13
 assign [class="gnome-calendar"] number $ws13
 assign [class="NextcloudCalendar"] number $ws13
-for_window [title=".*Calendar - Nextcloud"] move to workspace number $ws13
-for_window [title=".*Calendar - Nextcloud"] floating disable
-for_window [title="web.whatsapp.com"] move to workspace number $ws2
-for_window [title="web.whatsapp.com"] floating disable
-for_window [title="webmail.hiz-saarland.de"] move to workspace number $ws12
-for_window [title="webmail.hiz-saarland.de"] floating disable
-for_window [title="Postfach | christian.schulz1996@proton.me | Proton Mail"] move to workspace number $ws12
-for_window [title="Postfach | christian.schulz1996@proton.me | Proton Mail"] floating disable
-for_window [class="Brave-browser"] floating disable
 assign [class="pavucontrol"] $ws21
 assign [class="teams-for-linux"] number $ws10
 assign [class="Todoist"] number $ws13
-# for_window [title="Steam"] move to workspace number $ws8
 
-for_window [class="^NextcloudCalendar$"] fullscreen disable
-for_window [title="NextcloudCalendar"] fullscreen disable
-# for_window [title="WhatsApp — Mozilla Firefox"] move to workspace number $ws2
-# for_window [title="WhatsApp — Mozilla Firefox"] fullscreen disable
-# for_window [title="Proton Mail: Sign-in — Mozilla Firefox"] move to workspace number $ws12
-# for_window [title="Proton Mail: Sign-in — Brave"] move to workspace number $ws12
-# for_window [title="Proton Mail — Mozilla Firefox"] move to workspace number $ws12
-# for_window [title="Proton Mail: Sign-in — Mozilla Firefox"] fullscreen disable
-# for_window [title="Proton Mail: Sign-in — Brave"] fullscreen disable
-# for_window [title="Proton Mail — Mozilla Firefox"] fullscreen disable
-# for_window [title="Webmail HIZ :: Willkommen bei Webmail HIZ — Mozilla Firefox"] move to workspace number $ws12
-# for_window [title="Webmail HIZ :: Willkommen bei Webmail HIZ — Mozilla Firefox"] fullscreen disable
+for_window [title=".*Calendar - Nextcloud"] move to workspace number $ws13
+for_window [title="web.whatsapp.com"] move to workspace number $ws2
+for_window [title="webmail.hiz-saarland.de"] move to workspace number $ws12
+for_window [title="Postfach | christian.schulz1996@proton.me | Proton Mail"] move to workspace number $ws12
 for_window [class="Spotify"] move to workspace number $ws5
 
-exec_always --no-startup-id /home/christian/Bin/i3ClassApplyer.sh
+for_window [title="Postfach | christian.schulz1996@proton.me | Proton Mail"] floating disable
+for_window [title=".*Calendar - Nextcloud"] floating disable
+for_window [title="web.whatsapp.com"] floating disable
+for_window [title="webmail.hiz-saarland.de"] floating disable
+for_window [class="Brave-browser"] floating disable
+for_window [class="^NextcloudCalendar$"] fullscreen disable
+for_window [title="NextcloudCalendar"] fullscreen disable
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -342,8 +318,6 @@ mode " resize" {
 bindsym $mod+r mode " resize"
 
 # Always show app name instead of window title
-# for_window [title=".*"] title_format "%app_id"
-# for_window [class=".*"]  title_format "%class"
 for_window [class="WebApp"] title_format "%title"
 for_window [class="heroic"] title_format "Heroic"
 for_window [class="steam"] title_format "Steam"
@@ -354,7 +328,6 @@ for_window [class="kitty"] title_format "Kitty"
 # Define colors
 set $green   #008800
 set $magenta #FF00FF
-#set $split   #00F000
 set $split #00CC00
 set $white   #FFFFFF
 
@@ -365,17 +338,9 @@ set $text_on_split   #FF0FFF
 set $text_on_white   #000000
 
 
-# window colors
-# Format: 		client.<state> 		<border> 		<background> 		<text> 		<indicator>	<child_border>
-# client.focused          $bg-color           	$bg-color          	$text-color          	#aaaaaa
-# client.unfocused        $inactive-bg-color  	$inactive-bg-color 	$inactive-text-color 	#aaaaaa
-# client.focused_inactive $inactive-bg-color  	$inactive-bg-color 	$inactive-text-color 	#aaaaaa
-# client.urgent           $urgent-bg-color    	$urgent-bg-color   	$text-color          	#aaaaaa
-
 client.focused          $magenta 	$magenta 	$text_on_white 	$magenta	$magenta
 client.focused_inactive $split   	$split   	$text_on_white  $split   	$split
 client.unfocused        #00000000	$green		$text_on_white 	#00000000     	#00000000
-# client.unfocused        #00000000	#00000000	#00000000 	#00000000	#00000000
 client.urgent           $green   	$split   	$text_on_white  $green   	$green
 client.placeholder      $green   	$split   	$text_on_white 	$green   	$green
 
