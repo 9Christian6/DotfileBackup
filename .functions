@@ -1,0 +1,34 @@
+function addAlias(){echo "alias $1='$2'" >> ~/.zshrc; }
+
+function search(){lsa|awk '{print $9}' | grep -i $1}
+
+function showInstalled(){dpkg --list "*$1*"}
+
+function makecd(){mkdir $1 && cd $1}
+
+function startSilent(){nohup "$@" >/dev/null 2>&1&}
+
+function open(){nohup xdg-open "$@" >/dev/null 2>&1&}
+
+function unzip() {
+  if [[ $# -eq 1 && "$1" == *.zip ]]; then
+    local zipfile="$1"
+    local dirname="${zipfile%.zip}"
+
+    mkdir -p "$dirname"
+    command unzip "$zipfile" -d "$dirname"
+  else
+    command unzip "$@"
+  fi
+}
+
+function fcd() {
+  local target
+  target=$(find . -mindepth 1 \( -type d -o -type f \) | fzf) || return
+
+  if [ -d "$target" ]; then
+    cd "$target"
+  else
+    cd "$(dirname "$target")"
+  fi
+}

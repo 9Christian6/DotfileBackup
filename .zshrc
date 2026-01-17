@@ -22,6 +22,8 @@ export CONFIG="/home/christian/.config"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+source /home/christian/Opt/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -108,7 +110,10 @@ export PATH="$HOME/Bin:$PATH"
 export PATH="$HOME/Opt:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/Opt/PythonEnvs/myVirtualEnv/bin:$PATH"
-
+export NVM_DIR="$HOME/.nvm"
+export XDG_CONFIG_HOME="$HOME/.config"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -144,83 +149,103 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 #/home/christian/Bin/fm6000 -dog -c magenta
 #/usr/local/bin/pokemon-colorscripts -r
 
+if [ -f "$HOME/.aliases" ]; then
+  . "$HOME/.aliases"
+fi
+
+if [ -f "$HOME/.functions" ]; then
+  . "$HOME/.functions"
+fi
+
 #functions
-function addAlias(){echo "alias $1='$2'" >> ~/.zshrc; }
-#function search(){la | grep -i $1}
-function search(){lsa|awk '{print $9}' | grep -i $1}
-function showInstalled(){dpkg --list "*$1*"}
-function makecd(){mkdir $1 && cd $1}
-function startSilent(){nohup "$@" >/dev/null 2>&1&}
-function open(){nohup xdg-open "$@" >/dev/null 2>&1&}
-function unzip() {
-  if [[ $# -eq 1 && "$1" == *.zip ]]; then
-    local zipfile="$1"
-    local dirname="${zipfile%.zip}"
 
-    mkdir -p "$dirname"
-    command unzip "$zipfile" -d "$dirname"
-  else
-    command unzip "$@"
-  fi
-}
+# function addAlias(){echo "alias $1='$2'" >> ~/.zshrc; }
+
+# function search(){lsa|awk '{print $9}' | grep -i $1}
+
+# function showInstalled(){dpkg --list "*$1*"}
+
+# function makecd(){mkdir $1 && cd $1}
+
+# function startSilent(){nohup "$@" >/dev/null 2>&1&}
+
+# function open(){nohup xdg-open "$@" >/dev/null 2>&1&}
+
+# function unzip() {
+#   if [[ $# -eq 1 && "$1" == *.zip ]]; then
+#     local zipfile="$1"
+#     local dirname="${zipfile%.zip}"
+# 
+#     mkdir -p "$dirname"
+#     command unzip "$zipfile" -d "$dirname"
+#   else
+#     command unzip "$@"
+#   fi
+# }
+
+# function fcd() {
+#   local target
+#   target=$(find . -mindepth 1 \( -type d -o -type f \) | fzf) || return
+# 
+#   if [ -d "$target" ]; then
+#     cd "$target"
+#   else
+#     cd "$(dirname "$target")"
+#   fi
+# }
+
 #aliases
-alias :Q='exit'
-alias :q='exit'
-alias :wq='exit'
-# alias Backup='sudo rsnapshot -v alpha'
-alias DS='flatpak run org.desmume.DeSmuME'
-alias M64='nohup mupen64plus ~/Opt/N64Games/Mario64.n64 &'
-alias update='/home/christian/Bin/Update.sh'
-alias Update='/home/christian/Bin/Update.sh'
-alias cl="xdotool key ctrl+l"
-#alias clear="cd . && clear"
-alias cla="cl"
-alias cleanmake='cmake --build . --target clean'
-alias cleanmakerun='cleanmake && makerun'
-alias clearmake='cmake --build . && clear'
-alias cls="cd ~ && cl"
-alias config='/usr/bin/git --git-dir=/home/christian/dotfiles/ --work-tree=/home/christian'
-alias Dankbarkeit='$HOME/Bin/Dankbarkeit.sh'
-alias delete='gio trash'
-alias disableXBox='sudo systemctl stop xow.service'
-alias dotfileBackup='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
-alias editi3='nvim $HOME/.config/i3/config'
-alias editPolybar='nvim $HOME/.config/polybar/config'
-alias editZsh='nvim $HOME/.zshrc && source $HOME/.zshrc'
-alias editZshrc='nvim $HOME/.zshrc && source $HOME/.zshrc'
-alias editsway='$HOME/Bin/editsway.sh'
-alias editpolybar='nvim $HOME/.config/polybar/config.ini'
-alias editzsh='nvim $HOME/.zshrc && source $HOME/.zshrc'
-alias editzshrc='nvim $HOME/.zshrc && source $HOME/.zshrc'
-alias enableXBox='sudo systemctl start xow.service'
-alias htop='btop'
-alias la="ls -a"
-alias lgrep='la | grep'
-alias listDisks='sudo fdisk -l | grep -i "Disk /dev/sd"'
-alias network='sudo nethogs'
-# alias open='xdg-open'
-alias scriptBackup='/usr/bin/git --git-dir=/home/christian/scripts/ --work-tree=/home/christian'
-# alias sudo='doas '
-# alias doas='doas '
-alias sudoDotfileBackup='sudo /usr/bin/git --git-dir=/home/christian/dotfiles/ --work-tree=/home/christian'
-alias sudoconfig='sudo /usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
-alias tetris='vitetris'
-alias vifm='$HOME/.config/vifm/scripts/vifmrun'
-alias vim='nvim'
-alias zshrc='nvim $HOME/.zshrc && source $HOME/.zshrc'
-alias Weather='curl wttr.in/Heusweiler'
-alias calculator='bc -l'
-alias timer='$HOME/Bin/timer.py'
-alias lock='$HOME/Opt/i3lock-multimonitor/lock $HOME/Opt/Wallpapers/RoomAtNightCroppedWithBackground.png'
-alias lsa='ls -lt -c -r'
-alias picom='exec $HOME/Opt/picom-animations/build/src/picom --config $HOME/.config/picom/picom.conf --experimental-backends --animations -b&'
-
-source /home/christian/Opt/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-export NVM_DIR="$HOME/.nvm"
-export XDG_CONFIG_HOME="$HOME/.config"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-#gifetch alias
-alias gifetch="/home/christian/Opt/Gifetch/scripts/gifetch.sh"
-alias gif2ascii="/home/christian/Opt/Gifetch/scripts/gif2ascii.sh"
+# alias :Q='exit'
+# alias :q='exit'
+# alias :wq='exit'
+# alias DS='flatpak run org.desmume.DeSmuME'
+# alias M64='nohup mupen64plus ~/Opt/N64Games/Mario64.n64 &'
+# alias update='/home/christian/Bin/Update.sh'
+# alias Update='/home/christian/Bin/Update.sh'
+# alias cl="xdotool key ctrl+l"
+# alias cla="cl"
+# alias cleanmake='cmake --build . --target clean'
+# alias cleanmakerun='cleanmake && makerun'
+# alias clearmake='cmake --build . && clear'
+# alias cls="cd ~ && cl"
+# alias config='/usr/bin/git --git-dir=/home/christian/dotfiles/ --work-tree=/home/christian'
+# alias Dankbarkeit='$HOME/Bin/Dankbarkeit.sh'
+# alias delete='gio trash'
+# alias disableXBox='sudo systemctl stop xow.service'
+# alias dotfileBackup='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+# alias editi3='nvim $HOME/.config/i3/config'
+# alias editPolybar='nvim $HOME/.config/polybar/config'
+# alias editZsh='nvim $HOME/.zshrc && source $HOME/.zshrc'
+# alias editZshrc='nvim $HOME/.zshrc && source $HOME/.zshrc'
+# alias editsway='$HOME/Bin/editsway.sh'
+# alias editpolybar='nvim $HOME/.config/polybar/config.ini'
+# alias editzsh='nvim $HOME/.zshrc && source $HOME/.zshrc'
+# alias editzshrc='nvim $HOME/.zshrc && source $HOME/.zshrc'
+# alias enableXBox='sudo systemctl start xow.service'
+# alias htop='btop'
+# alias la="ls -a"
+# alias lgrep='la | grep'
+# alias listDisks='sudo fdisk -l | grep -i "Disk /dev/sd"'
+# alias network='sudo nethogs'
+# alias scriptBackup='/usr/bin/git --git-dir=/home/christian/scripts/ --work-tree=/home/christian'
+# alias sudoDotfileBackup='sudo /usr/bin/git --git-dir=/home/christian/dotfiles/ --work-tree=/home/christian'
+# alias sudoconfig='sudo /usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
+# alias tetris='vitetris'
+# alias vifm='$HOME/.config/vifm/scripts/vifmrun'
+# alias vim='nvim'
+# alias zshrc='nvim $HOME/.zshrc && source $HOME/.zshrc'
+# alias Weather='curl wttr.in/Heusweiler'
+# alias calculator='bc -l'
+# alias timer='/home/christian/Bin/timer.py'
+# alias lock='$HOME/Opt/i3lock-multimonitor/lock $HOME/Opt/Wallpapers/RoomAtNightCroppedWithBackground.png'
+# alias lsa='ls -lt -c -r -h'
+# alias picom='exec $HOME/Opt/picom-animations/build/src/picom --config $HOME/.config/picom/picom.conf --experimental-backends --unredir-if-possible --animations -b&'
+# alias gifetch="/home/christian/Opt/Gifetch/scripts/gifetch.sh"
+# alias gif2ascii="/home/christian/Opt/Gifetch/scripts/gif2ascii.sh"
+# alias rm='gio trash'
+# alias xbindkeys="xbindkeys -fg $CONFIG/xbindkeys/xbindkeysrc"
+# alias keybindings="grep -E -i \"^bindsym.* $mod\" /home/christian/.config/i3/config | fzf"
+# alias sshPi="ssh christian@192.168.178.75"
+# alias sshLaptop="ssh christian@christian-Inspiron-16-5620"
+# alias listAliases="grep -E \"^(alias|function)\" /home/christian/.zshrc | fzf"
+# alias listBindings="grep -E \"^bindsym\" /home/christian/.config/i3/config | fzf"

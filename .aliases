@@ -1,0 +1,54 @@
+alias :Q='exit'
+alias :q='exit'
+alias :wq='exit'
+alias DS='flatpak run org.desmume.DeSmuME'
+alias M64='nohup mupen64plus ~/Opt/N64Games/Mario64.n64 &'
+alias update='/home/christian/Bin/Update.sh'
+alias Update='/home/christian/Bin/Update.sh'
+alias cl="xdotool key ctrl+l"
+alias cla="cl"
+alias cleanmake='cmake --build . --target clean'
+alias cleanmakerun='cleanmake && makerun'
+alias clearmake='cmake --build . && clear'
+alias cls="cd ~ && cl"
+alias config='/usr/bin/git --git-dir=/home/christian/dotfiles/ --work-tree=/home/christian'
+alias Dankbarkeit='$HOME/Bin/Dankbarkeit.sh'
+alias delete='gio trash'
+alias disableXBox='sudo systemctl stop xow.service'
+alias dotfileBackup='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+alias editi3='nvim $HOME/.config/i3/config'
+alias editPolybar='nvim $HOME/.config/polybar/config'
+alias editZsh='nvim $HOME/.zshrc && source $HOME/.zshrc'
+alias editZshrc='nvim $HOME/.zshrc && source $HOME/.zshrc'
+alias editsway='$HOME/Bin/editsway.sh'
+alias editpolybar='nvim $HOME/.config/polybar/config.ini'
+alias editzsh='nvim $HOME/.zshrc && source $HOME/.zshrc'
+alias editzshrc='nvim $HOME/.zshrc && source $HOME/.zshrc'
+alias enableXBox='sudo systemctl start xow.service'
+alias htop='btop'
+alias la="ls -a"
+alias lgrep='la | grep'
+alias listDisks='sudo fdisk -l | grep -i "Disk /dev/sd"'
+alias network='sudo nethogs'
+alias scriptBackup='/usr/bin/git --git-dir=/home/christian/scripts/ --work-tree=/home/christian'
+alias sudoDotfileBackup='sudo /usr/bin/git --git-dir=/home/christian/dotfiles/ --work-tree=/home/christian'
+alias sudoconfig='sudo /usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
+alias tetris='vitetris'
+alias vifm='$HOME/.config/vifm/scripts/vifmrun'
+alias vim='nvim'
+alias zshrc='nvim $HOME/.zshrc && source $HOME/.zshrc'
+alias Weather='curl wttr.in/Heusweiler'
+alias calculator='bc -l'
+alias timer='/home/christian/Bin/timer.py'
+alias lock='$HOME/Opt/i3lock-multimonitor/lock $HOME/Opt/Wallpapers/RoomAtNightCroppedWithBackground.png'
+alias lsa='ls -lt -c -r -h'
+alias picom='exec $HOME/Opt/picom-animations/build/src/picom --config $HOME/.config/picom/picom.conf --experimental-backends --unredir-if-possible --animations -b&'
+alias gifetch="/home/christian/Opt/Gifetch/scripts/gifetch.sh"
+alias gif2ascii="/home/christian/Opt/Gifetch/scripts/gif2ascii.sh"
+alias rm='gio trash'
+alias xbindkeys="xbindkeys -fg $CONFIG/xbindkeys/xbindkeysrc"
+alias keybindings="grep -E -i \"^bindsym.* $mod\" /home/christian/.config/i3/config | fzf"
+alias sshPi="ssh christian@192.168.178.75"
+alias sshLaptop="ssh christian@christian-Inspiron-16-5620"
+alias listAliases="grep -E \"^(alias|function)\" /home/christian/.zshrc | fzf"
+alias listBindings="grep -E \"^bindsym\" /home/christian/.config/i3/config | fzf"
