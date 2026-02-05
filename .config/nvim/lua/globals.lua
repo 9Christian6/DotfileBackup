@@ -45,20 +45,4 @@ end
 -- Lua version
 vim.api.nvim_create_autocmd({"BufDelete", "BufLeave"}, {
   callback = closeQFIfLastBuff
-  -- callback = function()
-  --   -- Count listed buffers
-  --   local listed_buffers = vim.tbl_filter(function(buf)
-  --     return vim.api.nvim_buf_is_loaded(buf) and vim.bo[buf].buflisted
-  --   end, vim.api.nvim_list_bufs())
-
-  --   -- Only one buffer left
-  --   if #listed_buffers == 1 then
-  --     -- Close all quickfix windows
-  --     for _, win in ipairs(vim.fn.getwininfo()) do
-  --       if win.quickfix == 1 then
-  --         vim.api.nvim_win_close(win.winid, true)
-  --       end
-  --     end
-  --   end
-  -- end
 })

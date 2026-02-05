@@ -1,11 +1,10 @@
-local M = {
+return {
   "williamboman/mason.nvim",
+  dependencies = {
+    "williamboman/mason-lspconfig.nvim",
+  },
   config = function()
-    -- import mason
-    local mason = require("mason")
-
-    -- enable mason and configure icons
-    mason.setup({
+    require("mason").setup({
       ui = {
         icons = {
           package_installed = "✓",
@@ -14,10 +13,13 @@ local M = {
         },
       },
     })
+
+    require("mason-lspconfig").setup({
+      ensure_installed = {
+        "clangd",
+        "ltex",
+        "texlab",
+      },
+    })
   end,
 }
-require("mason").setup()
-require("mason-lspconfig").setup({
-  ensure_installed = { "clangd", "ltex" }
-})
-return M

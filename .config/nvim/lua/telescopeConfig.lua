@@ -2,7 +2,7 @@ local telescope = require("telescope")
 local actions = require("telescope.actions")
 require('telescope').setup{
 	defaults = {
-		path_display = { "truncate " },
+		path_display = { "smart" },
 		mappings = {
 			i = {
 				["<C-k>"] = actions.move_selection_previous, -- move to prev result
