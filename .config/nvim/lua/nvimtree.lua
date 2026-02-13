@@ -23,10 +23,14 @@ local function my_on_attach(bufnr)
   api.config.mappings.default_on_attach(bufnr)
 
   -- custom mappings
-  vim.keymap.set('n', '<C-l>', api.tree.change_root_to_node,        opts('Up'))
-  vim.keymap.set('n', '<C-h>', api.node.navigate.parent_close,        opts('Up'))
-  vim.keymap.set('n', 'l', api.node.open.edit,        opts('Up'))
-  vim.keymap.set('n', 'h', api.node.navigate.parent_close,        opts('Up'))
+  vim.keymap.set('n', '<C-l>', api.tree.change_root_to_node,        opts('Change root to node'))
+  vim.keymap.set('n', '<C-h>', api.node.navigate.parent_close,        opts('Close parent node'))
+  vim.keymap.set('n', 'l', api.node.open.edit,        opts('Open in current buffer'))
+  vim.keymap.set('n', 'L', function()
+    api.node.open.vertical()
+    api.tree.focus()
+  end,        opts('Open in vertical split'))
+  vim.keymap.set('n', 'h', api.node.navigate.parent_close,        opts('Close parent node'))
   vim.keymap.set('n', '?',     api.tree.toggle_help,                  opts('Help'))
   vim.keymap.set('n', 'A', api.tree.expand_all, opts('Expand All'))
 end

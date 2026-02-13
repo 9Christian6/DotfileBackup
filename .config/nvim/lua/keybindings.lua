@@ -74,13 +74,21 @@ vim.api.nvim_set_keymap("n", "g$", "$", opts)
 
 -- NvimTree
 vim.api.nvim_set_keymap("n", "<Leader>nt", ":NvimTreeToggle<CR>", opts)
--- vim.api.nvim_set_keymap("n", "<C-l>", api.tree.change_root_to_node, opts)
 
 -- Case-insensitive search
 vim.api.nvim_set_keymap("n", "/", "/\\c", opts)
 
 -- Undotree toggle
 vim.api.nvim_set_keymap("n", "<LEADER>u", ":UndotreeToggle<CR>", opts)
+
+--//////////////////////////////////////////////////////////////////////////
+-- Git integration
+--//////////////////////////////////////////////////////////////////////////
+vim.api.nvim_set_keymap("n", "<Leader>gg", ":lua require('gitConfig').toggleNeogit()<CR>", { desc = "Open Neogit UI" })
+vim.api.nvim_set_keymap("n", "<Leader>gd", ":lua require('gitConfig').toggle_linehl()<CR>", { desc = "Toggle inline git diff signs" })
+vim.api.nvim_set_keymap("n", "<Leader>gn", ":lua require('gitConfig').next_hunk()<CR>", { desc = "Go to next hunk" })
+vim.api.nvim_set_keymap("n", "<Leader>gp", ":lua require('gitConfig').prev_hunk()<CR>", { desc = "Go to previous hunk" })
+
 
 --//////////////////////////////////////////////////////////////////////////
 -- LaTeX-specific Keybindings
@@ -150,7 +158,7 @@ vim.api.nvim_create_autocmd("FileType", {
         local bufnr = vim.fn.bufnr('%')
         vim.keymap.set("n", "<cr>", function()
             vim.api.nvim_command([[execute "normal! \<cr>"]])
-            vim.api.nvim_command(bufnr .. 'bd')
+	    vim.api.nvim_buf_delete(bufnr, { force = true })
         end, { buffer = bufnr })
     end,
     pattern = "qf",

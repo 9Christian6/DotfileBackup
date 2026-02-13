@@ -1,25 +1,24 @@
-return {
-  "williamboman/mason.nvim",
-  dependencies = {
-    "williamboman/mason-lspconfig.nvim",
-  },
-  config = function()
-    require("mason").setup({
-      ui = {
-        icons = {
-          package_installed = "✓",
-          package_pending = "➜",
-          package_uninstalled = "✗",
-        },
-      },
-    })
+local M = {}
 
-    require("mason-lspconfig").setup({
-      ensure_installed = {
-        "clangd",
-        "ltex",
-        "texlab",
+function M.setup()
+  require("mason").setup({
+    ui = {
+      icons = {
+        package_installed = "✓",
+        package_pending = "➜",
+        package_uninstalled = "✗",
       },
-    })
-  end,
-}
+    },
+  })
+
+  require("mason-lspconfig").setup({
+    ensure_installed = {
+      "clangd",
+      "ltex",
+      "texlab",
+    },
+  })
+end
+
+return M
+

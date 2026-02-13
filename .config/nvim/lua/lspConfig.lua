@@ -2,20 +2,8 @@ local lspconfig = require("lspconfig")
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 local common = require("lsp.common")
 
--- clangd
-lspconfig.clangd.setup({
-  capabilities = capabilities,
-  on_attach = common.on_attach,
-})
-
 -- texlab
 lspconfig.texlab.setup({
-  capabilities = capabilities,
-  on_attach = common.on_attach,
-})
-
--- ltex
-lspconfig.ltex.setup({
   capabilities = capabilities,
   on_attach = common.on_attach,
 })

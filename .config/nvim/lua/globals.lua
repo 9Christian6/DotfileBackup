@@ -11,18 +11,35 @@ vim.opt.shiftwidth = 2
 vim.opt.smarttab = true
 
 --////////////////////////////////////////////////////////////////////////////
+--Text formatting
+--////////////////////////////////////////////////////////////////////////////
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "text", "markdown" },
+  callback = function()
+    local opt = vim.opt_local
+    opt.wrap = true
+    opt.linebreak = true
+    opt.list = false
+    opt.textwidth = 0
+    opt.formatoptions:append("t")
+    opt.formatoptions:remove("l")
+  end,
+})
+-- vim.opt_local.wrap = true          -- visual wrapping
+-- vim.opt_local.linebreak = true    -- wrap at word boundaries
+-- vim.opt_local.list = false        -- no wrap junk characters
+-- 
+-- vim.opt_local.textwidth = 0       -- use window width for formatting
+-- vim.opt_local.formatoptions:append("t") -- auto-wrap text
+-- vim.opt_local.formatoptions:remove("l") -- never split words
+
+--////////////////////////////////////////////////////////////////////////////
 --Set code folding
 --////////////////////////////////////////////////////////////////////////////
 vim.opt.foldmethod = "indent"
 vim.opt.foldcolumn = "1"
 vim.opt.foldenable = false
-
---////////////////////////////////////////////////////////////////////////////
---set colorscheme
---////////////////////////////////////////////////////////////////////////////
-vim.cmd.colorscheme("onedark")
-vim.api.nvim_set_hl(0, "Search", {bg = "#B31B97"})
-
 
 vim.o.laststatus = 2  -- always show statusline
 

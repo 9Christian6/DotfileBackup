@@ -39,4 +39,7 @@ vim.call('plug#begin')
 	Plug 'folke/which-key.nvim'
 	Plug 'SmiteshP/nvim-navic'
 	Plug 'nvim-lualine/lualine.nvim'
+	Plug 'sindrets/diffview.nvim'
+	Plug 'NeogitOrg/neogit'
+	Plug 'lewis6991/gitsigns.nvim'
 vim.call('plug#end')
