@@ -33,6 +33,54 @@ local function cmp_enabled()
 	return vim.b[bufnr].cmp_manual_enabled == true
 end
 
+local function in_tex_list_environment()
+	local ft = vim.bo.filetype
+	if ft ~= "tex" and ft ~= "latex" then
+		return false
+	end
+
+	local row = vim.api.nvim_win_get_cursor(0)[1]
+	local lines = vim.api.nvim_buf_get_lines(0, 0, row, false)
+	local depth = 0
+
+	for i = #lines, 1, -1 do
+		local line = lines[i]
+
+		for env in line:gmatch("\\end%s*{%s*([%a*]+)%s*}") do
+			if env == "itemize" or env == "enumerate" then
+				depth = depth + 1
+			end
+		end
+
+		for env in line:gmatch("\\begin%s*{%s*([%a*]+)%s*}") do
+			if env == "itemize" or env == "enumerate" then
+				if depth == 0 then
+					return true
+				end
+				depth = depth - 1
+			end
+		end
+	end
+
+	return false
+end
+
+local function should_continue_tex_item()
+	if not in_tex_list_environment() then
+		return false
+	end
+
+	local cursor = vim.api.nvim_win_get_cursor(0)
+	local col = cursor[2]
+	local line = vim.api.nvim_get_current_line()
+	local before = line:sub(1, col)
+
+	return before:match("^%s*\\item%f[%A]")
+		or before:match("^%s*\\begin%s*{%s*itemize%s*}%s*$")
+		or before:match("^%s*\\begin%s*{%s*enumerate%s*}%s*$")
+		or before:match("^%s*$")
+end
+
 -- Setup nvim-cmp
 local cmp_window = {
 	border = "rounded",
@@ -57,7 +105,25 @@ cmp.setup({
 		["<C-f>"] = cmp.mapping.scroll_docs(4),
 		["<C-Space>"] = cmp.mapping.complete(), -- show completion suggestions
 		["<C-e>"] = cmp.mapping.abort(), -- close completion window
-		["<CR>"] = cmp.mapping.confirm({ select = false }), -- confirm completion
+		["<CR>"] = cmp.mapping(function(fallback)
+			if cmp.visible() then
+				cmp.confirm({ select = false })
+				return
+			end
+
+			if should_continue_tex_item() then
+				local keys = vim.api.nvim_replace_termcodes(
+					"<CR>\\item ",
+					true,
+					false,
+					true
+				)
+				vim.api.nvim_feedkeys(keys, "n", false)
+				return
+			end
+
+			fallback()
+		end, { "i", "s" }),
 		["<Tab>"] = cmp.mapping(function(fallback)
 			if luasnip.expand_or_jumpable() then
 				luasnip.expand_or_jump()

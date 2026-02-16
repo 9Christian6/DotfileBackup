@@ -97,6 +97,7 @@ vim.api.nvim_set_keymap("n", "<Leader>gp", ":lua require('gitConfig').prev_hunk(
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "tex",
   callback = function()
+    local ls = require("luasnip")
     local bufnr = vim.api.nvim_get_current_buf()
 
     -- Vimtex compile
@@ -105,22 +106,10 @@ vim.api.nvim_create_autocmd("FileType", {
     -- Vimtex clean
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<Leader>lc', ':VimtexClean<CR>', opts)
 
-    -- LSP Bindings
-    vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', opts)
-    vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>', opts)
-    --vim.api.nvim_buf_set_keymap(bufnr, 'n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
+    -- TeX-specific LSP behavior
     vim.api.nvim_buf_set_keymap(bufnr, 'n', 'K', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
     vim.api.nvim_buf_set_keymap(bufnr, 'n', 'KK', ':lua vim.diagnostic.setloclist()<CR>', opts)
-    vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
-    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
-    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>wa', '<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>', opts)
-    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>wr', '<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>', opts)
-    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>wl', '<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>', opts)
-    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>D', '<cmd>lua vim.lsp.buf.type_definition()<CR>', opts)
-    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
-    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
-    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<Leader>re', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
 
     -- Build & View
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<localleader>b', ':VimtexCompile<CR>', opts)
@@ -137,7 +126,7 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 --//////////////////////////////////////////////////////////////////////////
--- C++ Programming Keybindings
+-- Programming Keybindings
 --//////////////////////////////////////////////////////////////////////////
 
 function findFunctionSymbols()
@@ -154,25 +143,25 @@ function findFunctionSymbols()
 end
 
 vim.api.nvim_create_autocmd("FileType", {
-    callback = function()
-        local bufnr = vim.fn.bufnr('%')
-        vim.keymap.set("n", "<cr>", function()
-            vim.api.nvim_command([[execute "normal! \<cr>"]])
-	    vim.api.nvim_buf_delete(bufnr, { force = true })
-        end, { buffer = bufnr })
-    end,
-    pattern = "qf",
+  callback = function()
+    local bufnr = vim.fn.bufnr('%')
+    vim.keymap.set("n", "<cr>", function()
+      vim.api.nvim_command([[execute "normal! \<cr>"]])
+      vim.api.nvim_buf_delete(bufnr, { force = true })
+    end, { buffer = bufnr })
+  end,
+  pattern = "qf",
 })
 
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = {"cpp","c"},
+  pattern = { "tex", "cpp", "c", "python" },
   callback = function()
     local bufnr = vim.api.nvim_get_current_buf()
+    local ft = vim.bo[bufnr].filetype
 
-    -- LSP Bindings
+    -- Shared LSP Bindings
     vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', opts)
     vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>', opts)
-    vim.api.nvim_buf_set_keymap(bufnr, 'n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
     vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>wa', '<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>', opts)
@@ -181,24 +170,23 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>D', '<cmd>lua vim.lsp.buf.type_definition()<CR>', opts)
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
-    -- vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>fu', '<cmd>lua findFunctionSymbols()<CR>i', opts)
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<Leader>re', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
+
+    if ft ~= "tex" then
+      vim.api.nvim_buf_set_keymap(bufnr, 'n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
+    end
+  end
+})
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "cpp", "c" },
+  callback = function()
+    local bufnr = vim.api.nvim_get_current_buf()
+
     -- Build with CMake
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<Leader>cmb', ':CMakeBuild<CR>', opts)
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<Leader>cmr', ':CMakeRun<CR>', opts)
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<Leader>cmt', ':CMakeToggleTerminal<CR>', opts)
-  end
-})
-
---//////////////////////////////////////////////////////////////////////////
--- Python Programming Keybindings
---//////////////////////////////////////////////////////////////////////////
-
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = "python",
-  callback = function()
-    local bufnr = vim.api.nvim_get_current_buf()
-    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>fu', '<cmd>lua findFunctionSymbols()<CR>i', opts)
   end
 })
