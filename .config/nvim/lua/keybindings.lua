@@ -190,3 +190,15 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<Leader>cmt', ':CMakeToggleTerminal<CR>', opts)
   end
 })
+
+--//////////////////////////////////////////////////////////////////////////
+-- Python Programming Keybindings
+--//////////////////////////////////////////////////////////////////////////
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "python",
+  callback = function()
+    local bufnr = vim.api.nvim_get_current_buf()
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>fu', '<cmd>lua findFunctionSymbols()<CR>i', opts)
+  end
+})
