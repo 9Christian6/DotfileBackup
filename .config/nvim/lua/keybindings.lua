@@ -53,6 +53,27 @@ vim.api.nvim_set_keymap("n", "<LEADER>w",  ":w<CR>", opts)
 vim.api.nvim_set_keymap("n", "<LEADER>q",  ":q<CR>", opts)
 vim.api.nvim_set_keymap("n", ":Q<CR>",  ":q<CR>", opts)
 vim.api.nvim_set_keymap("n", "<LEADER>wq", ":wq<CR>", opts)
+vim.api.nvim_set_keymap("n", "<LEADER>wq", ":wq<CR>", opts)
+
+-- Save and edit
+local function write_edit(path)
+  local base_dir = vim.fn.expand("%:p:h")
+  local full_path = vim.fn.fnamemodify(base_dir .. "/" .. path, ":p")
+  local dir = vim.fn.fnamemodify(full_path, ":h")
+
+  -- create directory if it doesn't exist
+  if vim.fn.isdirectory(dir) == 0 then
+    vim.fn.mkdir(dir, "p")
+  end
+
+  vim.cmd("saveas " .. vim.fn.fnameescape(full_path))
+end
+
+vim.api.nvim_create_user_command("We", function(opts)
+  write_edit(opts.args)
+end, { nargs = 1, complete = "file" })
+
+vim.cmd([[cabbrev <expr> we getcmdtype() == ':' && getcmdline() ==# 'we' ? 'We' : 'we']])
 
 -- File finding
 vim.api.nvim_set_keymap("n", "<LEADER>f", ":Files .<CR>", opts)
@@ -109,7 +130,6 @@ vim.api.nvim_create_autocmd("FileType", {
     -- TeX-specific LSP behavior
     vim.api.nvim_buf_set_keymap(bufnr, 'n', 'K', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
     vim.api.nvim_buf_set_keymap(bufnr, 'n', 'KK', ':lua vim.diagnostic.setloclist()<CR>', opts)
-    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
 
     -- Build & View
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<localleader>b', ':VimtexCompile<CR>', opts)
@@ -128,6 +148,19 @@ vim.api.nvim_create_autocmd("FileType", {
 --//////////////////////////////////////////////////////////////////////////
 -- Programming Keybindings
 --//////////////////////////////////////////////////////////////////////////
+
+function findReferences()
+  require("telescope.builtin").lsp_references({
+    symbols = { "Function", "Method", "Constructor" },
+    layout_strategy = "horizontal",
+    symbol_width = 70,
+    layout_config = {
+      width = 0.8,
+      height = 0.9,
+      prompt_position = "bottom",
+    },
+  })
+end
 
 function findFunctionSymbols()
   require("telescope.builtin").lsp_document_symbols({
@@ -154,7 +187,7 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "tex", "cpp", "c", "python" },
+  pattern = { "tex", "cpp", "c", "python", "rs" , "js"},
   callback = function()
     local bufnr = vim.api.nvim_get_current_buf()
     local ft = vim.bo[bufnr].filetype
@@ -171,7 +204,7 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>fu', '<cmd>lua findFunctionSymbols()<CR>i', opts)
-    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<Leader>re', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<Leader>re', '<cmd>lua findReferences()<CR>', opts)
 
     if ft ~= "tex" then
       vim.api.nvim_buf_set_keymap(bufnr, 'n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)

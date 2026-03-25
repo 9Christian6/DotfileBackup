@@ -21,7 +21,7 @@ vim.api.nvim_create_autocmd("FileType", {
     opt.wrap = true
     opt.linebreak = true
     opt.list = false
-    opt.textwidth = 0
+    opt.textwidth = 80
     opt.formatoptions:append("t")
     opt.formatoptions:remove("l")
   end,
