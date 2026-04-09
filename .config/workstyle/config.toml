@@ -10,81 +10,111 @@
 # precedence is given in order of apparition in this file.
 
 #terminal applications
-"ranger" = ""
-"vifm" = ""
-"vim" = " "
-"nvim" = " "
-"alacritty" = ""
-"kitty" = ""
-
-"calendar" = ""
-"NextcloudCalendar" = ""
-"whatsapp" = ""
-"thunderbird" = ""
-"proton" = ""
-"webmail" = ""
+#
+#
+#
+'christian@christians' = ''
+'ranger' = ''
+'vifm' = ''
+'python' = ''
+'vim' = ''
+'nvim' = ''
+'editpolybar' = ''
+'editi3' = ''
+'htop' = '󰵠'
+'btop' = '󰵠'
+'alacritty' = ''
+'timer' = '󱎫'
+'nala' = '󰚰'
+'update' = '󰚰'
+'weathr' = '󰖕'
+'helden-helden' = '󰞇'
+'calendar' = ''
+'photos' = ''
+'Nextcloud' = ''
+'nextcloud' = ''
+'chrisdockerpi' = '󰴴'
+'whatsapp' = ''
+'thunderbird' = ''
+'proton' = ''
+'webmail' = ''
+'gemini' = ''
+'chatgpt' = ''
+'codex' = ''
+'qwen' = ''
 #browsing
-"consorsbank" = ""
-"twitch" = ""
-"youtube" = ""
-"invidious" = ""
-"prime" = ""
-"amazon" = ""
-"reddit" = ""
-"todoist" = ""
-"audible" = ""
-"soundcloud" = ""
-"duckduckgo" = "󰇥"
-"teams" = ""
-"overleaf" = " "
-"photos" = ""
-"brave" = ""
-"chrome" = ""
+'7tv' = ''
+'consorsbank' = ''
+'twitch' = ''
+'youtube' = ''
+'invidious' = ''
+'man' = '󰗚'
+'prime' = ''
+'amazon' = ''
+'reddit' = ''
+'todoist' = ''
+'audible' = ''
+'soundcloud' = ' '
+'duckduckgo' = '󰇥'
+'teams' = ''
+'overleaf' = ''
+'jpg' = ''
+'png' = ''
+'brave-browser' = ''
+'chrome' = ''
 
-"xterm" = ""
-"volume control" = ""
+'xterm' = ''
+'volume control' = ' '
 
 #communication
-"signal" = ""
-"franz" = ""
-"telegram" = ""
-"telegram-desktop" = ""
-"discord" = ""
-"teamspeak" = ""
-"teams-for-linux" = ""
+'signal' = ''
+'franz' = ''
+'telegram' = ''
+'telegram-desktop' = ''
+'discord' = '󰙯'
+'teamspeak' = ''
+'teams-for-linux' = ''
 
 #images and pdfs
-"gimp" ="󱇣" 
-"gthumb" = ""
-"feh" = ""
-".pdf" = "`"
-"okular" = "`"
-"image" = ""
-"blender" = "󰂫"
+'gimp' ='󱇣' 
+'inkscape' = ''
+'gthumb' = ''
+'feh' = ''
+'.pdf' = ''
+'okular' = ''
+'image' = ''
+'blender' = '󰂫'
+'libreoffice-draw' = ''
 
 #files
-"nautilus" = ""
+'nautilus' = ''
+'files' = ''
+'sqlite' = ''
 
 #gaming
-"steam" = ""
-"heroic" = ""
-"unity" = ""
+'steam' = ''
+'heroic' = ''
+'unity' = ''
 
 #rest
-"windsurf" = "󱝆 "
-"cursor" = "󰆽 "
-"code" = "󰨞 "
-"reminders" = ""
-"spotify" = ""
-"github" = ""
-"google" = ""
-"private browsing" = ""
-"firefox" = ""
-"transmission" = ""
-"music" = ""
-"mpv" = ""
-"teamviewer" = "󰔀"
-"bitwarden" = ""
+'windsurf' = '󱝆 '
+'cursor' = '󰆽 '
+'fontforge' = ''
+'unicode' = ''
+'code' = '󰨞'
+'reminders' = ''
+'spotify' = ''
+'github' = ''
+'google' = ''
+'private browsing' = ''
+'firefox' = ''
+'transmission' = ''
+'music' = ''
+'mpv' = ''
+'teamviewer' = '󰔀'
+'bitwarden' = ''
+
+'fallback_icon' = '󰍹'
 [other]
-fallback_icon = "󰍹 "
+fallback_icon = '󰍹'
 deduplicate_icons = true
