@@ -35,10 +35,10 @@ main() {
     "video")
       ANIM_CACHE="${PCACHE}.gif"
       if [ ! -f "$ANIM_CACHE" ]; then
-	ffmpeg -hide_banner -loglevel error \
-	  -ss 0 -t 4 -i "$6" \
-	  -vf "fps=12,scale=320:-1:flags=lanczos" \
-	  "$ANIM_CACHE"
+        ffmpeg -hide_banner -loglevel error \
+          -ss 0 -t 4 -i "$6" \
+          -vf "fps=12,scale=320:-1:flags=lanczos" \
+          "$ANIM_CACHE"
       fi
       image "$1" "$2" "$3" "$4" "$5" "$ANIM_CACHE"
       ;;
