@@ -1,27 +1,167 @@
 #!/bin/sh
 
-export PCACHE="$HOME/.cache/vifm/thumbnail.$(
-  stat --printf '%n\0%i\0%F\0%s\0%W\0%Y' -- "$(readlink -f "$PWD/$6")" |
+ICAT_PID_FILE="/tmp/vifm-icat-preview.pid"
+KITTY_KITTEN="${HOME}/Opt/kitty/bin/kitten"
+
+if [ ! -x "$KITTY_KITTEN" ]; then
+  KITTY_KITTEN="$(command -v kitten 2>/dev/null)"
+fi
+
+resolve_path() {
+  readlink -f -- "$1"
+}
+
+preview_path() {
+  case "$1" in
+    /*) resolve_path "$1" ;;
+    *) resolve_path "$PWD/$1" ;;
+  esac
+}
+
+cache_base() {
+  stat --printf '%n\0%i\0%F\0%s\0%W\0%Y' -- "$1" |
     sha256sum | awk '{print $1}'
-  )"
+}
 
-  MPV_SOCKET="/tmp/vifm-mpv-preview.sock"
+media_orientation() {
+  ffprobe -v error \
+    -select_streams v:0 \
+    -show_entries stream=width,height \
+    -of csv=p=0:s=' ' \
+    -- "$1" 2>/dev/null | awk '
+      NF >= 2 {
+        if ($1 >= $2) {
+          print "landscape"
+        } else {
+          print "portrait"
+        }
+        exit
+      }
+    '
+}
 
-  pclear() {
+preview_file="$(
+  preview_path "$6"
+)"
+PCACHE="$HOME/.cache/vifm/thumbnail.$(
+  cache_base "$preview_file"
+)"
+
+pclear() {
+  if [ -n "$FIFO_UEBERZUG" ] && [ -p "$FIFO_UEBERZUG" ]; then
     printf '{"action": "remove", "identifier": "vifm-preview"}\n' > "$FIFO_UEBERZUG"
+  fi
 
-    # Kill old mpv safely
-    if [ -S "$MPV_SOCKET" ]; then
-      printf '{ "command": ["quit"] }\n' | socat - UNIX-CONNECT:"$MPV_SOCKET" 2>/dev/null
-      rm -f "$MPV_SOCKET"
+  if [ -f "$ICAT_PID_FILE" ]; then
+    icat_pid="$(cat "$ICAT_PID_FILE" 2>/dev/null)"
+    if [ -n "$icat_pid" ] && kill -0 "$icat_pid" 2>/dev/null; then
+      kill "$icat_pid" 2>/dev/null
+      sleep 0.05
+      kill -9 "$icat_pid" 2>/dev/null
     fi
-  }
+  fi
+
+  tty_path="$(find_tty)"
+  if [ -n "$tty_path" ] && [ -c "$tty_path" ] && [ -x "$KITTY_KITTEN" ]; then
+    "$KITTY_KITTEN" icat --stdin=no --clear --silent >"$tty_path" <"$tty_path" 2>/dev/null
+  fi
+
+  rm -f "$ICAT_PID_FILE"
+}
 
 image() {
   printf '{"action": "add", "identifier": "vifm-preview", "x": "%s", "y": "%s", "width": "%s", "height": "%s", "scaler": "contain", "path": "%s"}\n' \
     "$2" "$3" "$4" "$5" "$6" > "$FIFO_UEBERZUG"
-  }
+}
 
+find_tty() {
+  for fd in 1 2 0; do
+    path="$(readlink -f "/proc/$$/fd/$fd" 2>/dev/null)"
+    case "$path" in
+      /dev/pts/*|/dev/tty*) printf '%s\n' "$path"; return 0 ;;
+    esac
+  done
+
+  pid="$$"
+  while [ "$pid" -gt 1 ] 2>/dev/null; do
+    for fd in 1 2 0; do
+      path="$(readlink -f "/proc/$pid/fd/$fd" 2>/dev/null)"
+      case "$path" in
+        /dev/pts/*|/dev/tty*) printf '%s\n' "$path"; return 0 ;;
+      esac
+    done
+    pid="$(awk '/^PPid:/ { print $2 }' "/proc/$pid/status" 2>/dev/null)"
+    [ -n "$pid" ] || break
+  done
+
+  return 1
+}
+
+video_preview_file() {
+  pane_w="$1"
+  pane_h="$2"
+
+  case "$preview_file" in
+    *.gif|*.GIF|*.webp|*.WEBP)
+      printf '%s\n' "$preview_file"
+      ;;
+    *)
+      orient="$(media_orientation "$preview_file")"
+      [ -n "$orient" ] || orient="landscape"
+      anim_cache="${PCACHE}.${pane_w}x${pane_h}.${orient}.gif"
+      if [ ! -f "$anim_cache" ]; then
+        if [ "$orient" = "portrait" ]; then
+          vf_scale="scale=-2:${pane_h}:flags=lanczos"
+        else
+          vf_scale="scale=${pane_w}:-2:flags=lanczos"
+        fi
+        ffmpeg -hide_banner -loglevel error \
+          -ss 0 -t 5 -i "$preview_file" \
+          -vf "fps=12,${vf_scale},split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" \
+          -loop 0 \
+          "$anim_cache"
+      fi
+      printf '%s\n' "$anim_cache"
+      ;;
+  esac
+}
+
+play_with_icat() {
+  tty_path="$(find_tty)" || return 1
+  [ -c "$tty_path" ] || return 1
+  [ -x "$KITTY_KITTEN" ] || return 1
+
+  anim_file="$(video_preview_file "$4" "$5")" || return 1
+  [ -f "$anim_file" ] || return 1
+
+  "$KITTY_KITTEN" icat \
+    --stdin=no \
+    --silent \
+    --transfer-mode=file \
+    --place "${4}x${5}@${2}x${3}" \
+    --scale-up \
+    --loop -1 \
+    "$anim_file" >"$tty_path" <"$tty_path" 2>/dev/null &
+  icat_pid=$!
+  printf '%s\n' "$icat_pid" > "$ICAT_PID_FILE"
+  return 0
+}
+
+play_video() {
+  rm -f "$ICAT_PID_FILE"
+  play_with_icat "$@"
+}
+
+video_fallback() {
+  ANIM_CACHE="${PCACHE}.gif"
+  if [ ! -f "$ANIM_CACHE" ]; then
+    ffmpeg -hide_banner -loglevel error \
+      -ss 0 -t 4 -i "$preview_file" \
+      -vf "fps=12,scale=320:-1:flags=lanczos" \
+      "$ANIM_CACHE"
+  fi
+  image "$1" "$2" "$3" "$4" "$5" "$ANIM_CACHE"
+}
 
 main() {
   case "$1" in
@@ -29,37 +169,30 @@ main() {
       pclear
       ;;
     "draw")
-      FILE="$PWD/$6"
-      image "$1" "$2" "$3" "$4" "$5" "$FILE"
+      image "$1" "$2" "$3" "$4" "$5" "$preview_file"
       ;;
     "video")
-      ANIM_CACHE="${PCACHE}.gif"
-      if [ ! -f "$ANIM_CACHE" ]; then
-        ffmpeg -hide_banner -loglevel error \
-          -ss 0 -t 4 -i "$6" \
-          -vf "fps=12,scale=320:-1:flags=lanczos" \
-          "$ANIM_CACHE"
-      fi
-      image "$1" "$2" "$3" "$4" "$5" "$ANIM_CACHE"
+      pclear
+      play_video "$@" || video_fallback "$@"
       ;;
     "epub")
-      [ ! -f "$PCACHE" ] && epub-thumbnailer "$6" "$PCACHE" 1024
+      [ ! -f "$PCACHE" ] && epub-thumbnailer "$preview_file" "$PCACHE" 1024
       image "$1" "$2" "$3" "$4" "$5" "$PCACHE"
       ;;
     "pdf")
-      [ ! -f "${PCACHE}.jpg" ] && pdftoppm -jpeg -f 1 -singlefile "$6" "$PCACHE"
+      [ ! -f "${PCACHE}.jpg" ] && pdftoppm -jpeg -f 1 -singlefile "$preview_file" "$PCACHE"
       image "$1" "$2" "$3" "$4" "$5" "${PCACHE}.jpg"
       ;;
     "djvu")
-      [ ! -f "${PCACHE}.jpg" ] && ddjvu -format=tiff -quality=90 -page=1 "$6" "$PCACHE.jpg"
+      [ ! -f "${PCACHE}.jpg" ] && ddjvu -format=tiff -quality=90 -page=1 "$preview_file" "$PCACHE.jpg"
       image "$1" "$2" "$3" "$4" "$5" "${PCACHE}.jpg"
       ;;
     "audio")
-      [ ! -f "${PCACHE}.jpg" ] && ffmpeg -hide_banner -i "$6" "${PCACHE}.jpg" -y >/dev/null
+      [ ! -f "${PCACHE}.jpg" ] && ffmpeg -hide_banner -i "$preview_file" "${PCACHE}.jpg" -y >/dev/null
       image "$1" "$2" "$3" "$4" "$5" "${PCACHE}.jpg"
       ;;
     "font")
-      [ ! -f "${PCACHE}.jpg" ] && fontpreview -i "$6" -o "${PCACHE}.jpg"
+      [ ! -f "${PCACHE}.jpg" ] && fontpreview -i "$preview_file" -o "${PCACHE}.jpg"
       image "$1" "$2" "$3" "$4" "$5" "${PCACHE}.jpg"
       ;;
     *)
@@ -68,4 +201,3 @@ main() {
 }
 
 main "$@"
-
