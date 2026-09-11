@@ -3,6 +3,7 @@
 --////////////////////////////////////////////////////////////////////////////
 local Plug = vim.fn['plug#']
 vim.call('plug#begin')
+Plug 'MeanderingProgrammer/render-markdown.nvim'
 Plug 'nvim-tree/nvim-web-devicons' -- optional
 Plug 'nvim-tree/nvim-tree.lua'
 Plug 'joshdick/onedark.vim'
@@ -35,11 +36,12 @@ Plug 'stevearc/conform.nvim' -- , { 'for': ['python', 'lua', 'javascript'] }
 Plug 'frabjous/knap'
 Plug 'MeanderingProgrammer/render-markdown.nvim'
 Plug 'kdheepak/cmp-latex-symbols'
-Plug 'norcalli/nvim-colorizer.lua'
+Plug 'catgoose/nvim-colorizer.lua'
 Plug 'folke/which-key.nvim'
 Plug 'SmiteshP/nvim-navic'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'sindrets/diffview.nvim'
 Plug 'NeogitOrg/neogit'
 Plug 'lewis6991/gitsigns.nvim'
+Plug 'olimorris/codecompanion.nvim'
 vim.call('plug#end')

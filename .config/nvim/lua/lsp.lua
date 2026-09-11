@@ -1,6 +1,19 @@
 local M = {}
 local border_style = "rounded"
 
+-- Add your LTEX dictionaries here.
+-- The keys are LanguageTool language codes.
+local ltex_dictionary = {
+  ["en-US"] = {
+    -- Add English words here, e.g.:
+    "Neovim",
+  },
+  ["de-DE"] = {
+    -- Add German words here, e.g.:
+    "Neovim",
+  },
+}
+
 local function setup_float_style()
   local normal = vim.api.nvim_get_hl(0, { name = "Normal", link = false })
   local normal_bg = normal.bg
@@ -20,12 +33,19 @@ local function setup_float_style()
 end
 
 local function setup_lsp_handlers()
-  vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
-    border = border_style,
-  })
-  vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
-    border = border_style,
-  })
+  vim.lsp.handlers["textDocument/hover"] = function(err, result, ctx, config)
+    config = vim.tbl_deep_extend("force", config or {}, {
+      border = border_style,
+    })
+    return vim.lsp.handlers.hover(err, result, ctx, config)
+  end
+
+  vim.lsp.handlers["textDocument/signatureHelp"] = function(err, result, ctx, config)
+    config = vim.tbl_deep_extend("force", config or {}, {
+      border = border_style,
+    })
+    return vim.lsp.handlers.signature_help(err, result, ctx, config)
+  end
 end
 
 local function make_capabilities()
@@ -38,6 +58,7 @@ end
 
 local function on_attach(client, bufnr)
   vim.bo[bufnr].omnifunc = "v:lua.vim.lsp.omnifunc"
+
   local ok, navic = pcall(require, "nvim-navic")
   if ok and client.server_capabilities.documentSymbolProvider then
     navic.attach(client, bufnr)
@@ -46,36 +67,21 @@ end
 
 local lspconfig_util = require("lspconfig.util")
 local unpack = table.unpack or unpack
-local biome_root_files = {
-  "biome.json",
-  "biome.jsonc",
-  "biome.config.js",
-  "package.json",
-  "package-lock.json",
-  "yarn.lock",
-  "pnpm-lock.yaml",
-  "bun.lock",
-  "bun.lockb",
-  ".git",
-}
-
-local function biome_root_dir(fname)
-  local matcher = lspconfig_util.root_pattern(unpack(biome_root_files))
-  return matcher(fname) or vim.fs.dirname(fname)
-end
 
 local server_overrides = {
   pyright = function(config)
     return vim.tbl_deep_extend("force", config, {
       settings = {
-        python = {
-          analysis = {
-            typeCheckingMode = "basic",
-          },
-        },
+	python = {
+	  analysis = {
+	    typeCheckingMode = "basic",
+	    pythonPath = "/home/christian/Opt/PythonEnvs/myVirtualEnv/bin/python3.12",
+	  },
+	},
       },
     })
   end,
+
   ruff = function(config)
     config.on_attach = function(client, bufnr)
       client.server_capabilities.hoverProvider = false
@@ -84,22 +90,67 @@ local server_overrides = {
     end
     return config
   end,
+
   bacon_ls = function(config)
     config.filetypes = { "rust" }
     return config
   end,
-  biome = function(config)
-    config.cmd = { "biome", "lsp-proxy" }
-    config.filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" }
-    config.root_dir = function(bufnr, on_dir)
-      local fname = vim.api.nvim_buf_get_name(bufnr)
-      if fname == "" then
-        return
-      end
-      on_dir(biome_root_dir(fname))
-    end
-    config.workspace_required = true
-    return config
+
+  lua_ls = function(config)
+    return vim.tbl_deep_extend("force", config, {
+      settings = {
+	Lua = {
+	  runtime = {
+	    version = "LuaJIT",
+	  },
+	  diagnostics = {
+	    globals = { "vim" },
+	  },
+	  workspace = {
+	    checkThirdParty = false,
+	    library = vim.api.nvim_get_runtime_file("", true),
+	  },
+	  telemetry = {
+	    enable = false,
+	  },
+	},
+      },
+    })
+  end,
+
+  ltex = function(config)
+    return vim.tbl_deep_extend("force", config, {
+      settings = {
+	ltex = {
+	  -- Automatically detect the document language.
+	  -- This allows English and German documents to work.
+	  -- language = "auto",
+
+	  -- If your ltex-ls version supports language lists, you can also use:
+	  -- language = "de-DE",
+	  language = "auto",
+
+	  dictionary = ltex_dictionary,
+	},
+      },
+    })
+  end,
+  rust_analyzer = function(config)
+    return vim.tbl_deep_extend("force", config, {
+      settings = {
+	["rust-analyzer"] = {
+	  check = {
+	    command = "clippy",
+	  },
+	  cargo = {
+	    allFeatures = false,
+	  },
+	  diagnostics = {
+	    enable = true,
+	  },
+	},
+      },
+    })
   end,
 }
 
@@ -128,6 +179,9 @@ local ensured_servers = {
   "pyright",
   "ruff",
   "biome",
+  "lua_ls",
+  "ltex",
+  "rust_analyzer",
 }
 
 local function define_server_configs(capabilities)
@@ -136,7 +190,9 @@ local function define_server_configs(capabilities)
       capabilities = capabilities,
       on_attach = on_attach,
     })
+
     vim.lsp.config(server_name, server_config)
+    vim.lsp.enable(server_name)
   end
 end
 
@@ -144,9 +200,9 @@ local function setup_mason(capabilities)
   require("mason").setup({
     ui = {
       icons = {
-        package_installed = "✓",
-        package_pending = "➜",
-        package_uninstalled = "✗",
+	package_installed = "✓",
+	package_pending = "➜",
+	package_uninstalled = "✗",
       },
     },
   })
@@ -162,10 +218,12 @@ end
 
 function M.setup()
   local float_style_group = vim.api.nvim_create_augroup("FloatStyle", { clear = true })
+
   vim.api.nvim_create_autocmd("ColorScheme", {
     group = float_style_group,
     callback = setup_float_style,
   })
+
   setup_float_style()
   setup_lsp_handlers()
   setup_diagnostics()

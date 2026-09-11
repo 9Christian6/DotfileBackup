@@ -5,7 +5,7 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.path = vim.opt.path + "**"
 vim.opt.wildmenu = true
-vim.opt.mouse = 'a'
+vim.opt.mouse = "a"
 vim.opt.scrolloff = 10
 vim.opt.shiftwidth = 2
 vim.opt.smarttab = true
@@ -13,53 +13,102 @@ vim.opt.smarttab = true
 --////////////////////////////////////////////////////////////////////////////
 --Text formatting
 --////////////////////////////////////////////////////////////////////////////
-
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "text", "markdown" },
-  callback = function()
-    local opt = vim.opt_local
-    opt.wrap = true
-    opt.linebreak = true
-    opt.list = false
-    opt.textwidth = 80
-    opt.formatoptions:append("t")
-    opt.formatoptions:remove("l")
-  end,
+	pattern = { "text", "markdown" },
+	callback = function()
+		local opt = vim.opt_local
+		opt.wrap = true
+		opt.linebreak = true
+		opt.list = false
+		opt.textwidth = 80
+		opt.formatoptions:append("t")
+		opt.formatoptions:remove("l")
+	end,
 })
--- vim.opt_local.wrap = true          -- visual wrapping
--- vim.opt_local.linebreak = true    -- wrap at word boundaries
--- vim.opt_local.list = false        -- no wrap junk characters
--- 
--- vim.opt_local.textwidth = 0       -- use window width for formatting
--- vim.opt_local.formatoptions:append("t") -- auto-wrap text
--- vim.opt_local.formatoptions:remove("l") -- never split words
 
 --////////////////////////////////////////////////////////////////////////////
 --Set code folding
 --////////////////////////////////////////////////////////////////////////////
-vim.opt.foldmethod = "indent"
+vim.opt.foldmethod = "manual"
 vim.opt.foldcolumn = "1"
 vim.opt.foldenable = false
+vim.o.laststatus = 2 -- always show statusline
 
-vim.o.laststatus = 2  -- always show statusline
+--////////////////////////////////////////////////////////////////////////////
+-- Name each tab after its current buffer's filename
+--////////////////////////////////////////////////////////////////////////////
+vim.o.tabline = "%!v:lua.TabLine()"
 
-function closeQFIfLastBuff()
-  local listed_buffers = vim.tbl_filter(function(buf)
-    return vim.api.nvim_buf_is_loaded(buf) and vim.bo[buf].buflisted
-  end, vim.api.nvim_list_bufs())
+function _G.TabLine()
+	local tabs = {}
 
-  -- Only one buffer left
-  if #listed_buffers == 1 then
-    -- Close all quickfix windows
-    for _, win in ipairs(vim.fn.getwininfo()) do
-      if win.quickfix == 1 then
-	vim.api.nvim_win_close(win.winid, true)
-      end
-    end
-  end
+	for tabnr = 1, vim.fn.tabpagenr("$") do
+		local bufnr = vim.fn.tabpagebuflist(tabnr)[1]
+		local name = vim.fn.bufname(bufnr)
+
+		-- Get filename only, without the path
+		name = vim.fn.fnamemodify(name, ":t")
+
+		-- Fallback for unnamed buffers
+		if name == "" then
+			name = "[No Name]"
+		end
+
+		-- Highlight the current tab
+		if tabnr == vim.fn.tabpagenr() then
+			table.insert(tabs, "%#TabLineSel#")
+		else
+			table.insert(tabs, "%#TabLine#")
+		end
+
+		table.insert(tabs, " " .. name .. " ")
+	end
+
+	table.insert(tabs, "%#TabLineFill#")
+	return table.concat(tabs)
 end
 
--- Lua version
-vim.api.nvim_create_autocmd({"BufDelete", "BufLeave"}, {
-  callback = closeQFIfLastBuff
-})
+--////////////////////////////////////////////////////////////////////////////
+-- Tabline
+--////////////////////////////////////////////////////////////////////////////
+function _G.CustomTabLine()
+	local result = {}
+
+	local current_tab = vim.fn.tabpagenr()
+	local tab_count = vim.fn.tabpagenr("$")
+
+	for tabnr = 1, tab_count do
+		local bufnr = vim.fn.tabpagebuflist(tabnr)[1]
+
+		local filename = vim.fn.fnamemodify(
+			vim.fn.bufname(bufnr),
+			":t"
+		)
+
+		if filename == "" then
+			filename = "[No Name]"
+		end
+
+		local selected = tabnr == current_tab
+
+		-- Select background color for this tab
+		if selected then
+			table.insert(result, "%#TabSelected#")
+		else
+			table.insert(result, "%#TabNormal#")
+		end
+
+		-- Tab contents
+		table.insert(result, " " .. filename .. " ")
+
+		-- Reset to normal background for the gap
+		table.insert(result, "%#TabGap#")
+		table.insert(result, " ")
+	end
+
+	-- Fill remaining space with normal background
+	table.insert(result, "%#TabGap#")
+
+	return table.concat(result)
+end
+vim.o.tabline = "%!v:lua.CustomTabLine()"
