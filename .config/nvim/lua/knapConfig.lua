@@ -1,7 +1,7 @@
 -- Set Okular as viewer using knap's global option (no setup() needed!)
 local gknapsettings = {
     texoutputext = "pdf",
-    textopdf = "pdflatex -synctex=1 -halt-on-error -interaction=batchmode %docroot%",
+    textopdf = "lualatex -synctex=1 -halt-on-error -interaction=batchmode %docroot%",
     textopdfviewerlaunch = "okular %outputfile%",
     textopdfviewerrefresh = "kill -HUP %pid%"
 }
