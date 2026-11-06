@@ -15,7 +15,7 @@ output DP-2 {
         background ~/Opt/Wallpapers/RoomAtNightCroppedWithBackground.png fill
         resolution 2560x1440
 }
-output DVI-D-1 {
+output DVI-D-0 {
         pos 2560 0
         background ~/Opt/Wallpapers/RoomAtNightCroppedWithBackground.png fill
         resolution 1920x1080
