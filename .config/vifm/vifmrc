@@ -64,7 +64,7 @@ set norunexec
 
 " List of color schemes to try (picks the first one supported by the terminal)
 
-colorscheme Default
+colorscheme dracula
 
 " Format for displaying time in file list. For example:
 " TIME_STAMP_FORMAT=%m/%d-%H:%M
@@ -183,13 +183,14 @@ fileviewer {*.gif}
 
 "command okular okular *.{pdf}
 " PDF
- fileviewer *.pdf
+fileviewer *.pdf
    \ vifmimg pdf %px %py %pw %ph %c
    \ %pc
    \ vifmimg clear
 
 " filetype *.pdf okular &
-filetype *.pdf nohup okular 2>/dev/null &
+" filetype *.pdf nohup okular 2>/dev/null &
+filetype *.pdf nohup zathura -c '/home/christian/.config/zathura' 2>/dev/null &
 
 fileviewer *.djvu
     \ vifmimg djvu %px %py %pw %ph %c
@@ -210,17 +211,21 @@ fileviewer <video/*>
     \ %pc
     \ vifmimg clear
 
+fileviewer *.svg
+    \ vifmimg svg %px %py %pw %ph %c
+    \ %pc
+    \ vifmimg clear
+
 fileviewer <image/*>
     \ vifmimg draw %px %py %pw %ph %c
     \ %pc
     \ vifmimg clear
 
-
-filetype {*.png, *jpg} feh &
-
-filetype {*.svg} gimp &
+filetype {*.svg} feh &
 
 filetype {*.gif} ffplay -loop -1 > /dev/null 2>&1 &
+
+filetype <image/*> feh &
 
 fileviewer <audio/*>
     \ vifmimg audio %px %py %pw %ph %c
@@ -250,10 +255,11 @@ filextype {*.djvu},<image/vnd.djvu>
 " Audio
 filetype {*.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,*.opus},
         \<audio/*>
-       \ {Play using ffplay}
-       \ ffplay -nodisp -hide_banner -autoexit %c,
-       \ {Play using MPlayer}
-       \ mplayer %f,
+	\ kitty -e termusic %d&,
+"       \ {Play using ffplay}
+"       \ ffplay -nodisp -hide_banner -autoexit %c,
+"       \ {Play using MPlayer}
+"       \ mplayer %f,
 fileviewer {*.mp3},<audio/mpeg> mp3info
 fileviewer {*.flac},<audio/flac> soxi
 
@@ -423,7 +429,7 @@ set classify+='  ::../::,  ::*.sh::,  ::*.[hc]pp::,  ::*.[hc]::, 
 " archives
 set classify+='  ::*.7z,,*.ace,,*.arj,,*.bz2,,*.cpio,,*.deb,,*.dz,,*.gz,,*.jar,,*.lzh,,*.lzma,,*.rar,,*.rpm,,*.rz,,*.tar,,*.taz,,*.tb2,,*.tbz,,*.tbz2,,*.tgz,,*.tlz,,*.trz,,*.txz,,*.tz,,*.tz2,,*.xz,,*.z,,*.zip,,*.zoo::'
 " images
-set classify+='  ::*.svg,,*.bmp,,*.gif,,*.jpeg,,*.jpg,,*.ico,,*.png,,*.ppm,,*.svg,,*.svgz,,*.tga,,*.tif,,*.tiff,,*.xbm,,*.xcf,,*.xpm,,*.xspf,,*.xwd::'
+set classify+='  ::*.bmp,,*.gif,,*.jpeg,,*.jpg,,*.ico,,*.png,,*.ppm,,*.svgz,,*.tga,,*.tif,,*.tiff,,*.xbm,,*.xcf,,*.xpm,,*.xspf,,*.xwd::'
 " audio
 set classify+='  ::*.aac,,*.anx,,*.asf,,*.au,,*.axa,,*.flac,,*.m2a,,*.m4a,,*.mid,,*.midi,,*.mp3,,*.mpc,,*.oga,,*.ogg,,*.ogx,,*.ra,,*.ram,,*.rm,,*.spx,,*.wav,,*.wma,,*.ac3::'
 " media
@@ -431,7 +437,8 @@ set classify+=' ::*.avi,,*.ts,,*.axv,,*.divx,,*.m2v,,*.m4p,,*.m4v,,.mka,,*.mk
 " office files
 set classify+=' ::*.doc,,*.docx::, ::*.xls,,*.xls[mx]::, ::*.pptx,,*.ppt::'
 
-set previewoptions=hardgraphicsclear
+" ueberzug removes its own overlay; a full-screen erase causes flicker.
+set previewoptions=graphicsdelay:50000
 
 " Syntax highlighting in preview
 "

@@ -1,21 +1,20 @@
-#!/bin/sh
-
-if [ -z "$(command -v /home/christian/Opt/vifm/vifm)" ]; then
-	printf "vifm isn't installed on your system!\n"
-	exit 1
+#!/usr/bin/env bash
+if [ -z "$(command -v $OPT/vifm/vifm)" ]; then
+  printf "vifm isn't installed on your system!\nIt was searched at $OPT/vifm/vifm\n"
+  exit 1
 elif [ -z "$(command -v ueberzug)" ]; then
-	exec /home/christian/Opt/vifm/vifm "$@"
+  exec $OPT/vifm/vifm "$@"
 else
-	cleanup() {
-		exec 3>&-
-	    rm "$FIFO_UEBERZUG"
-	}
-	[ ! -d "$HOME/.cache/vifm" ] && mkdir -p "$HOME/.cache/vifm"
-	export FIFO_UEBERZUG="$HOME/.cache/vifm/ueberzug-${$}"
-	mkfifo "$FIFO_UEBERZUG"
-	ueberzug layer -s <"$FIFO_UEBERZUG" -p json &
-	exec 3>"$FIFO_UEBERZUG"
-	trap cleanup EXIT
-	/home/christian/Opt/vifm/vifm "$@" 3>&-
-	vifmimg clear
+  cleanup() {
+    exec 3>&-
+    rm "$FIFO_UEBERZUG"
+  }
+[ ! -d "$HOME/.cache/vifm" ] && mkdir -p "$HOME/.cache/vifm"
+export FIFO_UEBERZUG="$HOME/.cache/vifm/ueberzug-${$}"
+mkfifo "$FIFO_UEBERZUG"
+ueberzug layer -s <"$FIFO_UEBERZUG" -p json &
+exec 3>"$FIFO_UEBERZUG"
+trap cleanup EXIT
+$OPT/vifm/vifm "$@" 3>&-
+vifmimg clear
 fi

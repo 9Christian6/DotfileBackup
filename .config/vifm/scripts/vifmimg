@@ -1,10 +1,12 @@
 #!/bin/sh
 
-ICAT_PID_FILE="/tmp/vifm-icat-preview.pid"
-WORKER_PID_FILE="/tmp/vifm-icat-preview-worker.pid"
-REQUEST_FILE="/tmp/vifm-icat-preview.request"
+# Keep worker state separate for each vifmrun session.
+STATE_BASE="${FIFO_UEBERZUG:-${XDG_RUNTIME_DIR:-/tmp}/vifm-preview-$(id -u)}"
+ICAT_PID_FILE="${STATE_BASE}.icat.pid"
+WORKER_PID_FILE="${STATE_BASE}.worker.pid"
+REQUEST_FILE="${STATE_BASE}.request"
 KITTY_KITTEN="${HOME}/Opt/kitty/bin/kitten"
-MAX_PREVIEW_BYTES=$((1024 * 1024))
+MAX_PREVIEW_BYTES=$((90 * 1024 * 1024))
 
 if [ ! -x "$KITTY_KITTEN" ]; then
   KITTY_KITTEN="$(command -v kitten 2>/dev/null)"
@@ -115,7 +117,8 @@ clear_display() {
   fi
 
   tty_path="$(find_tty)"
-  if [ -n "$tty_path" ] && [ -c "$tty_path" ] && [ -x "$KITTY_KITTEN" ]; then
+  # Static ueberzug previews must not query or alter the terminal.
+  if [ -f "$ICAT_PID_FILE" ] && [ -n "$tty_path" ] && [ -c "$tty_path" ] && [ -x "$KITTY_KITTEN" ]; then
     "$KITTY_KITTEN" icat --stdin=no --clear --silent >"$tty_path" <"$tty_path" 2>/dev/null
   fi
 
@@ -138,7 +141,8 @@ clear_display_on_tty() {
     fi
   fi
 
-  if [ -n "$tty_path" ] && [ -c "$tty_path" ] && [ -x "$KITTY_KITTEN" ]; then
+  # Static ueberzug previews must not query or alter the terminal.
+  if [ -f "$ICAT_PID_FILE" ] && [ -n "$tty_path" ] && [ -c "$tty_path" ] && [ -x "$KITTY_KITTEN" ]; then
     "$KITTY_KITTEN" icat --stdin=no --clear --silent >"$tty_path" <"$tty_path" 2>/dev/null
   fi
 
@@ -146,8 +150,15 @@ clear_display_on_tty() {
 }
 
 image() {
-  printf '{"action": "add", "identifier": "vifm-preview", "x": "%s", "y": "%s", "width": "%s", "height": "%s", "scaler": "contain", "path": "%s"}\n' \
-    "$2" "$3" "$4" "$5" "$6" > "$FIFO_UEBERZUG"
+  [ -n "$FIFO_UEBERZUG" ] && [ -p "$FIFO_UEBERZUG" ] || return 1
+  # Encode filenames containing quotes, backslashes or newlines correctly.
+  python3 - "$2" "$3" "$4" "$5" "$6" > "$FIFO_UEBERZUG" <<'PYJSON'
+import json
+import sys
+x, y, width, height, path = sys.argv[1:]
+print(json.dumps(dict(action="add", identifier="vifm-preview", x=x, y=y,
+                     width=width, height=height, scaler="contain", path=path)))
+PYJSON
 }
 
 find_tty() {
@@ -340,6 +351,20 @@ main() {
       preview_allowed || exit 1
       image "$1" "$2" "$3" "$4" "$5" "$preview_file"
       ;;
+    "svg")
+      init_preview_context "$6"
+      preview_allowed || exit 1
+
+      svg_cache="${PCACHE}.png"
+
+      if [ ! -f "$svg_cache" ]; then
+	rsvg-convert \
+	  --output "$svg_cache" \
+	  "$preview_file" || exit 1
+      fi
+
+      image "$1" "$2" "$3" "$4" "$5" "$svg_cache"
+      ;;
     "video")
       init_preview_context "$6"
       play_video "$@" || video_fallback "$@"
@@ -353,7 +378,19 @@ main() {
     "pdf")
       init_preview_context "$6"
       preview_allowed || exit 1
-      [ ! -f "${PCACHE}.jpg" ] && pdftoppm -jpeg -f 1 -singlefile "$preview_file" "$PCACHE"
+      mkdir -p -- "$(dirname "$PCACHE")" || exit 1
+      if [ ! -s "${PCACHE}.jpg" ]; then
+        # Publish only complete thumbnails if rendering overlaps or is cancelled.
+        pdf_tmp="$(mktemp "${PCACHE}.tmp.XXXXXX")" || exit 1
+        trap 'rm -f -- "$pdf_tmp" "$pdf_tmp.jpg"' EXIT
+        trap 'exit 1' HUP INT TERM
+        if ! pdftoppm -jpeg -f 1 -singlefile -scale-to 1600 \
+            "$preview_file" "$pdf_tmp" 2>/dev/null || [ ! -s "$pdf_tmp.jpg" ]; then
+          printf 'PDF preview unavailable.\n'
+          exit 1
+        fi
+        mv -f -- "$pdf_tmp.jpg" "${PCACHE}.jpg" || exit 1
+      fi
       image "$1" "$2" "$3" "$4" "$5" "${PCACHE}.jpg"
       ;;
     "djvu")
