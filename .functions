@@ -1,10 +1,39 @@
+#filetype=bash
+
+anifetch() {
+    command anifetch "$@"
+    
+    # Fix the stuck cursor/screen
+    tput cnorm       
+    printf "\e[?1049l" 
+    
+    # Hide the ugly ^[[Hw^[[F% text glitch
+    tput el 
+    printf "\e[1A" # Move up one line to overwrite the glitch
+}
+
+function testAlias(){echo "alias $1='$2'"; }
+
 function addAlias(){echo "alias $1='$2'" >> ~/.zshrc; }
 
-function search(){lsa|awk '{print $9}' | grep -i $1}
+function search(){ls -lt -c -r -h -a|awk '{print $9}' | grep -i $1}
 
 function showInstalled(){dpkg --list "*$1*"}
 
 function makecd(){mkdir $1 && cd $1}
+
+function compileDebug(){
+  g++ -Wall -Wextra -fsanitize=undefined,address -D_GLIBCXX_DEBUG -g "$1" -o "${1%.*}"
+}
+
+function compile(){
+  if [ $# -eq 2 ]
+    then
+      g++ -x c++ -Wall -O2 -static -pipe "$1" -o "$2"
+    else
+      g++ -x c++ -Wall -O2 -static -pipe "$1"
+  fi
+}
 
 # function startSilent(){
 #   echo "$(date '+%H:%M %d.%m.%Y') \"$1\":">>$HOME/ScriptOutputs/stdout
@@ -12,35 +41,35 @@ function makecd(){mkdir $1 && cd $1}
 #   echo "\n">>$HOME/ScriptOutputs/stdout
 # }
 
-function startSilent(){
-  local LOG_DIR="$HOME/ScriptOutputs"
-  local TIMESTAMP="$(date '+%H:%M %d.%m.%Y')"
-
-  # 1. Log the execution start to stdout file
-  echo "$TIMESTAMP \"$1\":" >> "$LOG_DIR/stdout"
-
-  # 2. Run the command
-  # - Stdin is redirected from /dev/null to prevent nohup warnings.
-  # - Stdout appends to your stdout log.
-  # - Stderr is redirected to a process substitution >(...)
-  nohup "$@" < /dev/null >> "$LOG_DIR/stdout" 2> >(
-    # This block runs only for the error stream
-    if read -r line; then
-      # If we successfully read a line, it means there IS an error.
-      # Print the timestamp header to stderr log
-      echo "$TIMESTAMP \"$1\":" >> "$LOG_DIR/stderr"
-      
-      # Print the line we just captured
-      echo "$line" >> "$LOG_DIR/stderr"
-      
-      # Use 'cat' to print the rest of the error stream (if any)
-      cat >> "$LOG_DIR/stderr"
-    fi
-  )
-
-  # 3. Append a spacer line to stdout
-  echo "" >> "$LOG_DIR/stdout"
-}
+# function startSilent(){
+#   local LOG_DIR="$HOME/ScriptOutputs"
+#   local TIMESTAMP="$(date '+%H:%M %d.%m.%Y')"
+# 
+#   # 1. Log the execution start to stdout file
+#   echo "$TIMESTAMP \"$1\":" >> "$LOG_DIR/stdout"
+# 
+#   # 2. Run the command
+#   # - Stdin is redirected from /dev/null to prevent nohup warnings.
+#   # - Stdout appends to your stdout log.
+#   # - Stderr is redirected to a process substitution >(...)
+#   nohup "$@" < /dev/null >> "$LOG_DIR/stdout" 2> >(
+#     # This block runs only for the error stream
+#     if read -r line; then
+#       # If we successfully read a line, it means there IS an error.
+#       # Print the timestamp header to stderr log
+#       echo "$TIMESTAMP \"$1\":" >> "$LOG_DIR/stderr"
+#       
+#       # Print the line we just captured
+#       echo "$line" >> "$LOG_DIR/stderr"
+#       
+#       # Use 'cat' to print the rest of the error stream (if any)
+#       cat >> "$LOG_DIR/stderr"
+#     fi
+#   )
+# 
+#   # 3. Append a spacer line to stdout
+#   echo "" >> "$LOG_DIR/stdout"
+# }
 
 function open(){nohup xdg-open "$@" >/dev/null 2>&1&}
 
@@ -65,4 +94,34 @@ function fcd() {
     else
       cd "$(dirname "$target")"
 	fi
+}
+
+function findPattern(){
+  grep -rnw "$(pwd)" -e "$1"
+}
+
+function findFile(){
+  find ./ -iname "*$1*"
+}
+
+function odysseus() {
+    # Define the absolute path to your project root once.
+    PROJECT_PATH="/home/christian/Opt/odysseus"
+
+    # 1. Save the current directory so we can return to it.
+    local original_pwd=$(pwd)
+
+    # 2. Change to the project directory.
+    if [ -d "$PROJECT_PATH" ]; then
+        cd "$PROJECT_PATH"
+        echo "--- Running Odysseus from $PROJECT_PATH ---"
+
+        # Execute the command
+        /home/christian/Opt/odysseus/venv/bin/python -m uvicorn app:app --host 127.0.0.1 --port 7000
+
+        # Optional: Change back to the directory we started in
+        cd "$original_pwd"
+    else
+        echo "ERROR: Project directory not found at $PROJECT_PATH"
+    fi
 }
