@@ -34,9 +34,10 @@ set $mod mod4
 
 # Toggle Gaps
 set $mode_gaps Toggle gaps: (1) on (2) off
-bindsym $mod+g mode "$mode_gaps"
+#bindsym $mod+g mode "$mode_gaps"
+bindsym $mod+g exec "/home/christian/Bin/setGapSizeRofi.sh"
 mode "$mode_gaps" {
-    bindsym 1 mode "default", gaps inner all set 5, gaps outer all set 5
+  bindsym 1 mode "default", gaps inner all set 5, gaps outer all set 5
     bindsym 2 mode "default", gaps inner all set 0, gaps outer all set 0
     bindsym Return mode "default"
     bindsym Escape mode "default"
@@ -61,7 +62,7 @@ floating_maximum_size 2560 x 1440
 focus_follows_mouse no
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id /usr/bin/kitty
+bindsym $mod+Return exec --no-startup-id /home/christian/Opt/kitty/bin/kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -86,25 +87,38 @@ bindsym $mod+Control+d exec --no-startup-id $HOME/Bin/CommandPalletteLogging.py 
 #Key Bindings
 #Keybinds
 bindsym $mod+Control+q exec --no-startup-id /home/christian/Bin/takeScreenshot.sh
-bindsym $mod+u exec --no-startup-id /home/christian/Bin/removeUrgency
-bindsym $mod+c exec --no-startup-id brave-browser -new-window
+bindsym $mod+u exec /home/christian/Bin/removeUrgency.sh
+bindsym $mod+c exec --no-startup-id brave-browser 
 bindsym $mod+y exec --no-startup-id brave-browser -new-window www.youtube.com
+bindsym $mod+Control+y exec --no-startup-id brave-browser www.youtube.com
 bindsym $mod+t exec --no-startup-id brave-browser -new-window www.twitch.tv/following/live 
-bindsym $mod+Shift+t exec --no-startup-id $HOME/Bin/RofiStreamPicker.sh
+bindsym $mod+Shift+t exec --no-startup-id /home/christian/Bin/rofiTabSelector.py
+bindsym $mod+a exec /home/christian/Bin/i3lockNoClock.sh
 bindsym $mod+m move scratchpad
 bindsym $mod+n scratchpad show, floating disable
 bindsym $mod+Control+x exec --no-startup-id copyq
-bindsym $mod+Control+c exec --no-startup-id  /home/christian/Bin/chrome.sh
-bindsym $mod+Control+r exec --no-startup-id brave-browser -new-window old.reddit.com 
+bindsym $mod+Control+c exec /home/christian/Bin/chrome.sh
+# bindsym $mod+Control+r exec brave-browser -new-window old.reddit.com 
 bindsym $mod+Control+s exec /home/christian/Bin/Shutdown
 bindsym $mod+Control+h workspace prev_on_output
 bindsym $mod+Control+Left workspace prev_on_output
 bindsym $mod+Control+l workspace next_on_output
 bindsym $mod+Control+Right workspace next_on_output
-bindsym $mod+Shift+y exec --no-startup-id ~/Bin/emojipick.py
-bindsym $mod+Control+p exec --no-startup-id /home/christian/Bin/togglePicom.sh
-bindsym $mod+a exec --no-startup-id /home/christian/Bin/i3lockClock.sh
-bindsym --release $mod+Shift+p exec --no-startup-id /home/christian/Bin/Screenshot.sh
+bindsym $mod+Control+p exec /home/christian/Bin/togglePicom.sh
+bindsym $mod+Control+n exec /home/christian/Bin/newFreeWorkspace.py
+bindsym $mod+Control+b border toggle
+bindsym $mod+Shift+f exec /home/christian/Bin/startVifm.sh
+bindsym $mod+Control+Shift+n exec /home/christian/Bin/newFreeWorkspace.py "move"
+bindsym $mod+Shift+y exec ~/Bin/emojipick.py
+bindsym $mod+Shift+Control+t exec ~/Bin/toggleTitlebars.sh > ~/toggleTitlebars.log
+bindsym $mod+Control+t exec $HOME/Bin/timerMenu.sh
+bindsym --release $mod+Shift+p exec /home/christian/Bin/Screenshot.sh
+bindsym $mod+o exec /home/christian/Bin/WorkspaceHistory/workspace_history_client.py back
+bindsym $mod+i exec /home/christian/Bin/WorkspaceHistory/workspace_history_client.py forward
+bindsym $mod+Shift+a exec /home/christian/Bin/acknowledge.py
+# bindsym $mod+space+h exec --no-startup-id /home/christian/Bin/brotabControle.py left
+bindsym $mod+Shift+Control+i exec /home/christian/Bin/brotabControle.py left
+bindsym $mod+Shift+Control+o exec /home/christian/Bin/brotabControle.py right
 
 # Sound Control
 bindsym $mod+F1 exec --no-startup-id amixer -q -D pulse sset Master toggle
@@ -135,7 +149,7 @@ bindsym $mod+Right focus right
 bindsym $mod+Shift+$left move left
 bindsym $mod+Shift+$down move down
 bindsym $mod+Shift+$up move up
-bindsym $mod+Shift+$right move right
+ bindsym $mod+Shift+$right move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -165,72 +179,93 @@ bindsym $mod+p focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1:1"
-set $ws2 "2:2"
-set $ws3 "3:3"
-set $ws4 "4:4"
-set $ws5 "5:5"
-set $ws6 "6:6"
-set $ws7 "7:7"
-set $ws8 "8:8"
-set $ws9 "9:9"
-set $ws10 "10:10"
-set $ws11 "11:11"
-set $ws12 "12:12"
-set $ws13 "13:13"
-set $ws14 "14:14"
-set $ws15 "15:15"
-set $ws16 "16:16"
-set $ws17 "17:17"
-set $ws18 "18:18"
-set $ws19 "19:19"
-set $ws20 "20:20"
-set $ws21 "21:"
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+set $ws11 "11"
+set $ws12 "12"
+set $ws13 "13"
+set $ws14 "14"
+set $ws15 "15"
+set $ws16 "16"
+set $ws17 "17"
+set $ws18 "18"
+set $ws19 "19"
+set $ws20 "20"
+set $ws21 "21"
+#set $ws21 "21:"
 
-workspace $ws1 output DP-2
-workspace $ws2 output DVI-D-0
-workspace $ws4 output DVI-D-0
-workspace $ws5 output DVI-D-0
-workspace $ws8 output DVI-D-0
-workspace $ws9 output DVI-D-0
-workspace $ws10 output DVI-D-0
-workspace $ws11 output DP-2
-workspace $ws12 output DVI-D-0
-workspace $ws13 output DVI-D-0
-workspace $ws14 output DVI-D-0
+workspace $ws1 output primary
+workspace $ws2 output nonprimary
+workspace $ws4 output nonprimary
+workspace $ws5 output nonprimary
+workspace $ws8 output nonprimary
+workspace $ws9 output nonprimary
+workspace $ws10 output nonprimary
+workspace $ws11 output primary
+workspace $ws12 output nonprimary
+workspace $ws13 output nonprimary
+workspace $ws14 output nonprimary
 workspace $ws19 output HDMI-0
-workspace $ws21 output DVI-D-0
+workspace $ws21 output nonprimary
 
 #Workspace assignments
 assign [class="TelegramDesktop"] number $ws2
 assign [class="whatsdesk"] number $ws2
-assign [class="Signal"] number $ws2
+assign [class="signal"] number $ws2
 assign [class="heroic"] number $ws8
 assign [class="discord"] number $ws9
 assign [title="Steam"] number $ws8
+assign [title="steam"] number $ws8
+assign [class="steam"] number $ws8
+for_window [class="steam"] border pixel 2
+for_window [class="TelegramDesktop"] border pixel 2
+for_window [class="org.gnome.Nautilus"] border pixel 2
+for_window [class="baobab"] border pixel 2
+assign [class="steamwebhelper"] number $ws8
+for_window [class="steamwebhelper"] number $ws8
+assign [title="steamwebhelper"] number $ws8
 assign [class="thunderbird"] number $ws12
 assign [class="Morgen"] number $ws13
 assign [class="korganizer"] number $ws13
 assign [class="reminders"] number $ws13
-assign [class="gnome-calendar"] number $ws13
-assign [class="NextcloudCalendar"] number $ws13
 assign [class="pavucontrol"] $ws21
 assign [class="teams-for-linux"] number $ws10
+assign [instance="crx_cifhbcnohmdccbgoicgdjpfamggdegmo"] number $ws10
+for_window [instance="crx_cifhbcnohmdccbgoicgdjpfamggdegmo"] border pixel 2
 assign [class="Todoist"] number $ws13
 
-for_window [title=".*Calendar - Nextcloud"] move to workspace number $ws13
-for_window [title="web.whatsapp.com"] move to workspace number $ws2
-for_window [title="webmail.hiz-saarland.de"] move to workspace number $ws12
-for_window [title="Postfach | christian.schulz1996@proton.me | Proton Mail"] move to workspace number $ws12
-for_window [class="Spotify"] move to workspace number $ws5
+for_window [instance="192.168.178.75__apps_calendar_timeGridWeek_now"] move to workspace number $ws13
+for_window [instance="192.168.178.75__apps_tasks"] move to workspace number $ws13
+for_window [instance="192.168.178.75__apps_photos"] move to workspace number $ws14
+for_window [instance="mail.proton.me__u_\d_inbox"] move to workspace number $ws12
 
-for_window [title="Postfach | christian.schulz1996@proton.me | Proton Mail"] floating disable
-for_window [title=".*Calendar - Nextcloud"] floating disable
+for_window [title="web.whatsapp.com"] move to workspace number $ws2
 for_window [title="web.whatsapp.com"] floating disable
+
+for_window [class="soundcloud-player"] move to workspace number $ws5
+for_window [class="soundcloud-player"] floating disable
+
+for_window [title="Postfach | christian.schulz1996@proton.me | Proton Mail"] move to workspace number $ws12
+for_window [title="Postfach | christian.schulz1996@proton.me | Proton Mail"] floating disable
+for_window [title="webmail.hiz-saarland.de"] move to workspace number $ws12
 for_window [title="webmail.hiz-saarland.de"] floating disable
+for_window [title=".*Calendar - Nextcloud"] floating disable
+for_window [title=".*Tasks - Nextcloud"] floating disable
+for_window [title=".*Photos - Nextcloud"] floating disable
+for_window [title="NextcloudCalendar"] fullscreen disable
+
 for_window [class="Brave-browser"] floating disable
 for_window [class="^NextcloudCalendar$"] fullscreen disable
-for_window [title="NextcloudCalendar"] fullscreen disable
+for_window [class="Spotify"] move to workspace number $ws5
+for_window [class="StartupTerminal"] move to workspace number $ws4
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -291,52 +326,50 @@ bindsym $mod+Shift+e exec --no-startup-id "i3-nagbar -t warning -m 'You pressed 
 
 # resize window (you can also use the mouse for that)
 mode " resize" {
-        # These bindings trigger as soon as you enter the resize mode
+# These bindings trigger as soon as you enter the resize mode
 
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym $left       resize shrink width 10 px or 10 ppt
-        bindsym $up       resize grow height 10 px or 10 ppt
-        bindsym $down         resize shrink height 10 px or 10 ppt
-        bindsym $right      resize grow width 10 px or 10 ppt
+# Pressing left will shrink the window’s width.
+# Pressing right will grow the window’s width.
+# Pressing up will shrink the window’s height.
+# Pressing down will grow the window’s height.
+  bindsym $left       resize shrink width 10 px or 10 ppt
+    bindsym $up       resize grow height 10 px or 10 ppt
+    bindsym $down         resize shrink height 10 px or 10 ppt
+    bindsym $right      resize grow width 10 px or 10 ppt
 
-        # same bindings, but for the arrow keys
-        bindsym Left        resize shrink width 10 px or 10 ppt
-        bindsym Down        resize grow height 10 px or 10 ppt
-        bindsym Up          resize shrink height 10 px or 10 ppt
-        bindsym Right       resize grow width 10 px or 10 ppt
+# same bindings, but for the arrow keys
+    bindsym Left        resize shrink width 10 px or 10 ppt
+    bindsym Down        resize grow height 10 px or 10 ppt
+    bindsym Up          resize shrink height 10 px or 10 ppt
+    bindsym Right       resize grow width 10 px or 10 ppt
 
-        # back to normal: Enter or Escape or $mod+r
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-        bindsym $mod+Control+r mode "default"
+# back to normal: Enter or Escape or $mod+r
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+    bindsym $mod+Control+r mode "default"
 }
 
 # enter resize mode windows
 bindsym $mod+r mode " resize"
 
 # Always show app name instead of window title
+for_window [title="web.whatsapp.com"] title_format "Whatsapp"
 for_window [class="WebApp"] title_format "%title"
 for_window [class="heroic"] title_format "Heroic"
 for_window [class="steam"] title_format "Steam"
 for_window [title="okular"] title_format "Okular"
 for_window [title="org.wireshark.Wireshark"] title_format "Wireshark"
-for_window [class="kitty"] title_format "Kitty"
+# for_window [class="kitty"] title_format "Kitty"
 
 # Define colors
 set $green   #008800
 set $magenta #FF00FF
 set $split #00CC00
 set $white   #FFFFFF
-
-# Define complementary text colors
-set $text_on_green   #FF77FF
-set $text_on_magenta #77FF77
-set $text_on_split   #FF0FFF
 set $text_on_white   #000000
 
+# Syntax
+# <colorclass> 		<border> 	<background> 	<text> 		<indicator> 	<child_border>
 
 client.focused          $magenta 	$magenta 	$text_on_white 	$magenta	$magenta
 client.focused_inactive $split   	$split   	$text_on_white  $split   	$split
