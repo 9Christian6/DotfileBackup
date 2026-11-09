@@ -119,6 +119,7 @@ bindsym $mod+Shift+a exec /home/christian/Bin/acknowledge.py
 # bindsym $mod+space+h exec --no-startup-id /home/christian/Bin/brotabControle.py left
 bindsym $mod+Shift+Control+i exec /home/christian/Bin/brotabControle.py left
 bindsym $mod+Shift+Control+o exec /home/christian/Bin/brotabControle.py right
+bindsym $mod+Shift+Control+s exec /home/christian/Bin/brotabControle.py split
 
 # Sound Control
 bindsym $mod+F1 exec --no-startup-id amixer -q -D pulse sset Master toggle
