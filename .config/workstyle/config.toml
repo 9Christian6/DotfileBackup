@@ -14,6 +14,9 @@
 #
 #
 #
+# Foreground terminal applications must precede generic terminal/title rules.
+'codex' = ''
+'ollama' = ''
 'inkscape' = ' '
 'photocraft' = ''
 'gdb' = ''
@@ -72,7 +75,6 @@
 'zed' = ''
 'man' = '󰗚 '
 'openclaw' = ''
-'ollama' = ''
 'chrome' = ''
 'audacity' = '󰋋'
 'xterm' = ''
