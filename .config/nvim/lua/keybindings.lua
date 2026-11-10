@@ -83,6 +83,15 @@ vim.cmd([[cabbrev <expr> we getcmdtype() == ':' && getcmdline() ==# 'we' ? 'We' 
 -- File finding
 vim.api.nvim_set_keymap("n", "<LEADER>f", ":Files .<CR>", opts)
 
+-- Cancel fzf instead of leaving terminal mode when Escape is pressed.
+vim.api.nvim_create_autocmd("FileType", {
+	group = vim.api.nvim_create_augroup("FzfEscape", { clear = true }),
+	pattern = "fzf",
+	callback = function(event)
+		vim.keymap.set("t", "<Esc>", "<C-c>", { buffer = event.buf, silent = true })
+	end,
+})
+
 -- vim.api.nvim_set_keymap("n", "<LEADER>fs", ":lua require('telescope.builtin').live_grep"<CR>, opts)
 vim.api.nvim_set_keymap("n", "<LEADER>fs", ":lua require('telescope.builtin').live_grep()<CR>", opts)
 
@@ -178,6 +187,12 @@ end
 
 function findFunctionSymbols()
 	require("telescope.builtin").lsp_document_symbols({
+		attach_mappings = function(_, map)
+			local close = require("telescope.actions").close
+			map("i", "<Esc>", close)
+			map("n", "<Esc>", close)
+			return true
+		end,
 		symbols = { "Function", "Method", "Constructor" },
 		layout_strategy = "horizontal",
 		symbol_width = 70,
@@ -373,3 +388,15 @@ vim.api.nvim_set_keymap("v", "<leader>ci", "<cmd>CodeCompanion<CR>", opts)
 --     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<Leader>cmt', ':CMakeToggleTerminal<CR>', opts)
 --   end
 -- })
+
+--////////////////////////////////////////////////////////////////////////////
+-- Format buffer on save if an LSP client is attached
+--////////////////////////////////////////////////////////////////////////////
+vim.api.nvim_create_autocmd("BufWritePre", {
+	group = vim.api.nvim_create_augroup("lsp_format_on_save", { clear = true }),
+	callback = function()
+		if vim.lsp.get_clients({ bufnr = vim.api.nvim_get_current_buf() })[1] then
+			vim.lsp.buf.format({ async = false })
+		end
+	end,
+})
