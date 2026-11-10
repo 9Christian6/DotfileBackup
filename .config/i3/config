@@ -61,6 +61,14 @@ floating_maximum_size 2560 x 1440
 # Disable mouse focus
 focus_follows_mouse no
 
+# Keep applications from taking focus through activation requests.
+focus_on_window_activation none
+
+# Autostart windows should open in the background on their assigned workspaces.
+no_focus [class="(?i)^(signal|discord|thunderbird(_thunderbird)?|Spotify|StartupTerminal)$"]
+no_focus [instance="^(web[.]whatsapp[.]com|webmail[.]hiz-saarland[.]de)(__|$)"]
+no_focus [instance="^mail[.]proton[.]me__"]
+
 # start a terminal
 bindsym $mod+Return exec --no-startup-id /home/christian/Opt/kitty/bin/kitty
 
@@ -242,6 +250,13 @@ assign [class="teams-for-linux"] number $ws10
 assign [instance="crx_cifhbcnohmdccbgoicgdjpfamggdegmo"] number $ws10
 for_window [instance="crx_cifhbcnohmdccbgoicgdjpfamggdegmo"] border pixel 2
 assign [class="Todoist"] number $ws13
+
+# Assign these before mapping; keep the rules below for late property updates.
+assign [class="Spotify"] number $ws5
+assign [class="StartupTerminal"] number $ws4
+assign [instance="^web[.]whatsapp[.]com(__|$)"] number $ws2
+assign [instance="^webmail[.]hiz-saarland[.]de(__|$)"] number $ws12
+assign [instance="^mail[.]proton[.]me__"] number $ws12
 
 for_window [instance="192.168.178.75__apps_calendar_timeGridWeek_now"] move to workspace number $ws13
 for_window [instance="192.168.178.75__apps_tasks"] move to workspace number $ws13
