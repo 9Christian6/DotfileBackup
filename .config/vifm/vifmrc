@@ -138,7 +138,8 @@ mark h ~/
 
 command! df df -h %m 2> /dev/null
 command! diff vim -d %f %F
-command! zip zip -r %c.zip %f
+" Zip selected files (or the cursor file) into <cursor-name>.zip here.
+command! zip zip -r ./%c:t.zip -- %f
 command! run !! ./%f
 command! make !!make %a
 command! mkcd :mkdir %a | cd %a
@@ -146,7 +147,8 @@ command! vgrep vim "+grep %a"
 command! reload :write | restart full
 command! extract extract %a %f %n
 command! extract! extract -f %a %f %n
-command! unzip 7z x %f -o\*
+" Extract each selected archive into its own directory, without its suffix.
+command! unzip bash "$VIFM/scripts/unpack-archives" %f:p
 
 " ------------------------------------------------------------------------------
 
