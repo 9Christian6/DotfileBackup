@@ -1,0 +1,42 @@
+# Edits apply on the next hover, click or bar update.
+# All discovered sinks are prefilled, including disconnected outputs.
+# name="" uses the device description. enabled=false hides a sink and skips it when cycling.
+# enabled only affects this switcher; it does not disable devices or change audio settings.
+# allow_unknown=true permits outputs with no connection detection (e.g. S/PDIF).
+# Known disconnected ports are always excluded. Defaults apply unless overridden.
+[default]
+name = ""
+icon = "󰓃"
+enabled = true
+allow_unknown = false
+show_name = false # Set true to show custom names beside the volume bar.
+
+[sinks."alsa_output.usb-ASUS_Xonar_U7-00.analog-stereo"]
+enabled = true
+name = "Xonar U7"
+icon = " "
+
+[sinks."alsa_output.pci-0000_2b_00.1.pro-output-3"]
+enabled = true
+name = "AOC"
+icon = "󰓃"
+
+[sinks."alsa_output.pci-0000_2b_00.1.pro-output-7"]
+enabled = false
+name = "DELL U2715H"
+icon = "󰓃"
+
+[sinks."alsa_output.pci-0000_2b_00.1.pro-output-8"]
+enabled = false
+name = "HDMI 2"
+icon = "󰓃"
+
+[sinks."alsa_output.pci-0000_2b_00.1.pro-output-9"]
+enabled = false
+name = "HDMI 3"
+icon = "󰓃"
+
+[sinks."alsa_output.pci-0000_2d_00.4.iec958-stereo"]
+enabled = false
+name = "ALC897 Digital"
+icon = "󰓃"
