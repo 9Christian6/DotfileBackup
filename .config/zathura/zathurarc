@@ -1,0 +1,19 @@
+set selection-clipboard clipboard
+map <C-h> navigate previous
+map <C-l> navigate next
+map h scroll half-up
+map l scroll half-down
+map <Button1> scroll half-down
+map <Button3> scroll half-up
+
+# Jump to first/last page
+map gg goto top
+map G goto bottom
+
+# Vim-like scrolling
+map <C-e> scroll down
+map <C-y> scroll up
+
+# Vim-like full-page movement
+map <C-f> scroll full-down
+map <C-b> scroll full-up
