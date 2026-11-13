@@ -3,18 +3,19 @@
 # Format:
 # "pattern" = "icon"
 #
-# The pattern will be used to match against the application name, class_id or WM_CLASS.
+# Patterns match foreground programs, app_id or WM_CLASS, never window titles.
 # The icon will be used to represent that application.
 #
-# Note if multiple patterns are present in the same application name,
-# precedence is given in order of apparition in this file.
+# Foreground program matches precede terminal matches. Within each group,
+# the first matching pattern in this file wins. Matching ignores case.
+# Scoped title exceptions are defined in [[overrides]] below.
 #terminal applications
 #
 #
 #
 #
 #
-# Foreground terminal applications must precede generic terminal/title rules.
+# Foreground programs have priority over their terminal, regardless of order.
 'codex' = ''
 'ollama' = ''
 'inkscape' = ' '
@@ -57,8 +58,6 @@
 '7tv' = ''
 'consorsbank' = ' '
 'soundcloud' = ''
-'twitch' = ''
-'youtube' = ''
 'invidious' = ''
 'github' = ' '
 'teams' = '󰊻'
@@ -90,6 +89,7 @@
 'gthumb' = ''
 'feh' = ''
 '.pdf' = ''
+'zathura' = ''
 'okular' = ''
 'image' = ''
 'blender' = '󰂫'
@@ -118,6 +118,33 @@
 'bitwarden' = ''
 'temp icons' = '󰍹󰣆'
 'fallback_icon' = ''
+
+# Only these explicitly selected pages may override the Brave glyph.
+[[overrides]]
+app = 'brave-browser'
+title = 'YouTube'
+icon = ''
+
+[[overrides]]
+app = 'brave-browser'
+title = 'Twitch'
+icon = ''
+
+[[overrides]]
+app = 'brave-browser'
+title = 'proton mail'
+icon = ''
+
+[[overrides]]
+app = 'brave-browser'
+title = 'HIZ'
+icon = ''
+
+[[overrides]]
+app = 'brave-browser'
+title = 'whatsapp'
+icon = ''
+
 [other]
 fallback_icon = ''
 deduplicate_icons = true
