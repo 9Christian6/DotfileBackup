@@ -31,7 +31,7 @@ function compile(){
     then
       g++ -x c++ -Wall -O2 -static -pipe "$1" -o "$2"
     else
-      g++ -x c++ -Wall -O2 -static -pipe "$1"
+      g++ -x c++ -Wall -O2 -static -pipe "$1" -o "${1%.*}"
   fi
 }
 
