@@ -160,6 +160,14 @@ command! unzip bash "$VIFM/scripts/unpack-archives" %f:p
 " The command macros like %f, %F, %d, %D may be used in the commands.
 " The %a macro is ignored.  To use a % you must put %%.
 
+" First matching viewer wins. These asynchronous rules take precedence over
+" the older viewer examples below. Only graphics need coordinates and cleanup:
+" using %px and %py for text makes vifm blank the pane before every redraw.
+fileviewer <image/*>,<video/*>,<audio/*>,<font/*>,{*.pdf,*.djvu,*.epub,*.svg,*.ttf,*.otf,*.woff,*.woff2}
+    \ vifm-preview show %px %py %pw %ph %c %pu
+    \ %pc vifm-preview clear
+fileviewer * vifm-preview show 0 0 %pw %ph %c %pu
+
 " For automated FUSE mounts, you must register an extension with :file[x]type
 " in one of following formats:
 "
@@ -440,7 +448,12 @@ set classify+=' ::*.avi,,*.ts,,*.axv,,*.divx,,*.m2v,,*.m4p,,*.m4v,,.mka,,*.mk
 set classify+=' ::*.doc,,*.docx::, ::*.xls,,*.xls[mx]::, ::*.pptx,,*.ppt::'
 
 " ueberzug removes its own overlay; a full-screen erase causes flicker.
-set previewoptions=graphicsdelay:50000
+set previewoptions=graphicsdelay:0
+
+" Conversion runs in disposable workers. %pu picks up results on redraw.
+" Use the fileviewer rules above so text is not treated as graphical output.
+let $VIFM_PREVIEW_SERVER = v:servername
+set previewprg=
 
 " Syntax highlighting in preview
 "
@@ -487,6 +500,11 @@ set vifminfo=dhistory,savedirs,chistory,state,tui,shistory,
 " Customize view columns a bit (enable ellipsis for truncated file names)
 "
 set viewcolumns=-{name}..,20{}.
+
+" Calculate recursive directory sizes on entry (ga reuses cached sizes).
+" Select all entries without moving the cursor, then clear the selection.
+" Large directory trees can take time to scan; gA forces a fresh calculation.
+autocmd DirEnter * %select | normal! ga | nohlsearch
 
 " Filter-out build and temporary files
 "
