@@ -145,6 +145,21 @@ app = 'brave-browser'
 title = 'whatsapp'
 icon = ''
 
+[[overrides]]
+app = 'brave-browser'
+title = 'lichess'
+icon = ''
+
+[[overrides]]
+app = 'brave-browser'
+title = 'D&D'
+icon = ''
+
+[[overrides]]
+app = 'brave-browser'
+title = 'Roll20'
+icon = ''
+
 [other]
 fallback_icon = ''
 deduplicate_icons = true
