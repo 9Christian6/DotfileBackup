@@ -40,3 +40,8 @@ icon = "󰓃"
 enabled = false
 name = "ALC897 Digital"
 icon = "󰓃"
+
+[sinks."auto_null"]
+name = "Schein-Ausgabe"
+icon = "󰓃"
+enabled = true
