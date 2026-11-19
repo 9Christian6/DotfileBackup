@@ -61,16 +61,8 @@ floating_maximum_size 2560 x 1440
 # Disable mouse focus
 focus_follows_mouse no
 
-# Keep applications from taking focus through activation requests.
-focus_on_window_activation none
-
-# Autostart windows should open in the background on their assigned workspaces.
-no_focus [class="(?i)^(signal|discord|thunderbird(_thunderbird)?|Spotify|StartupTerminal)$"]
-no_focus [instance="^(web[.]whatsapp[.]com|webmail[.]hiz-saarland[.]de)(__|$)"]
-no_focus [instance="^mail[.]proton[.]me__"]
-
 # start a terminal
-bindsym $mod+Return exec --no-startup-id /home/christian/Opt/kitty/bin/kitty
+bindsym $mod+Return exec --no-startup-id /home/christian/Bin/kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -95,13 +87,13 @@ bindsym $mod+Control+d exec --no-startup-id $HOME/Bin/CommandPalletteLogging.py 
 #Key Bindings
 #Keybinds
 bindsym $mod+Control+q exec --no-startup-id /home/christian/Bin/takeScreenshot.sh
-bindsym $mod+u exec /home/christian/Bin/removeUrgency.sh
+bindsym $mod+u exec /home/christian/Bin/removeUrgency
 bindsym $mod+c exec --no-startup-id brave-browser 
 bindsym $mod+y exec --no-startup-id brave-browser -new-window www.youtube.com
 bindsym $mod+Control+y exec --no-startup-id brave-browser www.youtube.com
 bindsym $mod+t exec --no-startup-id brave-browser -new-window www.twitch.tv/following/live 
 bindsym $mod+Shift+t exec --no-startup-id /home/christian/Bin/rofiTabSelector.py
-bindsym $mod+a exec /home/christian/Bin/i3lockNoClock.sh
+bindsym $mod+a exec /home/christian/Bin/i3lockClock.sh
 bindsym $mod+m move scratchpad
 bindsym $mod+n scratchpad show, floating disable
 bindsym $mod+Control+x exec --no-startup-id copyq
@@ -115,9 +107,9 @@ bindsym $mod+Control+Right workspace next_on_output
 bindsym $mod+Control+p exec /home/christian/Bin/togglePicom.sh
 bindsym $mod+Control+n exec /home/christian/Bin/newFreeWorkspace.py
 bindsym $mod+Control+b border toggle
-bindsym $mod+Shift+f exec /home/christian/Bin/startVifm.sh
+bindsym $mod+Shift+f exec --no-startup-id /home/christian/Bin/startVifm.sh
 bindsym $mod+Control+Shift+n exec /home/christian/Bin/newFreeWorkspace.py "move"
-bindsym $mod+Shift+y exec ~/Bin/emojipick.py
+bindsym $mod+Shift+y exec ~/Opt/emojipicki3/emojipick
 bindsym $mod+Shift+Control+t exec ~/Bin/toggleTitlebars.sh > ~/toggleTitlebars.log
 bindsym $mod+Control+t exec $HOME/Bin/timerMenu.sh
 bindsym --release $mod+Shift+p exec /home/christian/Bin/Screenshot.sh
@@ -127,7 +119,6 @@ bindsym $mod+Shift+a exec /home/christian/Bin/acknowledge.py
 # bindsym $mod+space+h exec --no-startup-id /home/christian/Bin/brotabControle.py left
 bindsym $mod+Shift+Control+i exec /home/christian/Bin/brotabControle.py left
 bindsym $mod+Shift+Control+o exec /home/christian/Bin/brotabControle.py right
-bindsym $mod+Shift+Control+s exec /home/christian/Bin/brotabControle.py split
 
 # Sound Control
 bindsym $mod+F1 exec --no-startup-id amixer -q -D pulse sset Master toggle
@@ -235,11 +226,9 @@ assign [title="Steam"] number $ws8
 assign [title="steam"] number $ws8
 assign [class="steam"] number $ws8
 for_window [class="steam"] border pixel 2
-for_window [class="discord"] border pixel 2
 for_window [class="TelegramDesktop"] border pixel 2
 for_window [class="org.gnome.Nautilus"] border pixel 2
 for_window [class="baobab"] border pixel 2
-for_window [class="zoom"] border pixel 2
 assign [class="steamwebhelper"] number $ws8
 for_window [class="steamwebhelper"] number $ws8
 assign [title="steamwebhelper"] number $ws8
@@ -252,13 +241,6 @@ assign [class="teams-for-linux"] number $ws10
 assign [instance="crx_cifhbcnohmdccbgoicgdjpfamggdegmo"] number $ws10
 for_window [instance="crx_cifhbcnohmdccbgoicgdjpfamggdegmo"] border pixel 2
 assign [class="Todoist"] number $ws13
-
-# Assign these before mapping; keep the rules below for late property updates.
-assign [class="Spotify"] number $ws5
-assign [class="StartupTerminal"] number $ws4
-assign [instance="^web[.]whatsapp[.]com(__|$)"] number $ws2
-assign [instance="^webmail[.]hiz-saarland[.]de(__|$)"] number $ws12
-assign [instance="^mail[.]proton[.]me__"] number $ws12
 
 for_window [instance="192.168.178.75__apps_calendar_timeGridWeek_now"] move to workspace number $ws13
 for_window [instance="192.168.178.75__apps_tasks"] move to workspace number $ws13
@@ -332,9 +314,6 @@ bindsym $mod+Shift+Control+h move workspace to output left
 bindsym $mod+Shift+Control+Left move workspace to output left
 bindsym $mod+Shift+Control+l move workspace to output right
 bindsym $mod+Shift+Control+Right move workspace to output right
-
-# reload the configuration file
-bindsym $mod+Shift+c reload
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart 

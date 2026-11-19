@@ -1,7 +1,6 @@
 # Edits apply on the next hover, click or bar update.
 # All discovered sinks are prefilled, including disconnected outputs.
-# name="" uses the device description. enabled=false hides a sink and skips it when cycling.
-# enabled only affects this switcher; it does not disable devices or change audio settings.
+# name="" uses the device description. enabled=false hides a sink and skips it when cycling; it does not change audio settings.
 # allow_unknown=true permits outputs with no connection detection (e.g. S/PDIF).
 # Known disconnected ports are always excluded. Defaults apply unless overridden.
 [default]
@@ -11,37 +10,27 @@ enabled = true
 allow_unknown = false
 show_name = false # Set true to show custom names beside the volume bar.
 
-[sinks."alsa_output.usb-ASUS_Xonar_U7-00.analog-stereo"]
+[sinks."alsa_output.pci-0000_00_1f.3-platform-skl_hda_dsp_generic.HiFi__hw_sofhdadsp_5__sink"]
+name = "HDMI / DisplayPort 3 Output"
+icon = "󰓃"
 enabled = true
-name = "Xonar U7"
-icon = " "
 
-[sinks."alsa_output.pci-0000_2b_00.1.pro-output-3"]
+[sinks."alsa_output.pci-0000_00_1f.3-platform-skl_hda_dsp_generic.HiFi__hw_sofhdadsp_4__sink"]
+name = "HDMI / DisplayPort 2 Output"
+icon = "󰓃"
 enabled = true
-name = "AOC"
-icon = "󰓃"
 
-[sinks."alsa_output.pci-0000_2b_00.1.pro-output-7"]
-enabled = false
-name = "DELL U2715H"
+[sinks."alsa_output.pci-0000_00_1f.3-platform-skl_hda_dsp_generic.HiFi__hw_sofhdadsp_3__sink"]
+name = "HDMI / DisplayPort 1 Output"
 icon = "󰓃"
+enabled = true
 
-[sinks."alsa_output.pci-0000_2b_00.1.pro-output-8"]
-enabled = false
-name = "HDMI 2"
+[sinks."alsa_output.pci-0000_00_1f.3-platform-skl_hda_dsp_generic.HiFi__hw_sofhdadsp__sink"]
+name = "Speaker + Headphones"
 icon = "󰓃"
+enabled = true
 
-[sinks."alsa_output.pci-0000_2b_00.1.pro-output-9"]
-enabled = false
-name = "HDMI 3"
-icon = "󰓃"
-
-[sinks."alsa_output.pci-0000_2d_00.4.iec958-stereo"]
-enabled = false
-name = "ALC897 Digital"
-icon = "󰓃"
-
-[sinks."auto_null"]
-name = "Schein-Ausgabe"
+[sinks."bluez_output.B0_38_E2_63_D9_F2.1"]
+name = "soundcore Q20i"
 icon = "󰓃"
 enabled = true

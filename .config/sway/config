@@ -1,60 +1,104 @@
 # Default config for sway
 
 gaps inner 5
-default_border none
+default_border pixel 2
 default_floating_border none
-titlebar_padding 1
-titlebar_border_thickness 0
 
-input "1:1:AT_Translated_Set_2_keyboard" {
+# client.focused         		#880088 #880088 #880088 #008800 #880088 
+# client.focused_inactive         #880088 #880088 #880088 #008800 #880088
+# client.unfocused        	#008800 #008800 #008800 #008800 #008800 
+
+# Define colors
+# set $green   #008800
+# set $magenta #880088
+# set $split   #00F000
+# set $white   #FFFFFF
+
+# Borders
+# Format: client.<state> <border> <background> <text> <indicator> <child_border>
+# client.focused          $magenta $magenta $white $magenta $magenta
+# client.focused_inactive $green   $green   $magenta   $green $green
+# client.unfocused        $green   $split   $magenta   $green $green
+# client.urgent           $green   $green   $magenta   $green $green
+# client.placeholder      $green   $green   $magenta   $green $green
+
+# Define colors
+set $green   #008800
+set $magenta #880088
+set $split   #00F000
+set $white   #FFFFFF
+
+# Define complementary text colors
+set $text_on_green   #FF77FF
+set $text_on_magenta #77FF77
+set $text_on_split   #FF0FFF
+set $text_on_white   #000000
+
+# Borders
+# Format: client.<state> <border> <background> <text> <indicator> <child_border>
+
+client.focused          $magenta $magenta $text_on_white $magenta $magenta
+client.focused_inactive $green   $green   $text_on_white   $green   $green
+client.unfocused        $green   $split   $text_on_white   $green   $green
+client.urgent           $green   $green   $text_on_white   $green   $green
+client.placeholder      $green   $green   $text_on_white   $green   $green
+
+font pango:monospace 9
+titlebar_border_thickness 2
+hide_edge_borders none
+# Always show app name instead of window title
+# for_window [app_id=".*"] title_format "%app_id"
+# for_window [class=".*"]  title_format "%class"
+#for_window [app_id="brave"] title_format "Brave"
+for_window [app_id="brave"] title_format "%title"
+for_window [app_id="heroic"] title_format "Heroic"
+for_window [app_id="steam"] title_format "Steam"
+for_window [app_id="okular"] title_format "%title"
+for_window [app_id="org.wireshark.Wireshark"] title_format "Wireshark"
+for_window [app_id="signal"] title_format "Signal"
+for_window [app_id="Whatsapp"] title_format "Whatsapp"
+for_window [app_id="HIZMail"] title_format "HIZ Mail"
+for_window [app_id="ProtonMail"] title_format "Proton Mail"
+for_window [app_id="thunderbird_thunderbird"] title_format "Thunderbird"
+for_window [class="kitty"] title_format "%title"
+
+input * {
 	xkb_layout de,de
 }
+# output eDP-1 {
+#         pos 960 2160
+#         background ~/Opt/Wallpapers/RoomAtNightCroppedWithBackground.png fill
+#         resolution 1920x1200
+# }
 
-output DP-2 {
-        pos 0 0
+# output HDMI-A-1 {
+#         pos 0 0
+#         background ~/Opt/Wallpapers/RoomAtNightCroppedWithBackground.png fill
+#         resolution 3840x2160
+# }
+
+output * {
         background ~/Opt/Wallpapers/RoomAtNightCroppedWithBackground.png fill
-        resolution 2560x1440
 }
-output DVI-D-0 {
-        pos 2560 0
-        background ~/Opt/Wallpapers/RoomAtNightCroppedWithBackground.png fill
-        resolution 1920x1080
-}
-output HDMI-A-1 {
-        pos 4480 0
-        background ~/Opt/Wallpapers/RoomAtNightCroppedWithBackground.png fill
-        resolution 1920x1080
-}
-#exec_always --no-startup-id feh --bg-scale ~/Desktop/Wallpaper/RoomAtNight.png 
 
 #make GTK applications start faster
-exec_always dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+exec_always dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 
 #disable mouse focus follow
 focus_follows_mouse no
-
-default_border none
-default_floating_border none
-font pango:monospace 0
-# titlebar_padding 1
-# titlebar_border_thickness 0
-
-# Copy this to ~/.config/sway/config and edit it to your liking.
-#
-# Read `man 5 sway` for a complete reference.
 
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
-bindsym $mod+a exec --no-startup-id swaylock -i /home/christian/Opt/Wallpapers/RoomAtNightCroppedWithBackground.png
+bindsym $mod+a exec /home/christian/Bin/swaylockClock.sh
 # Home row direction keys, like vim
 set $left h
 set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term /home/christian/Bin/alacritty
+set $term /home/christian/Bin/kitty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -103,7 +147,7 @@ set $menu exec rofi -show drun
 # Basics:
 #
     # Start a terminal
-    bindsym $mod+Return exec $term
+    bindsym $mod+Return exec /home/christian/Bin/kitty
 
     # Kill focused window
     bindsym $mod+Shift+q kill
@@ -113,8 +157,8 @@ set $menu exec rofi -show drun
 
     # Start browser
     # bindsym $mod+c exec --no-startup-id firefox -new-window
-    bindsym $mod+c exec --no-startup-id brave-browser -new-window --use-gl=egl --ozone-platform-hint=auto --enable-features=VaapiVideoDecoder --disable-features=UseChromeOSDirectVideoDecoder
-    bindsym $mod+Control+c exec --no-startup-id  brave-browser --incognito 
+    bindsym $mod+c exec --no-startup-id brave -new-window 
+    bindsym $mod+Control+c exec --no-startup-id  brave --incognito 
     # bindsym $mod+Control+c exec --no-startup-id  brave-browser --incognito --use-gl=egl --ozone-platform-hint=auto --enable-features=VaapiVideoDecoder --disable-features=UseChromeOSDirectVideoDecoder
 
     # Drag floating windows by holding down $mod and left mouse button.
@@ -236,17 +280,20 @@ set $menu exec rofi -show drun
     #Hotkeys
     #hotkeys
     #KeyBindings
+    #KeyBinds
     #Key Bindings
-    bindsym $mod+Shift+y exec --no-startup-id /home/christian/Opt/emojipick/emojipick
+    bindsym $mod+Control+n exec --no-startup-id /home/christian/Bin/newFreeWorkspaceSway.py
+    bindsym $mod+Shift+y exec --no-startup-id /home/christian/Opt/emojipicki3/emojipick
+    bindsym $mod+Shift+b border toggle
     # bindsym $mod+a exec --no-startup-id /home/christian/Bin/Lock
     bindsym $mod+u exec --no-startup-id python3 /home/christian/Bin/removeUrgency.py
     # bindsym $mod+Control+c exec --no-startup-id  firefox --private-window
     # bindsym $mod+y exec --no-startup-id brave-browser -new-window www.youtube.com --use-gl=egl --ozone-platform-hint=auto --enable-features=VaapiVideoDecoder --disable-features=UseChromeOSDirectVideoDecoder
-    bindsym $mod+y exec --no-startup-id brave-browser -new-window www.youtube.com 
+    bindsym $mod+y exec --no-startup-id brave -new-window www.youtube.com 
     # bindsym $mod+t exec --no-startup-id brave-browser -new-window www.twitch.tv/following/live --use-gl=egl --ozone-platform-hint=auto --enable-features=VaapiVideoDecoder --disable-features=UseChromeOSDirectVideoDecoder
-    bindsym $mod+t exec --no-startup-id brave-browser -new-window www.twitch.tv/following/live 
-    bindsym $mod+Control+r exec --no-startup-id brave-browser -new-window old.reddit.com --use-gl=egl --ozone-platform-hint=auto --enable-features=VaapiVideoDecoder --disable-features=UseChromeOSDirectVideoDecoder
-    bindsym $mod+Control+s exec /home/christian/Bin/Shutdown
+    bindsym $mod+t exec --no-startup-id brave -new-window www.twitch.tv/following/live 
+    bindsym $mod+Control+r exec --no-startup-id brave -new-window old.reddit.com --use-gl=egl --ozone-platform-hint=auto --enable-features=VaapiVideoDecoder --disable-features=UseChromeOSDirectVideoDecoder
+    bindsym $mod+Control+s exec /home/christian/Bin/Shutdown.py
     bindsym $mod+Control+h workspace prev_on_output
     bindsym $mod+Control+Left workspace prev_on_output
     bindsym $mod+Control+l workspace next_on_output
@@ -254,75 +301,21 @@ set $menu exec rofi -show drun
     bindsym $mod+m move scratchpad
     bindsym $mod+n scratchpad show, floating disable
     bindsym $mod+F6 exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
-
-# Sound Control
-bindsym $mod+F1 exec --no-startup-id amixer -q -D pulse sset Master toggle
-bindsym $mod+F2 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10%
-bindsym $mod+F3 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10%
+    bindsym $mod+Shift+f exec /home/christian/Bin/StartupVifm.sh
+    bindsym $mod+Shift+p exec /home/christian/Bin/Screenshot.sh
+    bindsym $mod+ctrl+d exec /home/christian/Opt/PythonEnvs/myVirtualEnv/bin/nwg-displays
 
 #
 # program to Workspace assignments
 #
-assign [class="Signal"] $ws2
-assign [class="franz"] $ws2
-assign [class="Franz"] $ws2
-assign [class="steam"] $ws8
-assign [class="heroic"] $ws8
-assign [class="discord"] $ws9
-assign [class="Microsoft Teams - Preview"] $ws10
-assign [class="explorer.exe"] $ws11
-assign [class="leagueclient.exe"] $ws11
-assign [class="leagueclientux.exe"] $ws11
-assign [class="league of legends.exe"] $ws11
-assign [class="leagueclient.exe"] $ws11
-assign [class="Untitled Goose Game"] $ws11
-assign [class="Todoist"] $ws14
-assign [class="Code"] $ws1
-assign [app_id="thunderbird"] workspace number 12
-# assign [title="Google Calendar*"] $ws13
-assign [app_id="whatsapp-for-linux"] $ws2
-assign [title="christianschulz1996@tutanota.com - Tutanota — Mozilla Firefox"] $ws13
-for_window [title="christianschulz1996@tutanota.com - Tutanota — Mozilla Firefox"] move to workspace number 13
-for_window [title="christianschulz1996@tutanota.com - Tutanota — Mozilla Firefox"] fullscreen disable
-for_window [title="Google Calendar*"] fullscreen disable
-for_window [title="Google Calendar*"] move container to $ws13
-for_window [title="WhatsApp — Mozilla Firefox"] fullscreen disable
-for_window [title="WhatsApp — Mozilla Firefox"] move container to $ws2
-for_window [class="WebApp"] fullscreen disable
-for_window [class="Spotify"] move to workspace number 5
-for_window [title="^Sekiro$"] move to $ws11
-for_window [title="^ELDEN$"] move to $ws11
-for_window [title="^Celeste$"] move to $ws11
-for_window [title="^Factorio$"] move to $ws11
-for_window [title="^PORTAL 2 - OpenGL$"] move to $ws11
-for_window [title="^MONSTER HUNTER: WORLD$"] move to $ws11
-for_window [title="^DARK SOULS III$"] move to $ws11
-for_window [title="^The Witcher 3$"] move to $ws11
-for_window [class="mupen64plus"] move to $ws11
-for_window [class="^Hollow$"] move to $ws11
-
 for_window [class="Gnome-calculator"] floating enable
-for_window [class="Shutter"] floating enable
-for_window [class="zoom"] floating enable
-for_window [class="Lutris"] floating enable
-for_window [class="battle.net.exe"] floating enable
-for_window [class="Pavucontrol"] floating enable
-for_window [class="Desmume"] floating enable
-for_window [class="SFML works!"] floating enable
-for_window [class="Gimp"] floating enable
-for_window [class="Signal"] fullscreen disable
-
-# workspace to output assignments
-workspace 1 output DP-2
-workspace 2 output DVI-D-1
-workspace 5 output DVI-D-1
-workspace 4 output DVI-D-1
-workspace 8 output DVI-D-1
-workspace 9 output DVI-D-1
-workspace 10 output HDMI-A-1 
-workspace 11 output DP-2
-workspace 12 output DVI-D-1
-workspace 13 output DVI-D-1
+for_window [app_id="HIZMail"] fullscreen disable
+for_window [app_id="ProtonMail"] fullscreen disable
+assign [app_id="signal"] $ws2
+assign [app_id="Whatsapp"] $ws2
+assign [app_id="HIZMail"] $ws12
+assign [app_id="ProtonMail"] $ws12
+assign [app_id="thunderbird_thunderbird"] $ws12
 
 #
 # Layout stuff:
@@ -332,7 +325,7 @@ workspace 13 output DVI-D-1
     # respectively.
     bindsym $mod+b splith
     bindsym $mod+v splitv
-    bindsym $mod+x split toggle; border none
+    bindsym $mod+x split toggle 
 
     # Switch the current container between different layout styles
     bindsym $mod+s layout stacking

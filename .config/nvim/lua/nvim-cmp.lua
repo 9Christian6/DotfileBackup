@@ -14,7 +14,7 @@ end
 require("luasnip/loaders/from_vscode").lazy_load()
 
 -- Set completion options
--- vim.opt.completeopt = "menuone,noselect,popup"
+vim.opt.completeopt = "menu,menuone,noselect"
 
 local function has_lsp_attached(bufnr)
 	if vim.lsp.get_clients then
@@ -29,8 +29,8 @@ local function cmp_enabled()
 	if has_lsp_attached(bufnr) then
 		return true
 	end
-	return false
-	--return vim.b[bufnr].cmp_manual_enabled == true
+
+	return vim.b[bufnr].cmp_manual_enabled == true
 end
 
 local function in_tex_list_environment()
@@ -85,7 +85,6 @@ end
 local cmp_window = {
 	border = "rounded",
 	winhighlight = "Normal:NormalFloat,FloatBorder:FloatBorder,CursorLine:PmenuSel,Search:None",
-	max_height = 5,
 }
 
 cmp.setup({
@@ -106,25 +105,25 @@ cmp.setup({
 		["<C-f>"] = cmp.mapping.scroll_docs(4),
 		["<C-Space>"] = cmp.mapping.complete(), -- show completion suggestions
 		["<C-e>"] = cmp.mapping.abort(), -- close completion window
-
 		["<CR>"] = cmp.mapping(function(fallback)
-			-- 1. If menu is visible AND an item is actually selected, confirm it.
-			if cmp.visible() and cmp.get_selected_entry() then
+			if cmp.visible() then
 				cmp.confirm({ select = false })
 				return
 			end
 
-			-- 2. Custom TeX logic (will now trigger even if menu is visible but unselected)
 			if should_continue_tex_item() then
-				local keys = vim.api.nvim_replace_termcodes("<CR>\\item ", true, false, true)
+				local keys = vim.api.nvim_replace_termcodes(
+					"<CR>\\item ",
+					true,
+					false,
+					true
+				)
 				vim.api.nvim_feedkeys(keys, "n", false)
 				return
 			end
 
-			-- 3. Otherwise, fallback to normal <CR> behavior (e.g., inserting a newline)
 			fallback()
 		end, { "i", "s" }),
-
 		["<Tab>"] = cmp.mapping(function(fallback)
 			if luasnip.expand_or_jumpable() then
 				luasnip.expand_or_jump()

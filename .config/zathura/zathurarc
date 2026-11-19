@@ -1,10 +1,8 @@
 set selection-clipboard clipboard
-map <C-h> navigate previous
-map <C-l> navigate next
-map h scroll half-up
-map l scroll half-down
-map <Button1> scroll half-down
-map <Button3> scroll half-up
+map h navigate previous
+map l navigate next
+map <C-h> scroll half-up
+map <C-l> scroll half-down
 
 # Jump to first/last page
 map gg goto top
