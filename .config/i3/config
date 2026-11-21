@@ -1,6 +1,6 @@
 #make windows have no bars
-default_border pixel 2
-default_floating_border pixel 2
+default_border pixel 1
+default_floating_border pixel 1
 hide_edge_borders none
 
 #Gaps configuration
@@ -233,6 +233,20 @@ assign [class="steamwebhelper"] number $ws8
 for_window [class="steamwebhelper"] number $ws8
 assign [title="steamwebhelper"] number $ws8
 assign [class="thunderbird"] number $ws12
+for_window [class="thunderbird"] fullscreen disable
+for_window [class="Firefox"] border pixel 1
+for_window [class="Firefox"] fullscreen disable
+for_window [class="thunderbird"] border pixel 1
+for_window [class="signal"] border pixel 1
+for_window [class="whatsdesk"] border pixel 1
+for_window [class="Spotify"] border pixel 1
+for_window [class="kitty"] border pixel 1
+for_window [instance="ProtonMail"] move to workspace number $ws12
+for_window [instance="ProtonMail"] fullscreen disable
+for_window [instance="ProtonMail"] border pixel 1
+for_window [instance="HIZMail"] move to workspace number $ws12
+for_window [instance="HIZMail"] fullscreen disable
+for_window [instance="HIZMail"] border pixel 1
 assign [class="Morgen"] number $ws13
 assign [class="korganizer"] number $ws13
 assign [class="reminders"] number $ws13
@@ -265,7 +279,13 @@ for_window [title="NextcloudCalendar"] fullscreen disable
 for_window [class="Brave-browser"] floating disable
 for_window [class="^NextcloudCalendar$"] fullscreen disable
 for_window [class="Spotify"] move to workspace number $ws5
-for_window [class="StartupTerminal"] move to workspace number $ws4
+for_window [class="Spotify"] fullscreen disable
+for_window [class="kitty"] move to workspace number $ws4
+for_window [class="kitty"] fullscreen disable
+for_window [class="signal"] move to workspace number $ws2
+for_window [class="signal"] fullscreen disable
+for_window [class="whatsdesk"] move to workspace number $ws2
+for_window [class="whatsdesk"] fullscreen disable
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
