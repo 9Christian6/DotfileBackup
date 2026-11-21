@@ -280,7 +280,6 @@ for_window [class="Brave-browser"] floating disable
 for_window [class="^NextcloudCalendar$"] fullscreen disable
 for_window [class="Spotify"] move to workspace number $ws5
 for_window [class="Spotify"] fullscreen disable
-for_window [class="kitty"] move to workspace number $ws4
 for_window [class="kitty"] fullscreen disable
 for_window [class="signal"] move to workspace number $ws2
 for_window [class="signal"] fullscreen disable
